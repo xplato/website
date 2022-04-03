@@ -1,17 +1,10 @@
 import Li from "../Li";
 
-import { getRandomString } from "../../logic/rand";
-
-const usernames = [
-	'hydra',
-	'athena',
-	'xplato',
-];
 
 const Navigation = () => {
 	const links = [
 		{
-			label: `~${getRandomString(usernames)}`,
+			label: '~hydra',
 			href: '/',
 		},
 		{
@@ -36,7 +29,7 @@ const Navigation = () => {
 						<Li href={link.href} key={link.label}>{link.label}</Li>
 					))}
 				</div>
-				<div className="flex flex-row align-c justify-c">
+				<div className="flex flex-row align-c justify-c portrait-hide">
 					<a href="https://github.com/Infinium8" rel="noreferrer noopener nofollow" target="_blank">GitHub</a>
 				</div>
 			</div>

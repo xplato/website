@@ -13,7 +13,7 @@ const titles = [
 	'dev',
 	'top secret',
 	'fork me!',
-	`'--;`
+	`';--`
 ];
 
 const Project = ({
