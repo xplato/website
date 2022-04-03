@@ -1,9 +1,11 @@
 import Li from "../../components/Li";
+import PageTitle from "../../components/PageTitle";
 import { archivedArticles } from "../../data/articles";
 
 const Archive = () => {
 	return (
 		<>
+			<PageTitle>Archived articles</PageTitle>
 			<h1 id='fancyboi' className='title'>
 				Archived articles
 			</h1>

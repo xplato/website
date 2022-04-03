@@ -3,6 +3,19 @@ import ELi from '../components/ELi';
 
 import { Project, projects } from '../data/projects';
 
+import { getRandomString } from '../logic/rand';
+import PageTitle from '../components/PageTitle';
+
+const titles = [
+	'code',
+	'projects',
+	'work',
+	'dev',
+	'top secret',
+	'fork me!',
+	`'--;`
+];
+
 const Project = ({
 	title,
 	description,
@@ -44,7 +57,8 @@ const Project = ({
 const Projects = () => {
 	return (
 		<>
-			<h1 id='fancyboi' className='title'>Code</h1>
+			<PageTitle>code</PageTitle>
+			<h1 id='fancyboi' className='title'>{getRandomString(titles)}</h1>
 			<p>I work on a variety of things.</p>
 
 			<div className='w-100p grid s-grid-2 gap-2r portrait-grid-1 mt-2r'>

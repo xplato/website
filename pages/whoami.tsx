@@ -1,11 +1,21 @@
 import ELi from '../components/ELi';
 import Layout from '../components/layout/Layout';
+import PageTitle from '../components/PageTitle';
 
-const Articles = () => {
+import { getRandomString } from '../logic/rand';
+
+const titles = [
+	'whoami',
+	'who',
+	'echo $USER',
+	'id athena',
+];
+
+const Whoami = () => {
 	return (
 		<>
-			<h1 id="fancyboi" className="title">whoami</h1>
-
+			<PageTitle>whoami</PageTitle>
+			<h1 id="fancyboi" className="title">{getRandomString(titles)}</h1>
 			<p>
 				I'm a full-stack software engineer. I've been focused on web-related
 				tech for many years, but I'm now completely bored with it. As of late,
@@ -20,6 +30,6 @@ const Articles = () => {
 	);
 };
 
-Articles.layout = Layout;
+Whoami.layout = Layout;
 
-export default Articles;
+export default Whoami;

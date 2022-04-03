@@ -1,8 +1,10 @@
 import Article from '../../components/article/Article';
 import ELi from '../../components/ELi';
+import PageTitle from '../../components/PageTitle';
 
 const A = () => (
 	<Article>
+		<PageTitle>The Internet: An Extension of Google</PageTitle>
 		<p className='mt-1-5r'>27 March, 2022</p>
 		<h1>The Internet: An Extension of Google</h1>
 		<p>

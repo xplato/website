@@ -1,11 +1,24 @@
 import ELi from "../components/ELi";
 import Li from "../components/Li";
+import PageTitle from "../components/PageTitle";
+
+import { getRandomString } from "../logic/rand";
+
+const titles = [
+	'home',
+	'index',
+	'127.0.0.1',
+	'mod main',
+	'hello',
+	'welcome',
+];
 
 const Home = () => {
 	return (
 		<>
+			<PageTitle></PageTitle>
 			<h1 id='fancyboi' className='title index-title'>
-				home
+				{getRandomString(titles)}
 			</h1>
 			<p>
 				I'm Tristan (or `athena` on Tilde and `xplato` on GitHub). This

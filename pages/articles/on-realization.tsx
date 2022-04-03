@@ -1,7 +1,9 @@
 import Article from '../../components/article/Article';
+import PageTitle from '../../components/PageTitle';
 
 const A = () => (
 	<Article>
+		<PageTitle>On Realization</PageTitle>
 		<p className='mt-1-5r'>20 March, 2022</p>
 		<h1>On Realization</h1>
 		<p>
