@@ -46,6 +46,26 @@ $colors: (
 	}
 }
 
+body.black {
+	--ui: white !important;
+	--ui-1: var(--gray-100) !important;
+	--ui-2: var(--gray-200) !important;
+	--ui-3: var(--gray-300) !important;
+}
+
+.ui {
+	background-color: var(--ui);
+}
+.ui-1 {
+	background-color: var(--ui-1);
+}
+.ui-2 {
+	background-color: var(--ui-2);
+}
+.ui-3 {
+	background-color: var(--ui-3);
+}
+
 :root {
 	--accent-50: var(--green-50);
 	--accent-100: var(--green-100);
@@ -62,6 +82,10 @@ $colors: (
 	--white-500: var(--gray-200);
 	--black-500: #555;
 
+	--ui: #111;
+	--ui-1: var(--gray-800);
+	--ui-2: var(--gray-700);
+	--ui-3: var(--gray-600);
 
 	--rose-50: #fff1f2;
 	--rose-100: #ffe4e6;

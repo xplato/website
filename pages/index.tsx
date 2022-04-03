@@ -18,7 +18,7 @@ const Home = () => {
 			</p>
 			<p>
 				You can <Li href='/articles'>see my writings</Li> or{' '}
-				<ELi href='https://github.com/Infinium8'>some of my code</ELi>{' '}
+				<Li href='/projects'>some of my code</Li>{' '}
 				if you're into that sort of thing.
 			</p>
 			<p>

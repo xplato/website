@@ -7,6 +7,10 @@ const Navigation = () => {
 			href: '/',
 		},
 		{
+			label: 'code',
+			href: '/code',
+		},
+		{
 			label: 'articles',
 			href: '/articles',
 		},
