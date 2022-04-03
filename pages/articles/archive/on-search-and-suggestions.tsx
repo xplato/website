@@ -1,12 +1,15 @@
 import ArchiveHeader from '../../../components/article/ArchiveHeader';
 import Article from '../../../components/article/Article';
 import ELi from '../../../components/ELi';
-import PageTitle from '../../../components/PageTitle';
+import PageMeta from '../../../components/PageMeta';
 
 const A = () => (
 	<Article>
 		<ArchiveHeader />
-		<PageTitle>On Search &amp; Suggestions</PageTitle>
+		<PageMeta meta={{
+				title: 'On Search & Suggestions',
+				description: 'In the last few months, my work has been primarily focused on web-related projects with a similar (often identical) tech stack.',
+		}} />
 		<h1>On Search &amp; Suggestions</h1>
 		<p>In the last few months, my work has been primarily focused on web-related projects with a similar (often identical) tech stack.</p>
 		<p>I opened GitHub today, as I always do, and I happened to notice the “Explore repositories” section. As you can likely guess from both intuition and the title of this article, these project suggestions are based off what you do on GitHub. Primarily, of course, the projects you star, contribute to, and so on.</p>

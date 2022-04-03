@@ -1,11 +1,14 @@
 import ArchiveHeader from '../../../components/article/ArchiveHeader';
 import Article from '../../../components/article/Article';
-import PageTitle from '../../../components/PageTitle';
+import PageMeta from '../../../components/PageMeta';
 
 const A = () => (
 	<Article>
 		<ArchiveHeader />
-		<PageTitle>On Life as an Extension of Experience</PageTitle>
+		<PageMeta meta={{
+				title: 'On Life as an Extension of Experience',
+				description: 'I see the world as a series of interconnected systems.',
+		}} />
 		<p className="mt-1-5r">21 March, 2022</p>
 		<h1>On Life as an Extension of Experience</h1>
 		<p>I see the world as a series of interconnected systems.</p>

@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app';
+import dynamic from 'next/dynamic';
 
 import SettingsProvider from '../providers/SettingsProvider';
 import View from '../components/layout/View';
@@ -23,4 +24,6 @@ const App = ({ Component, pageProps }: AppProps) => {
 	);
 }
 
-export default App;
+export default dynamic(() => Promise.resolve(App), {
+	ssr: false,
+});

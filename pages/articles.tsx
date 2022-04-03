@@ -1,4 +1,4 @@
-import PageTitle from '../components/PageTitle';
+import PageMeta from '../components/PageMeta';
 import Layout from '../components/layout/Layout';
 import Li from '../components/Li';
 
@@ -17,7 +17,10 @@ const titles = [
 const Articles = () => {
 	return (
 		<>
-			<PageTitle>articles</PageTitle>
+			<PageMeta meta={{
+				title: 'articles',
+				description: 'I write occasionally.',
+			}} />
 			<h1 id='fancyboi' className='title'>{getRandomString(titles)}</h1>
 			<p>I write occasionally.</p>
 

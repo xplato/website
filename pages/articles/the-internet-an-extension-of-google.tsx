@@ -1,10 +1,17 @@
 import Article from '../../components/article/Article';
 import ELi from '../../components/ELi';
-import PageTitle from '../../components/PageTitle';
+import PageMeta from '../../components/PageMeta';
 
 const A = () => (
 	<Article>
-		<PageTitle>The Internet: An Extension of Google</PageTitle>
+		<PageMeta meta={{
+			title: 'The Internet: An Extension of Google',
+			description: `
+				There exist many tech companies who are right around or above the
+				size of Google. We usually group them into this subtly suggestive
+				term “FAANG” (Facebook, Apple, Amazon, Netflix, Google).
+			`,
+		}} />
 		<p className='mt-1-5r'>27 March, 2022</p>
 		<h1>The Internet: An Extension of Google</h1>
 		<p>

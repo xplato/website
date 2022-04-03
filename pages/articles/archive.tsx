@@ -1,13 +1,25 @@
 import Li from "../../components/Li";
-import PageTitle from "../../components/PageTitle";
+import PageMeta from "../../components/PageMeta";
+
 import { archivedArticles } from "../../data/articles";
+import { getRandomString } from "../../logic/rand";
+
+const titles = [
+	'Archived articles',
+	'The graveyard',
+	'Here lies...',
+	'Abandon all hope ye who enter here!',
+];
 
 const Archive = () => {
 	return (
 		<>
-			<PageTitle>Archived articles</PageTitle>
+			<PageMeta meta={{
+				title: 'Archived articles',
+				description: "Stuff you shouldn't see...",
+			}} />
 			<h1 id='fancyboi' className='title'>
-				Archived articles
+				{getRandomString(titles)}
 			</h1>
 			<p>
 				I prefer not to unpublish something that was once live. As such,

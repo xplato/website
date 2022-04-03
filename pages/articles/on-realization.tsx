@@ -1,9 +1,12 @@
 import Article from '../../components/article/Article';
-import PageTitle from '../../components/PageTitle';
+import PageMeta from '../../components/PageMeta';
 
 const A = () => (
 	<Article>
-		<PageTitle>On Realization</PageTitle>
+		<PageMeta meta={{
+				title: 'On Realization',
+				description: 'Lately, I have found myself thinking, perhaps more often than I should, about realization in a general sense.',
+			}} />
 		<p className='mt-1-5r'>20 March, 2022</p>
 		<h1>On Realization</h1>
 		<p>

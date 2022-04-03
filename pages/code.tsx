@@ -4,7 +4,7 @@ import ELi from '../components/ELi';
 import { Project, projects } from '../data/projects';
 
 import { getRandomString } from '../logic/rand';
-import PageTitle from '../components/PageTitle';
+import PageMeta from '../components/PageMeta';
 
 const titles = [
 	'code',
@@ -57,7 +57,10 @@ const Project = ({
 const Projects = () => {
 	return (
 		<>
-			<PageTitle>code</PageTitle>
+			<PageMeta meta={{
+				title: 'code',
+				description: 'My projects',
+			}} />
 			<h1 id='fancyboi' className='title'>{getRandomString(titles)}</h1>
 			<p>I work on a variety of things.</p>
 

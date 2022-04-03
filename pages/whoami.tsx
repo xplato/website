@@ -1,6 +1,6 @@
 import ELi from '../components/ELi';
 import Layout from '../components/layout/Layout';
-import PageTitle from '../components/PageTitle';
+import PageMeta from '../components/PageMeta';
 
 import { getRandomString } from '../logic/rand';
 
@@ -14,7 +14,11 @@ const titles = [
 const Whoami = () => {
 	return (
 		<>
-			<PageTitle>whoami</PageTitle>
+			<PageMeta meta={{
+				title: 'whoami',
+				description: 'About me.',
+			}} />
+
 			<h1 id="fancyboi" className="title">{getRandomString(titles)}</h1>
 			<p>
 				I'm a full-stack software engineer. I've been focused on web-related

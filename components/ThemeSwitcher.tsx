@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { useSettings } from "../providers/SettingsProvider";
 
-import { colors } from "../data/colors";
+import { colors, niceThemes } from "../data/colors";
 
 const ThemeSwitcher = () => {
 	const [active, setActive] = useState(false);
@@ -77,7 +77,7 @@ const ThemeSwitcher = () => {
 						}}
 					>
 						<p className='mb-0 lh-1 fs-sm mt-0 mr-0-25r'>
-							<a onClick={() => setActive(!active)}>Theme color: {settings.theme}</a>
+							<button onClick={() => setActive(!active)}>Theme color: {niceThemes[settings.theme]}</button>
 						</p>
 					</motion.div>
 				)}

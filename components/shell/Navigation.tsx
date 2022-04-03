@@ -1,9 +1,17 @@
 import Li from "../Li";
 
+import { getRandomString } from "../../logic/rand";
+
+const usernames = [
+	'hydra',
+	'athena',
+	'xplato',
+];
+
 const Navigation = () => {
 	const links = [
 		{
-			label: '~athena',
+			label: `~${getRandomString(usernames)}`,
 			href: '/',
 		},
 		{
