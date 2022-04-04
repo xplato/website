@@ -24,7 +24,7 @@ const A = () => (
 		</p>
 		<div className='ath-img'>
 			<img
-				src='https://tilde.club/~athena/assets/images/articles/2/sherlock.gif'
+				src='/images/articles/2/sherlock.gif'
 				alt='A GIF showing Sherlock (Bennedict Cumberbatch) coming to a sudden realization.'
 			/>
 		</div>
@@ -45,7 +45,7 @@ const A = () => (
 		</p>
 		<div className='ath-img'>
 			<img
-				src='https://tilde.club/~athena/assets/images/articles/2/realization.png'
+				src='/images/articles/2/realization.png'
 				alt='Two waves. The top one is a single wave with a high amplitude and peak. The bottom on displays many waves with a smaller amplutide, but more frequent peaks.'
 			/>
 		</div>

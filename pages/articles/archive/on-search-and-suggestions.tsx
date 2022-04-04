@@ -41,7 +41,7 @@ const A = () => (
 		</ul>
 		<p>Knowing this, I immediately interpreted the suggestions that GitHub gave me, and promptly wrote this article.</p>
 		<p>The suggestions were:</p>
-		<div className="ath-img"><img src="https://tilde.club/~athena/assets/images/articles/1/gh-dark.png" /></div>
+		<div className="ath-img"><img src="/images/articles/1/gh-dark.png" /></div>
 		<p>Need I go on?</p>
 		<p>While in some cases I would be interested in competing projects, I most often want new and innovative projects suggested to me. Not the same-product-with-a-different-label kind-of thing. I’ve seen all of that already.</p>
 		<p>This is what I label as a “surface-level” analysis. This is the sort-of logic and reasoning that a chimp could make, given a slight change in the parameters.</p>

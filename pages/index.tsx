@@ -33,8 +33,7 @@ const Home = () => {
 				).
 			</p>
 			<p>
-				If you are interested in hiring me or my company, contact me via
-				my Tilde email address. If you're not on Tilde, contact us{' '}
+				If you are interested in hiring me or my company, contact us{' '}
 				<ELi href='https://www.infinium.earth/contact'>
 					on our website.
 				</ELi>
