@@ -50,6 +50,7 @@ const Home = () => {
 
 			<hr></hr>
 
+			<p>Words of wisdom:</p>
 			<p>{randomQuote}</p>
 			
 			{randomQuote === 'Bingo!' && (

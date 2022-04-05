@@ -1,5 +1,5 @@
 const quotes = [
-	`Just 'cuz you put syrup on somethin' don' make it pancakes.`,
+	`Just 'cuz you put syrup on somethin' don't make it pancakes.`,
 	`Well, the plot, unlike your hair, continues to thicken.`,
 	`I don’t lose things. I place things in locations which later elude me.`,
 	`What isn’t clear is why people always say ‘goes without saying,’ yet still feel compelled to say the thing that was supposed to go without saying. Doesn’t that bother you?`,
@@ -13,8 +13,7 @@ const quotes = [
 	`I've heard it both ways.`,
 	`Actually, I've been promoted. It's Captain Crunch.`,
 	`Don't be Harry Potter and the Prisoner of Marzipan.`,
-	`Am I deliberately bloating my codebase because I'm tried of web stuff? I don't know, ask Charlotte.`,
-	`You smell like a jerk.`,
+	`Take it easy with the cocoa butter lotion. You smell like a jerk.`,
 	`Bingo!`,
 ];
 

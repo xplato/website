@@ -1,4 +1,8 @@
 @use './color';
 @use './style';
+@use './root';
 
+@use './components/Article';
 @use './components/Button';
+@use './components/Projects';
+@use './components/View';

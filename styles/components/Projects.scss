@@ -1,0 +1,29 @@
+.project-card {
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	display: grid;
+	gap: 0;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	position: relative;
+	background-color: #222;
+
+	& .new {
+		border-radius: 90px;
+		background-color: var(--accent-500);
+		color: black;
+		padding: 0.25rem 0.5rem;
+		font-size: 0.875rem;
+		font-weight: 600;
+		line-height: 1;
+		margin-left: 0.5rem;
+	}
+
+	body.black & {
+		background-color: var(--ui-1);
+
+		& .new {
+			color: white;
+		}
+	}
+}
