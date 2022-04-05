@@ -2,12 +2,12 @@ const articles = [
 	{
 		slug: 'the-internet-an-extension-of-google',
 		title: 'The Internet: An Extension of Google',
-		date: '27 March 2022'
+		date: '27 March 2022',
 	},
 	{
 		slug: 'on-realization',
 		title: 'On Realization',
-		date: '20 March 2022'
+		date: '20 March 2022',
 	},
 ];
 

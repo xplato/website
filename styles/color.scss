@@ -27,15 +27,42 @@ $colors: (
 	}
 }
 
+.dice-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 1px;
+}
+
 .color {
-	height: 1.5rem;
-	width: 1.5rem;
+	height: 1.6rem;
+	width: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 !important;
+
+	& .dot {
+		height: 4px;
+		width: 4px;
+		background-color: white;
+		border-radius: 90px;
+	}
+
+	&.white .dot, &.hacker-green .dot {
+		background-color: black;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
 	.color {
 		height: 2rem;
 		width: 2rem;
+
+		& .dot {
+			height: 6px;
+			width: 6px;
+		}
 	}
 }
 

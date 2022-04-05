@@ -5,6 +5,34 @@ import { useSettings } from "../providers/SettingsProvider";
 
 import { colors, niceThemes } from "../data/colors";
 
+
+// There is probably a better way to do
+// this, but idgaf. I'm tired of web shit.
+const diceMap = [
+	['', '', '', '', 1, '', '', '', ''],
+	[1, '', '', '', '', '', '', '', 2],
+	[1, '', '', '', 2, '', '', '', 3],
+	[1, '', 2, '', '', '', 3, '', 4],
+	[1, '', 2, '', 3, '', 4, '', 5],
+	[1, '', 2, 3, '', 4, 5, '', 6],
+]
+
+const Dice = () => {
+	const rollDice = () => {
+		return diceMap[Math.floor(Math.random() * 6)];
+	}
+
+	return (
+		<div className="dice-grid">
+			{rollDice().map(e => (
+				<div className="grid-block flex-c">
+					<div key={e} className={typeof e === 'string' ? '' : 'dot'}></div>
+				</div>
+			))}
+		</div>
+	);
+}
+
 const ThemeSwitcher = () => {
 	const [active, setActive] = useState(false);
 
@@ -12,11 +40,15 @@ const ThemeSwitcher = () => {
 
 	const onClick = (color: string) => {
 		settings.set('theme', color);
-		setActive(false);
 	}
 
 	const variants = {
 		text: {
+			initial: { opacity: 0, scale: 0.95 },
+			animate: { opacity: 1, scale: 1 },
+			exit: { opacity: 0, scale: 0.95 },
+		},
+		buttons: {
 			initial: { opacity: 0, scale: 0.95 },
 			animate: { opacity: 1, scale: 1 },
 			exit: { opacity: 0, scale: 0.95 },
@@ -41,28 +73,49 @@ const ThemeSwitcher = () => {
 					duration: 0.5,
 				}
 			}),
-			hover: { rotate: 45 },
+			hover: { rotate: 90 },
 		}
 	}
 
 	return (
-		<>
+		<div className="theme-switcher-wrapper">
 			<AnimatePresence exitBeforeEnter>
 				{active ? (
-					<div className="grid grid-5 gap-0">
-						{colors.map((color, i) => (
-							<motion.button
-								custom={i}
-								key={color}
-								variants={variants.color}
-								initial='initial'
-								animate='animate'
-								exit='exit'
-								whileHover='hover'
-								className={`color ${color}`}
-								onClick={() => onClick(color)}
-							></motion.button>
-						))}
+					<div className="flex align-c justify-c flex-row">
+						
+						<motion.div
+							key='buttons'
+							variants={variants.buttons}
+							initial='initial'
+							animate='animate'
+							exit='exit'
+							transition={{
+								delay: 1.8
+							}}
+							className="flex align-c justify-c flex-row mr-1r"
+						>
+							<button onClick={() => setActive(false)}>Save</button>
+						</motion.div>
+
+						<div className="grid grid-5 gap-0">
+							{colors.map((color, i) => (
+								<motion.button
+									custom={i}
+									key={color}
+									variants={variants.color}
+									initial='initial'
+									animate='animate'
+									exit='exit'
+									whileHover='hover'
+									className={`color ${color}`}
+									onClick={() => onClick(color)}
+								>
+									{settings.theme === color && (
+										<Dice />
+									)}
+								</motion.button>
+							))}
+						</div>
 					</div>
 				) : (
 					<motion.div
@@ -82,7 +135,7 @@ const ThemeSwitcher = () => {
 					</motion.div>
 				)}
 			</AnimatePresence>
-		</>
+		</div>
 	);
 };
 
