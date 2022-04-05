@@ -17,6 +17,8 @@ const titles = [
 ];
 
 const Home = () => {
+	const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
 	return (
 		<>
 			<PageMeta meta={{
@@ -48,7 +50,11 @@ const Home = () => {
 
 			<hr></hr>
 
-			<p>{quotes[Math.floor(Math.random() * quotes.length)]}</p>
+			<p>{randomQuote}</p>
+			
+			{randomQuote === 'Bingo!' && (
+				<Li href='/partner'>You've made it, partner.</Li>
+			)}
 		</>
 	);
 };

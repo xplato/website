@@ -13,7 +13,9 @@ const quotes = [
 	`I've heard it both ways.`,
 	`Actually, I've been promoted. It's Captain Crunch.`,
 	`Don't be Harry Potter and the Prisoner of Marzipan.`,
-	`Am I deliberately bloating my codebase because I'm tried of web stuff? I don't know, ask Charlotte.`
+	`Am I deliberately bloating my codebase because I'm tried of web stuff? I don't know, ask Charlotte.`,
+	`You smell like a jerk.`,
+	`Bingo!`,
 ];
 
 export {

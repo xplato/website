@@ -45,6 +45,12 @@ const Whoami = () => {
 					on our website.
 				</ELi>
 			</p>
+			<p>
+				You can contact me at: [my_first_name] [at] infinium [dot] earth
+			</p>
+			<p>
+				Sorry, man. It's the bots.
+			</p>
 		</>
 	);
 };
