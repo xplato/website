@@ -30,7 +30,7 @@ const Navigation = () => {
 					))}
 				</div>
 				<div className="flex flex-row align-c justify-c portrait-hide">
-					<a href="https://github.com/Infinium8" rel="noreferrer noopener nofollow" target="_blank">GitHub</a>
+					<Li href='/psych'>Psych</Li>
 				</div>
 			</div>
 		</header>
