@@ -1,8 +1,11 @@
 import ELi from "../components/ELi";
 import Li from "../components/Li";
 import PageMeta from "../components/PageMeta";
+import Spacer from "../components/Spacer";
 
 import { getRandomString } from "../logic/rand";
+
+import { quotes } from "../data/random";
 
 const titles = [
 	'home',
@@ -25,33 +28,27 @@ const Home = () => {
 				{getRandomString(titles)}
 			</h1>
 			<p>
-				I'm Tristan. This is my very minimal personal website. This is the place I write
-				(when I don't write for{' '}
-				<ELi href='https://infinium.earth'>
-					Infinium
-				</ELi>
-				).
+				<Li href='/whoami'>whoami?</Li>
 			</p>
-			<p>
-				If you are interested in hiring me or my company, contact us{' '}
-				<ELi href='https://www.infinium.earth/contact'>
-					on our website.
-				</ELi>
-			</p>
-			<p>
-				You can <Li href='/articles'>see my writings</Li> or{' '}
-				<Li href='/code'>some of my code</Li>{' '}
-				if you're into that sort of thing.
-			</p>
-			<p>Find me:</p>
+			<p>Find me @:</p>
 			<ul>
 				<li>
 					<ELi href="https://github.com/xplato">xplato on Github</ELi>
 				</li>
 				<li>
-					<ELi href="https://github.com/xplato">athena on Codeberg</ELi>
+					<ELi href="https://codeberg.org/athena">athena on Codeberg</ELi>
 				</li>
 			</ul>
+
+			<Spacer />
+
+			<p>
+				Injury-free since June, when I broke my finger flipping the injury countdown calendar.
+			</p>
+
+			<hr></hr>
+
+			<p>{quotes[Math.floor(Math.random() * quotes.length)]}</p>
 		</>
 	);
 };

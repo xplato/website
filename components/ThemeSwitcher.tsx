@@ -94,7 +94,9 @@ const ThemeSwitcher = () => {
 							}}
 							className="flex align-c justify-c flex-row mr-1r"
 						>
-							<button onClick={() => setActive(false)}>Save</button>
+							<button onClick={() => setActive(false)}>
+								I've rolled
+							</button>
 						</motion.div>
 
 						<div className="grid grid-5 gap-0">

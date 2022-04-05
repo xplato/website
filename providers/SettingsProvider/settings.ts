@@ -16,7 +16,7 @@ interface Settings {
 // Settings added here will be automatically applied
 // to localStorage.
 const defaultSettings: Settings = {
-	theme: 'hacker',
+	theme: 'hacker-green',
 };
 
 // We use 'yes' and 'no' because the SelectSetting
