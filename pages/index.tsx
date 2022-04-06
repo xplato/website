@@ -2,6 +2,7 @@ import ELi from "../components/ELi";
 import Li from "../components/Li";
 import PageMeta from "../components/PageMeta";
 import Spacer from "../components/Spacer";
+import Layout from "../components/layout/Layout";
 
 import { getRandomString } from "../logic/rand";
 
@@ -59,5 +60,7 @@ const Home = () => {
 		</>
 	);
 };
+
+Home.layout = Layout;
 
 export default Home;
