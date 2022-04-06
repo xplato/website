@@ -33,6 +33,9 @@ const settingsSchema: Schema = {
 	theme: {
 		allowedValues: colors,
 	},
+	font: {
+		allowedValues: ['mono', 'inter'],
+	}
 }
 
 export {

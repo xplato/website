@@ -14,3 +14,21 @@
 		color: black;
 	}
 }
+
+.button {
+	border-radius: 0.25rem;
+	font-size: 0.875rem;
+	padding: 0.5rem 0.75rem;
+	background-color: var(--ui-2);
+	color: white;
+	transition: var(--d-m-1) var(--e-s);
+
+	&:hover {
+		text-decoration: none;
+		background-color: var(--ui-3);
+	}
+
+	body.black & {
+		color: black;
+	}
+}

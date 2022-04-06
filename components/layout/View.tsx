@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-
+import useBodyModifier from "../../hooks/useBodyModifier";
 import { useSettings } from "../../providers/SettingsProvider";
 
 import Navigation from "../shell/Navigation";
@@ -10,15 +9,8 @@ import type { ChildrenOnly } from "../../types";
 const View = ({ children }: ChildrenOnly) => {
 	const settings = useSettings();
 
-	useEffect(() => {
-		if (settings.theme) {
-			document.body.classList.add(settings.theme);
-		}
-
-		return () => {
-			document.body.classList.remove(settings.theme);
-		}
-	}, [settings.theme]);
+	useBodyModifier(settings.theme);
+	useBodyModifier(settings.font);
 
 	return (
 		<div className="view">

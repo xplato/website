@@ -7,7 +7,7 @@ import View from '../components/layout/View';
 import '../styles/jupiterui.css';
 import '../styles/global.scss';
 import '@infinium/hydro/dist/style.css';
-
+import '../assets/fonts/inter.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
 	// @ts-ignore

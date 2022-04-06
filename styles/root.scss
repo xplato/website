@@ -1,3 +1,14 @@
+
+
+body, body *,
+body.mono, body.mono * {
+	font-family: "courier new", monospace;
+}
+
+body.inter, body.inter * {
+	font-family: "Inter", "Roboto", "Open Sans", "Helvetica", "Arial", system-ui, sans-serif !important;
+}
+
 hr {
 	width: 100%;
 	height: 1px;

@@ -7,7 +7,6 @@ body {
 	margin: auto;
 	padding: 1em;
 	max-width: 64em;
-	font-family: "courier new", monospace;
 	color: var(--accent-400);
 	background: var(--background);
 	word-wrap: break-word;
@@ -20,7 +19,6 @@ a, button, .theme-color-select {
 	color: var(--accent-300);
 	font-weight: bold;
 	padding-right: 0.25em;
-	font-family: "courier new", monospace;
 	cursor: pointer;
 }
 
@@ -35,6 +33,9 @@ h1 {
 }
 
 /* THEGOODS */
+#fancyboi {
+	font-size: 1.6rem;
+}
 #fancyboi::before {
 	content: "/";
 	margin-right: 0.5rem;
@@ -71,47 +72,6 @@ h1 {
 
 code > span.fl { 
  color: var(--accent-600); 
-}
-
- /* Style the navbar */
-#navbar {
-	overflow: hidden;
-	background-color: var(--accent-400);
-	color: #222;
-	z-index: 99;
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	border-radius: 0.25em;
-}
-
-#navbar a:hover {
-	background-color: var(--accent-500);
-}
-
-body.black #navbar {
-	background-color: var(--gray-100);
-}
-
-body.black #navbar a:hover {
-	background-color: var(--gray-200);
-}
-
-/* Navbar links */
-#navbar a {
-	float: left;
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px;
-	text-decoration: none;
-}
-
-@media only screen and (max-width: 767px) {
-    #navbar a {
-        font-size: 0.875rem;
-    }
 }
 
 /* Page content */

@@ -72,11 +72,13 @@ const Projects = () => {
 				</p>
 			</div>
 
-			<div className='w-100p grid s-grid-2 gap-2r portrait-grid-1 mt-2r'>
+			<div className='w-100p grid s-grid-2 gap-2r portrait-grid-1 my-2r'>
 				{projects.map(project => (
 					<Project key={project.title} {...project} />
 				))}
 			</div>
+
+			<ELi href='https://bingo-ten-omega.vercel.app'>Bingo!</ELi>
 		</>
 	);
 };
