@@ -5,12 +5,13 @@
 
 body {
 	margin: auto;
-	padding: 1em;
-	max-width: 64em;
+	padding: 1rem;
+	max-width: 64rem;
 	color: var(--accent-400);
 	background: var(--background);
 	word-wrap: break-word;
 }
+
 a, button, .theme-color-select {
 	box-shadow: none;
 	background-color: transparent;

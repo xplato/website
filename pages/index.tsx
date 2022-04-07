@@ -3,10 +3,14 @@ import Li from "../components/Li";
 import PageMeta from "../components/PageMeta";
 import Spacer from "../components/Spacer";
 import Layout from "../components/layout/Layout";
+import Pin from "../components/Pin";
 
 import { getRandomString } from "../logic/rand";
 
+import config from "../data/config";
+import pins from "../data/pins";
 import { quotes } from "../data/random";
+import PinsGrid from "../components/PinsGrid";
 
 const titles = [
 	'home',
@@ -45,22 +49,24 @@ const Home = () => {
 
 			<Spacer />
 
-			<h3>Pinned</h3>
-			<p>
-				I simply cannot recommend <ELi href="https://vercel.app">Vercel</ELi> enough.
-				On top of their already top-notch platform, the company itself is really something
-				to admire. Their support team is unlike anything I have seen. And they really do
-				read your reviews, I've tested it!
-			</p>
-			<p>
-				Note that I am not endorsed by or affiliated with Vercel in any capacity. I've
-				just been a happy user for over 2 years, way back when it was{' '}
-				<ELi href='https://vercel.com/blog/zeit-is-now-vercel'>ZEIT!</ELi>
-			</p>
+			<h3>Pins</h3>
+			<PinsGrid>
+				{pins.map((pin, i) => {
+					if (i + 1 > config.homePinCount) {
+						return <></>;
+					}
+
+					return <Pin key={pin.date} {...pin} />
+				})}
+			</PinsGrid>
+
+			{pins.length > config.homePinCount && (
+				<Li href='/pins'>Show all pins</Li>
+			)}
 
 			<hr></hr>
 
-			<p>Words of wisdom:</p>
+			<p>Random thought:</p>
 			<p>{randomQuote}</p>
 			
 			{randomQuote === 'Bingo!' && (

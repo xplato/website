@@ -1,10 +1,12 @@
 import Layout from '../components/layout/Layout';
 import ELi from '../components/ELi';
+import PageMeta from '../components/PageMeta';
+import Badge from '../components/etc/Badge';
 
 import { Project, projects } from '../data/projects';
 
 import { getRandomString } from '../logic/rand';
-import PageMeta from '../components/PageMeta';
+
 
 const titles = [
 	'code',
@@ -29,9 +31,7 @@ const Project = ({
 				<div className="w-100p flex align-c justify-s flex-row">
 					<h2 className='m-0'>{title}</h2>
 					{isNew && (
-						<div className="new">
-							<span>New!</span>
-						</div>
+						<Badge>New!</Badge>
 					)}
 				</div>
 				<p className='mt-0-5r'>{description}</p>
