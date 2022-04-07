@@ -27,9 +27,7 @@ const Project = ({
 		<div className='project-card'>
 			<div className='flex'>
 				<div className="w-100p flex align-c justify-s flex-row">
-					<h2 className='m-0'>
-						<ELi href={repository}>{title}</ELi>
-					</h2>
+					<h2 className='m-0'>{title}</h2>
 					{isNew && (
 						<div className="new">
 							<span>New!</span>

@@ -19,7 +19,7 @@ const Article = ({ children }: ChildrenOnly) => {
 	return (
 		<article>
 			<div className="mt-2r">
-				<button className='button' onClick={toggleFont}>Toggle font</button>
+				<a onClick={toggleFont}>{settings.font === 'mono' ? 'Sans' : 'Mono'} font</a>
 			</div>
 
 			{children}

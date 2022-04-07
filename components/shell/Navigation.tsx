@@ -26,11 +26,11 @@ const Navigation = () => {
 			<div id="navbar" className="flex-sb">
 			   <div className="flex flex-row align-c justify-c">
 					{links.map(link => (
-						<Li href={link.href} key={link.label}>{link.label}</Li>
+						<Li href={link.href} key={link.label} className='nav-link'>{link.label}</Li>
 					))}
 				</div>
 				<div className="flex flex-row align-c justify-c portrait-hide">
-					<Li href='/psych'>Psych</Li>
+					<Li href='/psych' className='nav-link'>Psych</Li>
 				</div>
 			</div>
 		</header>

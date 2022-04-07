@@ -22,6 +22,36 @@ a, button, .theme-color-select {
 	cursor: pointer;
 }
 
+a:not([class]) {
+	position: relative;
+	padding-right: 0 !important;
+
+	&:hover {
+		text-decoration: none !important;
+
+		&::after {
+			height: 100%;
+			opacity: 0.3;
+		}
+	}
+
+	&::after {
+		opacity: 0;
+	}
+
+	&::after, &::before {
+		content: "";
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		bottom: 1px;
+		left: 0;
+		right: 0;
+		background-color: var(--accent-500);
+		transition: var(--d-m-1) var(--e-s);
+	}
+}
+
 a:hover, button:hover {
 	text-decoration: underline;
 }
