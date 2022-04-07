@@ -11,6 +11,7 @@ import config from "../data/config";
 import pins from "../data/pins";
 import { quotes } from "../data/random";
 import PinsGrid from "../components/PinsGrid";
+import global from "../data/global";
 
 const titles = [
 	'home',
@@ -39,12 +40,19 @@ const Home = () => {
 			</p>
 			<p>Find me @:</p>
 			<ul>
-				<li>
-					<ELi href="https://github.com/xplato">xplato on Github</ELi>
-				</li>
-				<li>
-					<ELi href="https://codeberg.org/athena">athena on Codeberg</ELi>
-				</li>
+				{global.social.map(social => {
+					const inner = `${social.username} on ${social.title}`;
+
+					return (
+						<li key={social.title}>
+							{social.url ? (
+								<ELi href={social.url}>{inner}</ELi>
+							) : (
+								<span>{inner}</span>
+							)}
+						</li>
+					);
+				})}
 			</ul>
 
 			<Spacer />

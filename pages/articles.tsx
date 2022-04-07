@@ -27,11 +27,11 @@ const Articles = () => {
 			<ul>
 				{articles.map(article => (
 					<li key={article.slug}>
-						<Li href={`/articles/${article.slug}`}>{article.title} ({article.date})</Li>
+						<Li href={`/articles/${article.slug}`} className='multiline'>{article.title} ({article.date})</Li>
 					</li>
 				))}
 				<li>
-					<Li href='/articles/archive/'>...more</Li>
+					<Li href='/articles/archive/' className='multiline'>...more</Li>
 				</li>
 			</ul>
 		</>
