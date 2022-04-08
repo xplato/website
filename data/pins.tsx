@@ -7,7 +7,17 @@ interface Pin {
 
 const pins: Pin[] = [
 	{
-		date: '2022-04-07',
+		date: '2022-04-08',
+		content: (
+			<>
+				<p>
+					April's first puzzle was solved by <ELi href='https://codeberg.org/ar324'>ar324!</ELi> Very well done.
+				</p>
+			</>
+		),
+	},
+	{
+		date: '2022-04-06',
 		content: (
 			<>
 				<p>

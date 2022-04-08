@@ -75,8 +75,6 @@ const Projects = () => {
 					<Project key={project.title} {...project} />
 				))}
 			</div>
-
-			<ELi href='https://bingo-ten-omega.vercel.app'>Bingo!</ELi>
 		</>
 	);
 };

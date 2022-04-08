@@ -3,15 +3,16 @@ import Li from "../components/Li";
 import PageMeta from "../components/PageMeta";
 import Spacer from "../components/Spacer";
 import Layout from "../components/layout/Layout";
+import PinsGrid from "../components/PinsGrid";
 import Pin from "../components/Pin";
 
 import { getRandomString } from "../logic/rand";
 
 import config from "../data/config";
 import pins from "../data/pins";
-import { quotes } from "../data/random";
-import PinsGrid from "../components/PinsGrid";
 import global from "../data/global";
+import { quotes } from "../data/random";
+
 
 const titles = [
 	'home',
@@ -76,10 +77,6 @@ const Home = () => {
 
 			<p>Random thought:</p>
 			<p>{randomQuote}</p>
-			
-			{randomQuote === 'Bingo!' && (
-				<Li href='/partner'>You've made it, partner.</Li>
-			)}
 		</>
 	);
 };

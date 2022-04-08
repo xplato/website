@@ -14,7 +14,6 @@ const quotes = [
 	`Actually, I've been promoted. It's Captain Crunch.`,
 	`Don't be Harry Potter and the Prisoner of Marzipan.`,
 	`Take it easy with the cocoa butter lotion. You smell like a jerk.`,
-	`Bingo!`,
 ];
 
 export {
