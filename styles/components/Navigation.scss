@@ -22,7 +22,7 @@ body.black #navbar {
 	background-color: var(--gray-100);
 }
 
-body.black #navbar .nav-link:hover {
+body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 	background-color: var(--gray-200);
 }
 
