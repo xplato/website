@@ -21,7 +21,6 @@ const noResultQuotes = [
 	'Try being less specific.',
 	"Sorry, man, I've got nothing.",
 	'Do you even type, bro?',
-	'Maybe a typo?',
 ];
 
 export {
