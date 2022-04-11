@@ -25,15 +25,14 @@ const App = ({ Component, pageProps }: AppProps) => {
 	return (
 		<ScavengerProvider
 			initialResources={[
-				...articles.map(e => ({ ...e, title: truncate(e.title), type: 'Article' })),
-				...pages.map(e => ({ ...e, title: truncate(e.title), type: 'Page' })),
-				...projects.map(e => ({ ...e, title: truncate(e.title), type: 'Project' })),
+				...articles.map(e => ({ ...e, type: 'Article' })),
+				...pages.map(e => ({ ...e, type: 'Page' })),
+				...projects.map(e => ({ ...e, type: 'Project' })),
 			]}
 			suggestions={[
 				...pages.map(e => ({ ...e, type: 'Page' })),
 				{
 					...articles[0],
-					title: truncate(articles[0].title),
 					type: 'Article',
 				},
 			]}

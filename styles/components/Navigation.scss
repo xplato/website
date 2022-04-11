@@ -95,6 +95,8 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.7);
 	padding-top: 5rem;
+	padding-bottom: 2rem;
+	overflow-y: scroll;
 }
 
 .nav-suggestions {
@@ -104,8 +106,6 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 	align-items: center;
 	flex-direction: column;
 	max-width: 440px;
-	// position: absolute;
-	// top: 4rem;
 	padding: 0.5rem;
 	border-radius: 0.5rem;
 	background-color: var(--accent-400);
@@ -137,6 +137,13 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 			body.black & {
 				background-color: var(--gray-200);
 			}
+		}
+
+		& p:first-child {
+			white-space: nowrap;
+			max-width: 70%;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
 		& p {
