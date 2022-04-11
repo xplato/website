@@ -34,6 +34,11 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 	padding: 14px;
 	font-weight: 600;
 	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	user-select: none;
 
 	body.inter & {
 		font-weight: 500;
@@ -128,6 +133,7 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 		justify-content: space-between;
 		align-items: center;
 		flex-direction: row;
+		user-select: none;
 		transition: var(--d-f-1) var(--e-s);
 
 		&:hover, &.selected {
