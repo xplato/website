@@ -38,6 +38,11 @@
   resolved "https://registry.yarnpkg.com/@infinium/react-keyboard-event-handler/-/react-keyboard-event-handler-1.5.7.tgz#20888c8be6980f1d1ed4f06366fc2f0d361c804c"
   integrity sha512-dce3v5domelGLKBDfxkhgYcAbmLX73oJ2HgqlrhGdvNLzCoSc5UoIQdqTVHuaxGymjFUizTSN8uEIHvoPkTcBQ==
 
+"@infinium/scavenger@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@infinium/scavenger/-/scavenger-2.0.2.tgz#ef14715fb7114374be3c1badea7839af1fe9ba8f"
+  integrity sha512-y71RoBa2Wa4g0Pj4pnmeqYNjtxJCgJveu9qKyWe+h2ghmPpE/8EOEfZ8RpPZcHtT8D3IWYZZ/lf1CLylfio35A==
+
 "@next/env@12.1.4":
   version "12.1.4"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.4.tgz#5af629b43075281ecd7f87938802b7cf5b67e94b"

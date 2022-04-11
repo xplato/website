@@ -10,8 +10,12 @@
 	border-radius: 0.25em;
 }
 
-#navbar a:hover {
+#navbar a:hover, #navbar a:focus {
 	background-color: var(--accent-500);
+}
+
+#navbar a:focus {
+	outline: none;
 }
 
 body.black #navbar {

@@ -27,7 +27,11 @@ a:not([class]) {
 	position: relative;
 	padding-right: 0 !important;
 
-	&:hover {
+	&:focus {
+		outline: none;
+	}
+
+	&:hover, &:focus {
 		text-decoration: none !important;
 
 		&::after {
