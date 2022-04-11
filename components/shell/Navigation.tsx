@@ -104,7 +104,7 @@ const Navigation = () => {
 						initial='initial'
 						animate='animate'
 						exit='exit'
-						className="nav-overlay"
+						className="nav-overlay px-1r"
 						onClick={() => setShowSearch(false)}
 					>
 						<div className="w-100p flex-c">
