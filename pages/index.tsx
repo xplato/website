@@ -9,7 +9,7 @@ import Pin from "../components/Pin";
 import { getRandomString } from "../logic/rand";
 
 import config from "../data/config";
-import pins from "../data/pins";
+import { pins } from "../data/pins";
 import global from "../data/global";
 import { quotes } from "../data/random";
 

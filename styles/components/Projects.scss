@@ -11,4 +11,8 @@
 	body.black & {
 		background-color: var(--gray-100);
 	}
+
+	&.highlight {
+		outline: 2px solid var(--accent-400);
+	}
 }

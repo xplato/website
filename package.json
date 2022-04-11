@@ -10,8 +10,10 @@
     "export": "next export"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@infinium/hydro": "^2.1.7",
     "@infinium/scavenger": "^2.0.2",
+    "classnames": "^2.3.1",
     "framer-motion": "^6.2.8",
     "moment": "^2.29.2",
     "next": "12.1.4",

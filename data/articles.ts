@@ -1,13 +1,22 @@
-const articles = [
+interface Article {
+	slug: string;
+	title: string;
+	date: string;
+	tags: string[];
+}
+
+const articles: Article[] = [
 	{
 		slug: 'the-internet-an-extension-of-google',
 		title: 'The Internet: An Extension of Google',
 		date: '27 March 2022',
+		tags: ['google', 'the internet'],
 	},
 	{
 		slug: 'on-realization',
 		title: 'On Realization',
 		date: '20 March 2022',
+		tags: ['realization', 'sherlock lol'],
 	},
 ];
 
@@ -27,4 +36,8 @@ const archivedArticles = [
 export {
 	articles,
 	archivedArticles,
+}
+
+export type {
+	Article,
 }

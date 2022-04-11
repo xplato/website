@@ -3,6 +3,7 @@ import ELi from "../components/ELi";
 interface Pin {
 	date: string,
 	content: React.ReactNode;
+	tags: string[];
 }
 
 const pins: Pin[] = [
@@ -15,6 +16,7 @@ const pins: Pin[] = [
 				</p>
 			</>
 		),
+		tags: ['puzzle', 'april'],
 	},
 	{
 		date: '2022-04-06',
@@ -32,11 +34,14 @@ const pins: Pin[] = [
 					<ELi href='https://vercel.com/blog/zeit-is-now-vercel'>ZEIT!</ELi>
 				</p>
 			</>
-		)
+		),
+		tags: ['vercel', 'pin 1'],
 	},
 ];
 
-export default pins;
+export {
+	pins,
+};
 
 export type {
 	Pin,

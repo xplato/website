@@ -3,9 +3,10 @@ import ELi from '../components/ELi';
 import PageMeta from '../components/PageMeta';
 import Badge from '../components/etc/Badge';
 
-import { Project, projects } from '../data/projects';
+import { Project as ProjectType, projects } from '../data/projects';
 
 import { getRandomString } from '../logic/rand';
+import classNames from 'classnames';
 
 
 const titles = [
@@ -18,15 +19,24 @@ const titles = [
 	`';--`
 ];
 
+interface TProject extends ProjectType {
+	isHighlighted: boolean;
+}
+
 const Project = ({
+	id,
 	title,
 	description,
 	repository,
 	liveURL,
 	isNew,
-}: Project) => {
+	isHighlighted,
+}: TProject) => {
 	return (
-		<div className='project-card'>
+		<div id={id} className={classNames(
+			'project-card',
+			isHighlighted && 'highlight'
+		)}>
 			<div className='flex'>
 				<div className="w-100p flex align-c justify-s flex-row">
 					<h2 className='m-0'>{title}</h2>
@@ -53,6 +63,8 @@ const Project = ({
 }
 
 const Projects = () => {
+	const url = new URLSearchParams(window.location.search);
+
 	return (
 		<>
 			<PageMeta meta={{
@@ -72,7 +84,7 @@ const Projects = () => {
 
 			<div className='w-100p grid s-grid-2 gap-2r portrait-grid-1 my-2r'>
 				{projects.map(project => (
-					<Project key={project.title} {...project} />
+					<Project key={project.title} {...project} isHighlighted={url.get('h')?.trim() === project.id} />
 				))}
 			</div>
 		</>

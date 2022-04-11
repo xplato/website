@@ -1,5 +1,5 @@
 #navbar {
-	overflow: hidden;
+	height: 50px;
 	background-color: var(--accent-400);
 	color: #222;
 	z-index: 99;
@@ -10,11 +10,11 @@
 	border-radius: 0.25em;
 }
 
-#navbar a:hover, #navbar a:focus {
+#navbar .nav-link:hover, #navbar .nav-link:focus {
 	background-color: var(--accent-500);
 }
 
-#navbar a:focus {
+#navbar .nav-link:focus {
 	outline: none;
 }
 
@@ -22,11 +22,12 @@ body.black #navbar {
 	background-color: var(--gray-100);
 }
 
-body.black #navbar a:hover {
+body.black #navbar .nav-link:hover {
 	background-color: var(--gray-200);
 }
 
-#navbar a {
+#navbar .nav-link {
+	height: 50px;
 	display: block;
 	color: black;
 	text-align: center;
@@ -38,10 +39,126 @@ body.black #navbar a:hover {
 		font-weight: 500;
 		font-size: 0.875rem;
 	}
+
+	& i svg {
+		color: currentColor;
+	}
 }
 
 @media only screen and (max-width: 767px) {
-    #navbar a {
+    #navbar .nav-link {
         font-size: 0.875rem;
     }
+}
+
+.nav-search-container {
+	position: relative;
+}
+
+.nav-search {
+	height: 50px;
+	padding-left: 1rem;
+	background-color: transparent;
+	color: black;
+	text-align: center;
+	font-size: 1rem;
+	border: none;
+	box-shadow: none;
+	transition: var(--d-f-2) var(--e-s);
+
+	&::placeholder {
+		color: black;
+		opacity: 0.5;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.nav-links .nav-link:first-child {
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+}
+
+.search-button {
+	border-top-right-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+}
+
+.nav-overlay {
+	position: fixed;
+	z-index: 98;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-top: 5rem;
+}
+
+.nav-suggestions {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 440px;
+	// position: absolute;
+	// top: 4rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	background-color: var(--accent-400);
+
+	body.black & {
+		background-color: var(--gray-100);
+
+		& .nav-suggestion:hover {
+			background-color: var(--gray-200);
+		}
+	}
+
+	& .nav-suggestion {
+		width: 100%;
+		padding: 0.75rem 1rem;
+		border-radius: 0.5rem;
+		color: black;
+		font-size: 1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		transition: var(--d-f-1) var(--e-s);
+
+		&:hover, &.selected {
+			background-color: var(--accent-500);
+			text-decoration: none;
+
+			body.black & {
+				background-color: var(--gray-200);
+			}
+		}
+
+		& p {
+			margin: 0;
+			line-height: 1;
+		}
+
+		& p.type {
+			opacity: 0.5;
+			font-size: 0.875rem;
+			margin-left: 1rem;
+		}
+	}
+}
+
+.sticky {
+	position: sticky;
+	top: 1rem;
+	z-index: 99;
+}
+
+.nav-search-caption {
+	margin: 0;
+	color: black;
 }

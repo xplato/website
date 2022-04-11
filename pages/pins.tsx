@@ -5,7 +5,7 @@ import Pin from "../components/Pin";
 
 import { getRandomString } from "../logic/rand";
 
-import pins from "../data/pins";
+import { pins } from "../data/pins";
 
 const titles = [
 	'pins',

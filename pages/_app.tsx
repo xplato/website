@@ -1,8 +1,15 @@
 import type { AppProps } from 'next/app';
+import { ScavengerProvider } from '@infinium/scavenger';
 import dynamic from 'next/dynamic';
 
 import SettingsProvider from '../providers/SettingsProvider';
+
 import View from '../components/layout/View';
+import { Schema, truncate } from '../logic/search';
+
+import { articles } from '../data/articles';
+import { projects } from '../data/projects';
+import { pages } from '../data/pages';
 
 import '../styles/jupiterui.css';
 import '../styles/global.scss';
@@ -16,13 +23,30 @@ const App = ({ Component, pageProps }: AppProps) => {
 	const RootLayout = Component.layout || (({ children }: ChildrenOnly) => <>{children}</>);
 
 	return (
-		<SettingsProvider>
-			<View>
-				<RootLayout>
-					<Component {...pageProps} />
-				</RootLayout>
-			</View>
-		</SettingsProvider>
+		<ScavengerProvider
+			initialResources={[
+				...articles.map(e => ({ ...e, title: truncate(e.title), type: 'Article' })),
+				...pages.map(e => ({ ...e, title: truncate(e.title), type: 'Page' })),
+				...projects.map(e => ({ ...e, title: truncate(e.title), type: 'Project' })),
+			]}
+			suggestions={[
+				...pages.map(e => ({ ...e, type: 'Page' })),
+				{
+					...articles[0],
+					title: truncate(articles[0].title),
+					type: 'Article',
+				},
+			]}
+			schema={Schema}
+		>
+			<SettingsProvider>
+				<View>
+					<RootLayout>
+						<Component {...pageProps} />
+					</RootLayout>
+				</View>
+			</SettingsProvider>
+		</ScavengerProvider>
 	);
 }
 

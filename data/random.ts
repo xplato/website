@@ -16,6 +16,15 @@ const quotes = [
 	`Take it easy with the cocoa butter lotion. You smell like a jerk.`,
 ];
 
+const noResultQuotes = [
+	'Nothing found.',
+	'Try being less specific.',
+	"Sorry, man, I've got nothing.",
+	'Do you even type, bro?',
+	'Maybe a typo?',
+];
+
 export {
 	quotes,
+	noResultQuotes,
 }
