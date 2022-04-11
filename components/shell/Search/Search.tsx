@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { MutableRefObject } from 'react';
 
 
@@ -13,25 +12,8 @@ const Search = ({ inputRef, query, setQuery }: Props) => {
 		setQuery(ev.target.value);
 	}
 
-	const variants = {
-		initial: { opacity: 0, scale: 0.98 },
-		animate: { opacity: 1, scale: 1 },
-		exit: { opacity: 0, scale: 0.98 },
-	}
-
 	return (
-		<motion.div
-			key='search'
-			variants={variants}
-			initial='initial'
-			animate='animate'
-			exit='exit'
-			transition={{
-				type: 'tween',
-				duration: 0.3,
-			}}
-			className="w-100p nav-search-container flex-c"
-		>
+		<div className="w-100p nav-search-container flex-c">
 			<input
 				ref={inputRef}
 				type='text'
@@ -41,7 +23,7 @@ const Search = ({ inputRef, query, setQuery }: Props) => {
 				className='nav-search w-100p'
 				autoFocus
 			/>
-		</motion.div>
+		</div>
 	);
 };
 

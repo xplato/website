@@ -1,5 +1,4 @@
-import { useRef, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 import { Keyboard } from '@infinium/hydro';
 import { SearchIcon, XIcon } from '@heroicons/react/outline';
 
@@ -7,7 +6,6 @@ import Li from "../Li";
 import Search from './Search';
 import Suggestions from './Search/Suggestions';
 
-import { gVariants } from '../../data/motion';
 import classNames from 'classnames';
 
 
@@ -30,24 +28,8 @@ const links = [
 	},
 ];
 
-const variants = {
-	initial: { opacity: 0, scale: 0.98 },
-	animate: { opacity: 1, scale: 1 },
-	exit: { opacity: 0, scale: 0.98 },
-}
-
 const NavigationInner = () => (
-	<motion.div
-		variants={variants}
-		initial='initial'
-		animate='animate'
-		exit='exit'
-		transition={{
-			type: 'tween',
-			duration: 0.3,
-		}}
-		className='w-100p flex-sb'
-	>
+	<div className='w-100p flex-sb'>
 		<div className="flex flex-row align-c justify-c nav-links">
 			{links.map(link => (
 				<Li
@@ -60,7 +42,7 @@ const NavigationInner = () => (
 				>{link.label}</Li>
 			))}
 		</div>
-	</motion.div>
+	</div>
 );
 
 const Navigation = () => {
@@ -68,23 +50,30 @@ const Navigation = () => {
 	const [showSearch, setShowSearch] = useState(false);
 	const inputRef = useRef();
 
+	useEffect(() => {
+		if (!showSearch) {
+			try {
+				// @ts-ignore
+				inputRef?.current.blur();
+			} catch {}
+		}
+	}, [showSearch, inputRef]);
+
 	return (
 		<>
 			<header className={showSearch ? 'sticky' : ''}>
 				<div id="navbar" className="flex-sb">
 					<div className="w-100p h-100p">
-						<AnimatePresence exitBeforeEnter>
-							{showSearch ? (
-								<Search
-									key='search'
-									inputRef={inputRef}
-									query={query}
-									setQuery={setQuery}
-								/>
-							) : (
-								<NavigationInner />
-							)}
-						</AnimatePresence>
+						{showSearch ? (
+							<Search
+								key='search'
+								inputRef={inputRef}
+								query={query}
+								setQuery={setQuery}
+							/>
+						) : (
+							<NavigationInner />
+						)}
 					</div>
 
 					<div className="flex flex-row align-c justify-c">
@@ -97,34 +86,30 @@ const Navigation = () => {
 				</div>
 			</header>
 
-			<AnimatePresence exitBeforeEnter>
-				{showSearch && (
-					<motion.div
-						variants={gVariants.fadeIn}
-						initial='initial'
-						animate='animate'
-						exit='exit'
-						className="nav-overlay px-1r"
-						onClick={() => setShowSearch(false)}
-					>
-						<div className="w-100p flex-c">
-							<Suggestions
-								key='suggestions'
-								query={query}
-								setShowSearch={setShowSearch}
-							/>
-						</div>
-					</motion.div>
-				)}
-			</AnimatePresence>
+			{showSearch && (
+				<div
+					className="nav-overlay px-1r"
+					onClick={() => setShowSearch(false)}
+				>
+					<div className="w-100p flex-c">
+						<Suggestions
+							key='suggestions'
+							query={query}
+							setShowSearch={setShowSearch}
+						/>
+					</div>
+				</div>
+			)}
 
 			<Keyboard
 				keys={['esc', '/']}
-				callback={(key) => {
+				callback={(key, ev) => {
 					if (key === 'esc') {
 						setShowSearch(false);
 						return;
 					}
+
+					ev.preventDefault();
 
 					setShowSearch(true);
 
@@ -133,7 +118,7 @@ const Navigation = () => {
 							// @ts-ignore
 							inputRef?.current.select();
 						} catch {}
-					}, 300);
+					}, 10);
 				}}
 				handleFocusableElements
 			/>

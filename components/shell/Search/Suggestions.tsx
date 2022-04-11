@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useScavenger } from '@infinium/scavenger';
-import { motion } from 'framer-motion';
 import { Keyboard } from '@infinium/hydro';
 
 import Suggestion from './Suggestion';
+
 import { noResultQuotes } from '../../../data/random';
 
 interface Props {
@@ -17,24 +17,9 @@ const Suggestions = ({ query, setShowSearch }: Props) => {
 		sortBy: 'type',
 	});
 
-	const variants = {
-		initial: { opacity: 0, scale: 0.98 },
-		animate: { opacity: 1, scale: 1 },
-		exit: { opacity: 0, scale: 0.98 },
-	}
-
 	return (
 		<>
-			<motion.div
-				variants={variants}
-				initial='initial'
-				animate='animate'
-				exit='exit'
-				transition={{
-					type: 'tween',
-					duration: 0.4,
-					delay: 0.2
-				}}
+			<div
 				className='nav-suggestions'
 				onClick={(ev: any) => {
 					ev.stopPropagation();
@@ -53,7 +38,7 @@ const Suggestions = ({ query, setShowSearch }: Props) => {
 						/>
 					))
 				)}
-			</motion.div>
+			</div>
 
 			<Keyboard
 				keys={['up', 'down', 'right', 'left']}
