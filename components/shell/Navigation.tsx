@@ -89,7 +89,13 @@ const Navigation = () => {
 					</div>
 
 					<div className="flex flex-row align-c justify-c">
-						<button className="nav-link search-button" onClick={() => setShowSearch(!showSearch)} tabIndex={0}>
+						<button className="nav-link search-button" onClick={(ev) => {
+							if (showSearch) {
+								setShowSearch(false);
+							} else {
+								beginSearch(ev);
+							}
+						}} tabIndex={0}>
 							<i className="j-icon">
 								{showSearch ? <XIcon /> : <SearchIcon />}
 							</i>
