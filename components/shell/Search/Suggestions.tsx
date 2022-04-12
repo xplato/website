@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useScavenger } from '@infinium/scavenger';
-import { Keyboard } from '@infinium/hydro';
 
 import Suggestion from './Suggestion';
+import Keyboard from '../../Keyboard';
 
 import { noResultQuotes } from '../../../data/random';
+
 
 interface Props {
 	query: string;

@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
-import { Keyboard } from '@infinium/hydro';
 import classNames from 'classnames';
+
+import Keyboard from '../../Keyboard';
+
 
 interface Props {
 	index: number;

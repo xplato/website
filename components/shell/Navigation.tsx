@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import { Keyboard } from '@infinium/hydro';
 import { SearchIcon, XIcon } from '@heroicons/react/outline';
 
 import Li from "../Li";
 import Search from './Search';
 import Suggestions from './Search/Suggestions';
+import Keyboard from '../Keyboard';
 
 import classNames from 'classnames';
 
@@ -59,6 +59,18 @@ const Navigation = () => {
 		}
 	}, [showSearch, inputRef]);
 
+	const beginSearch = (ev: any) => {
+		ev.preventDefault();
+		setShowSearch(true);
+
+		setTimeout(() => {
+			try {
+				// @ts-ignore
+				inputRef?.current.select();
+			} catch {}
+		}, 10);
+	}
+
 	return (
 		<>
 			<header className={showSearch ? 'sticky' : ''}>
@@ -102,23 +114,18 @@ const Navigation = () => {
 			)}
 
 			<Keyboard
-				keys={['esc', '/']}
+				keys={['esc', '/', 's']}
 				callback={(key, ev) => {
 					if (key === 'esc') {
 						setShowSearch(false);
 						return;
 					}
 
-					ev.preventDefault();
-
-					setShowSearch(true);
-
-					setTimeout(() => {
-						try {
-							// @ts-ignore
-							inputRef?.current.select();
-						} catch {}
-					}, 10);
+					if (!showSearch) {
+						if (key === 's' || key === '/') {
+							beginSearch(ev);
+						}
+					}
 				}}
 				handleFocusableElements
 			/>
