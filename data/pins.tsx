@@ -13,7 +13,7 @@ const pins: Pin[] = [
 		title: 'Remember the previous puzzle',
 		content: (
 			<>
-				<p>One mustn't forget that the previous puzzle involved arrays of four numbers.</p>
+				<p>The latest puzzle (codename KofS) is live! Hints are available upon request.</p>
 			</>
 		),
 		tags: ['hint for puzzle 2 second'],
