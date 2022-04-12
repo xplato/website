@@ -162,6 +162,10 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 			}
 		}
 
+		&.is-default-suggestion p:first-child {
+			max-width: 70% !important;
+		}
+
 		& p:first-child {
 			white-space: nowrap;
 			max-width: 85%;

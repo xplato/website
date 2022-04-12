@@ -33,14 +33,16 @@ const App = ({ Component, pageProps }: AppProps) => {
 				...pins.map(e => ({ ...e, type: 'Pin' })),
 			]}
 			suggestions={[
-				...pages.map(e => ({ ...e, type: 'Page' })),
+				...pages.map(e => ({ ...e, type: 'Page', caption: '' })),
 				{
 					...articles[0],
 					type: 'Article',
+					caption: 'Latest Article',
 				},
 				{
 					...pins[0],
 					type: 'Pin',
+					caption: 'Latest Pin',
 				}
 			]}
 			schema={Schema}

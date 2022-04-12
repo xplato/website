@@ -48,11 +48,12 @@ const Suggestion = ({ index, result, selected, setShowSearch, setSelected }: Pro
 				onFocus={onFocus}
 				className={classNames(
 					'nav-suggestion',
-					selected === index && 'selected'
+					selected === index && 'selected',
+					result.caption && 'is-default-suggestion',
 				)}
 			>
 				<p>{result.title}</p>
-				<p className='type'>{result.type}</p>
+				<p className='type'>{result.caption ? result.caption : result.type}</p>
 			</button>
 
 			<Keyboard
