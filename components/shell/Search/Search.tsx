@@ -13,7 +13,10 @@ const Search = ({ inputRef, query, setQuery }: Props) => {
 	}
 
 	return (
-		<div className="w-100p nav-search-container flex-c">
+		<div className="w-100p nav-search-container flex align-c justify-c flex-row">
+			<div className="prompt">
+				<p>~</p>
+			</div>
 			<input
 				ref={inputRef}
 				type='text'
