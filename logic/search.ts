@@ -2,6 +2,7 @@ const Schema = {
 	Article: ['title', 'date', 'tags', 'type'],
 	Page: ['title', 'tags', 'type'],
 	Project: ['title', 'description', 'tags', 'type'],
+	Pin: ['title', 'type', 'date'],
 };
 
 const MAX_TITLE_LENGTH = 30;

@@ -2,12 +2,15 @@ import ELi from "../components/ELi";
 
 interface Pin {
 	date: string,
+	title: string,
 	content: React.ReactNode;
+	tags: string[];
 }
 
 const pins: Pin[] = [
 	{
 		date: '2022-04-11',
+		title: 'SiteGround for WordPress, HTML, and PHP hosting',
 		content: (
 			<>
 				<p>
@@ -24,9 +27,11 @@ const pins: Pin[] = [
 				</p>
 			</>
 		),
+		tags: [''],
 	},
 	{
 		date: '2022-04-08',
+		title: 'April Puzzle',
 		content: (
 			<>
 				<p>
@@ -34,9 +39,11 @@ const pins: Pin[] = [
 				</p>
 			</>
 		),
+		tags: [''],
 	},
 	{
 		date: '2022-04-06',
+		title: 'Vercel Customer Service, more',
 		content: (
 			<>
 				<p>
@@ -52,6 +59,7 @@ const pins: Pin[] = [
 				</p>
 			</>
 		),
+		tags: [''],
 	},
 ];
 

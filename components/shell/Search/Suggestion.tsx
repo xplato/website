@@ -22,7 +22,11 @@ const Suggestion = ({ index, result, selected, setShowSearch, setSelected }: Pro
 		}
 
 		if (result.type === 'Project') {
-			return `/code?h=${result.id}#${result.id}`
+			return `/code?h=${result.id}#${result.id}`;
+		}
+
+		if (result.type === 'Pin') {
+			return `/pins?h=${result.date}#${result.date}`;
 		}
 
 		return result.href || '/';

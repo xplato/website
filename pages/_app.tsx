@@ -18,6 +18,7 @@ import '@infinium/hydro/dist/style.css';
 
 import '../assets/fonts/inter/inter.css';
 import '../assets/fonts/courier/courier.css';
+import { pins } from '../data/pins';
 
 const App = ({ Component, pageProps }: AppProps) => {
 	// @ts-ignore
@@ -29,6 +30,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 				...articles.map(e => ({ ...e, type: 'Article' })),
 				...pages.map(e => ({ ...e, type: 'Page' })),
 				...projects.map(e => ({ ...e, type: 'Project' })),
+				...pins.map(e => ({ ...e, type: 'Pin' })),
 			]}
 			suggestions={[
 				...pages.map(e => ({ ...e, type: 'Page' })),
@@ -36,6 +38,10 @@ const App = ({ Component, pageProps }: AppProps) => {
 					...articles[0],
 					type: 'Article',
 				},
+				{
+					...pins[0],
+					type: 'Pin',
+				}
 			]}
 			schema={Schema}
 		>

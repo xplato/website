@@ -15,6 +15,8 @@ const titles = [
 ];
 
 const PinsPage = () => {
+	const url = new URLSearchParams(window.location.search);
+
 	return (
 		<>
 			<PageMeta meta={{
@@ -28,7 +30,7 @@ const PinsPage = () => {
 
 			<div className="mw-35r">
 				<Pins>
-					{pins.map(pin => <Pin key={pin.date} {...pin} />)}
+					{pins.map(pin => <Pin key={pin.date} {...pin} highlight={url.get('h')?.trim() === pin.date} />)}
 				</Pins>
 			</div>
 		</>
