@@ -1,12 +1,13 @@
 import type { AppProps } from 'next/app';
 import { ScavengerProvider } from '@infinium/scavenger';
+import { Notifications } from '@infinium/hydro';
 import dynamic from 'next/dynamic';
 
 import SettingsProvider from '../providers/SettingsProvider';
 
 import View from '../components/layout/View';
-import { Schema, truncate } from '../logic/search';
 
+import { Schema } from '../logic/search';
 import { articles } from '../data/articles';
 import { projects } from '../data/projects';
 import { pages } from '../data/pages';
@@ -38,6 +39,8 @@ const App = ({ Component, pageProps }: AppProps) => {
 			]}
 			schema={Schema}
 		>
+			<Notifications />
+
 			<SettingsProvider>
 				<View>
 					<RootLayout>

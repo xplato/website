@@ -5,7 +5,7 @@ interface Global {
 interface Social {
 	title: string;
 	username: string;
-	url?: string;
+	href?: string;
 }
 
 const global: Global = {
@@ -13,12 +13,12 @@ const global: Global = {
 		{
 			title: 'Codeberg',
 			username: 'athena',
-			url: 'https://codeberg.org/athena',
+			href: 'https://codeberg.org/athena',
 		},
 		{
 			title: 'GitHub',
 			username: 'xplato',
-			url: 'https://github.com/xplato',
+			href: 'https://github.com/xplato',
 		},
 		{
 			title: 'Matrix',

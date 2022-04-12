@@ -46,8 +46,8 @@ const Home = () => {
 
 					return (
 						<li key={social.title}>
-							{social.url ? (
-								<ELi href={social.url}>{inner}</ELi>
+							{social.href ? (
+								<ELi href={social.href}>{inner}</ELi>
 							) : (
 								<span>{inner}</span>
 							)}
