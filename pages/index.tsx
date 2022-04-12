@@ -53,7 +53,7 @@ const Home = () => {
 			<Spacer />
 
 			<div className="mw-35r">
-				<h3>Pins</h3>
+				<h3>Latest Pins</h3>
 				<Pins>
 					{pins.map((pin, i) => {
 						if (i + 1 > config.homePinCount) {
@@ -66,7 +66,7 @@ const Home = () => {
 			</div>
 
 			{pins.length > config.homePinCount && (
-				<Li href='/pins'>Show all pins</Li>
+				<Li href='/pins'>View all pins</Li>
 			)}
 
 			<Spacer />

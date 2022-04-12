@@ -3,10 +3,28 @@ import ELi from "../components/ELi";
 interface Pin {
 	date: string,
 	content: React.ReactNode;
-	tags: string[];
 }
 
 const pins: Pin[] = [
+	{
+		date: '2022-04-11',
+		content: (
+			<>
+				<p>
+					<ELi href='https://www.siteground.com/'>SiteGround</ELi> is an exceptional web host for Wordpress, static HTML, or PHP websites.
+				</p>
+				<p>
+					They offer a fantastic interface that allows me, as a developer, to make the specific
+					modifications I need without hassle. Other web hosts that I've used (HostGator *cough
+					cough*) baby-proof their interface which makes my life, as a developer, very difficult.
+				</p>
+				<p>
+					If you're a more "advanced" user than normal and are working on a Wordpress/HTML/PHP
+					site, you can't go wrong with SiteGround.
+				</p>
+			</>
+		),
+	},
 	{
 		date: '2022-04-08',
 		content: (
@@ -16,7 +34,6 @@ const pins: Pin[] = [
 				</p>
 			</>
 		),
-		tags: ['puzzle', 'april'],
 	},
 	{
 		date: '2022-04-06',
@@ -35,7 +52,6 @@ const pins: Pin[] = [
 				</p>
 			</>
 		),
-		tags: ['vercel', 'pin 1'],
 	},
 ];
 
