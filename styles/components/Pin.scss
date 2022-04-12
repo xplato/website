@@ -3,4 +3,9 @@
 	background-color: var(--ui-1);
 	border-radius: 0.5rem;
 	position: relative;
+	margin-bottom: 1rem;
+
+	& p:last-child {
+		margin-bottom: 0;
+	}
 }

@@ -1,6 +1,6 @@
 import PageMeta from "../components/PageMeta";
 import Layout from "../components/layout/Layout";
-import PinsGrid from "../components/PinsGrid";
+import Pins from "../components/Pins";
 import Pin from "../components/Pin";
 
 import { getRandomString } from "../logic/rand";
@@ -14,7 +14,7 @@ const titles = [
 	'tweets?',
 ];
 
-const Pins = () => {
+const PinsPage = () => {
 	return (
 		<>
 			<PageMeta meta={{
@@ -26,13 +26,15 @@ const Pins = () => {
 				{getRandomString(titles)}
 			</h1>
 
-			<PinsGrid>
-				{pins.map(pin => <Pin key={pin.date} {...pin} />)}
-			</PinsGrid>
+			<div className="mw-35r">
+				<Pins>
+					{pins.map(pin => <Pin key={pin.date} {...pin} />)}
+				</Pins>
+			</div>
 		</>
 	);
 };
 
-Pins.layout = Layout;
+PinsPage.layout = Layout;
 
-export default Pins;
+export default PinsPage;

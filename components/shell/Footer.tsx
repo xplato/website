@@ -11,7 +11,7 @@ const Footer = () => {
 		<div className='footer mt-5r mb-2r pt-2r'>
 			<div className='grid grid-2 landscape-grid-1'>
 				<div className='grid-block justify-s landscape-align-c landscape-text-c'>
-					<p className='mb-0 fs-sm lh-1'>
+					<p className='fs-sm lh-1'>
 						This website is <ELi href="https://github.com/xplato/website">open-source.</ELi>
 					</p>
 					<p className='mb-0 fs-sm lh-1-5'>
