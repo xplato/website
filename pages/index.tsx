@@ -60,7 +60,7 @@ const Home = () => {
 							return <></>;
 						}
 
-						return <Pin key={pin.date} {...pin} />;
+						return <Pin key={pin.date} {...pin} highlight={false} />;
 					})}
 				</Pins>
 			</div>
