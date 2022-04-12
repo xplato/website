@@ -136,9 +136,10 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 		user-select: none;
 		transition: var(--d-f-1) var(--e-s);
 
-		&:hover, &.selected {
+		&:hover, &.selected, &:focus {
 			background-color: var(--accent-500);
 			text-decoration: none;
+			outline: none;
 
 			body.black & {
 				background-color: var(--gray-200);

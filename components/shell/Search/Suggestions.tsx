@@ -36,6 +36,7 @@ const Suggestions = ({ query, setShowSearch }: Props) => {
 							result={result}
 							selected={selected}
 							setShowSearch={setShowSearch}
+							setSelected={setSelected}
 						/>
 					))
 				)}

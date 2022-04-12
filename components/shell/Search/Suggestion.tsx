@@ -9,9 +9,10 @@ interface Props {
 	result: any;
 	selected: number;
 	setShowSearch(v: boolean): void;
+	setSelected(v: number): void;
 }
 
-const Suggestion = ({ index, result, selected, setShowSearch }: Props) => {
+const Suggestion = ({ index, result, selected, setShowSearch, setSelected }: Props) => {
 	const { push } = useRouter();
 
 	const getResultURL = (result: any) => {
@@ -31,10 +32,15 @@ const Suggestion = ({ index, result, selected, setShowSearch }: Props) => {
 		setShowSearch(false);
 	};
 
+	const onFocus = () => {
+		setSelected(index);
+	}
+
 	return (
 		<>
 			<button
 				onClick={() => onResultClick(result)}
+				onFocus={onFocus}
 				className={classNames(
 					'nav-suggestion',
 					selected === index && 'selected'

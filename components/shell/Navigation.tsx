@@ -89,11 +89,11 @@ const Navigation = () => {
 					</div>
 
 					<div className="flex flex-row align-c justify-c">
-						<a className="nav-link search-button" onClick={() => setShowSearch(!showSearch)}>
+						<button className="nav-link search-button" onClick={() => setShowSearch(!showSearch)} tabIndex={0}>
 							<i className="j-icon">
 								{showSearch ? <XIcon /> : <SearchIcon />}
 							</i>
-						</a>
+						</button>
 					</div>
 				</div>
 			</header>
