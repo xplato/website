@@ -27,15 +27,12 @@ interface NiceThemes {
 
 let niceThemes: NiceThemes = {
 	'hacker-green': 'Hacker Green',
-}
+};
 
 const cap = (w: string) => w.charAt(0).toUpperCase() + w.slice(1);
 
-colors.slice(1).forEach(color => {
+colors.slice(1).forEach((color) => {
 	niceThemes[color] = cap(color);
-})
+});
 
-export {
-	colors,
-	niceThemes,
-}
+export { colors, niceThemes };

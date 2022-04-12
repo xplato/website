@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import Keyboard from '../../Keyboard';
 import { toast } from '@infinium/hydro';
 
-
 interface Props {
 	index: number;
 	result: any;
@@ -13,7 +12,13 @@ interface Props {
 	setSelected(v: number): void;
 }
 
-const Suggestion = ({ index, result, selected, setShowSearch, setSelected }: Props) => {
+const Suggestion = ({
+	index,
+	result,
+	selected,
+	setShowSearch,
+	setSelected,
+}: Props) => {
 	const { push } = useRouter();
 
 	const getResultURL = (result: any) => {
@@ -39,7 +44,7 @@ const Suggestion = ({ index, result, selected, setShowSearch, setSelected }: Pro
 
 	const onFocus = () => {
 		setSelected(index);
-	}
+	};
 
 	return (
 		<>
@@ -49,11 +54,13 @@ const Suggestion = ({ index, result, selected, setShowSearch, setSelected }: Pro
 				className={classNames(
 					'nav-suggestion',
 					selected === index && 'selected',
-					result.caption && 'is-default-suggestion',
+					result.caption && 'is-default-suggestion'
 				)}
 			>
 				<p>{result.title}</p>
-				<p className='type'>{result.caption ? result.caption : result.type}</p>
+				<p className='type'>
+					{result.caption ? result.caption : result.type}
+				</p>
 			</button>
 
 			<Keyboard

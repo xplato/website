@@ -14,14 +14,11 @@ const gVariants = {
 		animate: { opacity: 1 },
 		exit: { opacity: 0 },
 	},
-}
+};
 
 const gTransition = {
 	duration: 0.5,
-	type: 'tween'
-}
+	type: 'tween',
+};
 
-export {
-	gVariants,
-	gTransition,
-}
+export { gVariants, gTransition };

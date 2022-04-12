@@ -1,4 +1,4 @@
-import type { ChildrenOnly } from "../../types";
+import type { ChildrenOnly } from '../../types';
 
 const Badge = ({ children }: ChildrenOnly) => (
 	<div className='badge'>

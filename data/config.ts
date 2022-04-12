@@ -1,5 +1,5 @@
 interface Config {
-	homePinCount: number,
+	homePinCount: number;
 }
 
 const config: Config = {
@@ -8,6 +8,4 @@ const config: Config = {
 
 export default config;
 
-export type {
-	Config,
-}
+export type { Config };

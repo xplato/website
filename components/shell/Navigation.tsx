@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { SearchIcon, XIcon } from '@heroicons/react/outline';
 
-import Li from "../Li";
+import Li from '../Li';
 import Search from './Search';
 import Suggestions from './Search/Suggestions';
 import Keyboard from '../Keyboard';
 
 import classNames from 'classnames';
-
 
 const links = [
 	{
@@ -30,8 +29,8 @@ const links = [
 
 const NavigationInner = () => (
 	<div className='w-100p flex-sb'>
-		<div className="flex flex-row align-c justify-c nav-links">
-			{links.map(link => (
+		<div className='flex flex-row align-c justify-c nav-links'>
+			{links.map((link) => (
 				<Li
 					key={link.label}
 					href={link.href}
@@ -39,7 +38,9 @@ const NavigationInner = () => (
 						'nav-link',
 						link.label !== '~hydra' && 'portrait-hide'
 					)}
-				>{link.label}</Li>
+				>
+					{link.label}
+				</Li>
 			))}
 		</div>
 	</div>
@@ -69,13 +70,13 @@ const Navigation = () => {
 				inputRef?.current.select();
 			} catch {}
 		}, 10);
-	}
+	};
 
 	return (
 		<>
 			<header className={showSearch ? 'sticky' : ''}>
-				<div id="navbar" className="flex-sb">
-					<div className="w-100p h-100p">
+				<div id='navbar' className='flex-sb'>
+					<div className='w-100p h-100p'>
 						{showSearch ? (
 							<Search
 								key='search'
@@ -88,16 +89,23 @@ const Navigation = () => {
 						)}
 					</div>
 
-					<div className="flex flex-row align-c justify-c">
-						<button className="nav-link search-button" onClick={(ev) => {
-							if (showSearch) {
-								setShowSearch(false);
-							} else {
-								beginSearch(ev);
-							}
-						}} tabIndex={0} title={showSearch ? 'Close search' : 'Search'}>
-							<span className="sr-only">{showSearch ? 'Close search' : 'Search'}</span>
-							<i className="j-icon">
+					<div className='flex flex-row align-c justify-c'>
+						<button
+							className='nav-link search-button'
+							onClick={(ev) => {
+								if (showSearch) {
+									setShowSearch(false);
+								} else {
+									beginSearch(ev);
+								}
+							}}
+							tabIndex={0}
+							title={showSearch ? 'Close search' : 'Search'}
+						>
+							<span className='sr-only'>
+								{showSearch ? 'Close search' : 'Search'}
+							</span>
+							<i className='j-icon'>
 								{showSearch ? <XIcon /> : <SearchIcon />}
 							</i>
 						</button>
@@ -107,10 +115,10 @@ const Navigation = () => {
 
 			{showSearch && (
 				<div
-					className="nav-overlay px-1r"
+					className='nav-overlay px-1r'
 					onClick={() => setShowSearch(false)}
 				>
-					<div className="w-100p flex-c">
+					<div className='w-100p flex-c'>
 						<Suggestions
 							key='suggestions'
 							query={query}

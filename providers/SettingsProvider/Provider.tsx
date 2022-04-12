@@ -13,39 +13,42 @@ import { defaultSettings, settingsSchema } from './settings';
 
 import type { ChildrenOnly } from '../../types';
 
-
 const SettingsContext = createContext<any>({});
 
 const SettingsProvider = ({ children }: ChildrenOnly) => {
-	const [settings, setSettings] = useState(
-		() => {
-			// This merges the initial settings with the
-			// user's saved settings. This will mean that
-			// any value added to defaultSettings will be
-			// stored automatically.
-			return {
-				...defaultSettings,
-				...getSavedSettings(),
-			};
-		}
+	const [settings, setSettings] = useState(() => {
+		// This merges the initial settings with the
+		// user's saved settings. This will mean that
+		// any value added to defaultSettings will be
+		// stored automatically.
+		return {
+			...defaultSettings,
+			...getSavedSettings(),
+		};
+	});
+
+	const set = useCallback(
+		(key: string, value: any) => {
+			setSettings({ ...settings, [key]: value });
+		},
+		[settings, setSettings]
 	);
 
-	const set = useCallback((key: string, value: any) => {
-		setSettings({ ...settings, [key]: value });
-	}, [settings, setSettings]);
-
-	const deleteSetting = useCallback((key: string) => {
-		// Don't mutate directly!
-		let s = { ...settings };
-		delete s[key];
-		setSettings(s);
-	}, [settings, setSettings]);
+	const deleteSetting = useCallback(
+		(key: string) => {
+			// Don't mutate directly!
+			let s = { ...settings };
+			delete s[key];
+			setSettings(s);
+		},
+		[settings, setSettings]
+	);
 
 	const previousSettings = usePrevious(settings);
 
 	useEffect(() => {
 		const keys = Object.keys(settings);
-		keys.forEach(key => {
+		keys.forEach((key) => {
 			const currentValue = settings[key];
 			const allowedValues = settingsSchema[key]?.allowedValues;
 
@@ -83,14 +86,12 @@ const SettingsProvider = ({ children }: ChildrenOnly) => {
 			{children}
 		</SettingsContext.Provider>
 	);
-}
+};
 
 const useSettings = () => {
 	return useContext(SettingsContext);
-}
+};
 
 export default SettingsProvider;
 
-export {
-	useSettings,
-}
+export { useSettings };

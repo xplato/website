@@ -1,10 +1,7 @@
 import dynamic from 'next/dynamic';
 import ELi from '../ELi';
 
-const ThemeSwitcher = dynamic(
-	() => import('../ThemeSwitcher'),
-	{ ssr: false }
-);
+const ThemeSwitcher = dynamic(() => import('../ThemeSwitcher'), { ssr: false });
 
 const Footer = () => {
 	return (
@@ -12,7 +9,10 @@ const Footer = () => {
 			<div className='grid grid-2 landscape-grid-1'>
 				<div className='grid-block justify-s landscape-align-c landscape-text-c'>
 					<p className='fs-sm lh-1'>
-						This website is <ELi href="https://github.com/xplato/website">open-source.</ELi>
+						This website is{' '}
+						<ELi href='https://github.com/xplato/website'>
+							open-source.
+						</ELi>
 					</p>
 					<p className='mb-0 fs-sm lh-1-5'>
 						Copyright &copy; 2022. All rights reserved.

@@ -1,10 +1,10 @@
-import useBodyModifier from "../../hooks/useBodyModifier";
-import { useSettings } from "../../providers/SettingsProvider";
+import useBodyModifier from '../../hooks/useBodyModifier';
+import { useSettings } from '../../providers/SettingsProvider';
 
-import Navigation from "../shell/Navigation";
-import Footer from "../shell/Footer";
+import Navigation from '../shell/Navigation';
+import Footer from '../shell/Footer';
 
-import type { ChildrenOnly } from "../../types";
+import type { ChildrenOnly } from '../../types';
 
 const View = ({ children }: ChildrenOnly) => {
 	const settings = useSettings();
@@ -13,7 +13,7 @@ const View = ({ children }: ChildrenOnly) => {
 	useBodyModifier(settings.font);
 
 	return (
-		<div className="view">
+		<div className='view'>
 			<Navigation />
 			{children}
 			<Footer />

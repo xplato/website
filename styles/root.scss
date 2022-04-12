@@ -2,13 +2,17 @@
 	box-sizing: border-box;
 }
 
-body, body *,
-body.mono, body.mono * {
+body,
+body *,
+body.mono,
+body.mono * {
 	font-family: 'Courier', monospace;
 }
 
-body.inter, body.inter * {
-	font-family: "Inter", "Roboto", "Open Sans", "Helvetica", "Arial", system-ui, sans-serif !important;
+body.inter,
+body.inter * {
+	font-family: 'Inter', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', system-ui,
+		sans-serif !important;
 }
 
 p {
@@ -29,7 +33,6 @@ hr {
 	line-height: 1;
 }
 
-
 .footer {
 	border-top: 1px solid #444;
 }
@@ -38,7 +41,7 @@ hr {
 	font-size: 0.875rem;
 }
 .lh-1-5 {
-	line-height: 1.5;;
+	line-height: 1.5;
 }
 
 @media only screen and (max-width: 767px) {

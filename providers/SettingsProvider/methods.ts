@@ -1,8 +1,8 @@
-import { defaultSettings } from "./settings";
+import { defaultSettings } from './settings';
 
 const _isEmpty = (v: any) => {
 	return Object.keys(v).length === 0;
-}
+};
 
 // We have to go this back-handed route to use
 // localStorage for a few reasons. Primarily,
@@ -17,10 +17,12 @@ const _get = () => {
 
 	try {
 		v = localStorage.getItem('settings');
-	} catch (err) { v = null; }
+	} catch (err) {
+		v = null;
+	}
 
 	return v ? v : null;
-}
+};
 
 // If the above function returns `null` or the
 // settings are empty, this will return the
@@ -47,7 +49,4 @@ const saveSettings = (v: any) => {
 	}
 };
 
-export {
-	getSavedSettings,
-	saveSettings,
-}
+export { getSavedSettings, saveSettings };

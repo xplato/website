@@ -1,9 +1,7 @@
-import type { ChildrenOnly } from "../types";
+import type { ChildrenOnly } from '../types';
 
 const Pins = ({ children }: ChildrenOnly) => (
-	<div className='flex'>
-		{children}
-	</div>
+	<div className='flex'>{children}</div>
 );
 
 export default Pins;

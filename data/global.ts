@@ -23,8 +23,8 @@ const global: Global = {
 		{
 			title: 'Matrix',
 			username: '@xplato:matrix.org',
-		}
-	]
-}
+		},
+	],
+};
 
 export default global;

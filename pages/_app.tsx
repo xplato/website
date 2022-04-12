@@ -1,24 +1,33 @@
-import type { AppProps } from 'next/app';
+// THIRD-PARTY
+
 import { ScavengerProvider } from '@infinium/scavenger';
 import { Notifications } from '@infinium/hydro';
 import dynamic from 'next/dynamic';
 
-import SettingsProvider from '../providers/SettingsProvider';
+import type { AppProps } from 'next/app';
 
+// COMPONENTS
+
+import SettingsProvider from '../providers/SettingsProvider';
 import View from '../components/layout/View';
+
+// DATA
 
 import { Schema } from '../logic/search';
 import { articles } from '../data/articles';
 import { projects } from '../data/projects';
 import { pages } from '../data/pages';
+import { pins } from '../data/pins';
+
+// STYLES
 
 import '../styles/jupiterui.css';
 import '../styles/global.scss';
 import '@infinium/hydro/dist/style.css';
 
+/// FONTS
 import '../assets/fonts/inter/inter.css';
 import '../assets/fonts/courier/courier.css';
-import { pins } from '../data/pins';
 
 const App = ({ Component, pageProps }: AppProps) => {
 	// @ts-ignore
@@ -27,13 +36,13 @@ const App = ({ Component, pageProps }: AppProps) => {
 	return (
 		<ScavengerProvider
 			initialResources={[
-				...articles.map(e => ({ ...e, type: 'Article' })),
-				...pages.map(e => ({ ...e, type: 'Page' })),
-				...projects.map(e => ({ ...e, type: 'Project' })),
-				...pins.map(e => ({ ...e, type: 'Pin' })),
+				...articles.map((e) => ({ ...e, type: 'Article' })),
+				...pages.map((e) => ({ ...e, type: 'Page' })),
+				...projects.map((e) => ({ ...e, type: 'Project' })),
+				...pins.map((e) => ({ ...e, type: 'Pin' })),
 			]}
 			suggestions={[
-				...pages.map(e => ({ ...e, type: 'Page', caption: '' })),
+				...pages.map((e) => ({ ...e, type: 'Page', caption: '' })).slice(0, 5),
 				{
 					...articles[0],
 					type: 'Article',
@@ -43,7 +52,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 					...pins[0],
 					type: 'Pin',
 					caption: 'Latest Pin',
-				}
+				},
 			]}
 			schema={Schema}
 		>
@@ -58,7 +67,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 			</SettingsProvider>
 		</ScavengerProvider>
 	);
-}
+};
 
 export default dynamic(() => Promise.resolve(App), {
 	ssr: false,

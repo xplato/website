@@ -6,12 +6,12 @@ const KeyboardEventHandler = dynamic(
 );
 
 interface KeyboardProps {
-	children?: React.ReactNode,
-	keys: string[],
-	callback(key?: string, ev?: any): void,
-	handleFocusableElements?: boolean,
-	isDisabled?: boolean,
-	isExclusive?: boolean
+	children?: React.ReactNode;
+	keys: string[];
+	callback(key?: string, ev?: any): void;
+	handleFocusableElements?: boolean;
+	isDisabled?: boolean;
+	isExclusive?: boolean;
 }
 
 const Keyboard = ({

@@ -33,11 +33,6 @@ const archivedArticles = [
 	},
 ];
 
-export {
-	articles,
-	archivedArticles,
-}
+export { articles, archivedArticles };
 
-export type {
-	Article,
-}
+export type { Article };

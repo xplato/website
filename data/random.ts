@@ -23,7 +23,4 @@ const noResultQuotes = [
 	'Do you even type, bro?',
 ];
 
-export {
-	quotes,
-	noResultQuotes,
-}
+export { quotes, noResultQuotes };

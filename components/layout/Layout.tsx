@@ -1,12 +1,7 @@
-import type { ChildrenOnly } from "../../types";
-
+import type { ChildrenOnly } from '../../types';
 
 const Layout = ({ children }: ChildrenOnly) => {
-	return (
-		<div className="layout">
-			{children}
-		</div>
-	);
+	return <div className='layout'>{children}</div>;
 };
 
 export default Layout;

@@ -49,10 +49,10 @@ const Home = () => {
 					);
 				})}
 			</ul>
-			
+
 			<Spacer />
 
-			<div className="mw-35r">
+			<div className='mw-35r'>
 				<h3>Latest Pins</h3>
 				<Pins>
 					{pins.map((pin, i) => {
@@ -60,7 +60,9 @@ const Home = () => {
 							return <></>;
 						}
 
-						return <Pin key={pin.date} {...pin} highlight={false} />;
+						return (
+							<Pin key={pin.date} {...pin} highlight={false} />
+						);
 					})}
 				</Pins>
 			</div>

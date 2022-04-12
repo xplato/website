@@ -21,7 +21,8 @@ const projects: Project[] = [
 	{
 		id: 'use-undoable',
 		title: 'useUndoable',
-		description: 'React hook for undo/redo functionality (with batteries included)',
+		description:
+			'React hook for undo/redo functionality (with batteries included)',
 		repository: 'https://github.com/Infinium8/useUndoable',
 		liveURL: 'https://codesandbox.io/s/use-undoable-zi0b4',
 		tags: ['javascript', 'react', 'typescript', 'undo/redo'],
@@ -37,7 +38,8 @@ const projects: Project[] = [
 	{
 		id: 'hydro',
 		title: 'Hydro',
-		description: 'A fluid set of general React components for modern web apps.',
+		description:
+			'A fluid set of general React components for modern web apps.',
 		repository: 'https://github.com/Infinium8/Hydro',
 		liveURL: 'https://neqd5.csb.app/',
 		tags: ['react components', 'javascript', 'typescript'],
@@ -45,7 +47,8 @@ const projects: Project[] = [
 	{
 		id: 'supervisor',
 		title: 'Supervisor',
-		description: 'Effortlessly run scripts or commands when certain files change.',
+		description:
+			'Effortlessly run scripts or commands when certain files change.',
 		repository: 'https://github.com/Infinium8/Supervisor',
 		tags: ['python', 'file', 'watcher'],
 	},
@@ -59,40 +62,23 @@ const projects: Project[] = [
 	{
 		id: 'tree',
 		title: 'Tree',
-		description: 'Easily manage, manipulate, and traverse a JavaScript Tree',
+		description:
+			'Easily manage, manipulate, and traverse a JavaScript Tree',
 		repository: 'https://github.com/Infinium8/Tree',
 		tags: ['javascript'],
 	},
 	{
 		id: 'use-settings',
 		title: 'useSettings',
-		description: 'Easily manage application settings in localStorage with a React hook',
+		description:
+			'Easily manage application settings in localStorage with a React hook',
 		repository: 'https://github.com/Infinium8/useSettings',
 		tags: ['settings', 'localstorage'],
 	},
-	// {
-	// 	title: '',
-	// 	repository: '',
-	// },
-	// {
-	// 	title: '',
-	// 	repository: '',
-	// },
-	// {
-	// 	title: '',
-	// 	repository: '',
-	// },
 ];
 
-const deprecatedProjects: Project[] = [
-	
-];
+const deprecatedProjects: Project[] = [];
 
-export {
-	projects,
-	deprecatedProjects,
-}
+export { projects, deprecatedProjects };
 
-export type {
-	Project,
-}
+export type { Project };

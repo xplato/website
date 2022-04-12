@@ -18,12 +18,12 @@ $colors: (
 	'orange',
 	'red',
 	'white',
-	'black',
+	'black'
 );
 
 @each $color in $colors {
 	.color.#{$color} {
-		background-color: var(#{"--"}#{$color}#{"-500"});
+		background-color: var(#{'--'}#{$color}#{'-500'});
 	}
 }
 
@@ -49,7 +49,8 @@ $colors: (
 		border-radius: 90px;
 	}
 
-	&.white .dot, &.hacker-green .dot {
+	&.white .dot,
+	&.hacker-green .dot {
 		background-color: black;
 	}
 }
@@ -337,9 +338,7 @@ body.black {
 
 	--background: #111;
 	--background-1: #222;
-  }
-
-
+}
 
 body.hacker-green {
 	--accent-300: #00ff00 !important;

@@ -1,5 +1,3 @@
-const Spacer = () => (
-	<div className='h-1r'></div>
-);
+const Spacer = () => <div className='h-1r'></div>;
 
 export default Spacer;

@@ -1,7 +1,7 @@
 // Most of this file, with a few exceptions,
 // was taken directly from Tilde.club. They
 // deserve the credit for nearly the entire
-// layout to my website. Thank you, Tilde!
+// layout of my website. Thank you, Tilde!
 
 body {
 	margin: auto;
@@ -12,7 +12,9 @@ body {
 	word-wrap: break-word;
 }
 
-a, button, .theme-color-select {
+a,
+button,
+.theme-color-select {
 	box-shadow: none;
 	background-color: transparent;
 	border: none;
@@ -31,7 +33,8 @@ a:not([class]) {
 		outline: none;
 	}
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		text-decoration: none !important;
 
 		&::after {
@@ -44,8 +47,9 @@ a:not([class]) {
 		opacity: 0;
 	}
 
-	&::after, &::before {
-		content: "";
+	&::after,
+	&::before {
+		content: '';
 		height: 1px;
 		width: 100%;
 		position: absolute;
@@ -59,25 +63,26 @@ a:not([class]) {
 
 a.multiline {
 	text-decoration: none !important;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size 0.3s;
 
 	&:hover {
 		background-size: 100% 2px;
 	}
 
 	&::after {
-		content: "";
+		content: '';
 		width: 100%;
 		height: 1px;
 		background-color: var(--accent-500);
 	}
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
 	text-decoration: underline;
 }
 
@@ -92,42 +97,48 @@ h1 {
 	font-size: 1.6rem;
 }
 #fancyboi::before {
-	content: "/";
+	content: '/';
 	margin-right: 0.5rem;
 }
 
 #fancyboi.article::before {
-	content: "?";
+	content: '?';
 }
 
 @media (prefers-reduced-motion: no-preference) {
 	@keyframes flash {
-		50% { opacity: 0; }
+		50% {
+			opacity: 0;
+		}
 	}
 	@keyframes reveal {
-		from { width: 2em; } /* Width of ::before */
-		  to { width: 100%; }
+		from {
+			width: 2em;
+		} /* Width of ::before */
+		to {
+			width: 100%;
+		}
 	}
 	#fancyboi {
 		overflow: hidden;
 		white-space: nowrap;
 		animation: reveal 4s linear;
-		text-overflow: "█";
+		text-overflow: '█';
 	}
 	#fancyboi::after {
 		font-family: monospace;
-		content: "█";
+		content: '█';
 		animation: flash 0.5s step-end infinite;
 	}
 }
 /* SDOOGEHT */
 
 .sourceCode {
- color: var(--accent-600);
+	color: var(--accent-600);
 }
 
-code > span.fl { 
- color: var(--accent-600); 
+code > span.fl {
+	color: var(--accent-600);
 }
 
 /* Page content */
@@ -136,11 +147,11 @@ code > span.fl {
 }
 
 blockquote {
-    border-left: 2px solid var(--accent-800);
-    padding: 0.5rem;
-    padding-left: 1rem;
+	border-left: 2px solid var(--accent-800);
+	padding: 0.5rem;
+	padding-left: 1rem;
 	margin: 0;
-}	
+}
 
 /* Mobile */
 @media (max-width: 768px) {

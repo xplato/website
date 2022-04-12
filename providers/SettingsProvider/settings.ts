@@ -1,5 +1,4 @@
-import { colors } from "../../data/colors";
-
+import { colors } from '../../data/colors';
 
 interface Schema {
 	[key: string]: SettingSchema;
@@ -35,10 +34,7 @@ const settingsSchema: Schema = {
 	},
 	font: {
 		allowedValues: ['mono', 'inter'],
-	}
-}
+	},
+};
 
-export {
-	defaultSettings,
-	settingsSchema,
-}
+export { defaultSettings, settingsSchema };

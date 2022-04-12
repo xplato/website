@@ -9,7 +9,17 @@ interface Pin {
 
 const pins: Pin[] = [
 	{
-		date: '2022-04-12',
+		date: '2022-04-12 13:40',
+		title: 'Remember the previous puzzle',
+		content: (
+			<>
+				<p>One mustn't forget that the previous puzzle involved arrays of four numbers.</p>
+			</>
+		),
+		tags: ['hint for puzzle 2 second'],
+	},
+	{
+		date: '2022-04-12 11:00',
 		title: 'On the new puzzle difficulty rating',
 		content: (
 			<>

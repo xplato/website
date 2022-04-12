@@ -1,6 +1,5 @@
 import { MutableRefObject } from 'react';
 
-
 interface Props {
 	inputRef: MutableRefObject<any>;
 	query: string;
@@ -10,11 +9,11 @@ interface Props {
 const Search = ({ inputRef, query, setQuery }: Props) => {
 	const onChange = (ev: any) => {
 		setQuery(ev.target.value);
-	}
+	};
 
 	return (
-		<div className="w-100p nav-search-container flex align-c justify-c flex-row">
-			<div className="prompt">
+		<div className='w-100p nav-search-container flex align-c justify-c flex-row'>
+			<div className='prompt'>
 				<p>~</p>
 			</div>
 			<input

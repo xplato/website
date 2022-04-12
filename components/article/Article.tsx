@@ -1,6 +1,6 @@
 import { useSettings } from '../../providers/SettingsProvider';
 
-import type { ChildrenOnly } from "../../types";
+import type { ChildrenOnly } from '../../types';
 
 const Article = ({ children }: ChildrenOnly) => {
 	const settings = useSettings();
@@ -14,12 +14,14 @@ const Article = ({ children }: ChildrenOnly) => {
 		}
 
 		settings.set('font', settings.font === 'mono' ? 'inter' : 'mono');
-	}
+	};
 
 	return (
 		<article>
-			<div className="mt-2r">
-				<a onClick={toggleFont}>{settings.font === 'mono' ? 'Sans' : 'Mono'} font</a>
+			<div className='mt-2r'>
+				<a onClick={toggleFont}>
+					{settings.font === 'mono' ? 'Sans' : 'Mono'} font
+				</a>
 			</div>
 
 			{children}

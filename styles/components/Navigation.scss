@@ -12,7 +12,8 @@ $max: 540px;
 	border-radius: 0.25em;
 }
 
-#navbar .nav-link:hover, #navbar .nav-link:focus {
+#navbar .nav-link:hover,
+#navbar .nav-link:focus {
 	background-color: var(--accent-500);
 }
 
@@ -24,7 +25,8 @@ body.black #navbar {
 	background-color: var(--gray-100);
 }
 
-body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
+body.black #navbar .nav-link:hover,
+body.black #navbar .nav-link:focus {
 	background-color: var(--gray-200);
 }
 
@@ -53,9 +55,9 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 }
 
 @media only screen and (max-width: 767px) {
-    #navbar .nav-link {
-        font-size: 0.875rem;
-    }
+	#navbar .nav-link {
+		font-size: 0.875rem;
+	}
 }
 
 .nav-search-container {
@@ -152,7 +154,9 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 		user-select: none;
 		transition: var(--d-f-1) var(--e-s);
 
-		&:hover, &.selected, &:focus {
+		&:hover,
+		&.selected,
+		&:focus {
 			background-color: var(--accent-500);
 			text-decoration: none;
 			outline: none;

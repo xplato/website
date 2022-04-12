@@ -30,12 +30,13 @@ const pages: Page[] = [
 		title: 'whoami',
 		tags: ['about me'],
 	},
+	{
+		href: '/samara',
+		title: 'samara',
+		tags: [''],
+	},
 ];
 
-export {
-	pages,
-}
+export { pages };
 
-export type {
-	Page,
-}
+export type { Page };
