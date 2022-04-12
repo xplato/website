@@ -15,7 +15,7 @@ interface Props {
 const Suggestions = ({ query, setShowSearch }: Props) => {
 	const [selected, setSelected] = useState(0);
 	const scavenger = useScavenger(query, 'root', {
-		sortBy: 'type',
+		sortBy: 'title',
 	});
 
 	return (
