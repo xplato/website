@@ -76,3 +76,12 @@ hr {
 ul {
 	margin: 0;
 }
+
+// Screen reader only
+.sr-only {
+	visibility: hidden;
+	display: none;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}

@@ -95,7 +95,8 @@ const Navigation = () => {
 							} else {
 								beginSearch(ev);
 							}
-						}} tabIndex={0}>
+						}} tabIndex={0} title={showSearch ? 'Close search' : 'Search'}>
+							<span className="sr-only">{showSearch ? 'Close search' : 'Search'}</span>
 							<i className="j-icon">
 								{showSearch ? <XIcon /> : <SearchIcon />}
 							</i>
