@@ -27,6 +27,10 @@ const Archive = () => {
 				them at your peril.
 			</p>
 
+			<p>
+				Most of these... I wasn't "in the normal state of mind," if you know what I mean.
+			</p>
+
 			<ul>
 				{archivedArticles.map(article => (
 					<li key={article.slug}>

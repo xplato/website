@@ -24,12 +24,12 @@ const archivedArticles = [
 	{
 		slug: 'on-life-as-an-extension-of-experience',
 		title: 'On Life as an Extension of Experience',
-		date: '21 March 2022'
+		date: '21 March 2022',
 	},
 	{
 		slug: 'on-search-and-suggestions',
 		title: 'On Search & Suggestions',
-		date: '18 March 2022'
+		date: '18 March 2022',
 	},
 ];
 
