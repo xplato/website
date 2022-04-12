@@ -1,4 +1,4 @@
-$max: 440px;
+$max: 540px;
 
 #navbar {
 	height: 50px;
@@ -164,7 +164,7 @@ body.black #navbar .nav-link:hover, body.black #navbar .nav-link:focus {
 
 		& p:first-child {
 			white-space: nowrap;
-			max-width: 70%;
+			max-width: 85%;
 			overflow: hidden;
 			text-overflow: ellipsis;
 		}
