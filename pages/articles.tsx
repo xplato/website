@@ -4,6 +4,7 @@ import Li from '../components/Li';
 
 import { articles } from '../data/articles';
 import { getRandomString } from '../logic/rand';
+import { getPrettyDate } from '../logic/date';
 
 const titles = [
 	'articles',
@@ -35,7 +36,7 @@ const Articles = () => {
 							href={`/articles/${article.slug}`}
 							className='multiline'
 						>
-							{article.title} ({article.date})
+							{article.title} ({getPrettyDate(article.date)})
 						</Li>
 					</li>
 				))}

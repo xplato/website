@@ -1,7 +1,13 @@
 import ELi from "../components/ELi";
 
 interface Pin {
+	// Date and time formatted like
+	// 1970-01-28 13:40
 	date: string,
+
+	// Title isn't displayed right now, but only
+	// used in the searching because the `content`
+	// can't be searched by Scavenger.
 	title: string,
 	content: React.ReactNode;
 	tags: string[];
@@ -37,7 +43,7 @@ const pins: Pin[] = [
 		tags: ['puzzle', 'april'],
 	},
 	{
-		date: '2022-04-11',
+		date: '2022-04-11 13:00',
 		title: 'SiteGround for WordPress, HTML, and PHP hosting',
 		content: (
 			<>
@@ -58,7 +64,7 @@ const pins: Pin[] = [
 		tags: [''],
 	},
 	{
-		date: '2022-04-08',
+		date: '2022-04-08 13:00',
 		title: 'April Puzzle',
 		content: (
 			<>
@@ -70,7 +76,7 @@ const pins: Pin[] = [
 		tags: [''],
 	},
 	{
-		date: '2022-04-06',
+		date: '2022-04-06 13:00',
 		title: 'Vercel Customer Service, more',
 		content: (
 			<>
