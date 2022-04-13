@@ -9,7 +9,7 @@ const ELi = ({ href, rel, children, ...props }: Props) => (
 	<a
 		href={href}
 		target='_blank'
-		rel={['nofollow noopener noreferrer', rel].join(' ')}
+		rel={rel ? rel : 'nofollow noopener noreferrer'}
 		{...props}
 	>
 		{children}
