@@ -159,3 +159,16 @@ blockquote {
 		display: block;
 	}
 }
+
+.radius-8 {
+	border-radius: 0.5rem;
+}
+
+.shortcut-block-header {
+	padding: 1rem;
+	border-bottom: 1px solid #444;
+
+	& > h4 {
+		margin: 0;
+	}
+}

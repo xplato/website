@@ -16,7 +16,7 @@ import View from '../components/layout/View';
 import { Schema } from '../logic/search';
 import { articles } from '../data/articles';
 import { projects } from '../data/projects';
-import { pages } from '../data/pages';
+import { helpPages, pages } from '../data/pages';
 import { pins } from '../data/pins';
 
 // STYLES
@@ -38,6 +38,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 			initialResources={[
 				...articles.map((e) => ({ ...e, type: 'Article' })),
 				...pages.map((e) => ({ ...e, type: 'Page' })),
+				...helpPages.map((e) => ({ ...e, type: 'HelpPage' })),
 				...projects.map((e) => ({ ...e, type: 'Project' })),
 				...pins.map((e) => ({ ...e, type: 'Pin' })),
 			]}

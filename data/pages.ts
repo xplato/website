@@ -1,5 +1,6 @@
 interface Page {
-	href: string;
+	id?: string;
+	href?: string;
 	title: string;
 	tags: string[];
 }
@@ -31,12 +32,25 @@ const pages: Page[] = [
 		tags: ['about me'],
 	},
 	{
+		href: '/help',
+		title: 'help',
+		tags: [''],
+	},
+	{
 		href: '/samara',
 		title: 'samara',
 		tags: [''],
 	},
 ];
 
-export { pages };
+const helpPages: Page[] = [
+	{
+		id: 'shortcuts',
+		title: 'Keyboard shortcuts',
+		tags: [''],
+	},
+];
+
+export { pages, helpPages };
 
 export type { Page };

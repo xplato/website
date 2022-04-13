@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { SearchIcon, XIcon } from '@heroicons/react/outline';
+import classNames from 'classnames';
 
 import Li from '../Li';
 import Search from './Search';
 import Suggestions from './Search/Suggestions';
 import Keyboard from '../Keyboard';
+import Shortcuts from './Shortcuts';
 
-import classNames from 'classnames';
 
 const links = [
 	{
@@ -144,6 +145,8 @@ const Navigation = () => {
 				}}
 				handleFocusableElements
 			/>
+
+			<Shortcuts />
 		</>
 	);
 };

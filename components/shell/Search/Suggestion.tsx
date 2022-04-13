@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
 import Keyboard from '../../Keyboard';
-import { toast } from '@infinium/hydro';
 
 interface Props {
 	index: number;
@@ -11,6 +10,8 @@ interface Props {
 	setShowSearch(v: boolean): void;
 	setSelected(v: number): void;
 }
+
+const getHighlightURL = (baseSlug: string, v: string) => `/${baseSlug}?h=${v}#${v}`;
 
 const Suggestion = ({
 	index,
@@ -23,15 +24,19 @@ const Suggestion = ({
 
 	const getResultURL = (result: any) => {
 		if (result.slug) {
-			return `/articles/${result.slug}`;
+			return getHighlightURL('articles', result.slug);
 		}
 
 		if (result.type === 'Project') {
-			return `/code?h=${result.id}#${result.id}`;
+			return getHighlightURL('code', result.id);
 		}
 
 		if (result.type === 'Pin') {
-			return `/pins?h=${result.date}#${result.date}`;
+			return getHighlightURL('pins', result.date);
+		}
+
+		if (result.type === 'HelpPage') {
+			return getHighlightURL('help', result.id);
 		}
 
 		return result.href || '/';
