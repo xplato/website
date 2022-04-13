@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useScavenger } from '@infinium/scavenger';
+import { useScavenger, sortObjectsInSpecificOrder } from '@infinium/scavenger';
 
 import Suggestion from './Suggestion';
 import Keyboard from '../../Keyboard';
@@ -16,6 +16,8 @@ const Suggestions = ({ query, setShowSearch }: Props) => {
 	const scavenger = useScavenger(query, 'root', {
 		sortBy: 'title',
 	});
+
+	const order = ['Page', 'Pin', 'Article', 'Project'];
 
 	return (
 		<>
@@ -36,7 +38,7 @@ const Suggestions = ({ query, setShowSearch }: Props) => {
 						}
 					</p>
 				) : (
-					scavenger.results.map((result: any, index: number) => (
+					sortObjectsInSpecificOrder(scavenger.results, order, 'type').map((result: any, index: number) => (
 						<Suggestion
 							key={result.title || result.date}
 							index={index}

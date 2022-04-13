@@ -10,12 +10,20 @@ interface Project {
 
 const projects: Project[] = [
 	{
+		id: 'scavenger',
+		title: 'Scavenger',
+		description: '⚡️ A lightning-fast search library for React.',
+		repository: 'https://codeberg.org/athena/Scavenger',
+		liveURL: 'https://codesandbox.io/s/scavenger-o44bxn',
+		isNew: true,
+		tags: ['search', 'static resources'],
+	},
+	{
 		id: 'gofe',
 		title: 'Gofë',
 		description: 'A private and minimal front-end for Google Search.',
 		repository: 'https://codeberg.org/ar324/gofe',
 		liveURL: 'https://gofe.app',
-		isNew: true,
 		tags: ['search', 'private', 'google', 'gofe', 'javascript', 'go'],
 	},
 	{
