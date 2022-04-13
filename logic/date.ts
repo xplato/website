@@ -8,7 +8,7 @@ const getPrettyDate = (date: string) => {
 
 	// If the date is today
 	if (moment(today).isSame(fd)) {
-		return date.length > 10 ? `Today @ ${ft}` : `Today`;
+		return date.length > 10 ? ft : `Today`;
 	}
 
 	return moment(date).fromNow();
