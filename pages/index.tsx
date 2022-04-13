@@ -36,7 +36,11 @@ const Home = () => {
 			<p>Find me @:</p>
 			<ul>
 				{global.social.map((social) => {
-					const inner = `${social.username} on ${social.title}`;
+					let inner = `${social.username} on ${social.title}`;
+				
+					if (social.title === 'Mastodon') {
+						inner = 'Follow me on Mastodon';
+					}
 
 					return (
 						<li key={social.title}>
