@@ -41,7 +41,7 @@ const Home = () => {
 					return (
 						<li key={social.title}>
 							{social.href ? (
-								<ELi href={social.href}>{inner}</ELi>
+								<ELi href={social.href} rel={social.title === 'Mastodon' ? 'me' : ''}>{inner}</ELi>
 							) : (
 								<span>{inner}</span>
 							)}

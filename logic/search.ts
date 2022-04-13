@@ -1,7 +1,7 @@
 const Schema = {
 	Article: ['title', 'date', 'tags', 'type'],
 	Page: ['title', 'tags', 'type'],
-	HelpPage: ['id', 'title', 'tags', 'type'],
+	Help: ['id', 'title', 'tags', 'type'],
 	Project: ['title', 'description', 'tags', 'type'],
 	Pin: ['title', 'type', 'date'],
 };

@@ -35,7 +35,7 @@ const Suggestion = ({
 			return getHighlightURL('pins', result.date);
 		}
 
-		if (result.type === 'HelpPage') {
+		if (result.type === 'Help') {
 			return getHighlightURL('help', result.id);
 		}
 

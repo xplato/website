@@ -17,7 +17,7 @@ const Suggestions = ({ query, setShowSearch }: Props) => {
 		sortBy: 'title',
 	});
 
-	const order = ['Page', 'Pin', 'Article', 'Project', 'HelpPage'];
+	const order = ['Page', 'Pin', 'Article', 'Project', 'Help'];
 
 	return (
 		<>

@@ -38,7 +38,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 			initialResources={[
 				...articles.map((e) => ({ ...e, type: 'Article' })),
 				...pages.map((e) => ({ ...e, type: 'Page' })),
-				...helpPages.map((e) => ({ ...e, type: 'HelpPage' })),
+				...helpPages.map((e) => ({ ...e, type: 'Help' })),
 				...projects.map((e) => ({ ...e, type: 'Project' })),
 				...pins.map((e) => ({ ...e, type: 'Pin' })),
 			]}

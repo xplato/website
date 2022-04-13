@@ -21,6 +21,11 @@ const global: Global = {
 			href: 'https://github.com/xplato',
 		},
 		{
+			title: 'Mastodon',
+			username: 'xplato',
+			href: 'https://fosstodon.org/@xplato',
+		},
+		{
 			title: 'Matrix',
 			username: '@xplato:matrix.org',
 		},
