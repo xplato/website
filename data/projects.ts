@@ -12,7 +12,7 @@ const projects: Project[] = [
 	{
 		id: 'scavenger',
 		title: 'Scavenger',
-		description: '⚡️ A lightning-fast search library for React.',
+		description: '⚡️ A lightning-fast search library for React. It powers the search feature of this website.',
 		repository: 'https://codeberg.org/athena/Scavenger',
 		liveURL: 'https://codesandbox.io/s/scavenger-o44bxn',
 		isNew: true,
