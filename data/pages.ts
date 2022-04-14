@@ -12,8 +12,8 @@ const pages: Page[] = [
 		tags: ['landing', 'first', '1'],
 	},
 	{
-		href: '/articles',
-		title: 'articles',
+		href: '/writings',
+		title: 'writings',
 		tags: ['blog'],
 	},
 	{

@@ -2,7 +2,7 @@ import Li from '../Li';
 
 const ArchiveHeader = () => (
 	<Li
-		href='/articles/archive'
+		href='/writings/archive'
 		className='very-top flex align-c justify-s flex-row'
 	>
 		<i className='j-icon mr-0-5r'>
@@ -19,7 +19,7 @@ const ArchiveHeader = () => (
 				/>
 			</svg>
 		</i>
-		<p className='my-0 lh-1'>Back to archived articles</p>
+		<p className='my-0 lh-1'>Back to archived writings</p>
 	</Li>
 );
 

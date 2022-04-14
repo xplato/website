@@ -19,8 +19,8 @@ const links = [
 		href: '/code',
 	},
 	{
-		label: 'articles',
-		href: '/articles',
+		label: 'writings',
+		href: '/writings',
 	},
 	{
 		label: 'whoami',

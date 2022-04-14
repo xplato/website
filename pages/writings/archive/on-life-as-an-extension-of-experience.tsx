@@ -1,9 +1,9 @@
-import ArchiveHeader from '../../../components/article/ArchiveHeader';
-import Article from '../../../components/article/Article';
+import ArchiveHeader from '../../../components/writing/ArchiveHeader';
+import Writing from '../../../components/writing/Writing';
 import PageMeta from '../../../components/PageMeta';
 
 const A = () => (
-	<Article>
+	<Writing>
 		<ArchiveHeader />
 		<PageMeta meta={{
 				title: 'On Life as an Extension of Experience',
@@ -39,14 +39,14 @@ const A = () => (
 		<p>And if so, where, then, does experience lie upon the pyramid of our reality? Is life the entire pyramid?</p>
 		<p>Surely, something is based upon something else. If I can alter my perspective of reality by closing a single eye, by making a physical change, then surely experience must rest upon something much more complex.</p>
 		<h2>My Opinion</h2>
-		<p>I generally attempt to merely pose a question with these kinds of articles. Food for thought.</p>
+		<p>I generally attempt to merely pose a question with these kinds of writings. Food for thought.</p>
 		<p>Philosophy is largely, however, just that. Of course, it it much more complex than it appears; philosophic perspectives have led to some amazing innovations. They do, indeed, have utility, if applied correctly.</p>
 		<p>Regardless of the supposed utility of this point, I believe that “life” as a concept is a simple one. It is, however, based upon experience in some form or another.</p>
 		<p>This of course begs the question, “what is experience based on?”</p>
 		<p>I do not know. Perhaps I will hypothesize, given time.</p>
 		<p>Think about it.</p>
 		<p>Thanks for reading.</p>
-	</Article>
+	</Writing>
 );
 
 export default A;

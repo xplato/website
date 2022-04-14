@@ -14,7 +14,7 @@ import View from '../components/layout/View';
 // DATA
 
 import { Schema } from '../logic/search';
-import { articles } from '../data/articles';
+import { writings } from '../data/writings';
 import { projects } from '../data/projects';
 import { helpPages, pages } from '../data/pages';
 import { pins } from '../data/pins';
@@ -36,7 +36,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 	return (
 		<ScavengerProvider
 			initialResources={[
-				...articles.map((e) => ({ ...e, type: 'Article' })),
+				...writings.map((e) => ({ ...e, type: 'Writing' })),
 				...pages.map((e) => ({ ...e, type: 'Page' })),
 				...helpPages.map((e) => ({ ...e, type: 'Help' })),
 				...projects.map((e) => ({ ...e, type: 'Project' })),
@@ -45,7 +45,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 			suggestions={[
 				...pages.map((e) => ({ ...e, type: 'Page', caption: '' })).slice(0, 5),
 				{
-					...articles[0],
+					...writings[0],
 					type: 'Article',
 					caption: 'Latest Article',
 				},

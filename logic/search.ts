@@ -1,5 +1,5 @@
 const Schema = {
-	Article: ['title', 'date', 'tags', 'type'],
+	Writing: ['title', 'date', 'tags', 'type'],
 	Page: ['title', 'tags', 'type'],
 	Help: ['id', 'title', 'tags', 'type'],
 	Project: ['title', 'description', 'tags', 'type'],

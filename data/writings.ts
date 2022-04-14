@@ -1,11 +1,11 @@
-interface Article {
+interface Writing {
 	slug: string;
 	title: string;
 	date: string;
 	tags: string[];
 }
 
-const articles: Article[] = [
+const writings: Writing[] = [
 	{
 		slug: 'the-internet-an-extension-of-google',
 		title: 'The Internet: An Extension of Google',
@@ -20,7 +20,7 @@ const articles: Article[] = [
 	},
 ];
 
-const archivedArticles = [
+const archivedWritings = [
 	{
 		slug: 'on-life-as-an-extension-of-experience',
 		title: 'On Life as an Extension of Experience',
@@ -33,6 +33,6 @@ const archivedArticles = [
 	},
 ];
 
-export { articles, archivedArticles };
+export { writings, archivedWritings };
 
-export type { Article };
+export type { Writing };

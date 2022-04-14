@@ -24,7 +24,7 @@ const Suggestion = ({
 
 	const getResultURL = (result: any) => {
 		if (result.slug) {
-			return getHighlightURL('articles', result.slug);
+			return getHighlightURL('writings', result.slug);
 		}
 
 		if (result.type === 'Project') {

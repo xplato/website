@@ -35,7 +35,7 @@ const pins: Pin[] = [
 				<p>Whereas a level 0 would indicate it's practically solved in its default state, just a minor change needed.</p>
 				<p>April's first puzzle is an example of a level 2 puzzle. The solution was to throw the string into a hex-to-string converter, and then take only the numbers of that output and throw that into the same hex-to-string converter.</p>
 				<p>Puzzles will generally be rated on their complexity rather than the knowledge required to solve them. For instance, April's first puzzle, while simple for those of us who know what hex representation is, might seem like a level 9 to my non-techie brother.</p>
-				<p>Puzzles are also rather low-key. There's no direct view of them like there are articles or pins. Instead, puzzles are found in random places throughout the site, so keep your eye out!</p>
+				<p>Puzzles are also rather low-key. There's no direct view of them like there are writings or pins. Instead, puzzles are found in random places throughout the site, so keep your eye out!</p>
 				<p>Avoid the temptation to use my commit history as a list of the puzzles. The solutions will not be included in the commits (obviously) but the location will be... somewhat apparent.</p>
 				<p>Happy solving :)</p>
 			</>

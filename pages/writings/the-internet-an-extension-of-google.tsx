@@ -1,9 +1,9 @@
-import Article from '../../components/article/Article';
+import Writing from '../../components/writing/Writing';
 import ELi from '../../components/ELi';
 import PageMeta from '../../components/PageMeta';
 
 const A = () => (
-	<Article>
+	<Writing>
 		<PageMeta meta={{
 			title: 'The Internet: An Extension of Google',
 			description: `
@@ -284,7 +284,7 @@ const A = () => (
 				https://joshrenaud.com/pd/josh-renaud-personal-statement.pdf
 			</ELi>
 		</p>
-	</Article>
+	</Writing>
 );
 
 export default A;

@@ -9,7 +9,7 @@ interface TKeys {
 const KEYS: TKeys = {
 	'.': 'home',
 	'c': 'code',
-	'a': 'articles',
+	'a': 'writings',
 	'w': 'whoami',
 	'p': 'pins',
 	'h': 'help',
@@ -31,7 +31,7 @@ const Shortcuts = () => {
 				push('/code');
 				break;
 			case 'a':
-				push('/articles');
+				push('/writings');
 				break;
 			case 'w':
 				push('/whoami');

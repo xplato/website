@@ -2,12 +2,11 @@ import PageMeta from '../components/PageMeta';
 import Layout from '../components/layout/Layout';
 import Li from '../components/Li';
 
-import { articles } from '../data/articles';
+import { writings } from '../data/writings';
 import { getRandomString } from '../logic/rand';
 import { getPrettyDate } from '../logic/date';
 
 const titles = [
-	'articles',
 	'writings',
 	'blog',
 	'sea log',
@@ -20,7 +19,7 @@ const Articles = () => {
 		<>
 			<PageMeta
 				meta={{
-					title: 'articles',
+					title: 'writings',
 					description: 'I write occasionally.',
 				}}
 			/>
@@ -30,10 +29,10 @@ const Articles = () => {
 			<p>I write occasionally.</p>
 
 			<ul>
-				{articles.map((article) => (
+				{writings.map((article) => (
 					<li key={article.slug}>
 						<Li
-							href={`/articles/${article.slug}`}
+							href={`/writings/${article.slug}`}
 							className='multiline'
 						>
 							{article.title} ({getPrettyDate(article.date)})
@@ -41,7 +40,7 @@ const Articles = () => {
 					</li>
 				))}
 				<li>
-					<Li href='/articles/archive/' className='multiline'>
+					<Li href='/writings/archive/' className='multiline'>
 						...more
 					</Li>
 				</li>

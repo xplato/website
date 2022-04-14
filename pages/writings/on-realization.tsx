@@ -1,8 +1,8 @@
-import Article from '../../components/article/Article';
+import Writing from '../../components/writing/Writing';
 import PageMeta from '../../components/PageMeta';
 
 const A = () => (
-	<Article>
+	<Writing>
 		<PageMeta meta={{
 				title: 'On Realization',
 				description: 'Lately, I have found myself thinking, perhaps more often than I should, about realization in a general sense.',
@@ -24,7 +24,7 @@ const A = () => (
 		</p>
 		<div className='ath-img'>
 			<img
-				src='/images/articles/2/sherlock.gif'
+				src='/images/writings/2/sherlock.gif'
 				alt='A GIF showing Sherlock (Bennedict Cumberbatch) coming to a sudden realization.'
 			/>
 		</div>
@@ -45,7 +45,7 @@ const A = () => (
 		</p>
 		<div className='ath-img'>
 			<img
-				src='/images/articles/2/realization.png'
+				src='/images/writings/2/realization.png'
 				alt='Two waves. The top one is a single wave with a high amplitude and peak. The bottom on displays many waves with a smaller amplutide, but more frequent peaks.'
 			/>
 		</div>
@@ -150,13 +150,13 @@ const A = () => (
 		<p>Notice “fully.”</p>
 		<h2>The Point</h2>
 		<p>
-			As with most of my informative articles, there’s no inherent “point”
+			As with most of my informative writings, there’s no inherent “point”
 			to this. The only point is to hopefully make you think about your
 			own realizations. Understand them. It may help.
 		</p>
 		<p>Food for thought.</p>
 		<p>Thanks for reading.</p>
-	</Article>
+	</Writing>
 );
 
 export default A;

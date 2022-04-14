@@ -2,7 +2,7 @@ import { useSettings } from '../../providers/SettingsProvider';
 
 import type { ChildrenOnly } from '../../types';
 
-const Article = ({ children }: ChildrenOnly) => {
+const Writing = ({ children }: ChildrenOnly) => {
 	const settings = useSettings();
 
 	const toggleFont = () => {
@@ -17,6 +17,7 @@ const Article = ({ children }: ChildrenOnly) => {
 	};
 
 	return (
+		// Lol, can't change this
 		<article>
 			<div className='mt-2r'>
 				<a onClick={toggleFont}>
@@ -29,4 +30,4 @@ const Article = ({ children }: ChildrenOnly) => {
 	);
 };
 
-export default Article;
+export default Writing;
