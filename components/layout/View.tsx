@@ -15,10 +15,10 @@ const View = ({ children }: ChildrenOnly) => {
 
 	return (
 		<div className='view'>
-			{showSearch && <Search setSearch={setShowSearch} />}
 
 			{children}
 			
+			{showSearch && <Search setSearch={setShowSearch} />}
 			<Shortcuts />
 
 			<Keyboard

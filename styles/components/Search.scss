@@ -135,6 +135,10 @@ $icon-colors: (
 			height: 100vh;
 		}
 	}
+	
+	nav:not(.affix) ~ .i-modal {
+		padding-top: 0 !important;
+	}
 }
 
 .search-tabs {
