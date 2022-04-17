@@ -1,7 +1,6 @@
 import Layout from '../components/layout/Layout';
 import PageMeta from '../components/PageMeta';
 import HObject from '../components/HObject';
-import Li from '../components/Li';
 
 import { writings } from '../data/writings';
 
@@ -35,11 +34,6 @@ const Writings = () => {
 							/>
 						))}
 					</div>
-
-					<p className='mt-2r'>
-						Abandon all hope, ye who enter{' '}
-						<Li href='/writings/archive'>here</Li>
-					</p>
 				</div>
 			</section>
 		</>
