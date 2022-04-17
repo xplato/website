@@ -3,7 +3,7 @@ import PageMeta from '../components/PageMeta';
 import Layout from '../components/layout/Layout';
 import Li from '../components/Li';
 
-const K = ({ children }: any) => <div className="key">{children}</div>
+const K = ({ children }: any) => <div className='key'>{children}</div>;
 
 const Help = () => {
 	return (
@@ -15,11 +15,9 @@ const Help = () => {
 				}}
 			/>
 
-			<Wrapper s='ui-1 dark-ui' c='flex-c'>
+			<Wrapper s='ui-1 dark-ui mod-padding' c='flex-c'>
 				<article className='w-100p mw-40r'>
-					<h1 className='fw-600 mb-1r'>
-						Help {'&'} Info
-					</h1>
+					<h1 className='fw-600 mb-1r'>Help {'&'} Info</h1>
 					<p className='fs-lg'>
 						If you notice any bugs or have any questions about this
 						site, don't hesitate to reach out.
@@ -33,6 +31,11 @@ const Help = () => {
 					<p>
 						Although it may not look like it, this site is packed
 						with keyboard shortcuts that make navigation super fast.
+					</p>
+					<p>
+						If some of these shortcuts don't work, try clicking on a
+						blank area of the screen. Sometimes the focus goes away
+						and disables the event listeners.
 					</p>
 					<p>
 						The primary means of navigation is the search interface.
@@ -62,19 +65,31 @@ const Help = () => {
 						pages.
 					</p>
 					<p>
-						For instance, pressing <K>s</K> and then <K>enter</K> will take
-						you to the home page.
+						For instance, pressing <K>s</K> and then <K>enter</K>{' '}
+						will take you to the home page.
 					</p>
 					<p>Some common key combinations include:</p>
 					<ul>
 						<li>
-							<p><K>s</K><K>c</K><K>enter</K> — Code page</p>
+							<p>
+								<K>s</K>
+								<K>c</K>
+								<K>enter</K> — Code page
+							</p>
 						</li>
 						<li>
-							<p><K>s</K><K>h</K><K>enter</K> — Help page</p>
+							<p>
+								<K>s</K>
+								<K>h</K>
+								<K>enter</K> — Help page
+							</p>
 						</li>
 						<li>
-							<p><K>s</K><K>w</K><K>enter</K> — Whoami page</p>
+							<p>
+								<K>s</K>
+								<K>w</K>
+								<K>enter</K> — Whoami page
+							</p>
 						</li>
 					</ul>
 
@@ -89,32 +104,51 @@ const Help = () => {
 
 					<ul>
 						<li>
-							<p><K>.</K> — Home page</p>
+							<p>
+								<K>.</K> — Home page
+							</p>
 						</li>
 						<li>
-							<p><K>h</K> — Help page</p>
+							<p>
+								<K>h</K> — Help page
+							</p>
 						</li>
 						<li>
-							<p><K>k</K> — Keyboard shortcuts</p>
+							<p>
+								<K>k</K> — Keyboard shortcuts
+							</p>
 						</li>
 						<li>
-							<p><K>a</K> — Writings page</p>
+							<p>
+								<K>a</K> — Writings page
+							</p>
 						</li>
 						<li>
-							<p><K>p</K> — Pins page</p>
+							<p>
+								<K>p</K> — Pins page
+							</p>
 						</li>
 						<li>
-							<p><K>c</K> — Code page</p>
+							<p>
+								<K>c</K> — Code page
+							</p>
 						</li>
 						<li>
-							<p><K>w</K> — Whoami page</p>
+							<p>
+								<K>w</K> — Whoami page
+							</p>
 						</li>
 					</ul>
 
-					<p>There are also some extra keybindings that effect certain areas of the site.</p>
+					<p>
+						There are also some extra keybindings that effect
+						certain areas of the site.
+					</p>
 					<ul>
 						<li>
-							<p><K>t</K> — Toggle theme</p>
+							<p>
+								<K>t</K> — Toggle theme
+							</p>
 						</li>
 					</ul>
 				</article>

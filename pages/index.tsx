@@ -12,7 +12,7 @@ const Home = () => {
 			<PageMeta
 				meta={{
 					title: 'Home',
-					description: '',
+					description: 'This is my website.',
 				}}
 			/>
 

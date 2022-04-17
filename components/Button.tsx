@@ -10,6 +10,8 @@ import ELi from "./ELi";
 interface BaseButton {
 	id?: string;
 	className?: string;
+	name?: string;
+	title?: string;
 	children: React.ReactNode;
 }
 
@@ -40,6 +42,8 @@ const classes = {
 
 const Action = ({
 	id,
+	name,
+	title,
 	className,
 	children,
 	onClick,
@@ -47,6 +51,8 @@ const Action = ({
 	return (
 		<button
 			id={id}
+			name={name}
+			title={title}
 			className={className || classes.Action}
 			onClick={onClick}
 		>{children}</button>
@@ -55,6 +61,8 @@ const Action = ({
 
 const Internal = ({
 	id,
+	name,
+	title,
 	href,
 	className,
 	children,
@@ -68,6 +76,8 @@ const Internal = ({
 	return (
 		<button
 			id={id}
+			name={name}
+			title={title}
 			className={className || classes.Internal}
 			onClick={onClick}
 		>{children}</button>

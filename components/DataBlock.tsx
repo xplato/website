@@ -2,6 +2,7 @@ import { useState } from 'react';
 import classNames from 'classnames';
 
 import HObject from './HObject';
+import { isMobile } from 'react-device-detect';
 
 interface Props {
 	type: 'project' | 'writing' | 'pin';
@@ -37,8 +38,12 @@ const DataBlock = ({ type, data, block, isTop, showMore, setMode }: Props) => {
 					href='#t'
 					className='j-link underline flex align-c justify-c flex-row'
 					onClick={() => {
-						if (setMode) {
+						if (setMode && !isMobile) {
 							setMode(showMore ? 'mix' : type);
+						}
+
+						if (isMobile) {
+							window.location = type === 'project' ? `/code` : `/${type}s`
 						}
 					}}
 				>
