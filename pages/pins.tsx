@@ -14,11 +14,11 @@ const PinsPage = () => {
 			<PageMeta
 				meta={{
 					title: 'pins',
-					description: "Updates, tweets, pins.",
+					description: 'Updates, tweets, pins.',
 				}}
 			/>
 
-			<Wrapper s='ui-1 dark-ui' c='flex-c'>
+			<Wrapper s='ui-1 dark-ui mod-padding' c='flex-c'>
 				<div className='mw-35r flex-c'>
 					<Pins>
 						{pins.map((pin) => (
@@ -26,7 +26,7 @@ const PinsPage = () => {
 								key={pin.date}
 								id={pin.date}
 								obj={{
-									...pin
+									...pin,
 								}}
 								highlight={url.get('h')?.trim() === pin.date}
 							/>

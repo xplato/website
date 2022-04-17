@@ -17,7 +17,7 @@ const Projects = () => {
 				}}
 			/>
 
-			<section className='section ui-1 dark-ui'>
+			<section className='section ui-1 dark-ui mod-padding'>
 				<div className='container'>
 					<div className='mb-1-5r'>
 						<h1 className='mb-0 fw-600'>Projects 🎯</h1>

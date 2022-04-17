@@ -13,7 +13,7 @@ const Whoami = () => {
 				}}
 			/>
 
-			<Wrapper s='ui-1 dark-ui' c='primary-text flex-c'>
+			<Wrapper s='ui-1 dark-ui mod-padding' c='primary-text flex-c'>
 				<article className='w-100p mw-40r'>
 					<h1 className='mb-1r'>About me</h1>
 					<p className='fs-lg mb-0-5r'>

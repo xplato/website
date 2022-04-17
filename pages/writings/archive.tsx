@@ -1,6 +1,5 @@
 import HObject from '../../components/HObject';
 import Layout from '../../components/layout/Layout';
-import Li from '../../components/Li';
 import PageMeta from '../../components/PageMeta';
 import Wrapper from '../../components/Wrapper';
 
@@ -16,7 +15,7 @@ const Archive = () => {
 				}}
 			/>
 
-			<Wrapper s='ui-1'>
+			<Wrapper s='ui-1 mod-padding'>
 				<div className='mb-1-5r'>
 					<h1 className='mb-0 fw-600'>Here lies... 🪦</h1>
 				</div>

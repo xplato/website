@@ -1,9 +1,9 @@
 import Layout from '../components/layout/Layout';
 import PageMeta from '../components/PageMeta';
 import HObject from '../components/HObject';
+import Li from '../components/Li';
 
 import { writings } from '../data/writings';
-import Li from '../components/Li';
 
 const Writings = () => {
 	return (
@@ -15,7 +15,7 @@ const Writings = () => {
 				}}
 			/>
 
-			<section className='section ui-1 dark-ui'>
+			<section className='section ui-1 dark-ui mod-padding'>
 				<div className='container'>
 					<div className='mb-1-5r'>
 						<h1 className='mb-0 fw-600'>Writings 📜</h1>

@@ -17,7 +17,7 @@ const Help = () => {
 
 			<Wrapper s='ui-1 dark-ui' c='flex-c'>
 				<article className='w-100p mw-40r'>
-					<h1 className='fw-600 mb-1r' id='shortcuts'>
+					<h1 className='fw-600 mb-1r'>
 						Help {'&'} Info
 					</h1>
 					<p className='fs-lg'>
@@ -29,7 +29,7 @@ const Help = () => {
 						<Li href='/whoami'>whoami</Li> page.
 					</p>
 
-					<h2>Keyboard Shortcuts</h2>
+					<h2 id='shortcuts'>Keyboard Shortcuts</h2>
 					<p>
 						Although it may not look like it, this site is packed
 						with keyboard shortcuts that make navigation super fast.
