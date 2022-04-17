@@ -12,9 +12,7 @@ import Keyboard from '../Keyboard';
 
 
 const Search = ({ setSearch }: any) => {
-	const [value, setValue] = useState<string>(() => {
-		return localStorage.getItem('query') || '';
-	});
+	const [value, setValue] = useState<string>('');
 
 	const [scope, setScope] = useState('All');
 	const [sortBy, setSortBy] = useState('_order');
@@ -22,15 +20,17 @@ const Search = ({ setSearch }: any) => {
 
 	const previousScope = usePrevious(scope);
 
-	useEffect(() => {
-		localStorage.setItem('query', value);
-	}, [value]);
-
 	const scavenger = useScavenger(
 		value,
 		scope === 'All' ? 'root' : scope,
 		{ sortBy },
 	);
+
+	useEffect(() => {
+		if (scope !== previousScope) {
+			setSelected(0);
+		}
+	}, [scope, selected]);
 
 	const variants = {
 		container: {
