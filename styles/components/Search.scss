@@ -134,8 +134,12 @@ $icon-colors: (
 			border-radius: 0;
 			height: 100vh;
 		}
+
+		& .results-container {
+			max-height: calc(100% - 167px);
+		}
 	}
-	
+
 	nav:not(.affix) ~ .i-modal {
 		padding-top: 0 !important;
 	}

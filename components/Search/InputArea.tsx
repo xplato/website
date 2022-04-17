@@ -1,6 +1,11 @@
-import { Icon } from '@infinium/hydro';
-import { isBrowser } from 'react-device-detect';
 import classNames from 'classnames';
+import { isBrowser, isMobile } from 'react-device-detect';
+import { Icon } from '@infinium/hydro';
+import { XIcon } from '@heroicons/react/solid';
+
+import { useSearchPanel } from '../../providers/SearchPanelProvider';
+
+import Button from '../Button';
 
 import { icons } from '../../data/icons';
 
@@ -38,9 +43,15 @@ const Tab = ({ type, scope, setScope }: any) => {
 };
 
 const InputArea = ({ value, setValue, scope, setScope }: Props) => {
+	const { setShowSearch } = useSearchPanel();
+
 	const shouldDisplayClear = () => {
 		return value.trim() !== '' || scope !== 'All';
 	};
+
+	const close = () => {
+		setShowSearch(false);
+	}
 
 	return (
 		<div className='header w-100p'>
@@ -55,7 +66,7 @@ const InputArea = ({ value, setValue, scope, setScope }: Props) => {
 						onChange={ev => setValue(ev.target.value)}
 						autoFocus={isBrowser}
 					/>
-					<div className='pr-1-5r flex align-s justify-e flex-row'>
+					<div className='pr-1-5r flex align-c justify-s flex-row'>
 						{shouldDisplayClear() && (
 							<a
 								className='caption-link'
@@ -66,6 +77,14 @@ const InputArea = ({ value, setValue, scope, setScope }: Props) => {
 							>
 								clear
 							</a>
+						)}
+
+						{isMobile && (
+							<Button.Action onClick={close} className='hy-button icon-only ml-0-25r'>
+								<i className="j-icon sm">
+									<XIcon />
+								</i>
+							</Button.Action>
 						)}
 					</div>
 				</div>
