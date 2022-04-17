@@ -77,7 +77,7 @@ const Whoami = () => {
 					<p>
 						I use a combination of{' '}
 						<ELi href='https://vscodium.com/'>VSCodium</ELi> and Vim
-						for editing. VSCodium's keykindings truly unlock the
+						for editing. VSCodium's keybindings truly unlock the
 						one-mode way of editing. This is in opposition to, say,
 						Vim, where you have different modes of editing, not just
 						insertion like GUI editors.

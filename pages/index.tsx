@@ -39,21 +39,25 @@ const Home = () => {
 								<Spacer />
 								<Spacer />
 
-								<p>
-									I've recently been working on{' '}
-									<ELi href='https://gofe.app'>Gofë,</ELi>{' '}
-									which is a private front-end for Google. In
-									other words, it uses Google's results while
-									letting you remain anonymous.
-								</p>
-								<p>
-									If you use React, you might be interested in
-									my other search-related project,{' '}
-									<Li href='/code?h=scavenger#scavenger'>
-										Scavenger,
-									</Li>{' '}
-									which powers the search behind this website.
-								</p>
+								<div className='mw-30r'>
+									<p>
+										I've recently been working on{' '}
+										<ELi href='https://gofe.app'>Gofë,</ELi>{' '}
+										which is a private front-end for Google.
+										In other words, it uses Google's results
+										while letting you remain anonymous.
+									</p>
+									<p>
+										If you use React, you might be
+										interested in my other search-related
+										project,{' '}
+										<Li href='/code?h=scavenger#scavenger'>
+											Scavenger,
+										</Li>{' '}
+										which powers the search behind this
+										website.
+									</p>
+								</div>
 							</div>
 
 							<Social />

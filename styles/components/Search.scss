@@ -125,7 +125,17 @@ $icon-colors: (
 	}
 }
 
+@media only screen and (max-width: 420px) {
+	.i-modal {
+		padding: 0;
+		padding-top: 4rem;
 
+		& .inner {
+			border-radius: 0;
+			height: 100vh;
+		}
+	}
+}
 
 .search-tabs {
 	width: 100%;

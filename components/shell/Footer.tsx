@@ -5,8 +5,8 @@ import Button from '../Button';
 const Footer = () => {
 	return (
 		<div className='footer'>
-			<div className='w-100p grid grid-3 landscape-grid-2'>
-				<div className='grid-block'>
+			<div className='w-100p grid grid-3 landscape-grid-2 portrait-grid-1'>
+				<div className='grid-block portrait-flex-c portrait-text-c'>
 					<div className='flex align-c justify-c flex-row'>
 						<p className='caption-text low-weight'>
 							Copyright &copy; 2022
@@ -21,7 +21,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className='grid-block align-e'>
+				<div className='grid-block align-e portrait-flex-c portrait-text-c'>
 					<div className="flex align-c justify-c flex-row">
 						<p className="mb-0">Made with</p>
 						<i className='j-icon mx-0-25r'>

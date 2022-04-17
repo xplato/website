@@ -49,7 +49,7 @@ const DataBlock = ({ type, data, block, isTop, showMore, setMode }: Props) => {
 			<div
 				className={classNames(
 					'w-100p grid gap-1r',
-					type === 'project' ? 'grid-2' : 'grid-1'
+					type === 'project' ? 'grid-2 portrait-grid-1' : 'grid-1'
 				)}
 			>
 				{data.slice(0, slice).map((e) => {

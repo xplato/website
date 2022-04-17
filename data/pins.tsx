@@ -26,7 +26,7 @@ const pins: Pin[] = [
 	// 	tags: [''],
 	// },
 	{
-		date: '2022-04-14',
+		date: '2022-04-16',
 		time: '13:40',
 		title: 'On the redesign',
 		content: (

@@ -89,7 +89,7 @@ const Search = ({ setSearch }: any) => {
 
 				<div className="w-100p border-top-ui-2 px-1-5r py-1r flex-sb">
 					<p className='fs-sm text-dynamic-07 mb-0'>{scavenger.results.length} result{scavenger.results.length === 1 ? '' : 's'}</p>
-					<div className="flex align-c justify-c flex-row arrow-block-container">
+					<div className="flex align-c justify-c flex-row arrow-block-container portrait-hide">
 						<div className="arrow-block up"><i className='j-icon xs'><ArrowUpIcon /></i></div>
 						<div className="arrow-block down"><i className='j-icon xs'><ArrowUpIcon /></i></div>
 						<span>Select result</span>
