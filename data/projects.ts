@@ -1,6 +1,7 @@
 interface Project {
 	id: string;
 	title: string;
+	date: string;
 	repository: string;
 	description?: string;
 	liveURL?: string;
@@ -12,6 +13,7 @@ const projects: Project[] = [
 	{
 		id: 'scavenger',
 		title: 'Scavenger',
+		date: '2022-04-04',
 		description: '⚡️ A lightning-fast search library for React. It powers the search feature of this website.',
 		repository: 'https://codeberg.org/athena/Scavenger',
 		liveURL: 'https://codesandbox.io/s/scavenger-o44bxn',
@@ -21,7 +23,8 @@ const projects: Project[] = [
 	{
 		id: 'gofe',
 		title: 'Gofë',
-		description: 'A private and minimal front-end for Google Search.',
+		date: '2022-04-04',
+		description: '🔍 A private and minimal front-end for Google Search.',
 		repository: 'https://codeberg.org/ar324/gofe',
 		liveURL: 'https://gofe.app',
 		tags: ['search', 'private', 'google', 'gofe', 'javascript', 'go'],
@@ -29,6 +32,7 @@ const projects: Project[] = [
 	{
 		id: 'use-undoable',
 		title: 'useUndoable',
+		date: '2022-04-04',
 		description:
 			'React hook for undo/redo functionality (with batteries included)',
 		repository: 'https://github.com/Infinium8/useUndoable',
@@ -38,6 +42,7 @@ const projects: Project[] = [
 	{
 		id: 'jupiterui',
 		title: 'JupiterUI',
+		date: '2022-04-04',
 		description: 'The elegant and reliable UI kit for web artisans.',
 		repository: 'https://github.com/Infinium8/JupiterUI',
 		liveURL: 'https://jupiter-ui.vercel.app/',
@@ -46,6 +51,7 @@ const projects: Project[] = [
 	{
 		id: 'hydro',
 		title: 'Hydro',
+		date: '2022-04-04',
 		description:
 			'A fluid set of general React components for modern web apps.',
 		repository: 'https://github.com/Infinium8/Hydro',
@@ -55,6 +61,7 @@ const projects: Project[] = [
 	{
 		id: 'supervisor',
 		title: 'Supervisor',
+		date: '2022-04-04',
 		description:
 			'Effortlessly run scripts or commands when certain files change.',
 		repository: 'https://github.com/Infinium8/Supervisor',
@@ -63,6 +70,7 @@ const projects: Project[] = [
 	{
 		id: 'hyper',
 		title: 'Hyper',
+		date: '2022-04-04',
 		description: 'A tiny, hook-based request library for React',
 		repository: 'https://github.com/Infinium8/Hyper',
 		tags: ['request', 'http', 'javascript', 'typescript'],
@@ -70,6 +78,7 @@ const projects: Project[] = [
 	{
 		id: 'tree',
 		title: 'Tree',
+		date: '2022-04-04',
 		description:
 			'Easily manage, manipulate, and traverse a JavaScript Tree',
 		repository: 'https://github.com/Infinium8/Tree',
@@ -78,6 +87,7 @@ const projects: Project[] = [
 	{
 		id: 'use-settings',
 		title: 'useSettings',
+		date: '2022-04-04',
 		description:
 			'Easily manage application settings in localStorage with a React hook',
 		repository: 'https://github.com/Infinium8/useSettings',

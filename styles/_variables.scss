@@ -1,0 +1,78 @@
+$colors: (
+	'blue',
+	'gray',
+	'magenta',
+	'cyan',
+	'purple',
+	'teal',
+	'red',
+	'orange',
+	'green'
+);
+
+$article-colors: (
+	'blue-60',
+	'green-40',
+	'orange-60',
+	'cyan-40',
+	'teal-40',
+	'magenta-50',
+	'teal-40',
+	'cyan-60'
+);
+
+$shadow: 0 1px #0000000d, 0 4px 10px rgba(0, 0, 0, 0.1);
+
+// Border radius
+$radius-lg: 1rem;
+$radius: 0.5rem;
+$radius-sm: 0.25rem;
+
+// Special radius
+$radius-md: 0.4rem;
+$radius-x-md: 0.375rem;
+
+// Box-shadow
+// $menu-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+$menu-shadow: 0 1px #0000000d, 0 4px 10px rgba(0, 0, 0, 0.1);
+$widget-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+$button-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+
+:root {
+	--productive-standard: cubic-bezier(0.2, 0, 0.38, 0.9);
+	--expressive-standard: cubic-bezier(0.4, 0.14, 0.3, 1);
+
+	--productive-entrance: cubic-bezier(0, 0, 0.38, 0.9);
+	--expressive-entrance: cubic-bezier(0, 0, 0.3, 1);
+
+	--productive-exit: cubic-bezier(0.2, 0, 1, 0.9);
+	--expressive-exit: cubic-bezier(0.4, 0.14, 1, 1);
+
+	--duration-fast-01: 70ms;
+	--duration-fast-02: 110ms;
+
+	--duration-moderate-01: 150ms;
+	--duration-moderate-02: 240ms;
+
+	--duration-slow-01: 400ms;
+	--duration-slow-02: 700ms;
+
+	// Shortened
+	--p-s: var(--productive-standard);
+	--e-s: var(--expressive-standard);
+
+	--p-e: var(--productive-entrance);
+	--e-e: var(--expressive-entrance);
+
+	--p-exit: var(--productive-exit);
+	--e-exit: var(--expressive-exit);
+
+	--d-f-1: var(--duration-fast-01);
+	--d-f-2: var(--duration-fast-02);
+
+	--d-m-1: var(--duration-moderate-01);
+	--d-m-2: var(--duration-moderate-02);
+
+	--d-s-1: var(--duration-slow-01);
+	--d-s-2: var(--duration-slow-02);
+}

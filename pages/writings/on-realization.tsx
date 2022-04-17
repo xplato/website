@@ -1,5 +1,6 @@
 import Writing from '../../components/writing/Writing';
 import PageMeta from '../../components/PageMeta';
+import Layout from '../../components/layout/Layout';
 
 const A = () => (
 	<Writing>
@@ -158,5 +159,7 @@ const A = () => (
 		<p>Thanks for reading.</p>
 	</Writing>
 );
+
+A.layout = Layout;
 
 export default A;

@@ -1,9 +1,11 @@
 import moment from "moment";
 
+const FORMAT = 'YYYY-MM-DD hh:mm';
+
 const getPrettyDate = (date: string) => {
 	// Format date and time separately
-	const fd = moment(date).format('D MMMM, Y');
-	const ft = moment(date).format('h:mm A');
+	const fd = moment(date, FORMAT).format('D MMMM, Y');
+	const ft = moment(date, FORMAT).format('h:mm A');
 	const today = moment().format('D MMMM, Y');
 
 	// If the date is today
@@ -11,7 +13,7 @@ const getPrettyDate = (date: string) => {
 		return date.length > 10 ? ft : `Today`;
 	}
 
-	return moment(date).fromNow();
+	return moment(date, FORMAT).fromNow();
 }
 
 export {

@@ -1,13 +1,10 @@
 import PageMeta from '../components/PageMeta';
 import Layout from '../components/layout/Layout';
 import Pins from '../components/Pins';
-import Pin from '../components/Pin';
-
-import { getRandomString } from '../logic/rand';
+import Wrapper from '../components/Wrapper';
+import HObject from '../components/HObject';
 
 import { pins } from '../data/pins';
-
-const titles = ['pins', 'thougts', 'updates', 'tweets?'];
 
 const PinsPage = () => {
 	const url = new URLSearchParams(window.location.search);
@@ -16,26 +13,29 @@ const PinsPage = () => {
 		<>
 			<PageMeta
 				meta={{
-					title: 'home',
-					description: "~athena's personal website.",
+					title: 'pins',
+					description: "Updates, tweets, pins.",
 				}}
 			/>
 
-			<h1 id='fancyboi' className='title index-title'>
-				{getRandomString(titles)}
-			</h1>
+			<Wrapper s='ui-1 dark-ui' c='flex-c'>
+				<div className='mw-35r flex-c'>
+					<Pins>
+						{pins.map((pin) => (
+							<HObject
+								key={pin.date}
+								id={pin.date}
+								obj={{
+									...pin
+								}}
+								highlight={url.get('h')?.trim() === pin.date}
+							/>
+						))}
+					</Pins>
 
-			<div className='mw-35r'>
-				<Pins>
-					{pins.map((pin) => (
-						<Pin
-							key={pin.date}
-							{...pin}
-							highlight={url.get('h')?.trim() === pin.date}
-						/>
-					))}
-				</Pins>
-			</div>
+					<p className='text-dynamic-07 mt-2r'>{pins.length} pins</p>
+				</div>
+			</Wrapper>
 		</>
 	);
 };

@@ -1,73 +1,124 @@
+import Wrapper from '../components/Wrapper';
 import PageMeta from '../components/PageMeta';
 import Layout from '../components/layout/Layout';
 import Li from '../components/Li';
 
-import { KEYS } from '../components/shell/Shortcuts';
-
-interface TShortcutBlock {
-	type: string;
-	keys: {
-		[key: string]: string;
-	};
-}
-
-const SHORTCUTS: TShortcutBlock[] = [
-	{
-		type: 'Navigational',
-		keys: KEYS,
-	},
-	{
-		type: 'Action',
-		keys: {
-			'/ or s': 'open search',
-			'esc': 'cancel',
-		},
-	}
-];
-
-const ShortcutBlock = ({ keys, type }: TShortcutBlock) => {
-	return (
-		<div className="ui-1 radius-8 d-inline-flex align-s justify-s flex-column">
-			<div className="w-100p shortcut-block-header">
-				<h4>{type}</h4>
-			</div>
-			<div className="p-1r">
-				{Object.keys(keys).map((key, index) => (
-					<p className={index === Object.keys(keys).length - 1 ? 'mb-0' : ''}><strong>{key}</strong> {'—>'} <strong>{keys[key]}</strong></p>
-				))}
-			</div>
-		</div>
-	);
-}
+const K = ({ children }: any) => <div className="key">{children}</div>
 
 const Help = () => {
-	const url = new URLSearchParams(window.location.search);
-
 	return (
 		<>
 			<PageMeta
 				meta={{
 					title: 'help',
-					description: "Help, keyboard shortcuts, and more.",
+					description: 'Help, keyboard shortcuts, and more.',
 				}}
 			/>
 
-			<h1 id='fancyboi' className='title index-title'>Help {'&'} Info</h1>
-			<p>If you notice any bugs or have any questions about this site, don't hesitate to reach out. You can find contact info on the <Li href='/whoami'>whoami</Li> page.</p>
+			<Wrapper s='ui-1 dark-ui top' c='flex-c'>
+				<article className='w-100p mw-40r'>
+					<h1 className='fw-600 mb-1r' id='shortcuts'>
+						Help {'&'} Info
+					</h1>
+					<p className='fs-lg'>
+						If you notice any bugs or have any questions about this
+						site, don't hesitate to reach out.
+					</p>
+					<p>
+						You can find contact info on the{' '}
+						<Li href='/whoami'>whoami</Li> page.
+					</p>
 
-			<h2>Keyboard Shortcuts</h2>
-			<p>Although it may not look like it, this site is packed with keyboard shortcuts that make navigation super fast.</p>
-			<p>The following keyboard shortcuts will navigate to certain pages.</p>
+					<h2>Keyboard Shortcuts</h2>
+					<p>
+						Although it may not look like it, this site is packed
+						with keyboard shortcuts that make navigation super fast.
+					</p>
+					<p>
+						The primary means of navigation is the search interface.
+					</p>
+					<p>
+						You can open the search interface in 3 ways: pressing
+						"/", pressing "s", or using the button in the navigation
+						bar.
+					</p>
+					<p>
+						Within the search interface, you can press Escape to
+						close it, or click on the outside area. You can use the
+						up and down arrow keys to pick a result. Pressing Enter
+						on the selected result will navigate to it.
+					</p>
+					<p>
+						You can "filter" or "change the scope" of the search by
+						pressing the left and right arrow keys or by clicking
+						the visual tabs beneath the input box.
+					</p>
 
-			<div id="shortcuts" className={url.get('h')?.trim() === 'shortcuts' ? 'highlight' : ''}>
-				<div className="w-100p grid grid-3 landscape-grid-1">
-					{SHORTCUTS.map(block => (
-						<ShortcutBlock key={block.type} {...block} />
-					))}
-				</div>
-			</div>
+					<div className='h-1 my-2r ui-3'></div>
 
-			<p></p>
+					<p>
+						Due to how the search bar works, certain key
+						combinations made in order will take you to certain
+						pages.
+					</p>
+					<p>
+						For instance, pressing <K>s</K> and then <K>enter</K> will take
+						you to the home page.
+					</p>
+					<p>Some common key combinations include:</p>
+					<ul>
+						<li>
+							<p><K>s</K><K>c</K><K>enter</K> — Code page</p>
+						</li>
+						<li>
+							<p><K>s</K><K>h</K><K>enter</K> — Help page</p>
+						</li>
+						<li>
+							<p><K>s</K><K>w</K><K>enter</K> — Whoami page</p>
+						</li>
+					</ul>
+
+					<p>...and so on.</p>
+
+					<div className='h-1 my-2r ui-3'></div>
+
+					<p>
+						As an added convenience, certain keys map to certain
+						pages by default. Those are:
+					</p>
+
+					<ul>
+						<li>
+							<p><K>.</K> — Home page</p>
+						</li>
+						<li>
+							<p><K>h</K> — Help page</p>
+						</li>
+						<li>
+							<p><K>k</K> — Keyboard shortcuts</p>
+						</li>
+						<li>
+							<p><K>a</K> — Writings page</p>
+						</li>
+						<li>
+							<p><K>p</K> — Pins page</p>
+						</li>
+						<li>
+							<p><K>c</K> — Code page</p>
+						</li>
+						<li>
+							<p><K>w</K> — Whoami page</p>
+						</li>
+					</ul>
+
+					<p>There are also some extra keybindings that effect certain areas of the site.</p>
+					<ul>
+						<li>
+							<p><K>t</K> — Toggle theme</p>
+						</li>
+					</ul>
+				</article>
+			</Wrapper>
 		</>
 	);
 };

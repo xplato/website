@@ -1,4 +1,4 @@
-import { defaultSettings } from './settings';
+import { defaultSettings } from '../../data/settings';
 
 const _isEmpty = (v: any) => {
 	return Object.keys(v).length === 0;

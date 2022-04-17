@@ -37,6 +37,11 @@ const pages: Page[] = [
 		tags: [''],
 	},
 	{
+		href: '/privacy',
+		title: 'privacy',
+		tags: [''],
+	},
+	{
 		href: '/samara',
 		title: 'samara',
 		tags: [''],
@@ -47,6 +52,7 @@ const helpPages: Page[] = [
 	{
 		id: 'shortcuts',
 		title: 'Keyboard shortcuts',
+		href: '/help?h=shortcuts#shortcuts',
 		tags: [''],
 	},
 ];

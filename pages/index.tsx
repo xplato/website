@@ -1,89 +1,76 @@
-import ELi from '../components/ELi';
+import Layout from '../components/layout/Layout';
 import Li from '../components/Li';
+import Social from '../components/Social';
+import HomePanel from '../components/HomePanel';
 import PageMeta from '../components/PageMeta';
 import Spacer from '../components/Spacer';
-import Layout from '../components/layout/Layout';
-import Pins from '../components/Pins';
-import Pin from '../components/Pin';
-
-import { getRandomString } from '../logic/rand';
-
-import config from '../data/config';
-import global from '../data/global';
-import { pins } from '../data/pins';
-import { quotes } from '../data/random';
-
-const titles = ['home', 'index', '127.0.0.1', 'mod main', 'hello', 'welcome'];
+import ELi from '../components/ELi';
 
 const Home = () => {
-	const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-
 	return (
 		<>
 			<PageMeta
 				meta={{
-					title: 'home',
-					description: "~athena's personal website.",
+					title: 'Home',
+					description: '',
 				}}
 			/>
 
-			<h1 id='fancyboi' className='title index-title'>
-				{getRandomString(titles)}
-			</h1>
-			<p>
-				<Li href='/whoami'>whoami?</Li>
-			</p>
-			<p>Find me @:</p>
-			<ul>
-				{global.social.map((social) => {
-					let inner = `${social.username} on ${social.title}`;
-				
-					if (social.title === 'Mastodon') {
-						inner = 'Follow me on Mastodon';
-					}
+			<section className='full-view flex-c index-page'>
+				<div className='w-100p h-100p grid grid-2 landscape-grid-1 gap-0'>
+					<div className='grid-block relative justify-s'>
+						<div className='h-screen landscape-h-auto flex justify-sb p-4r pt-6r landscape-p-2r landscape-pt-8r sticky top-0'>
+							<div className='flex landscape-mb-5r large-text'>
+								<h1>Hello 👋</h1>
+								<div className='mw-30r'>
+									<p className='mb-0-5r'>
+										Hi, I'm Tristan. I'm a software engineer
+										specializing in websites. I primarily
+										work on open-source software.
+									</p>
+								</div>
+								<Li
+									href='/whoami'
+									className='j-link underline lh-1-2'
+								>
+									Learn more
+								</Li>
 
-					return (
-						<li key={social.title}>
-							{social.href ? (
-								<ELi href={social.href} rel={social.title === 'Mastodon' ? 'me' : ''}>{inner}</ELi>
-							) : (
-								<span>{inner}</span>
-							)}
-						</li>
-					);
-				})}
-			</ul>
+								<Spacer />
+								<Spacer />
 
-			<Spacer />
+								<p>
+									I've recently been working on{' '}
+									<ELi href='https://gofe.app'>Gofë,</ELi>{' '}
+									which is a private front-end for Google. In
+									other words, it uses Google's results while
+									letting you remain anonymous.
+								</p>
+								<p>
+									If you use React, you might be interested in
+									my other search-related project,{' '}
+									<Li href='/code?h=scavenger#scavenger'>
+										Scavenger,
+									</Li>{' '}
+									which powers the search behind this website.
+								</p>
+							</div>
 
-			<div className='mw-35r'>
-				<h3>Latest Pins</h3>
-				<Pins>
-					{pins.map((pin, i) => {
-						if (i + 1 > config.homePinCount) {
-							return <></>;
-						}
-
-						return (
-							<Pin key={pin.date} {...pin} highlight={false} />
-						);
-					})}
-				</Pins>
-			</div>
-
-			{pins.length > config.homePinCount && (
-				<Li href='/pins'>View all pins</Li>
-			)}
-
-			<Spacer />
-			<Spacer />
-
-			<p>Random thought:</p>
-			<p>{randomQuote}</p>
+							<Social />
+						</div>
+					</div>
+					<div
+						id='t'
+						className='grid-block justify-s pt-4r ui-1 landscape-pt-2r w-100p border-left-ui-2'
+					>
+						<HomePanel />
+					</div>
+				</div>
+			</section>
 		</>
 	);
 };
 
-Home.layout = Layout;
+Home.layout = ({ children }: any) => <Layout hideFooter>{children}</Layout>;
 
 export default Home;

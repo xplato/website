@@ -1,7 +1,17 @@
-import type { ChildrenOnly } from '../../types';
+import Footer from '../shell/Footer';
 
-const Layout = ({ children }: ChildrenOnly) => {
-	return <div className='layout'>{children}</div>;
+interface Props {
+	hideFooter: boolean;
+	children: React.ReactNode;
+}
+
+const Layout = ({ hideFooter, children }: Props) => {
+	return (
+		<>
+			<div className='layout'>{children}</div>
+			{!hideFooter && <Footer />}
+		</>
+	);
 };
 
 export default Layout;

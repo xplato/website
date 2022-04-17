@@ -2,6 +2,7 @@ import ArchiveHeader from '../../../components/writing/ArchiveHeader';
 import Writing from '../../../components/writing/Writing';
 import ELi from '../../../components/ELi';
 import PageMeta from '../../../components/PageMeta';
+import Layout from '../../../components/layout/Layout';
 
 const A = () => (
 	<Writing>
@@ -98,5 +99,7 @@ const A = () => (
 		<p>[^2]: <ELi href="https://en.wikipedia.org/wiki/GitHub">https://en.wikipedia.org/wiki/GitHub</ELi></p>
 	</Writing>
 );
+
+A.layout = Layout;
 
 export default A;

@@ -1,54 +1,46 @@
-import PageMeta from '../components/PageMeta';
 import Layout from '../components/layout/Layout';
-import Li from '../components/Li';
+import PageMeta from '../components/PageMeta';
+import HObject from '../components/HObject';
 
 import { writings } from '../data/writings';
-import { getRandomString } from '../logic/rand';
-import { getPrettyDate } from '../logic/date';
 
-const titles = [
-	'writings',
-	'blog',
-	'sea log',
-	'What, you egg?',
-	'[He Stabs Him]',
-];
 
-const Articles = () => {
+const Writings = () => {
 	return (
 		<>
 			<PageMeta
 				meta={{
-					title: 'writings',
-					description: 'I write occasionally.',
+					title: 'code',
+					description: 'My projects',
 				}}
 			/>
-			<h1 id='fancyboi' className='title'>
-				{getRandomString(titles)}
-			</h1>
-			<p>I write occasionally.</p>
 
-			<ul>
-				{writings.map((article) => (
-					<li key={article.slug}>
-						<Li
-							href={`/writings/${article.slug}`}
-							className='multiline'
-						>
-							{article.title} ({getPrettyDate(article.date)})
-						</Li>
-					</li>
-				))}
-				<li>
-					<Li href='/writings/archive/' className='multiline'>
-						...more
-					</Li>
-				</li>
-			</ul>
+			<section className='section ui-1 dark-ui top'>
+				<div className='container'>
+					<div className='mb-1-5r'>
+						<h1 className='mb-0 fw-600'>Writings 📜</h1>
+					</div>
+
+					<div className="w-100p grid grid-3 tablet-grid-2 landscape-grid-1">
+						{writings.map(e => (
+							<HObject
+								id={e.slug}
+								doesLink
+								highlight={false}
+								obj={{
+									...e,
+									href: `/writings/${e.slug}`,
+									content: e.excerpt,
+								}}
+							/>
+						))}
+					</div>
+				</div>
+			</section>
 		</>
 	);
 };
 
-Articles.layout = Layout;
+Writings.layout = Layout;
 
-export default Articles;
+export default Writings;

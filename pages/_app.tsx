@@ -2,6 +2,7 @@
 
 import { ScavengerProvider } from '@infinium/scavenger';
 import { Notifications } from '@infinium/hydro';
+import { ThemeProvider } from 'next-themes';
 import dynamic from 'next/dynamic';
 
 import type { AppProps } from 'next/app';
@@ -9,6 +10,7 @@ import type { AppProps } from 'next/app';
 // COMPONENTS
 
 import SettingsProvider from '../providers/SettingsProvider';
+import SearchPanelProvider from '../providers/SearchPanelProvider';
 import View from '../components/layout/View';
 
 // DATA
@@ -23,11 +25,11 @@ import { pins } from '../data/pins';
 
 import '../styles/jupiterui.css';
 import '../styles/global.scss';
-import '@infinium/hydro/dist/style.css';
+import '../styles/hydro.css';
 
 /// FONTS
 import '../assets/fonts/inter/inter.css';
-import '../assets/fonts/courier/courier.css';
+
 
 const App = ({ Component, pageProps }: AppProps) => {
 	// @ts-ignore
@@ -36,23 +38,56 @@ const App = ({ Component, pageProps }: AppProps) => {
 	return (
 		<ScavengerProvider
 			initialResources={[
-				...writings.map((e) => ({ ...e, type: 'Writing' })),
-				...pages.map((e) => ({ ...e, type: 'Page' })),
-				...helpPages.map((e) => ({ ...e, type: 'Help' })),
-				...projects.map((e) => ({ ...e, type: 'Project' })),
-				...pins.map((e) => ({ ...e, type: 'Pin' })),
+				...pages.map((e) => ({
+					...e,
+					type: 'Page',
+					_order: `A ${e.title}`,
+				})),
+				...helpPages.map((e) => ({
+					...e,
+					type: 'Help',
+					_order: `B ${e.title}`,
+				})),
+				...pins.map((e) => ({
+					...e,
+					type: 'Pin',
+					href: `/pins?h=${e.date}#${e.date}`,
+					_order: `C ${e.title}`,
+				})),
+				...writings.map((e) => ({
+					...e,
+					type: 'Writing',
+					href: `/writings/${e.slug}`,
+					_order: `D ${e.title}`,
+				})),
+				...projects.map((e) => ({
+					...e,
+					type: 'Project',
+					_order: `E ${e.title}`,
+				})),
 			]}
 			suggestions={[
-				...pages.map((e) => ({ ...e, type: 'Page', caption: '' })).slice(0, 5),
+				...pages
+					.map((e) => ({
+						...e,
+						type: 'Page',
+						caption: '',
+						_order: 'A',
+					}))
+					.slice(0, 5),
 				{
 					...writings[0],
-					type: 'Article',
-					caption: 'Latest Article',
+					type: 'Writing',
+					caption: 'Latest Writing',
+					href: `/writings/${writings[0].slug}`,
+					_order: 'B',
 				},
 				{
 					...pins[0],
 					type: 'Pin',
 					caption: 'Latest Pin',
+					href: `/pins?h=${pins[0].date}#${pins[0].date}`,
+					_order: 'C',
 				},
 			]}
 			schema={Schema}
@@ -60,11 +95,15 @@ const App = ({ Component, pageProps }: AppProps) => {
 			<Notifications />
 
 			<SettingsProvider>
-				<View>
-					<RootLayout>
-						<Component {...pageProps} />
-					</RootLayout>
-				</View>
+				<ThemeProvider attribute='class'>
+					<SearchPanelProvider>
+						<View>
+							<RootLayout>
+								<Component {...pageProps} />
+							</RootLayout>
+						</View>
+					</SearchPanelProvider>
+				</ThemeProvider>
 			</SettingsProvider>
 		</ScavengerProvider>
 	);

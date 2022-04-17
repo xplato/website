@@ -9,7 +9,7 @@ import React, {
 import { usePrevious } from '../../hooks/usePrevious';
 
 import { getSavedSettings, saveSettings } from './methods';
-import { defaultSettings, settingsSchema } from './settings';
+import { defaultSettings, settingsSchema } from '../../data/settings';
 
 import type { ChildrenOnly } from '../../types';
 
@@ -61,6 +61,7 @@ const SettingsProvider = ({ children }: ChildrenOnly) => {
 
 			// If the saved value of this key is not in the specified
 			// values, set it to the default.
+			// @ts-ignore
 			if (!allowedValues.includes(currentValue)) {
 				set(key, defaultSettings[key]);
 			}

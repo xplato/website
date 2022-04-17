@@ -1,6 +1,7 @@
 import Writing from '../../components/writing/Writing';
 import ELi from '../../components/ELi';
 import PageMeta from '../../components/PageMeta';
+import Layout from '../../components/layout/Layout';
 
 const A = () => (
 	<Writing>
@@ -286,5 +287,7 @@ const A = () => (
 		</p>
 	</Writing>
 );
+
+A.layout = Layout;
 
 export default A;

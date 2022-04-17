@@ -1,11 +1,14 @@
-@use './color';
-@use './style';
 @use './root';
+@use './layout';
+@use './typography';
 
-@use './components/Article';
+// Components
 @use './components/Button';
+@use './components/Input';
+@use './components/Footer';
+@use './components/HObject';
 @use './components/Navigation';
-@use './components/Pin';
-@use './components/Projects';
+@use './components/ProjectCard';
+@use './components/Search';
 @use './components/Tag';
-@use './components/View';
+@use './components/Writing';

@@ -1,0 +1,35 @@
+.h-object {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 1.5rem;
+	background-color: var(--ui);
+	border-radius: 0.5rem;
+	position: relative;
+	box-shadow: var(--shadow-xs);
+	color: var(--text-color);
+	transition: var(--d-m-2) var(--e-s);
+
+	& h4 {
+		line-height: 1;
+		margin-bottom: 0.5rem;
+	}
+
+	& p {
+		margin-bottom: 0.5rem;
+	}
+
+	& p:last-child {
+		margin-bottom: 0;
+	}
+
+	&.does-link:hover {
+		transform: translateY(-3px);
+	}
+
+	html.dark & {
+		background-color: var(--ui-1);
+	}
+}

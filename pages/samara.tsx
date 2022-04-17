@@ -1,6 +1,7 @@
 import ELi from '../components/ELi';
 import Layout from '../components/layout/Layout';
 import PageMeta from '../components/PageMeta';
+import Wrapper from '../components/Wrapper';
 
 const Samara = () => {
 	return (
@@ -11,17 +12,33 @@ const Samara = () => {
 					description: 'My projects',
 				}}
 			/>
-			
-			<div className="w-100p flex-c">
-				<div className="w-100p">
-					<p>Difficulty: 5</p>
-					<p>Searching with Google is discouraged.... but you're welcome to utilize <ELi href='https://gofe.app/'>Gofë!</ELi></p>
-					<p>~ **** * ******* **~* *~** *~ ~~* ******* ** *** ~~~*** ******* *~ ******* ~** ** *** ~ *~* *~ ~*~* ~ ** ~~~ ~*</p>
-					<p>~ **** * ******* **~* *~** *~ ~~* ******* ** *** ******* *~ ******* ~** ** *** ~ *~* *~ ~*~* ~ ** ~~~ ~*</p>
-					<p>~*** **~ ~ ******* *~~ **** ** ~*~* **** ******* ** *** ******* ** ~ **~~**</p>
-				</div>
-			</div>
 
+			<Wrapper s='top' c='flex-c'>
+				<article className='w-100p flex-c'>
+					<div className='w-100p flex-c text-c'>
+						<p>Difficulty: 5</p>
+						<p>
+							Searching with Google is discouraged.... but you're
+							welcome to utilize{' '}
+							<ELi href='https://gofe.app/'>Gofë!</ELi>
+						</p>
+						<p>
+							~ **** * ******* **~* *~** *~ ~~* ******* ** ***
+							~~~*** ******* *~ ******* ~** ** *** ~ *~* *~ ~*~* ~
+							** ~~~ ~*
+						</p>
+						<p>
+							~ **** * ******* **~* *~** *~ ~~* ******* ** ***
+							******* *~ ******* ~** ** *** ~ *~* *~ ~*~* ~ ** ~~~
+							~*
+						</p>
+						<p>
+							~*** **~ ~ ******* *~~ **** ** ~*~* **** ******* **
+							*** ******* ** ~ **~~**
+						</p>
+					</div>
+				</article>
+			</Wrapper>
 		</>
 	);
 };

@@ -1,0 +1,4663 @@
+:root {
+	--productive-standard: cubic-bezier(0.2, 0, 0.38, 0.9);
+	--expressive-standard: cubic-bezier(0.4, 0.14, 0.3, 1);
+	--productive-entrance: cubic-bezier(0, 0, 0.38, 0.9);
+	--expressive-entrance: cubic-bezier(0, 0, 0.3, 1);
+	--productive-exit: cubic-bezier(0.2, 0, 1, 0.9);
+	--expressive-exit: cubic-bezier(0.4, 0.14, 1, 1);
+	--duration-fast-01: 70ms;
+	--duration-fast-02: 110ms;
+	--duration-moderate-01: 150ms;
+	--duration-moderate-02: 240ms;
+	--duration-slow-01: 400ms;
+	--duration-slow-02: 700ms;
+	--p-s: var(--productive-standard);
+	--e-s: var(--expressive-standard);
+	--p-e: var(--productive-entrance);
+	--e-e: var(--expressive-entrance);
+	--p-exit: var(--productive-exit);
+	--e-exit: var(--expressive-exit);
+	--d-f-1: var(--duration-fast-01);
+	--d-f-2: var(--duration-fast-02);
+	--d-m-1: var(--duration-moderate-01);
+	--d-m-2: var(--duration-moderate-02);
+	--d-s-1: var(--duration-slow-01);
+	--d-s-2: var(--duration-slow-02);
+}
+:root {
+	--rose-50: #fff1f2;
+	--rose-100: #ffe4e6;
+	--rose-200: #fecdd3;
+	--rose-300: #fda4af;
+	--rose-400: #fb7185;
+	--rose-500: #f43f5e;
+	--rose-600: #e11d48;
+	--rose-700: #be123c;
+	--rose-800: #9f1239;
+	--rose-900: #881337;
+	--pink-50: #fdf2f8;
+	--pink-100: #fce7f3;
+	--pink-200: #fbcfe8;
+	--pink-300: #f9a8d4;
+	--pink-400: #f472b6;
+	--pink-500: #ec4899;
+	--pink-600: #db2777;
+	--pink-700: #be185d;
+	--pink-800: #9d174d;
+	--pink-900: #831843;
+	--fuchsia-50: #fdf4ff;
+	--fuchsia-100: #fae8ff;
+	--fuchsia-200: #f5d0fe;
+	--fuchsia-300: #f0abfc;
+	--fuchsia-400: #e879f9;
+	--fuchsia-500: #d946ef;
+	--fuchsia-600: #c026d3;
+	--fuchsia-700: #a21caf;
+	--fuchsia-800: #86198f;
+	--fuchsia-900: #701a75;
+	--purple-50: #faf5ff;
+	--purple-100: #f3e8ff;
+	--purple-200: #e9d5ff;
+	--purple-300: #d8b4fe;
+	--purple-400: #c084fc;
+	--purple-500: #a855f7;
+	--purple-600: #9333ea;
+	--purple-700: #7e22ce;
+	--purple-800: #6b21a8;
+	--purple-900: #581c87;
+	--violet-50: #f5f3ff;
+	--violet-100: #ede9fe;
+	--violet-200: #ddd6fe;
+	--violet-300: #c4b5fd;
+	--violet-400: #a78bfa;
+	--violet-500: #8b5cf6;
+	--violet-600: #7c3aed;
+	--violet-700: #6d28d9;
+	--violet-800: #5b21b6;
+	--violet-900: #4c1d95;
+	--indigo-50: #eef2ff;
+	--indigo-100: #e0e7ff;
+	--indigo-200: #c7d2fe;
+	--indigo-300: #a5b4fc;
+	--indigo-400: #818cf8;
+	--indigo-500: #6366f1;
+	--indigo-600: #4f46e5;
+	--indigo-700: #4338ca;
+	--indigo-800: #3730a3;
+	--indigo-900: #312e81;
+	--blue-50: #eff6ff;
+	--blue-100: #dbeafe;
+	--blue-200: #bfdbfe;
+	--blue-300: #93c5fd;
+	--blue-400: #60a5fa;
+	--blue-500: #3b82f6;
+	--blue-600: #2563eb;
+	--blue-700: #1d4ed8;
+	--blue-800: #1e40af;
+	--blue-900: #1e3a8a;
+	--sky-50: #f0f9ff;
+	--sky-100: #e0f2fe;
+	--sky-200: #bae6fd;
+	--sky-300: #7dd3fc;
+	--sky-400: #38bdf8;
+	--sky-500: #0ea5e9;
+	--sky-600: #0284c7;
+	--sky-700: #0369a1;
+	--sky-800: #075985;
+	--sky-900: #0c4a6e;
+	--cyan-50: #ecfeff;
+	--cyan-100: #cffafe;
+	--cyan-200: #a5f3fc;
+	--cyan-300: #67e8f9;
+	--cyan-400: #22d3ee;
+	--cyan-500: #06b6d4;
+	--cyan-600: #0891b2;
+	--cyan-700: #0e7490;
+	--cyan-800: #155e75;
+	--cyan-900: #164e63;
+	--teal-50: #f0fdfa;
+	--teal-100: #ccfbf1;
+	--teal-200: #99f6e4;
+	--teal-300: #5eead4;
+	--teal-400: #2dd4bf;
+	--teal-500: #14b8a6;
+	--teal-600: #0d9488;
+	--teal-700: #0f766e;
+	--teal-800: #115e59;
+	--teal-900: #134e4a;
+	--emerald-50: #ecfdf5;
+	--emerald-100: #d1fae5;
+	--emerald-200: #a7f3d0;
+	--emerald-300: #6ee7b7;
+	--emerald-400: #34d399;
+	--emerald-500: #10b981;
+	--emerald-600: #059669;
+	--emerald-700: #047857;
+	--emerald-800: #065f46;
+	--emerald-900: #064e3b;
+	--green-50: #f0fdf4;
+	--green-100: #dcfce7;
+	--green-200: #bbf7d0;
+	--green-300: #86efac;
+	--green-400: #4ade80;
+	--green-500: #22c55e;
+	--green-600: #16a34a;
+	--green-700: #15803d;
+	--green-800: #166534;
+	--green-900: #14532d;
+	--lime-50: #f7fee7;
+	--lime-100: #ecfccb;
+	--lime-200: #d9f99d;
+	--lime-300: #bef264;
+	--lime-400: #a3e635;
+	--lime-500: #84cc16;
+	--lime-600: #65a30d;
+	--lime-700: #4d7c0f;
+	--lime-800: #3f6212;
+	--lime-900: #365314;
+	--yellow-50: #fefce8;
+	--yellow-100: #fef9c3;
+	--yellow-200: #fef08a;
+	--yellow-300: #fde047;
+	--yellow-400: #facc15;
+	--yellow-500: #eab308;
+	--yellow-600: #ca8a04;
+	--yellow-700: #a16207;
+	--yellow-800: #854d0e;
+	--yellow-900: #713f12;
+	--amber-50: #fffbeb;
+	--amber-100: #fef3c7;
+	--amber-200: #fde68a;
+	--amber-300: #fcd34d;
+	--amber-400: #fbbf24;
+	--amber-500: #f59e0b;
+	--amber-600: #d97706;
+	--amber-700: #b45309;
+	--amber-800: #92400e;
+	--amber-900: #78350f;
+	--orange-50: #fff7ed;
+	--orange-100: #ffedd5;
+	--orange-200: #fed7aa;
+	--orange-300: #fdba74;
+	--orange-400: #fb923c;
+	--orange-500: #f97316;
+	--orange-600: #ea580c;
+	--orange-700: #c2410c;
+	--orange-800: #9a3412;
+	--orange-900: #7c2d12;
+	--red-50: #fef2f2;
+	--red-100: #fee2e2;
+	--red-200: #fecaca;
+	--red-300: #fca5a5;
+	--red-400: #f87171;
+	--red-500: #ef4444;
+	--red-600: #dc2626;
+	--red-700: #b91c1c;
+	--red-800: #991b1b;
+	--red-900: #7f1d1d;
+	--warmGray-50: #fafaf9;
+	--warmGray-100: #f5f5f4;
+	--warmGray-200: #e7e5e4;
+	--warmGray-300: #d6d3d1;
+	--warmGray-400: #a8a29e;
+	--warmGray-500: #78716c;
+	--warmGray-600: #57534e;
+	--warmGray-700: #44403c;
+	--warmGray-800: #292524;
+	--warmGray-900: #1c1917;
+	--trueGray-50: #fafafa;
+	--trueGray-100: #f5f5f5;
+	--trueGray-200: #e5e5e5;
+	--trueGray-300: #d4d4d4;
+	--trueGray-400: #a3a3a3;
+	--trueGray-500: #737373;
+	--trueGray-600: #525252;
+	--trueGray-700: #404040;
+	--trueGray-800: #262626;
+	--trueGray-900: #171717;
+	--coolGray-50: #f9fafb;
+	--coolGray-100: #f3f4f6;
+	--coolGray-200: #e5e7eb;
+	--coolGray-300: #d1d5db;
+	--coolGray-400: #9ca3af;
+	--coolGray-500: #6b7280;
+	--coolGray-600: #4b5563;
+	--coolGray-700: #374151;
+	--coolGray-800: #1f2937;
+	--coolGray-900: #111827;
+	--blueGray-50: #f8fafc;
+	--blueGray-100: #f1f5f9;
+	--blueGray-200: #e2e8f0;
+	--blueGray-300: #cbd5e1;
+	--blueGray-400: #94a3b8;
+	--blueGray-500: #64748b;
+	--blueGray-600: #475569;
+	--blueGray-700: #334155;
+	--blueGray-800: #1e293b;
+	--blueGray-900: #0f172a;
+}
+.h-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 600;
+	height: 2.5rem;
+	padding: 0.65rem 1rem;
+	border-radius: 0.5rem;
+	appearance: button;
+	cursor: pointer;
+	transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.h-button.accent {
+	color: #fff;
+	background-color: var(--accent-500);
+}
+.h-button.accent:hover {
+	background-color: var(--accent-600);
+}
+.h-button.accent:focus {
+	box-shadow: var(--accent-100) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.accent:focus {
+	box-shadow: var(--accent-900) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.rose {
+	color: #fff;
+	background-color: var(--rose-500);
+}
+.h-button.rose:hover {
+	background-color: var(--rose-600);
+}
+.h-button.rose:focus {
+	box-shadow: var(--rose-100) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.rose:focus {
+	box-shadow: var(--rose-900) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.pink {
+	color: #fff;
+	background-color: var(--pink-500);
+}
+.h-button.pink:hover {
+	background-color: var(--pink-600);
+}
+.h-button.pink:focus {
+	box-shadow: var(--pink-100) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.pink:focus {
+	box-shadow: var(--pink-900) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.fuchsia {
+	color: #fff;
+	background-color: var(--fuchsia-500);
+}
+.h-button.fuchsia:hover {
+	background-color: var(--fuchsia-600);
+}
+.h-button.fuchsia:focus {
+	box-shadow: var(--fuchsia-100) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.fuchsia:focus {
+	box-shadow: var(--fuchsia-900) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.purple {
+	color: #fff;
+	background-color: var(--purple-500);
+}
+.h-button.purple:hover {
+	background-color: var(--purple-600);
+}
+.h-button.purple:focus {
+	box-shadow: var(--purple-100) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.purple:focus {
+	box-shadow: var(--purple-900) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.violet {
+	color: #fff;
+	background-color: var(--violet-500);
+}
+.h-button.violet:hover {
+	background-color: var(--violet-600);
+}
+.h-button.violet:focus {
+	box-shadow: var(--violet-100) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.violet:focus {
+	box-shadow: var(--violet-900) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.indigo {
+	color: #fff;
+	background-color: var(--indigo-500);
+}
+.h-button.indigo:hover {
+	background-color: var(--indigo-600);
+}
+.h-button.indigo:focus {
+	box-shadow: var(--indigo-100) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.indigo:focus {
+	box-shadow: var(--indigo-900) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.blue {
+	color: #fff;
+	background-color: var(--blue-500);
+}
+.h-button.blue:hover {
+	background-color: var(--blue-600);
+}
+.h-button.blue:focus {
+	box-shadow: var(--blue-100) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.blue:focus {
+	box-shadow: var(--blue-900) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.sky {
+	color: #fff;
+	background-color: var(--sky-500);
+}
+.h-button.sky:hover {
+	background-color: var(--sky-600);
+}
+.h-button.sky:focus {
+	box-shadow: var(--sky-100) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.sky:focus {
+	box-shadow: var(--sky-900) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.cyan {
+	color: #fff;
+	background-color: var(--cyan-500);
+}
+.h-button.cyan:hover {
+	background-color: var(--cyan-600);
+}
+.h-button.cyan:focus {
+	box-shadow: var(--cyan-100) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.cyan:focus {
+	box-shadow: var(--cyan-900) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.teal {
+	color: #fff;
+	background-color: var(--teal-500);
+}
+.h-button.teal:hover {
+	background-color: var(--teal-600);
+}
+.h-button.teal:focus {
+	box-shadow: var(--teal-100) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.teal:focus {
+	box-shadow: var(--teal-900) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.emerald {
+	color: #fff;
+	background-color: var(--emerald-500);
+}
+.h-button.emerald:hover {
+	background-color: var(--emerald-600);
+}
+.h-button.emerald:focus {
+	box-shadow: var(--emerald-100) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.emerald:focus {
+	box-shadow: var(--emerald-900) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.green {
+	color: #fff;
+	background-color: var(--green-500);
+}
+.h-button.green:hover {
+	background-color: var(--green-600);
+}
+.h-button.green:focus {
+	box-shadow: var(--green-100) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.green:focus {
+	box-shadow: var(--green-900) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.lime {
+	color: #fff;
+	background-color: var(--lime-500);
+}
+.h-button.lime:hover {
+	background-color: var(--lime-600);
+}
+.h-button.lime:focus {
+	box-shadow: var(--lime-100) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.lime:focus {
+	box-shadow: var(--lime-900) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.yellow {
+	color: #fff;
+	background-color: var(--yellow-500);
+}
+.h-button.yellow:hover {
+	background-color: var(--yellow-600);
+}
+.h-button.yellow:focus {
+	box-shadow: var(--yellow-100) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.yellow:focus {
+	box-shadow: var(--yellow-900) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.amber {
+	color: #fff;
+	background-color: var(--amber-500);
+}
+.h-button.amber:hover {
+	background-color: var(--amber-600);
+}
+.h-button.amber:focus {
+	box-shadow: var(--amber-100) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.amber:focus {
+	box-shadow: var(--amber-900) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.orange {
+	color: #fff;
+	background-color: var(--orange-500);
+}
+.h-button.orange:hover {
+	background-color: var(--orange-600);
+}
+.h-button.orange:focus {
+	box-shadow: var(--orange-100) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.orange:focus {
+	box-shadow: var(--orange-900) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.red {
+	color: #fff;
+	background-color: var(--red-500);
+}
+.h-button.red:hover {
+	background-color: var(--red-600);
+}
+.h-button.red:focus {
+	box-shadow: var(--red-100) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-button.red:focus {
+	box-shadow: var(--red-900) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button:not(.no-shadow) {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.h-button:not(.white) {
+	color: #fff;
+}
+.h-button.shape-pill {
+	border-radius: 90px;
+}
+.h-button:disabled {
+	opacity: 0.5;
+	cursor: default;
+	pointer-events: none;
+}
+.h-button.gray {
+	background-color: var(--ui-1);
+	color: var(--text-color-06);
+	box-shadow: none;
+}
+.h-button.gray:hover {
+	background-color: var(--ui-2);
+}
+.h-button.gray:focus {
+	box-shadow: var(--ui) 0px 0px 0px 2px, var(--ui-2) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-button.ui {
+	background-color: var(--ui);
+	color: var(--text-color-06);
+	box-shadow: none;
+}
+.h-button.ui:hover {
+	background-color: var(--ui-1);
+}
+.h-button.transparent {
+	background-color: transparent;
+	color: var(--text-color-06);
+	box-shadow: none !important;
+}
+.h-button.size-xs {
+	height: 1.5rem;
+	padding: 0 0.75rem;
+	font-size: 0.75rem;
+}
+.h-button.size-sm {
+	height: 1.875rem;
+	padding: 0 0.875rem;
+	font-size: 0.8125rem;
+}
+.h-button.size-md {
+	height: 2.25rem;
+	padding: 0 0.875rem;
+	font-size: 0.8125rem;
+}
+.h-button.size-lg {
+	height: 3.5rem;
+	padding: 0 2rem;
+	font-size: 1rem;
+}
+.h-button.no-focus:focus {
+	box-shadow: none !important;
+}
+.h-button.variant-icon {
+	padding: 0;
+}
+.h-button.variant-icon.size-sm {
+	width: 1.875rem;
+	height: 1.875rem;
+}
+.h-button.variant-icon.size-default {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+html.dark .h-button.variant-icon.ui {
+	background-color: var(--ui-1);
+}
+.h-button.variant-with-icon {
+	padding-left: 0.5rem;
+}
+.h-button.variant-with-icon i {
+	margin-right: 0.2rem;
+}
+.h-checkbox {
+	border-radius: 0.25rem;
+	background-color: transparent;
+	color: var(--text-color);
+	border: 2px solid var(--ui-2);
+	height: 1.25rem;
+	width: 1.25rem;
+	cursor: pointer;
+	transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.h-checkbox:hover {
+	background-color: var(--ui-1);
+}
+.h-checkbox > i {
+	opacity: 0;
+	height: 1rem;
+	width: 1rem;
+	color: #fff;
+}
+.h-checkbox.active > i {
+	opacity: 1;
+}
+.h-checkbox.no-select {
+	user-select: none;
+	pointer-events: none;
+	padding: 0 !important;
+	border-radius: 0.2rem;
+}
+.h-checkbox.no-select.active {
+	border-color: var(--accent);
+}
+.h-checkbox.xs {
+	height: 0.9rem;
+	width: 0.9rem;
+}
+.h-checkbox.xs > i {
+	height: 0.7rem;
+	width: 0.7rem;
+}
+.h-checkbox.sm {
+	height: 1rem;
+	width: 1rem;
+}
+.h-checkbox.sm > i {
+	height: 0.8rem;
+	width: 0.8rem;
+}
+.h-checkbox.lg {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.h-checkbox.lg > i {
+	height: 1.25rem;
+	width: 1.25rem;
+}
+.h-checkbox.accent:focus {
+	box-shadow: var(--accent-100) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.accent.active {
+	background-color: var(--accent-500);
+	border-color: var(--accent-500);
+}
+html.dark .h-checkbox.accent:focus {
+	box-shadow: var(--accent-900) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.accent.no-select.active {
+	border-color: var(--accent-500);
+}
+.h-checkbox.rose:focus {
+	box-shadow: var(--rose-100) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.rose.active {
+	background-color: var(--rose-500);
+	border-color: var(--rose-500);
+}
+html.dark .h-checkbox.rose:focus {
+	box-shadow: var(--rose-900) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.rose.no-select.active {
+	border-color: var(--rose-500);
+}
+.h-checkbox.pink:focus {
+	box-shadow: var(--pink-100) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.pink.active {
+	background-color: var(--pink-500);
+	border-color: var(--pink-500);
+}
+html.dark .h-checkbox.pink:focus {
+	box-shadow: var(--pink-900) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.pink.no-select.active {
+	border-color: var(--pink-500);
+}
+.h-checkbox.fuchsia:focus {
+	box-shadow: var(--fuchsia-100) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.fuchsia.active {
+	background-color: var(--fuchsia-500);
+	border-color: var(--fuchsia-500);
+}
+html.dark .h-checkbox.fuchsia:focus {
+	box-shadow: var(--fuchsia-900) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.fuchsia.no-select.active {
+	border-color: var(--fuchsia-500);
+}
+.h-checkbox.purple:focus {
+	box-shadow: var(--purple-100) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.purple.active {
+	background-color: var(--purple-500);
+	border-color: var(--purple-500);
+}
+html.dark .h-checkbox.purple:focus {
+	box-shadow: var(--purple-900) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.purple.no-select.active {
+	border-color: var(--purple-500);
+}
+.h-checkbox.violet:focus {
+	box-shadow: var(--violet-100) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.violet.active {
+	background-color: var(--violet-500);
+	border-color: var(--violet-500);
+}
+html.dark .h-checkbox.violet:focus {
+	box-shadow: var(--violet-900) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.violet.no-select.active {
+	border-color: var(--violet-500);
+}
+.h-checkbox.indigo:focus {
+	box-shadow: var(--indigo-100) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.indigo.active {
+	background-color: var(--indigo-500);
+	border-color: var(--indigo-500);
+}
+html.dark .h-checkbox.indigo:focus {
+	box-shadow: var(--indigo-900) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.indigo.no-select.active {
+	border-color: var(--indigo-500);
+}
+.h-checkbox.blue:focus {
+	box-shadow: var(--blue-100) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.blue.active {
+	background-color: var(--blue-500);
+	border-color: var(--blue-500);
+}
+html.dark .h-checkbox.blue:focus {
+	box-shadow: var(--blue-900) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.blue.no-select.active {
+	border-color: var(--blue-500);
+}
+.h-checkbox.sky:focus {
+	box-shadow: var(--sky-100) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.sky.active {
+	background-color: var(--sky-500);
+	border-color: var(--sky-500);
+}
+html.dark .h-checkbox.sky:focus {
+	box-shadow: var(--sky-900) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.sky.no-select.active {
+	border-color: var(--sky-500);
+}
+.h-checkbox.cyan:focus {
+	box-shadow: var(--cyan-100) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.cyan.active {
+	background-color: var(--cyan-500);
+	border-color: var(--cyan-500);
+}
+html.dark .h-checkbox.cyan:focus {
+	box-shadow: var(--cyan-900) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.cyan.no-select.active {
+	border-color: var(--cyan-500);
+}
+.h-checkbox.teal:focus {
+	box-shadow: var(--teal-100) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.teal.active {
+	background-color: var(--teal-500);
+	border-color: var(--teal-500);
+}
+html.dark .h-checkbox.teal:focus {
+	box-shadow: var(--teal-900) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.teal.no-select.active {
+	border-color: var(--teal-500);
+}
+.h-checkbox.emerald:focus {
+	box-shadow: var(--emerald-100) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.emerald.active {
+	background-color: var(--emerald-500);
+	border-color: var(--emerald-500);
+}
+html.dark .h-checkbox.emerald:focus {
+	box-shadow: var(--emerald-900) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.emerald.no-select.active {
+	border-color: var(--emerald-500);
+}
+.h-checkbox.green:focus {
+	box-shadow: var(--green-100) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.green.active {
+	background-color: var(--green-500);
+	border-color: var(--green-500);
+}
+html.dark .h-checkbox.green:focus {
+	box-shadow: var(--green-900) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.green.no-select.active {
+	border-color: var(--green-500);
+}
+.h-checkbox.lime:focus {
+	box-shadow: var(--lime-100) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.lime.active {
+	background-color: var(--lime-500);
+	border-color: var(--lime-500);
+}
+html.dark .h-checkbox.lime:focus {
+	box-shadow: var(--lime-900) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.lime.no-select.active {
+	border-color: var(--lime-500);
+}
+.h-checkbox.yellow:focus {
+	box-shadow: var(--yellow-100) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.yellow.active {
+	background-color: var(--yellow-500);
+	border-color: var(--yellow-500);
+}
+html.dark .h-checkbox.yellow:focus {
+	box-shadow: var(--yellow-900) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.yellow.no-select.active {
+	border-color: var(--yellow-500);
+}
+.h-checkbox.amber:focus {
+	box-shadow: var(--amber-100) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.amber.active {
+	background-color: var(--amber-500);
+	border-color: var(--amber-500);
+}
+html.dark .h-checkbox.amber:focus {
+	box-shadow: var(--amber-900) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.amber.no-select.active {
+	border-color: var(--amber-500);
+}
+.h-checkbox.orange:focus {
+	box-shadow: var(--orange-100) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.orange.active {
+	background-color: var(--orange-500);
+	border-color: var(--orange-500);
+}
+html.dark .h-checkbox.orange:focus {
+	box-shadow: var(--orange-900) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.orange.no-select.active {
+	border-color: var(--orange-500);
+}
+.h-checkbox.red:focus {
+	box-shadow: var(--red-100) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.red.active {
+	background-color: var(--red-500);
+	border-color: var(--red-500);
+}
+html.dark .h-checkbox.red:focus {
+	box-shadow: var(--red-900) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-checkbox.red.no-select.active {
+	border-color: var(--red-500);
+}
+.h-box-label {
+	font-size: 0.875rem;
+	color: var(--text-color-07);
+	margin-bottom: 0;
+	margin-left: 0.75rem;
+	user-select: none;
+}
+.h-contextmenu {
+	width: auto !important;
+	min-width: 10rem;
+	position: fixed;
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+	z-index: 9999;
+	transform: translate3d(0, 0, 0);
+	transition: none;
+	background-color: var(--ui);
+	padding: 0.4rem 0;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px #0000000d, 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+html.dark .h-contextmenu {
+	background-color: var(--ui-1);
+}
+.h-contextmenu .wrapper {
+	padding: 0 0.4rem;
+	position: relative;
+}
+.h-contextmenu button {
+	height: 30px;
+	width: 100%;
+	font-size: 0.75rem;
+	background-color: transparent;
+	color: var(--text-color);
+	font-weight: 500;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+	transition: none !important;
+}
+.h-contextmenu button:hover,
+.h-contextmenu button.active,
+.h-contextmenu button:focus {
+	background-color: var(--accent);
+	color: #fff !important;
+}
+.h-contextmenu button:hover .h-dropdown-shortcut,
+.h-contextmenu button.active .h-dropdown-shortcut,
+.h-contextmenu button:focus .h-dropdown-shortcut {
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+.h-contextmenu button.gray:hover,
+.h-contextmenu button.gray.active {
+	background-color: var(--ui-1);
+	color: var(--text-color) !important;
+}
+html.dark .h-contextmenu button.gray:hover,
+html.dark .h-contextmenu button.gray.active {
+	background-color: var(--ui-3);
+	color: var(--text-color) !important;
+}
+.h-contextmenu button.accent:hover,
+.h-contextmenu button.accent.active,
+.h-contextmenu button.accent:focus {
+	color: #fff !important;
+	background-color: var(--accent-500) !important;
+}
+.h-contextmenu button.rose:hover,
+.h-contextmenu button.rose.active,
+.h-contextmenu button.rose:focus {
+	color: #fff !important;
+	background-color: var(--rose-500) !important;
+}
+.h-contextmenu button.pink:hover,
+.h-contextmenu button.pink.active,
+.h-contextmenu button.pink:focus {
+	color: #fff !important;
+	background-color: var(--pink-500) !important;
+}
+.h-contextmenu button.fuchsia:hover,
+.h-contextmenu button.fuchsia.active,
+.h-contextmenu button.fuchsia:focus {
+	color: #fff !important;
+	background-color: var(--fuchsia-500) !important;
+}
+.h-contextmenu button.purple:hover,
+.h-contextmenu button.purple.active,
+.h-contextmenu button.purple:focus {
+	color: #fff !important;
+	background-color: var(--purple-500) !important;
+}
+.h-contextmenu button.violet:hover,
+.h-contextmenu button.violet.active,
+.h-contextmenu button.violet:focus {
+	color: #fff !important;
+	background-color: var(--violet-500) !important;
+}
+.h-contextmenu button.indigo:hover,
+.h-contextmenu button.indigo.active,
+.h-contextmenu button.indigo:focus {
+	color: #fff !important;
+	background-color: var(--indigo-500) !important;
+}
+.h-contextmenu button.blue:hover,
+.h-contextmenu button.blue.active,
+.h-contextmenu button.blue:focus {
+	color: #fff !important;
+	background-color: var(--blue-500) !important;
+}
+.h-contextmenu button.sky:hover,
+.h-contextmenu button.sky.active,
+.h-contextmenu button.sky:focus {
+	color: #fff !important;
+	background-color: var(--sky-500) !important;
+}
+.h-contextmenu button.cyan:hover,
+.h-contextmenu button.cyan.active,
+.h-contextmenu button.cyan:focus {
+	color: #fff !important;
+	background-color: var(--cyan-500) !important;
+}
+.h-contextmenu button.teal:hover,
+.h-contextmenu button.teal.active,
+.h-contextmenu button.teal:focus {
+	color: #fff !important;
+	background-color: var(--teal-500) !important;
+}
+.h-contextmenu button.emerald:hover,
+.h-contextmenu button.emerald.active,
+.h-contextmenu button.emerald:focus {
+	color: #fff !important;
+	background-color: var(--emerald-500) !important;
+}
+.h-contextmenu button.green:hover,
+.h-contextmenu button.green.active,
+.h-contextmenu button.green:focus {
+	color: #fff !important;
+	background-color: var(--green-500) !important;
+}
+.h-contextmenu button.lime:hover,
+.h-contextmenu button.lime.active,
+.h-contextmenu button.lime:focus {
+	color: #fff !important;
+	background-color: var(--lime-500) !important;
+}
+.h-contextmenu button.yellow:hover,
+.h-contextmenu button.yellow.active,
+.h-contextmenu button.yellow:focus {
+	color: #fff !important;
+	background-color: var(--yellow-500) !important;
+}
+.h-contextmenu button.amber:hover,
+.h-contextmenu button.amber.active,
+.h-contextmenu button.amber:focus {
+	color: #fff !important;
+	background-color: var(--amber-500) !important;
+}
+.h-contextmenu button.orange:hover,
+.h-contextmenu button.orange.active,
+.h-contextmenu button.orange:focus {
+	color: #fff !important;
+	background-color: var(--orange-500) !important;
+}
+.h-contextmenu button.red:hover,
+.h-contextmenu button.red.active,
+.h-contextmenu button.red:focus {
+	color: #fff !important;
+	background-color: var(--red-500) !important;
+}
+.h-contextmenu button.font-accent {
+	color: var(--accent-500) !important;
+}
+.h-contextmenu button.font-rose {
+	color: var(--rose-500) !important;
+}
+.h-contextmenu button.font-pink {
+	color: var(--pink-500) !important;
+}
+.h-contextmenu button.font-fuchsia {
+	color: var(--fuchsia-500) !important;
+}
+.h-contextmenu button.font-purple {
+	color: var(--purple-500) !important;
+}
+.h-contextmenu button.font-violet {
+	color: var(--violet-500) !important;
+}
+.h-contextmenu button.font-indigo {
+	color: var(--indigo-500) !important;
+}
+.h-contextmenu button.font-blue {
+	color: var(--blue-500) !important;
+}
+.h-contextmenu button.font-sky {
+	color: var(--sky-500) !important;
+}
+.h-contextmenu button.font-cyan {
+	color: var(--cyan-500) !important;
+}
+.h-contextmenu button.font-teal {
+	color: var(--teal-500) !important;
+}
+.h-contextmenu button.font-emerald {
+	color: var(--emerald-500) !important;
+}
+.h-contextmenu button.font-green {
+	color: var(--green-500) !important;
+}
+.h-contextmenu button.font-lime {
+	color: var(--lime-500) !important;
+}
+.h-contextmenu button.font-yellow {
+	color: var(--yellow-500) !important;
+}
+.h-contextmenu button.font-amber {
+	color: var(--amber-500) !important;
+}
+.h-contextmenu button.font-orange {
+	color: var(--orange-500) !important;
+}
+.h-contextmenu button.font-red {
+	color: var(--red-500) !important;
+}
+.h-contextmenu button.selected {
+	background-color: var(--ui-1);
+}
+.h-contextmenu button.selected:hover,
+.h-contextmenu button.selected:focus {
+	color: var(--text-color) !important;
+	background-color: var(--ui-2) !important;
+}
+html.dark .h-contextmenu button.selected {
+	background-color: var(--ui-2);
+}
+html.dark .h-contextmenu button.selected:hover {
+	background-color: var(--ui-3) !important;
+}
+.h-contextmenu button.disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+.h-contextmenu button span {
+	white-space: nowrap;
+}
+.h-contextmenu button .h-dropdown-shortcut {
+	color: var(--text-color-05);
+}
+.h-contextmenu .separator {
+	width: 100%;
+	height: 1px;
+	background-color: var(--ui-1);
+	margin: 0.4rem 0;
+}
+html.dark .h-contextmenu .separator {
+	background-color: var(--ui-2);
+	opacity: 0.4;
+}
+.h-dropdown {
+	position: relative;
+}
+@keyframes spring-down {
+	0% {
+		transform: translate3d(0, -30px, 0);
+	}
+	41% {
+		transform: translate3d(0, 2px, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes spring-up {
+	0% {
+		transform: translate3d(0, 30px, 0);
+	}
+	41% {
+		transform: translate3d(0, -2px, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+.h-dropdown-menu {
+	position: absolute;
+	top: calc(100% + 0.5rem);
+	left: 0;
+	background-color: var(--ui);
+	padding: 0.4rem 0;
+	border-radius: 0.5rem;
+	min-width: 10rem;
+	box-shadow: 0 1px #0000000d, 0 4px 10px rgba(0, 0, 0, 0.1);
+	will-change: transform;
+	z-index: 8;
+	-webkit-filter: blur(0.000001px);
+	pointer-events: none;
+	visibility: hidden;
+}
+html.blur .h-dropdown-menu {
+	background-color: var(--ui-blur-fallback) !important;
+}
+html.dark .h-dropdown-menu {
+	background-color: var(--ui-1);
+}
+.h-dropdown-menu.accent button:hover,
+.h-dropdown-menu.accent button.active,
+.h-dropdown-menu.accent button:focus {
+	background-color: var(--accent-500) !important;
+}
+.h-dropdown-menu.rose button:hover,
+.h-dropdown-menu.rose button.active,
+.h-dropdown-menu.rose button:focus {
+	background-color: var(--rose-500) !important;
+}
+.h-dropdown-menu.pink button:hover,
+.h-dropdown-menu.pink button.active,
+.h-dropdown-menu.pink button:focus {
+	background-color: var(--pink-500) !important;
+}
+.h-dropdown-menu.fuchsia button:hover,
+.h-dropdown-menu.fuchsia button.active,
+.h-dropdown-menu.fuchsia button:focus {
+	background-color: var(--fuchsia-500) !important;
+}
+.h-dropdown-menu.purple button:hover,
+.h-dropdown-menu.purple button.active,
+.h-dropdown-menu.purple button:focus {
+	background-color: var(--purple-500) !important;
+}
+.h-dropdown-menu.violet button:hover,
+.h-dropdown-menu.violet button.active,
+.h-dropdown-menu.violet button:focus {
+	background-color: var(--violet-500) !important;
+}
+.h-dropdown-menu.indigo button:hover,
+.h-dropdown-menu.indigo button.active,
+.h-dropdown-menu.indigo button:focus {
+	background-color: var(--indigo-500) !important;
+}
+.h-dropdown-menu.blue button:hover,
+.h-dropdown-menu.blue button.active,
+.h-dropdown-menu.blue button:focus {
+	background-color: var(--blue-500) !important;
+}
+.h-dropdown-menu.sky button:hover,
+.h-dropdown-menu.sky button.active,
+.h-dropdown-menu.sky button:focus {
+	background-color: var(--sky-500) !important;
+}
+.h-dropdown-menu.cyan button:hover,
+.h-dropdown-menu.cyan button.active,
+.h-dropdown-menu.cyan button:focus {
+	background-color: var(--cyan-500) !important;
+}
+.h-dropdown-menu.teal button:hover,
+.h-dropdown-menu.teal button.active,
+.h-dropdown-menu.teal button:focus {
+	background-color: var(--teal-500) !important;
+}
+.h-dropdown-menu.emerald button:hover,
+.h-dropdown-menu.emerald button.active,
+.h-dropdown-menu.emerald button:focus {
+	background-color: var(--emerald-500) !important;
+}
+.h-dropdown-menu.green button:hover,
+.h-dropdown-menu.green button.active,
+.h-dropdown-menu.green button:focus {
+	background-color: var(--green-500) !important;
+}
+.h-dropdown-menu.lime button:hover,
+.h-dropdown-menu.lime button.active,
+.h-dropdown-menu.lime button:focus {
+	background-color: var(--lime-500) !important;
+}
+.h-dropdown-menu.yellow button:hover,
+.h-dropdown-menu.yellow button.active,
+.h-dropdown-menu.yellow button:focus {
+	background-color: var(--yellow-500) !important;
+}
+.h-dropdown-menu.amber button:hover,
+.h-dropdown-menu.amber button.active,
+.h-dropdown-menu.amber button:focus {
+	background-color: var(--amber-500) !important;
+}
+.h-dropdown-menu.orange button:hover,
+.h-dropdown-menu.orange button.active,
+.h-dropdown-menu.orange button:focus {
+	background-color: var(--orange-500) !important;
+}
+.h-dropdown-menu.red button:hover,
+.h-dropdown-menu.red button.active,
+.h-dropdown-menu.red button:focus {
+	background-color: var(--red-500) !important;
+}
+.h-dropdown-menu.multi-select .wrapper {
+	margin-bottom: 0.25rem;
+}
+.h-dropdown-menu.multi-select .wrapper:last-child {
+	margin-bottom: 0;
+}
+.h-dropdown-menu.top-44 {
+	top: 44px;
+}
+.h-dropdown-menu.spring,
+.h-dropdown-menu.spring-up {
+	opacity: 0;
+	z-index: -1;
+	transition: var(--d-m-1) var(--e-s);
+}
+.h-dropdown-menu[aria-expanded='true'] {
+	pointer-events: auto;
+	visibility: visible;
+}
+.h-dropdown-menu[aria-expanded='true'].spring,
+.h-dropdown-menu[aria-expanded='true'].spring-up {
+	opacity: 1;
+	z-index: 9999;
+	transform-origin: top;
+}
+.h-dropdown-menu[aria-expanded='true'].spring {
+	animation: spring-down 0.35s ease none;
+}
+.h-dropdown-menu[aria-expanded='true'].spring-up {
+	animation: spring-up 0.35s ease none;
+}
+.h-dropdown-menu.push-above-right {
+	top: auto;
+	right: -50%;
+	bottom: calc(100% + 0.5rem);
+}
+.h-dropdown-menu.relative-right {
+	left: auto;
+	right: 0;
+}
+.h-dropdown-menu.relative-far-left {
+	left: calc(100% - 2.75rem);
+}
+.h-dropdown-menu.relative-far-left {
+	left: calc(100% - 2.75rem);
+}
+.h-dropdown-menu .wrapper {
+	padding: 0 0.4rem;
+	position: relative;
+}
+.h-dropdown-menu button {
+	height: 30px;
+	width: 100%;
+	font-size: 0.75rem;
+	background-color: transparent;
+	color: var(--text-color);
+	font-weight: 500;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+	transition: none !important;
+}
+.h-dropdown-menu button:hover,
+.h-dropdown-menu button.active,
+.h-dropdown-menu button:focus {
+	background-color: var(--accent);
+	color: #fff !important;
+}
+.h-dropdown-menu button:hover .h-dropdown-shortcut,
+.h-dropdown-menu button.active .h-dropdown-shortcut,
+.h-dropdown-menu button:focus .h-dropdown-shortcut {
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+.h-dropdown-menu button.gray:hover,
+.h-dropdown-menu button.gray.active {
+	background-color: var(--ui-1);
+	color: var(--text-color) !important;
+}
+html.dark .h-dropdown-menu button.gray:hover,
+html.dark .h-dropdown-menu button.gray.active {
+	background-color: var(--ui-3);
+	color: var(--text-color) !important;
+}
+.h-dropdown-menu button.accent:hover,
+.h-dropdown-menu button.accent.active,
+.h-dropdown-menu button.accent:focus {
+	color: #fff !important;
+	background-color: var(--accent-500) !important;
+}
+.h-dropdown-menu button.rose:hover,
+.h-dropdown-menu button.rose.active,
+.h-dropdown-menu button.rose:focus {
+	color: #fff !important;
+	background-color: var(--rose-500) !important;
+}
+.h-dropdown-menu button.pink:hover,
+.h-dropdown-menu button.pink.active,
+.h-dropdown-menu button.pink:focus {
+	color: #fff !important;
+	background-color: var(--pink-500) !important;
+}
+.h-dropdown-menu button.fuchsia:hover,
+.h-dropdown-menu button.fuchsia.active,
+.h-dropdown-menu button.fuchsia:focus {
+	color: #fff !important;
+	background-color: var(--fuchsia-500) !important;
+}
+.h-dropdown-menu button.purple:hover,
+.h-dropdown-menu button.purple.active,
+.h-dropdown-menu button.purple:focus {
+	color: #fff !important;
+	background-color: var(--purple-500) !important;
+}
+.h-dropdown-menu button.violet:hover,
+.h-dropdown-menu button.violet.active,
+.h-dropdown-menu button.violet:focus {
+	color: #fff !important;
+	background-color: var(--violet-500) !important;
+}
+.h-dropdown-menu button.indigo:hover,
+.h-dropdown-menu button.indigo.active,
+.h-dropdown-menu button.indigo:focus {
+	color: #fff !important;
+	background-color: var(--indigo-500) !important;
+}
+.h-dropdown-menu button.blue:hover,
+.h-dropdown-menu button.blue.active,
+.h-dropdown-menu button.blue:focus {
+	color: #fff !important;
+	background-color: var(--blue-500) !important;
+}
+.h-dropdown-menu button.sky:hover,
+.h-dropdown-menu button.sky.active,
+.h-dropdown-menu button.sky:focus {
+	color: #fff !important;
+	background-color: var(--sky-500) !important;
+}
+.h-dropdown-menu button.cyan:hover,
+.h-dropdown-menu button.cyan.active,
+.h-dropdown-menu button.cyan:focus {
+	color: #fff !important;
+	background-color: var(--cyan-500) !important;
+}
+.h-dropdown-menu button.teal:hover,
+.h-dropdown-menu button.teal.active,
+.h-dropdown-menu button.teal:focus {
+	color: #fff !important;
+	background-color: var(--teal-500) !important;
+}
+.h-dropdown-menu button.emerald:hover,
+.h-dropdown-menu button.emerald.active,
+.h-dropdown-menu button.emerald:focus {
+	color: #fff !important;
+	background-color: var(--emerald-500) !important;
+}
+.h-dropdown-menu button.green:hover,
+.h-dropdown-menu button.green.active,
+.h-dropdown-menu button.green:focus {
+	color: #fff !important;
+	background-color: var(--green-500) !important;
+}
+.h-dropdown-menu button.lime:hover,
+.h-dropdown-menu button.lime.active,
+.h-dropdown-menu button.lime:focus {
+	color: #fff !important;
+	background-color: var(--lime-500) !important;
+}
+.h-dropdown-menu button.yellow:hover,
+.h-dropdown-menu button.yellow.active,
+.h-dropdown-menu button.yellow:focus {
+	color: #fff !important;
+	background-color: var(--yellow-500) !important;
+}
+.h-dropdown-menu button.amber:hover,
+.h-dropdown-menu button.amber.active,
+.h-dropdown-menu button.amber:focus {
+	color: #fff !important;
+	background-color: var(--amber-500) !important;
+}
+.h-dropdown-menu button.orange:hover,
+.h-dropdown-menu button.orange.active,
+.h-dropdown-menu button.orange:focus {
+	color: #fff !important;
+	background-color: var(--orange-500) !important;
+}
+.h-dropdown-menu button.red:hover,
+.h-dropdown-menu button.red.active,
+.h-dropdown-menu button.red:focus {
+	color: #fff !important;
+	background-color: var(--red-500) !important;
+}
+.h-dropdown-menu button.font-accent {
+	color: var(--accent-500) !important;
+}
+.h-dropdown-menu button.font-rose {
+	color: var(--rose-500) !important;
+}
+.h-dropdown-menu button.font-pink {
+	color: var(--pink-500) !important;
+}
+.h-dropdown-menu button.font-fuchsia {
+	color: var(--fuchsia-500) !important;
+}
+.h-dropdown-menu button.font-purple {
+	color: var(--purple-500) !important;
+}
+.h-dropdown-menu button.font-violet {
+	color: var(--violet-500) !important;
+}
+.h-dropdown-menu button.font-indigo {
+	color: var(--indigo-500) !important;
+}
+.h-dropdown-menu button.font-blue {
+	color: var(--blue-500) !important;
+}
+.h-dropdown-menu button.font-sky {
+	color: var(--sky-500) !important;
+}
+.h-dropdown-menu button.font-cyan {
+	color: var(--cyan-500) !important;
+}
+.h-dropdown-menu button.font-teal {
+	color: var(--teal-500) !important;
+}
+.h-dropdown-menu button.font-emerald {
+	color: var(--emerald-500) !important;
+}
+.h-dropdown-menu button.font-green {
+	color: var(--green-500) !important;
+}
+.h-dropdown-menu button.font-lime {
+	color: var(--lime-500) !important;
+}
+.h-dropdown-menu button.font-yellow {
+	color: var(--yellow-500) !important;
+}
+.h-dropdown-menu button.font-amber {
+	color: var(--amber-500) !important;
+}
+.h-dropdown-menu button.font-orange {
+	color: var(--orange-500) !important;
+}
+.h-dropdown-menu button.font-red {
+	color: var(--red-500) !important;
+}
+.h-dropdown-menu button.selected {
+	background-color: var(--ui-1);
+}
+.h-dropdown-menu button.selected:hover,
+.h-dropdown-menu button.selected:focus {
+	color: var(--text-color) !important;
+	background-color: var(--ui-2) !important;
+}
+html.dark .h-dropdown-menu button.selected {
+	background-color: var(--ui-2);
+}
+html.dark .h-dropdown-menu button.selected:hover {
+	background-color: var(--ui-3) !important;
+}
+.h-dropdown-menu button.disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+.h-dropdown-menu button span {
+	white-space: nowrap;
+}
+.h-dropdown-menu button .h-dropdown-shortcut {
+	color: var(--text-color-05);
+}
+.h-submenu {
+	top: -0.4rem !important;
+	left: 100% !important;
+	bottom: auto !important;
+	right: auto !important;
+	padding: 0.4rem 0 !important;
+}
+.h-dropdown-menu.relative-right .h-submenu {
+	left: auto !important;
+	right: 100% !important;
+}
+.h-dropdown-trigger {
+	background-color: transparent;
+	box-shadow: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 !important;
+}
+.h-dropdown-menu .separator {
+	width: 100%;
+	height: 1px;
+	background-color: var(--ui-2);
+	margin: 0.4rem 0;
+}
+html.dark .h-dropdown-menu .separator {
+	opacity: 0.4;
+}
+.h-input {
+	height: 2.5rem;
+	padding: 0 1rem;
+	font-size: 1rem;
+	line-height: 2.5rem;
+	background-color: var(--ui);
+	color: var(--text-color);
+	border: none;
+	box-shadow: inset var(--ui-2) 0px 0px 0px 1px;
+	border-radius: 0.5rem;
+	transition: box-shadow var(--d-m-2) var(--e-s);
+}
+html.dark .h-input {
+	box-shadow: inset var(--ui-3) 0px 0px 0px 1px;
+}
+.h-input:focus {
+	outline: none;
+}
+.h-input.variant-shadow {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.h-input.accent:focus {
+	box-shadow: inset var(--accent-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.rose:focus {
+	box-shadow: inset var(--rose-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.pink:focus {
+	box-shadow: inset var(--pink-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.fuchsia:focus {
+	box-shadow: inset var(--fuchsia-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.purple:focus {
+	box-shadow: inset var(--purple-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.violet:focus {
+	box-shadow: inset var(--violet-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.indigo:focus {
+	box-shadow: inset var(--indigo-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.blue:focus {
+	box-shadow: inset var(--blue-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.sky:focus {
+	box-shadow: inset var(--sky-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.cyan:focus {
+	box-shadow: inset var(--cyan-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.teal:focus {
+	box-shadow: inset var(--teal-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.emerald:focus {
+	box-shadow: inset var(--emerald-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.green:focus {
+	box-shadow: inset var(--green-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.lime:focus {
+	box-shadow: inset var(--lime-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.yellow:focus {
+	box-shadow: inset var(--yellow-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.amber:focus {
+	box-shadow: inset var(--amber-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.orange:focus {
+	box-shadow: inset var(--orange-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.red:focus {
+	box-shadow: inset var(--red-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-input.size-sm {
+	height: 1.875rem;
+	padding: 0 0.5rem;
+	font-size: 0.75rem;
+	border-radius: 0.35rem;
+}
+.h-input.size-lg {
+	height: 3.5rem;
+	padding: 0 1.25rem;
+	font-size: 1rem;
+}
+.h-label-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.h-label-container .h-label {
+	margin-bottom: 0.5rem;
+}
+.h-label-container .h-label > span {
+	font-size: 0.875rem;
+	color: var(--text-color-07);
+}
+.h-label-container .h-label > div {
+	font-size: 10px;
+	margin-left: 0.25rem;
+	color: var(--text-color-05);
+}
+.h-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.h-modal.none {
+	background-color: rgba(0, 0, 0, 0);
+}
+.h-modal.light {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+.h-modal.dim {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.h-modal.medium {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.h-modal.dark {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.h-modal.darkest {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.h-modal .inner-container {
+	border-radius: 0.5rem;
+	background-color: var(--ui);
+	position: relative;
+	overflow: hidden;
+	will-change: transform;
+	box-shadow: 0 1px #0000000d, 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@supports (backdrop-filter: saturate(180%) blur(20px)) {
+	html.blur .h-modal .inner-container {
+		background-color: var(--ui-blur) !important;
+		-webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+		backdrop-filter: saturate(180%) blur(20px) !important;
+	}
+}
+html.dark .h-modal .inner-container {
+	background-color: var(--ui-1);
+}
+.h-modal .inner-container.sm {
+	max-width: 20rem;
+}
+.h-modal .inner-container.default {
+	max-width: 34rem;
+}
+.h-modal .inner-container.lg {
+	max-width: 50rem;
+}
+.h-modal .inner-container.panel {
+	max-width: none;
+}
+.h-modal .inner-container.sm h3 {
+	font-size: 1.25rem !important;
+}
+.h-modal .inner-container.sm .buttons-container {
+	margin-top: 0;
+}
+.h-modal .inner-container.panel {
+	min-width: 65%;
+	min-height: 75%;
+	height: 75%;
+}
+.h-modal .inner-container.panel .inner {
+	padding: 0 !important;
+}
+.h-modal .inner-container.panel .inner .content-area {
+	padding: 1.5rem;
+	padding-top: 0;
+}
+.h-modal .inner-container.panel h3 {
+	font-size: 0.9rem !important;
+	font-weight: 600 !important;
+	line-height: 1rem !important;
+	margin-bottom: 0 !important;
+}
+.h-modal .inner-container.panel .close {
+	top: 1.25rem;
+	right: 1.5rem;
+}
+.h-modal .inner {
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	max-height: 100%;
+	overflow-y: scroll;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	scrollbar-width: thin;
+	scrollbar-color: var(--ui-2) var(--ui-1);
+}
+html.light .h-modal .inner {
+	scrollbar-color: var(--ui-2) var(--ui);
+}
+.h-modal .inner h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+.h-modal .buttons-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 1rem;
+}
+.h-modal .buttons-container .buttons {
+	width: 100%;
+}
+html.dark .h-modal .buttons-container .buttons button.gray {
+	background-color: var(--ui-2);
+}
+.h-modal:not(.no-button-constraint) .inner-container.sm .buttons {
+	max-width: none;
+}
+.h-modal:not(.no-button-constraint) .inner-container.default .buttons {
+	max-width: 14rem;
+}
+.h-modal:not(.no-button-constraint) .inner-container.lg .buttons {
+	max-width: 14rem;
+}
+.h-modal:not(.no-button-constraint) .inner-container.panel .buttons {
+	max-width: 14rem;
+}
+.h-modal .header {
+	width: 100%;
+}
+.h-modal .header.panel {
+	padding: 1.5rem;
+}
+.h-modal .close {
+	background-color: transparent;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	color: var(--text-color);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.h-modal .close,
+.h-modal .close > div.bg {
+	height: 1.5rem;
+	width: 1.5rem;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-modal .close > div.bg {
+	position: absolute;
+	border-radius: 90px;
+	background-color: var(--ui-1);
+	z-index: 1;
+}
+.h-modal .close > div.bg:hover {
+	transform: scale(1.2);
+}
+html.dark .h-modal .close > div.bg {
+	background-color: var(--ui-2);
+}
+.h-modal .close > div.icon {
+	position: absolute;
+	z-index: 2;
+}
+.h-modal .close > div.icon,
+.h-modal .close > div.icon i {
+	pointer-events: none;
+}
+.h-modal .close i {
+	width: 0.875rem;
+	height: 0.875rem;
+}
+.h-multi-select-trigger {
+	height: 2rem;
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 0.5rem;
+	background-color: var(--ui-1);
+	color: var(--text-color);
+	border-radius: 0.5rem;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	overflow-x: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	transition: var(--d-m-1) var(--e-s);
+}
+.h-multi-select-trigger::-webkit-scrollbar {
+	display: none;
+}
+.h-multi-select-trigger.accent:focus {
+	box-shadow: inset var(--accent-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.rose:focus {
+	box-shadow: inset var(--rose-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.pink:focus {
+	box-shadow: inset var(--pink-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.fuchsia:focus {
+	box-shadow: inset var(--fuchsia-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.purple:focus {
+	box-shadow: inset var(--purple-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.violet:focus {
+	box-shadow: inset var(--violet-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.indigo:focus {
+	box-shadow: inset var(--indigo-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.blue:focus {
+	box-shadow: inset var(--blue-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.sky:focus {
+	box-shadow: inset var(--sky-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.cyan:focus {
+	box-shadow: inset var(--cyan-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.teal:focus {
+	box-shadow: inset var(--teal-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.emerald:focus {
+	box-shadow: inset var(--emerald-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.green:focus {
+	box-shadow: inset var(--green-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.lime:focus {
+	box-shadow: inset var(--lime-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.yellow:focus {
+	box-shadow: inset var(--yellow-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.amber:focus {
+	box-shadow: inset var(--amber-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.orange:focus {
+	box-shadow: inset var(--orange-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger.red:focus {
+	box-shadow: inset var(--red-500) 0px 0px 0px 2px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-multi-select-trigger:hover {
+	background-color: var(--ui-2);
+}
+.h-multi-select-trigger.rounded .option {
+	border-radius: 90rem;
+}
+.h-multi-select-trigger .option {
+	white-space: nowrap;
+	padding: 0.15rem 0.25rem;
+	background-color: var(--accent);
+	color: var(--accent-50);
+	border-radius: 0.3rem;
+	margin-right: 0.15rem;
+}
+.h-multi-select-trigger .option:last-child {
+	margin-right: 0;
+}
+.h-multi-select-trigger .option.accent {
+	color: #fff;
+	background-color: var(--accent-500);
+}
+.h-multi-select-trigger .option.rose {
+	color: #fff;
+	background-color: var(--rose-500);
+}
+.h-multi-select-trigger .option.pink {
+	color: #fff;
+	background-color: var(--pink-500);
+}
+.h-multi-select-trigger .option.fuchsia {
+	color: #fff;
+	background-color: var(--fuchsia-500);
+}
+.h-multi-select-trigger .option.purple {
+	color: #fff;
+	background-color: var(--purple-500);
+}
+.h-multi-select-trigger .option.violet {
+	color: #fff;
+	background-color: var(--violet-500);
+}
+.h-multi-select-trigger .option.indigo {
+	color: #fff;
+	background-color: var(--indigo-500);
+}
+.h-multi-select-trigger .option.blue {
+	color: #fff;
+	background-color: var(--blue-500);
+}
+.h-multi-select-trigger .option.sky {
+	color: #fff;
+	background-color: var(--sky-500);
+}
+.h-multi-select-trigger .option.cyan {
+	color: #fff;
+	background-color: var(--cyan-500);
+}
+.h-multi-select-trigger .option.teal {
+	color: #fff;
+	background-color: var(--teal-500);
+}
+.h-multi-select-trigger .option.emerald {
+	color: #fff;
+	background-color: var(--emerald-500);
+}
+.h-multi-select-trigger .option.green {
+	color: #fff;
+	background-color: var(--green-500);
+}
+.h-multi-select-trigger .option.lime {
+	color: #fff;
+	background-color: var(--lime-500);
+}
+.h-multi-select-trigger .option.yellow {
+	color: #fff;
+	background-color: var(--yellow-500);
+}
+.h-multi-select-trigger .option.amber {
+	color: #fff;
+	background-color: var(--amber-500);
+}
+.h-multi-select-trigger .option.orange {
+	color: #fff;
+	background-color: var(--orange-500);
+}
+.h-multi-select-trigger .option.red {
+	color: #fff;
+	background-color: var(--red-500);
+}
+.multi-select button:focus {
+	background-color: var(--ui-1) !important;
+	color: var(--text-color) !important;
+}
+.multi-select button.selected {
+	background-color: var(--ui) !important;
+}
+:root {
+	--ui-auto: var(--ui);
+}
+html.dark {
+	--ui-auto: var(--ui-1) !important;
+}
+.h-icon-container {
+	height: 1rem;
+	width: 1rem;
+	border-radius: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.h-icon-container > i {
+	width: 0.7rem;
+	height: 0.7rem;
+}
+.h-icon-container.default {
+	height: 0.5rem;
+	width: 0.5rem;
+}
+.h-icon-container.default > i {
+	display: none;
+}
+.h-icon-container.accent {
+	color: #fff;
+	background-color: var(--accent-500);
+}
+.h-icon-container.rose {
+	color: #fff;
+	background-color: var(--rose-500);
+}
+.h-icon-container.pink {
+	color: #fff;
+	background-color: var(--pink-500);
+}
+.h-icon-container.fuchsia {
+	color: #fff;
+	background-color: var(--fuchsia-500);
+}
+.h-icon-container.purple {
+	color: #fff;
+	background-color: var(--purple-500);
+}
+.h-icon-container.violet {
+	color: #fff;
+	background-color: var(--violet-500);
+}
+.h-icon-container.indigo {
+	color: #fff;
+	background-color: var(--indigo-500);
+}
+.h-icon-container.blue {
+	color: #fff;
+	background-color: var(--blue-500);
+}
+.h-icon-container.sky {
+	color: #fff;
+	background-color: var(--sky-500);
+}
+.h-icon-container.cyan {
+	color: #fff;
+	background-color: var(--cyan-500);
+}
+.h-icon-container.teal {
+	color: #fff;
+	background-color: var(--teal-500);
+}
+.h-icon-container.emerald {
+	color: #fff;
+	background-color: var(--emerald-500);
+}
+.h-icon-container.green {
+	color: #fff;
+	background-color: var(--green-500);
+}
+.h-icon-container.lime {
+	color: #fff;
+	background-color: var(--lime-500);
+}
+.h-icon-container.yellow {
+	color: #fff;
+	background-color: var(--yellow-500);
+}
+.h-icon-container.amber {
+	color: #fff;
+	background-color: var(--amber-500);
+}
+.h-icon-container.orange {
+	color: #fff;
+	background-color: var(--orange-500);
+}
+.h-icon-container.red {
+	color: #fff;
+	background-color: var(--red-500);
+}
+.h-number-input {
+	width: auto;
+	display: grid;
+	grid-template-columns: 2rem minmax(2rem, min-content) 2rem;
+	border-radius: 0.25rem;
+	overflow: hidden;
+	position: relative;
+}
+.h-number-input button {
+	padding: 0;
+	background-color: var(--ui);
+	color: var(--text-color);
+	height: 2rem;
+	width: 2rem;
+	cursor: pointer;
+	border: 1px solid var(--ui-2);
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+	border-right-color: transparent;
+	position: relative;
+	left: 1px;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.h-number-input button.accent:focus {
+	box-shadow: inset var(--accent-500) 0px 0px 0px 1px;
+	border-color: var(--accent-500);
+}
+html.dark .h-number-input button.accent:focus {
+	box-shadow: inset var(--accent-500) 0px 0px 0px 1px;
+	border-color: var(--accent-500);
+}
+.h-number-input button.rose:focus {
+	box-shadow: inset var(--rose-500) 0px 0px 0px 1px;
+	border-color: var(--rose-500);
+}
+html.dark .h-number-input button.rose:focus {
+	box-shadow: inset var(--rose-500) 0px 0px 0px 1px;
+	border-color: var(--rose-500);
+}
+.h-number-input button.pink:focus {
+	box-shadow: inset var(--pink-500) 0px 0px 0px 1px;
+	border-color: var(--pink-500);
+}
+html.dark .h-number-input button.pink:focus {
+	box-shadow: inset var(--pink-500) 0px 0px 0px 1px;
+	border-color: var(--pink-500);
+}
+.h-number-input button.fuchsia:focus {
+	box-shadow: inset var(--fuchsia-500) 0px 0px 0px 1px;
+	border-color: var(--fuchsia-500);
+}
+html.dark .h-number-input button.fuchsia:focus {
+	box-shadow: inset var(--fuchsia-500) 0px 0px 0px 1px;
+	border-color: var(--fuchsia-500);
+}
+.h-number-input button.purple:focus {
+	box-shadow: inset var(--purple-500) 0px 0px 0px 1px;
+	border-color: var(--purple-500);
+}
+html.dark .h-number-input button.purple:focus {
+	box-shadow: inset var(--purple-500) 0px 0px 0px 1px;
+	border-color: var(--purple-500);
+}
+.h-number-input button.violet:focus {
+	box-shadow: inset var(--violet-500) 0px 0px 0px 1px;
+	border-color: var(--violet-500);
+}
+html.dark .h-number-input button.violet:focus {
+	box-shadow: inset var(--violet-500) 0px 0px 0px 1px;
+	border-color: var(--violet-500);
+}
+.h-number-input button.indigo:focus {
+	box-shadow: inset var(--indigo-500) 0px 0px 0px 1px;
+	border-color: var(--indigo-500);
+}
+html.dark .h-number-input button.indigo:focus {
+	box-shadow: inset var(--indigo-500) 0px 0px 0px 1px;
+	border-color: var(--indigo-500);
+}
+.h-number-input button.blue:focus {
+	box-shadow: inset var(--blue-500) 0px 0px 0px 1px;
+	border-color: var(--blue-500);
+}
+html.dark .h-number-input button.blue:focus {
+	box-shadow: inset var(--blue-500) 0px 0px 0px 1px;
+	border-color: var(--blue-500);
+}
+.h-number-input button.sky:focus {
+	box-shadow: inset var(--sky-500) 0px 0px 0px 1px;
+	border-color: var(--sky-500);
+}
+html.dark .h-number-input button.sky:focus {
+	box-shadow: inset var(--sky-500) 0px 0px 0px 1px;
+	border-color: var(--sky-500);
+}
+.h-number-input button.cyan:focus {
+	box-shadow: inset var(--cyan-500) 0px 0px 0px 1px;
+	border-color: var(--cyan-500);
+}
+html.dark .h-number-input button.cyan:focus {
+	box-shadow: inset var(--cyan-500) 0px 0px 0px 1px;
+	border-color: var(--cyan-500);
+}
+.h-number-input button.teal:focus {
+	box-shadow: inset var(--teal-500) 0px 0px 0px 1px;
+	border-color: var(--teal-500);
+}
+html.dark .h-number-input button.teal:focus {
+	box-shadow: inset var(--teal-500) 0px 0px 0px 1px;
+	border-color: var(--teal-500);
+}
+.h-number-input button.emerald:focus {
+	box-shadow: inset var(--emerald-500) 0px 0px 0px 1px;
+	border-color: var(--emerald-500);
+}
+html.dark .h-number-input button.emerald:focus {
+	box-shadow: inset var(--emerald-500) 0px 0px 0px 1px;
+	border-color: var(--emerald-500);
+}
+.h-number-input button.green:focus {
+	box-shadow: inset var(--green-500) 0px 0px 0px 1px;
+	border-color: var(--green-500);
+}
+html.dark .h-number-input button.green:focus {
+	box-shadow: inset var(--green-500) 0px 0px 0px 1px;
+	border-color: var(--green-500);
+}
+.h-number-input button.lime:focus {
+	box-shadow: inset var(--lime-500) 0px 0px 0px 1px;
+	border-color: var(--lime-500);
+}
+html.dark .h-number-input button.lime:focus {
+	box-shadow: inset var(--lime-500) 0px 0px 0px 1px;
+	border-color: var(--lime-500);
+}
+.h-number-input button.yellow:focus {
+	box-shadow: inset var(--yellow-500) 0px 0px 0px 1px;
+	border-color: var(--yellow-500);
+}
+html.dark .h-number-input button.yellow:focus {
+	box-shadow: inset var(--yellow-500) 0px 0px 0px 1px;
+	border-color: var(--yellow-500);
+}
+.h-number-input button.amber:focus {
+	box-shadow: inset var(--amber-500) 0px 0px 0px 1px;
+	border-color: var(--amber-500);
+}
+html.dark .h-number-input button.amber:focus {
+	box-shadow: inset var(--amber-500) 0px 0px 0px 1px;
+	border-color: var(--amber-500);
+}
+.h-number-input button.orange:focus {
+	box-shadow: inset var(--orange-500) 0px 0px 0px 1px;
+	border-color: var(--orange-500);
+}
+html.dark .h-number-input button.orange:focus {
+	box-shadow: inset var(--orange-500) 0px 0px 0px 1px;
+	border-color: var(--orange-500);
+}
+.h-number-input button.red:focus {
+	box-shadow: inset var(--red-500) 0px 0px 0px 1px;
+	border-color: var(--red-500);
+}
+html.dark .h-number-input button.red:focus {
+	box-shadow: inset var(--red-500) 0px 0px 0px 1px;
+	border-color: var(--red-500);
+}
+.h-number-input button:last-child {
+	left: auto;
+	right: 1px;
+	border-right-color: var(--ui-2);
+	border-left-color: transparent;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+}
+.h-number-input button > i {
+	transition: var(--d-m-1) var(--e-s);
+}
+.h-number-input button:hover {
+	background-color: var(--ui-1);
+}
+.h-number-input button:active > i {
+	transform: scale(0.9);
+}
+.h-number-input button:focus {
+	z-index: 3;
+}
+.h-number-input button > i {
+	width: 0.9rem !important;
+	height: 0.9rem !important;
+}
+.h-number-input .h-number-input-main-wrapper {
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+.h-number-input .h-number-input-main-wrapper,
+.h-number-input .h-number-input-main-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.h-number-input .h-number-input-main-wrapper > div {
+	width: 100%;
+	height: 100%;
+	padding: 0 0.25rem;
+	position: relative;
+	border: 1px solid var(--ui-2);
+	z-index: 2;
+}
+.h-number-input .h-number-input-main-wrapper > div.accent:focus {
+	box-shadow: inset var(--accent-500) 0px 0px 0px 1px;
+	border-color: var(--accent-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.accent:focus {
+	box-shadow: inset var(--accent-500) 0px 0px 0px 1px;
+	border-color: var(--accent-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.rose:focus {
+	box-shadow: inset var(--rose-500) 0px 0px 0px 1px;
+	border-color: var(--rose-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.rose:focus {
+	box-shadow: inset var(--rose-500) 0px 0px 0px 1px;
+	border-color: var(--rose-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.pink:focus {
+	box-shadow: inset var(--pink-500) 0px 0px 0px 1px;
+	border-color: var(--pink-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.pink:focus {
+	box-shadow: inset var(--pink-500) 0px 0px 0px 1px;
+	border-color: var(--pink-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.fuchsia:focus {
+	box-shadow: inset var(--fuchsia-500) 0px 0px 0px 1px;
+	border-color: var(--fuchsia-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.fuchsia:focus {
+	box-shadow: inset var(--fuchsia-500) 0px 0px 0px 1px;
+	border-color: var(--fuchsia-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.purple:focus {
+	box-shadow: inset var(--purple-500) 0px 0px 0px 1px;
+	border-color: var(--purple-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.purple:focus {
+	box-shadow: inset var(--purple-500) 0px 0px 0px 1px;
+	border-color: var(--purple-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.violet:focus {
+	box-shadow: inset var(--violet-500) 0px 0px 0px 1px;
+	border-color: var(--violet-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.violet:focus {
+	box-shadow: inset var(--violet-500) 0px 0px 0px 1px;
+	border-color: var(--violet-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.indigo:focus {
+	box-shadow: inset var(--indigo-500) 0px 0px 0px 1px;
+	border-color: var(--indigo-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.indigo:focus {
+	box-shadow: inset var(--indigo-500) 0px 0px 0px 1px;
+	border-color: var(--indigo-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.blue:focus {
+	box-shadow: inset var(--blue-500) 0px 0px 0px 1px;
+	border-color: var(--blue-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.blue:focus {
+	box-shadow: inset var(--blue-500) 0px 0px 0px 1px;
+	border-color: var(--blue-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.sky:focus {
+	box-shadow: inset var(--sky-500) 0px 0px 0px 1px;
+	border-color: var(--sky-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.sky:focus {
+	box-shadow: inset var(--sky-500) 0px 0px 0px 1px;
+	border-color: var(--sky-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.cyan:focus {
+	box-shadow: inset var(--cyan-500) 0px 0px 0px 1px;
+	border-color: var(--cyan-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.cyan:focus {
+	box-shadow: inset var(--cyan-500) 0px 0px 0px 1px;
+	border-color: var(--cyan-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.teal:focus {
+	box-shadow: inset var(--teal-500) 0px 0px 0px 1px;
+	border-color: var(--teal-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.teal:focus {
+	box-shadow: inset var(--teal-500) 0px 0px 0px 1px;
+	border-color: var(--teal-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.emerald:focus {
+	box-shadow: inset var(--emerald-500) 0px 0px 0px 1px;
+	border-color: var(--emerald-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.emerald:focus {
+	box-shadow: inset var(--emerald-500) 0px 0px 0px 1px;
+	border-color: var(--emerald-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.green:focus {
+	box-shadow: inset var(--green-500) 0px 0px 0px 1px;
+	border-color: var(--green-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.green:focus {
+	box-shadow: inset var(--green-500) 0px 0px 0px 1px;
+	border-color: var(--green-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.lime:focus {
+	box-shadow: inset var(--lime-500) 0px 0px 0px 1px;
+	border-color: var(--lime-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.lime:focus {
+	box-shadow: inset var(--lime-500) 0px 0px 0px 1px;
+	border-color: var(--lime-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.yellow:focus {
+	box-shadow: inset var(--yellow-500) 0px 0px 0px 1px;
+	border-color: var(--yellow-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.yellow:focus {
+	box-shadow: inset var(--yellow-500) 0px 0px 0px 1px;
+	border-color: var(--yellow-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.amber:focus {
+	box-shadow: inset var(--amber-500) 0px 0px 0px 1px;
+	border-color: var(--amber-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.amber:focus {
+	box-shadow: inset var(--amber-500) 0px 0px 0px 1px;
+	border-color: var(--amber-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.orange:focus {
+	box-shadow: inset var(--orange-500) 0px 0px 0px 1px;
+	border-color: var(--orange-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.orange:focus {
+	box-shadow: inset var(--orange-500) 0px 0px 0px 1px;
+	border-color: var(--orange-500);
+}
+.h-number-input .h-number-input-main-wrapper > div.red:focus {
+	box-shadow: inset var(--red-500) 0px 0px 0px 1px;
+	border-color: var(--red-500);
+}
+html.dark .h-number-input .h-number-input-main-wrapper > div.red:focus {
+	box-shadow: inset var(--red-500) 0px 0px 0px 1px;
+	border-color: var(--red-500);
+}
+.h-number-input .h-number-input-main-wrapper > div:focus {
+	outline: none;
+}
+.h-radio-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	cursor: pointer;
+}
+.h-radio {
+	border-radius: 90px;
+	border: 2px solid var(--ui-2);
+	background-color: var(--ui);
+	padding: 0;
+	cursor: pointer;
+	transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.25rem;
+	height: 1.25rem;
+}
+.h-radio > .h-radio-inner {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.h-radio:hover {
+	background-color: var(--ui-1);
+}
+.h-radio.sm {
+	width: 1rem;
+	height: 1rem;
+}
+.h-radio.sm > .h-radio-inner {
+	width: 0.35rem;
+	height: 0.35rem;
+}
+.h-radio.lg {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.h-radio.lg > .h-radio-inner {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.h-radio .h-radio-inner {
+	background-color: #fff;
+	border-radius: 90px;
+	transition: var(--d-m-1) var(--e-s);
+	transform: scale(0);
+	opacity: 0;
+}
+.h-radio.accent:focus {
+	box-shadow: var(--accent-100) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.accent.active {
+	background-color: var(--accent-500);
+	border-color: var(--accent-500);
+}
+html.dark .h-radio.accent:focus {
+	box-shadow: var(--accent-900) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.accent.no-select.active {
+	border-color: var(--accent-500);
+}
+.h-radio.rose:focus {
+	box-shadow: var(--rose-100) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.rose.active {
+	background-color: var(--rose-500);
+	border-color: var(--rose-500);
+}
+html.dark .h-radio.rose:focus {
+	box-shadow: var(--rose-900) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.rose.no-select.active {
+	border-color: var(--rose-500);
+}
+.h-radio.pink:focus {
+	box-shadow: var(--pink-100) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.pink.active {
+	background-color: var(--pink-500);
+	border-color: var(--pink-500);
+}
+html.dark .h-radio.pink:focus {
+	box-shadow: var(--pink-900) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.pink.no-select.active {
+	border-color: var(--pink-500);
+}
+.h-radio.fuchsia:focus {
+	box-shadow: var(--fuchsia-100) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.fuchsia.active {
+	background-color: var(--fuchsia-500);
+	border-color: var(--fuchsia-500);
+}
+html.dark .h-radio.fuchsia:focus {
+	box-shadow: var(--fuchsia-900) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.fuchsia.no-select.active {
+	border-color: var(--fuchsia-500);
+}
+.h-radio.purple:focus {
+	box-shadow: var(--purple-100) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.purple.active {
+	background-color: var(--purple-500);
+	border-color: var(--purple-500);
+}
+html.dark .h-radio.purple:focus {
+	box-shadow: var(--purple-900) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.purple.no-select.active {
+	border-color: var(--purple-500);
+}
+.h-radio.violet:focus {
+	box-shadow: var(--violet-100) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.violet.active {
+	background-color: var(--violet-500);
+	border-color: var(--violet-500);
+}
+html.dark .h-radio.violet:focus {
+	box-shadow: var(--violet-900) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.violet.no-select.active {
+	border-color: var(--violet-500);
+}
+.h-radio.indigo:focus {
+	box-shadow: var(--indigo-100) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.indigo.active {
+	background-color: var(--indigo-500);
+	border-color: var(--indigo-500);
+}
+html.dark .h-radio.indigo:focus {
+	box-shadow: var(--indigo-900) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.indigo.no-select.active {
+	border-color: var(--indigo-500);
+}
+.h-radio.blue:focus {
+	box-shadow: var(--blue-100) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.blue.active {
+	background-color: var(--blue-500);
+	border-color: var(--blue-500);
+}
+html.dark .h-radio.blue:focus {
+	box-shadow: var(--blue-900) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.blue.no-select.active {
+	border-color: var(--blue-500);
+}
+.h-radio.sky:focus {
+	box-shadow: var(--sky-100) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.sky.active {
+	background-color: var(--sky-500);
+	border-color: var(--sky-500);
+}
+html.dark .h-radio.sky:focus {
+	box-shadow: var(--sky-900) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.sky.no-select.active {
+	border-color: var(--sky-500);
+}
+.h-radio.cyan:focus {
+	box-shadow: var(--cyan-100) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.cyan.active {
+	background-color: var(--cyan-500);
+	border-color: var(--cyan-500);
+}
+html.dark .h-radio.cyan:focus {
+	box-shadow: var(--cyan-900) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.cyan.no-select.active {
+	border-color: var(--cyan-500);
+}
+.h-radio.teal:focus {
+	box-shadow: var(--teal-100) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.teal.active {
+	background-color: var(--teal-500);
+	border-color: var(--teal-500);
+}
+html.dark .h-radio.teal:focus {
+	box-shadow: var(--teal-900) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.teal.no-select.active {
+	border-color: var(--teal-500);
+}
+.h-radio.emerald:focus {
+	box-shadow: var(--emerald-100) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.emerald.active {
+	background-color: var(--emerald-500);
+	border-color: var(--emerald-500);
+}
+html.dark .h-radio.emerald:focus {
+	box-shadow: var(--emerald-900) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.emerald.no-select.active {
+	border-color: var(--emerald-500);
+}
+.h-radio.green:focus {
+	box-shadow: var(--green-100) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.green.active {
+	background-color: var(--green-500);
+	border-color: var(--green-500);
+}
+html.dark .h-radio.green:focus {
+	box-shadow: var(--green-900) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.green.no-select.active {
+	border-color: var(--green-500);
+}
+.h-radio.lime:focus {
+	box-shadow: var(--lime-100) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.lime.active {
+	background-color: var(--lime-500);
+	border-color: var(--lime-500);
+}
+html.dark .h-radio.lime:focus {
+	box-shadow: var(--lime-900) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.lime.no-select.active {
+	border-color: var(--lime-500);
+}
+.h-radio.yellow:focus {
+	box-shadow: var(--yellow-100) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.yellow.active {
+	background-color: var(--yellow-500);
+	border-color: var(--yellow-500);
+}
+html.dark .h-radio.yellow:focus {
+	box-shadow: var(--yellow-900) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.yellow.no-select.active {
+	border-color: var(--yellow-500);
+}
+.h-radio.amber:focus {
+	box-shadow: var(--amber-100) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.amber.active {
+	background-color: var(--amber-500);
+	border-color: var(--amber-500);
+}
+html.dark .h-radio.amber:focus {
+	box-shadow: var(--amber-900) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.amber.no-select.active {
+	border-color: var(--amber-500);
+}
+.h-radio.orange:focus {
+	box-shadow: var(--orange-100) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.orange.active {
+	background-color: var(--orange-500);
+	border-color: var(--orange-500);
+}
+html.dark .h-radio.orange:focus {
+	box-shadow: var(--orange-900) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.orange.no-select.active {
+	border-color: var(--orange-500);
+}
+.h-radio.red:focus {
+	box-shadow: var(--red-100) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.red.active {
+	background-color: var(--red-500);
+	border-color: var(--red-500);
+}
+html.dark .h-radio.red:focus {
+	box-shadow: var(--red-900) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-radio.red.no-select.active {
+	border-color: var(--red-500);
+}
+.h-radio.active {
+	background-color: var(--accent);
+	border-color: var(--accent);
+}
+.h-radio.active .h-radio-inner {
+	opacity: 1;
+	transform: scale(1);
+}
+.h-radio-buttons .h-radio-container:not(:last-child) {
+	margin-bottom: 0.5rem;
+}
+.h-radio-buttons.horizontal {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+}
+.h-radio-buttons.horizontal .h-radio-container {
+	margin-bottom: 0 !important;
+	margin-right: 1rem;
+}
+.h-radio-buttons.horizontal .h-radio-container:last-child {
+	margin-right: 0;
+}
+.h-select-trigger {
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 0.5rem;
+	background-color: var(--ui-1);
+	color: var(--text-color);
+	border-radius: 0.5rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-select-trigger.accent {
+	color: #fff;
+	background-color: var(--accent-500);
+}
+.h-select-trigger.accent:hover {
+	background-color: var(--accent-600);
+}
+.h-select-trigger.accent:focus {
+	box-shadow: var(--accent-100) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.accent:focus {
+	box-shadow: var(--accent-900) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.rose {
+	color: #fff;
+	background-color: var(--rose-500);
+}
+.h-select-trigger.rose:hover {
+	background-color: var(--rose-600);
+}
+.h-select-trigger.rose:focus {
+	box-shadow: var(--rose-100) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.rose:focus {
+	box-shadow: var(--rose-900) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.pink {
+	color: #fff;
+	background-color: var(--pink-500);
+}
+.h-select-trigger.pink:hover {
+	background-color: var(--pink-600);
+}
+.h-select-trigger.pink:focus {
+	box-shadow: var(--pink-100) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.pink:focus {
+	box-shadow: var(--pink-900) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.fuchsia {
+	color: #fff;
+	background-color: var(--fuchsia-500);
+}
+.h-select-trigger.fuchsia:hover {
+	background-color: var(--fuchsia-600);
+}
+.h-select-trigger.fuchsia:focus {
+	box-shadow: var(--fuchsia-100) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.fuchsia:focus {
+	box-shadow: var(--fuchsia-900) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.purple {
+	color: #fff;
+	background-color: var(--purple-500);
+}
+.h-select-trigger.purple:hover {
+	background-color: var(--purple-600);
+}
+.h-select-trigger.purple:focus {
+	box-shadow: var(--purple-100) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.purple:focus {
+	box-shadow: var(--purple-900) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.violet {
+	color: #fff;
+	background-color: var(--violet-500);
+}
+.h-select-trigger.violet:hover {
+	background-color: var(--violet-600);
+}
+.h-select-trigger.violet:focus {
+	box-shadow: var(--violet-100) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.violet:focus {
+	box-shadow: var(--violet-900) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.indigo {
+	color: #fff;
+	background-color: var(--indigo-500);
+}
+.h-select-trigger.indigo:hover {
+	background-color: var(--indigo-600);
+}
+.h-select-trigger.indigo:focus {
+	box-shadow: var(--indigo-100) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.indigo:focus {
+	box-shadow: var(--indigo-900) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.blue {
+	color: #fff;
+	background-color: var(--blue-500);
+}
+.h-select-trigger.blue:hover {
+	background-color: var(--blue-600);
+}
+.h-select-trigger.blue:focus {
+	box-shadow: var(--blue-100) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.blue:focus {
+	box-shadow: var(--blue-900) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.sky {
+	color: #fff;
+	background-color: var(--sky-500);
+}
+.h-select-trigger.sky:hover {
+	background-color: var(--sky-600);
+}
+.h-select-trigger.sky:focus {
+	box-shadow: var(--sky-100) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.sky:focus {
+	box-shadow: var(--sky-900) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.cyan {
+	color: #fff;
+	background-color: var(--cyan-500);
+}
+.h-select-trigger.cyan:hover {
+	background-color: var(--cyan-600);
+}
+.h-select-trigger.cyan:focus {
+	box-shadow: var(--cyan-100) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.cyan:focus {
+	box-shadow: var(--cyan-900) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.teal {
+	color: #fff;
+	background-color: var(--teal-500);
+}
+.h-select-trigger.teal:hover {
+	background-color: var(--teal-600);
+}
+.h-select-trigger.teal:focus {
+	box-shadow: var(--teal-100) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.teal:focus {
+	box-shadow: var(--teal-900) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.emerald {
+	color: #fff;
+	background-color: var(--emerald-500);
+}
+.h-select-trigger.emerald:hover {
+	background-color: var(--emerald-600);
+}
+.h-select-trigger.emerald:focus {
+	box-shadow: var(--emerald-100) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.emerald:focus {
+	box-shadow: var(--emerald-900) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.green {
+	color: #fff;
+	background-color: var(--green-500);
+}
+.h-select-trigger.green:hover {
+	background-color: var(--green-600);
+}
+.h-select-trigger.green:focus {
+	box-shadow: var(--green-100) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.green:focus {
+	box-shadow: var(--green-900) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.lime {
+	color: #fff;
+	background-color: var(--lime-500);
+}
+.h-select-trigger.lime:hover {
+	background-color: var(--lime-600);
+}
+.h-select-trigger.lime:focus {
+	box-shadow: var(--lime-100) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.lime:focus {
+	box-shadow: var(--lime-900) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.yellow {
+	color: #fff;
+	background-color: var(--yellow-500);
+}
+.h-select-trigger.yellow:hover {
+	background-color: var(--yellow-600);
+}
+.h-select-trigger.yellow:focus {
+	box-shadow: var(--yellow-100) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.yellow:focus {
+	box-shadow: var(--yellow-900) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.amber {
+	color: #fff;
+	background-color: var(--amber-500);
+}
+.h-select-trigger.amber:hover {
+	background-color: var(--amber-600);
+}
+.h-select-trigger.amber:focus {
+	box-shadow: var(--amber-100) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.amber:focus {
+	box-shadow: var(--amber-900) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.orange {
+	color: #fff;
+	background-color: var(--orange-500);
+}
+.h-select-trigger.orange:hover {
+	background-color: var(--orange-600);
+}
+.h-select-trigger.orange:focus {
+	box-shadow: var(--orange-100) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.orange:focus {
+	box-shadow: var(--orange-900) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.red {
+	color: #fff;
+	background-color: var(--red-500);
+}
+.h-select-trigger.red:hover {
+	background-color: var(--red-600);
+}
+.h-select-trigger.red:focus {
+	box-shadow: var(--red-100) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-select-trigger.red:focus {
+	box-shadow: var(--red-900) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger:hover {
+	background-color: var(--ui-2);
+}
+.h-select-trigger:focus {
+	box-shadow: var(--ui) 0px 0px 0px 2px, var(--ui-2) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-select-trigger.bordered {
+	border: 1px solid var(--ui-2);
+}
+html.dark .h-select-trigger.bordered {
+	border-color: var(--ui-3);
+}
+.h-skeleton-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.h-skeleton-wrapper .h-skeleton:not(:last-child) {
+	margin-bottom: 0.8rem;
+}
+@keyframes shimmer {
+	100% {
+		transform: translateX(100%);
+	}
+}
+.h-skeleton {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.25rem;
+	background-color: var(--ui-2);
+}
+.h-skeleton.size-sm {
+	height: 1.5rem;
+}
+.h-skeleton.size-md {
+	height: 2rem;
+}
+.h-skeleton.size-lg {
+	height: 2.5rem;
+}
+.h-skeleton::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translateX(-100%);
+	background-color: var(--ui-2);
+}
+.h-skeleton.animate::after {
+	background-image: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0,
+		rgba(255, 255, 255, 0.2) 20%,
+		rgba(255, 255, 255, 0.5) 60%,
+		rgba(255, 255, 255, 0)
+	);
+	animation: shimmer 2s infinite;
+}
+html.dark .h-skeleton.animate::after {
+	background-image: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0,
+		rgba(39, 39, 42, 0.2) 20%,
+		rgba(39, 39, 42, 0.5) 60%,
+		rgba(255, 255, 255, 0)
+	);
+}
+.h-slider-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+.h-slider-container.right {
+	flex-direction: row;
+}
+.h-side-box {
+	background-color: var(--ui);
+	border-radius: 0.5rem;
+	border: 2px solid var(--ui-2);
+	padding: 0.25rem 0.5rem;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-side-box > span {
+	font-size: 0.875rem;
+	line-height: 1;
+	color: var(--text-color-06);
+	font-weight: 500;
+}
+.h-slider {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 3px;
+	background: var(--ui-2);
+	outline: none;
+	border-radius: 0.25rem;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-slider:hover {
+	background-color: var(--ui-3);
+}
+.h-slider:hover + .h-side-box {
+	border-color: var(--ui-3);
+}
+.h-slider.thin {
+	height: 2px;
+}
+.h-slider.thin::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1rem;
+	height: 1rem;
+	background: var(--accent);
+	border-radius: 90px;
+	cursor: pointer;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-slider.thin::-moz-range-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1rem;
+	height: 1rem;
+	background: var(--accent);
+	border-radius: 90px;
+	cursor: pointer;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-slider.accent::-webkit-slider-thumb {
+	background-color: var(--accent-500);
+}
+.h-slider.accent::-moz-range-thumb {
+	background-color: var(--accent-500);
+}
+.h-slider.accent:focus::-webkit-slider-thumb {
+	box-shadow: var(--accent-100) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.accent:focus::-moz-range-thumb {
+	box-shadow: var(--accent-100) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.accent:focus::-webkit-slider-thumb {
+	box-shadow: var(--accent-900) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.accent:focus::-moz-range-thumb {
+	box-shadow: var(--accent-900) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.rose::-webkit-slider-thumb {
+	background-color: var(--rose-500);
+}
+.h-slider.rose::-moz-range-thumb {
+	background-color: var(--rose-500);
+}
+.h-slider.rose:focus::-webkit-slider-thumb {
+	box-shadow: var(--rose-100) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.rose:focus::-moz-range-thumb {
+	box-shadow: var(--rose-100) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.rose:focus::-webkit-slider-thumb {
+	box-shadow: var(--rose-900) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.rose:focus::-moz-range-thumb {
+	box-shadow: var(--rose-900) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.pink::-webkit-slider-thumb {
+	background-color: var(--pink-500);
+}
+.h-slider.pink::-moz-range-thumb {
+	background-color: var(--pink-500);
+}
+.h-slider.pink:focus::-webkit-slider-thumb {
+	box-shadow: var(--pink-100) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.pink:focus::-moz-range-thumb {
+	box-shadow: var(--pink-100) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.pink:focus::-webkit-slider-thumb {
+	box-shadow: var(--pink-900) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.pink:focus::-moz-range-thumb {
+	box-shadow: var(--pink-900) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.fuchsia::-webkit-slider-thumb {
+	background-color: var(--fuchsia-500);
+}
+.h-slider.fuchsia::-moz-range-thumb {
+	background-color: var(--fuchsia-500);
+}
+.h-slider.fuchsia:focus::-webkit-slider-thumb {
+	box-shadow: var(--fuchsia-100) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.fuchsia:focus::-moz-range-thumb {
+	box-shadow: var(--fuchsia-100) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.fuchsia:focus::-webkit-slider-thumb {
+	box-shadow: var(--fuchsia-900) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.fuchsia:focus::-moz-range-thumb {
+	box-shadow: var(--fuchsia-900) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.purple::-webkit-slider-thumb {
+	background-color: var(--purple-500);
+}
+.h-slider.purple::-moz-range-thumb {
+	background-color: var(--purple-500);
+}
+.h-slider.purple:focus::-webkit-slider-thumb {
+	box-shadow: var(--purple-100) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.purple:focus::-moz-range-thumb {
+	box-shadow: var(--purple-100) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.purple:focus::-webkit-slider-thumb {
+	box-shadow: var(--purple-900) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.purple:focus::-moz-range-thumb {
+	box-shadow: var(--purple-900) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.violet::-webkit-slider-thumb {
+	background-color: var(--violet-500);
+}
+.h-slider.violet::-moz-range-thumb {
+	background-color: var(--violet-500);
+}
+.h-slider.violet:focus::-webkit-slider-thumb {
+	box-shadow: var(--violet-100) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.violet:focus::-moz-range-thumb {
+	box-shadow: var(--violet-100) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.violet:focus::-webkit-slider-thumb {
+	box-shadow: var(--violet-900) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.violet:focus::-moz-range-thumb {
+	box-shadow: var(--violet-900) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.indigo::-webkit-slider-thumb {
+	background-color: var(--indigo-500);
+}
+.h-slider.indigo::-moz-range-thumb {
+	background-color: var(--indigo-500);
+}
+.h-slider.indigo:focus::-webkit-slider-thumb {
+	box-shadow: var(--indigo-100) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.indigo:focus::-moz-range-thumb {
+	box-shadow: var(--indigo-100) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.indigo:focus::-webkit-slider-thumb {
+	box-shadow: var(--indigo-900) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.indigo:focus::-moz-range-thumb {
+	box-shadow: var(--indigo-900) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.blue::-webkit-slider-thumb {
+	background-color: var(--blue-500);
+}
+.h-slider.blue::-moz-range-thumb {
+	background-color: var(--blue-500);
+}
+.h-slider.blue:focus::-webkit-slider-thumb {
+	box-shadow: var(--blue-100) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.blue:focus::-moz-range-thumb {
+	box-shadow: var(--blue-100) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.blue:focus::-webkit-slider-thumb {
+	box-shadow: var(--blue-900) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.blue:focus::-moz-range-thumb {
+	box-shadow: var(--blue-900) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.sky::-webkit-slider-thumb {
+	background-color: var(--sky-500);
+}
+.h-slider.sky::-moz-range-thumb {
+	background-color: var(--sky-500);
+}
+.h-slider.sky:focus::-webkit-slider-thumb {
+	box-shadow: var(--sky-100) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.sky:focus::-moz-range-thumb {
+	box-shadow: var(--sky-100) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.sky:focus::-webkit-slider-thumb {
+	box-shadow: var(--sky-900) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.sky:focus::-moz-range-thumb {
+	box-shadow: var(--sky-900) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.cyan::-webkit-slider-thumb {
+	background-color: var(--cyan-500);
+}
+.h-slider.cyan::-moz-range-thumb {
+	background-color: var(--cyan-500);
+}
+.h-slider.cyan:focus::-webkit-slider-thumb {
+	box-shadow: var(--cyan-100) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.cyan:focus::-moz-range-thumb {
+	box-shadow: var(--cyan-100) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.cyan:focus::-webkit-slider-thumb {
+	box-shadow: var(--cyan-900) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.cyan:focus::-moz-range-thumb {
+	box-shadow: var(--cyan-900) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.teal::-webkit-slider-thumb {
+	background-color: var(--teal-500);
+}
+.h-slider.teal::-moz-range-thumb {
+	background-color: var(--teal-500);
+}
+.h-slider.teal:focus::-webkit-slider-thumb {
+	box-shadow: var(--teal-100) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.teal:focus::-moz-range-thumb {
+	box-shadow: var(--teal-100) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.teal:focus::-webkit-slider-thumb {
+	box-shadow: var(--teal-900) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.teal:focus::-moz-range-thumb {
+	box-shadow: var(--teal-900) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.emerald::-webkit-slider-thumb {
+	background-color: var(--emerald-500);
+}
+.h-slider.emerald::-moz-range-thumb {
+	background-color: var(--emerald-500);
+}
+.h-slider.emerald:focus::-webkit-slider-thumb {
+	box-shadow: var(--emerald-100) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.emerald:focus::-moz-range-thumb {
+	box-shadow: var(--emerald-100) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.emerald:focus::-webkit-slider-thumb {
+	box-shadow: var(--emerald-900) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.emerald:focus::-moz-range-thumb {
+	box-shadow: var(--emerald-900) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.green::-webkit-slider-thumb {
+	background-color: var(--green-500);
+}
+.h-slider.green::-moz-range-thumb {
+	background-color: var(--green-500);
+}
+.h-slider.green:focus::-webkit-slider-thumb {
+	box-shadow: var(--green-100) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.green:focus::-moz-range-thumb {
+	box-shadow: var(--green-100) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.green:focus::-webkit-slider-thumb {
+	box-shadow: var(--green-900) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.green:focus::-moz-range-thumb {
+	box-shadow: var(--green-900) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.lime::-webkit-slider-thumb {
+	background-color: var(--lime-500);
+}
+.h-slider.lime::-moz-range-thumb {
+	background-color: var(--lime-500);
+}
+.h-slider.lime:focus::-webkit-slider-thumb {
+	box-shadow: var(--lime-100) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.lime:focus::-moz-range-thumb {
+	box-shadow: var(--lime-100) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.lime:focus::-webkit-slider-thumb {
+	box-shadow: var(--lime-900) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.lime:focus::-moz-range-thumb {
+	box-shadow: var(--lime-900) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.yellow::-webkit-slider-thumb {
+	background-color: var(--yellow-500);
+}
+.h-slider.yellow::-moz-range-thumb {
+	background-color: var(--yellow-500);
+}
+.h-slider.yellow:focus::-webkit-slider-thumb {
+	box-shadow: var(--yellow-100) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.yellow:focus::-moz-range-thumb {
+	box-shadow: var(--yellow-100) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.yellow:focus::-webkit-slider-thumb {
+	box-shadow: var(--yellow-900) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.yellow:focus::-moz-range-thumb {
+	box-shadow: var(--yellow-900) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.amber::-webkit-slider-thumb {
+	background-color: var(--amber-500);
+}
+.h-slider.amber::-moz-range-thumb {
+	background-color: var(--amber-500);
+}
+.h-slider.amber:focus::-webkit-slider-thumb {
+	box-shadow: var(--amber-100) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.amber:focus::-moz-range-thumb {
+	box-shadow: var(--amber-100) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.amber:focus::-webkit-slider-thumb {
+	box-shadow: var(--amber-900) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.amber:focus::-moz-range-thumb {
+	box-shadow: var(--amber-900) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.orange::-webkit-slider-thumb {
+	background-color: var(--orange-500);
+}
+.h-slider.orange::-moz-range-thumb {
+	background-color: var(--orange-500);
+}
+.h-slider.orange:focus::-webkit-slider-thumb {
+	box-shadow: var(--orange-100) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.orange:focus::-moz-range-thumb {
+	box-shadow: var(--orange-100) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.orange:focus::-webkit-slider-thumb {
+	box-shadow: var(--orange-900) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.orange:focus::-moz-range-thumb {
+	box-shadow: var(--orange-900) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.red::-webkit-slider-thumb {
+	background-color: var(--red-500);
+}
+.h-slider.red::-moz-range-thumb {
+	background-color: var(--red-500);
+}
+.h-slider.red:focus::-webkit-slider-thumb {
+	box-shadow: var(--red-100) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider.red:focus::-moz-range-thumb {
+	box-shadow: var(--red-100) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.red:focus::-webkit-slider-thumb {
+	box-shadow: var(--red-900) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+html.dark .h-slider.red:focus::-moz-range-thumb {
+	box-shadow: var(--red-900) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1.25rem;
+	height: 1.25rem;
+	background: var(--accent);
+	border-radius: 90px;
+	cursor: pointer;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-slider::-moz-range-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1.25rem;
+	height: 1.25rem;
+	background: var(--accent);
+	border-radius: 90px;
+	cursor: pointer;
+	transition: var(--d-m-2) var(--e-s);
+}
+.h-slider:hover::-webkit-slider-thumb {
+	transform: scale(1.15);
+}
+.h-slider:hover::-moz-range-thumb {
+	transform: scale(1.15);
+}
+.h-table {
+	width: 100%;
+	border-radius: 0.25rem;
+	border: 1px solid var(--ui-2);
+	overflow: scroll;
+}
+.h-table.alternate .h-row:nth-child(odd) {
+	background-color: var(--ui-1);
+}
+.h-table.alternate .h-row:nth-child(even) {
+	background-color: var(--ui);
+}
+.h-table.no-select .h-cell {
+	user-select: none;
+}
+.h-table.border-first .h-table-header .h-cell:first-child,
+.h-table.border-first .h-row .h-cell:first-child {
+	border-right: 1px solid var(--ui-2);
+}
+.h-table.attach-first .h-table-header .h-cell:first-child,
+.h-table.attach-first .h-row .h-cell:first-child {
+	position: sticky;
+	left: 0;
+	background-color: var(--ui);
+	z-index: 2;
+}
+.h-table.attach-first .h-table-header .h-cell:first-child {
+	background-color: var(--ui-1);
+}
+.h-table.border-columns .h-table-header .h-cell:not(:last-child),
+.h-table.border-columns .h-row .h-cell:not(:last-child) {
+	border-right: 1px solid var(--ui-2);
+}
+.h-table.cells-lg .h-row .h-cell {
+	height: 2.5625rem;
+}
+.h-table-header {
+	width: 100%;
+	height: 2rem;
+	background-color: var(--ui-1);
+	display: grid;
+	grid-template-rows: 1;
+}
+.h-table.attach-header .h-table-header {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+.h-table.attach-header .h-table-header:first-child {
+	z-index: 3 !important;
+	position: sticky;
+	top: 0 !important;
+	left: auto;
+}
+.h-table-header .h-cell {
+	width: 100%;
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--text-color);
+	padding: 0.5rem 2rem;
+	border-bottom: 1px solid var(--ui-2);
+	height: 2rem;
+}
+.h-row {
+	border-bottom: 1px solid var(--ui-2);
+}
+.h-row {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1;
+}
+.h-row:last-child {
+	border-bottom: none;
+}
+.h-cell {
+	padding: 0.5rem 2rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: left;
+}
+.h-cell span {
+	font-size: 0.875rem;
+	color: var(--text-color-06);
+}
+.h-tag {
+	display: inline-block;
+	border-radius: 0.25rem;
+	border: 2px solid var(--ui-2);
+	background-color: var(--ui-1);
+	font-weight: 500;
+}
+.h-tag.size-sm {
+	font-size: 0.7rem;
+	padding: 0.25rem 0.5rem;
+}
+.h-tag.size-md {
+	font-size: 0.875rem;
+	padding: 0.25rem 0.5rem;
+}
+.h-tag.size-lg {
+	font-size: 1rem;
+	padding: 0.75rem 1rem;
+}
+.h-tag.shape-pill {
+	border-radius: 90px;
+}
+.h-tag.shape-rounded {
+	border-radius: 0.25rem;
+}
+.h-tag.shape-square {
+	border-radius: 0;
+}
+.h-tag.variant-solid.accent {
+	color: #fff;
+	background-color: var(--accent-500);
+	border-color: var(--accent-500);
+}
+html.dark .h-tag.variant-solid.accent:is(.color-adjust) {
+	background-color: var(--accent-900);
+	border-color: var(--accent-900);
+}
+.h-tag.variant-outline.accent {
+	border-color: var(--accent-500);
+	color: var(--accent-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.accent:focus {
+	box-shadow: var(--accent-100) 0px 0px 0px 2px,
+		var(--accent-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.accent.variant-solid:hover {
+	background-color: var(--accent-600);
+	border-color: var(--accent-600);
+}
+.h-tag.clickable.accent.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.accent.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.rose {
+	color: #fff;
+	background-color: var(--rose-500);
+	border-color: var(--rose-500);
+}
+html.dark .h-tag.variant-solid.rose:is(.color-adjust) {
+	background-color: var(--rose-900);
+	border-color: var(--rose-900);
+}
+.h-tag.variant-outline.rose {
+	border-color: var(--rose-500);
+	color: var(--rose-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.rose:focus {
+	box-shadow: var(--rose-100) 0px 0px 0px 2px, var(--rose-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.rose.variant-solid:hover {
+	background-color: var(--rose-600);
+	border-color: var(--rose-600);
+}
+.h-tag.clickable.rose.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.rose.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.pink {
+	color: #fff;
+	background-color: var(--pink-500);
+	border-color: var(--pink-500);
+}
+html.dark .h-tag.variant-solid.pink:is(.color-adjust) {
+	background-color: var(--pink-900);
+	border-color: var(--pink-900);
+}
+.h-tag.variant-outline.pink {
+	border-color: var(--pink-500);
+	color: var(--pink-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.pink:focus {
+	box-shadow: var(--pink-100) 0px 0px 0px 2px, var(--pink-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.pink.variant-solid:hover {
+	background-color: var(--pink-600);
+	border-color: var(--pink-600);
+}
+.h-tag.clickable.pink.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.pink.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.fuchsia {
+	color: #fff;
+	background-color: var(--fuchsia-500);
+	border-color: var(--fuchsia-500);
+}
+html.dark .h-tag.variant-solid.fuchsia:is(.color-adjust) {
+	background-color: var(--fuchsia-900);
+	border-color: var(--fuchsia-900);
+}
+.h-tag.variant-outline.fuchsia {
+	border-color: var(--fuchsia-500);
+	color: var(--fuchsia-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.fuchsia:focus {
+	box-shadow: var(--fuchsia-100) 0px 0px 0px 2px,
+		var(--fuchsia-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.fuchsia.variant-solid:hover {
+	background-color: var(--fuchsia-600);
+	border-color: var(--fuchsia-600);
+}
+.h-tag.clickable.fuchsia.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.fuchsia.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.purple {
+	color: #fff;
+	background-color: var(--purple-500);
+	border-color: var(--purple-500);
+}
+html.dark .h-tag.variant-solid.purple:is(.color-adjust) {
+	background-color: var(--purple-900);
+	border-color: var(--purple-900);
+}
+.h-tag.variant-outline.purple {
+	border-color: var(--purple-500);
+	color: var(--purple-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.purple:focus {
+	box-shadow: var(--purple-100) 0px 0px 0px 2px,
+		var(--purple-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.purple.variant-solid:hover {
+	background-color: var(--purple-600);
+	border-color: var(--purple-600);
+}
+.h-tag.clickable.purple.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.purple.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.violet {
+	color: #fff;
+	background-color: var(--violet-500);
+	border-color: var(--violet-500);
+}
+html.dark .h-tag.variant-solid.violet:is(.color-adjust) {
+	background-color: var(--violet-900);
+	border-color: var(--violet-900);
+}
+.h-tag.variant-outline.violet {
+	border-color: var(--violet-500);
+	color: var(--violet-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.violet:focus {
+	box-shadow: var(--violet-100) 0px 0px 0px 2px,
+		var(--violet-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.violet.variant-solid:hover {
+	background-color: var(--violet-600);
+	border-color: var(--violet-600);
+}
+.h-tag.clickable.violet.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.violet.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.indigo {
+	color: #fff;
+	background-color: var(--indigo-500);
+	border-color: var(--indigo-500);
+}
+html.dark .h-tag.variant-solid.indigo:is(.color-adjust) {
+	background-color: var(--indigo-900);
+	border-color: var(--indigo-900);
+}
+.h-tag.variant-outline.indigo {
+	border-color: var(--indigo-500);
+	color: var(--indigo-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.indigo:focus {
+	box-shadow: var(--indigo-100) 0px 0px 0px 2px,
+		var(--indigo-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.indigo.variant-solid:hover {
+	background-color: var(--indigo-600);
+	border-color: var(--indigo-600);
+}
+.h-tag.clickable.indigo.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.indigo.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.blue {
+	color: #fff;
+	background-color: var(--blue-500);
+	border-color: var(--blue-500);
+}
+html.dark .h-tag.variant-solid.blue:is(.color-adjust) {
+	background-color: var(--blue-900);
+	border-color: var(--blue-900);
+}
+.h-tag.variant-outline.blue {
+	border-color: var(--blue-500);
+	color: var(--blue-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.blue:focus {
+	box-shadow: var(--blue-100) 0px 0px 0px 2px, var(--blue-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.blue.variant-solid:hover {
+	background-color: var(--blue-600);
+	border-color: var(--blue-600);
+}
+.h-tag.clickable.blue.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.blue.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.sky {
+	color: #fff;
+	background-color: var(--sky-500);
+	border-color: var(--sky-500);
+}
+html.dark .h-tag.variant-solid.sky:is(.color-adjust) {
+	background-color: var(--sky-900);
+	border-color: var(--sky-900);
+}
+.h-tag.variant-outline.sky {
+	border-color: var(--sky-500);
+	color: var(--sky-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.sky:focus {
+	box-shadow: var(--sky-100) 0px 0px 0px 2px, var(--sky-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.sky.variant-solid:hover {
+	background-color: var(--sky-600);
+	border-color: var(--sky-600);
+}
+.h-tag.clickable.sky.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.sky.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.cyan {
+	color: #fff;
+	background-color: var(--cyan-500);
+	border-color: var(--cyan-500);
+}
+html.dark .h-tag.variant-solid.cyan:is(.color-adjust) {
+	background-color: var(--cyan-900);
+	border-color: var(--cyan-900);
+}
+.h-tag.variant-outline.cyan {
+	border-color: var(--cyan-500);
+	color: var(--cyan-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.cyan:focus {
+	box-shadow: var(--cyan-100) 0px 0px 0px 2px, var(--cyan-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.cyan.variant-solid:hover {
+	background-color: var(--cyan-600);
+	border-color: var(--cyan-600);
+}
+.h-tag.clickable.cyan.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.cyan.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.teal {
+	color: #fff;
+	background-color: var(--teal-500);
+	border-color: var(--teal-500);
+}
+html.dark .h-tag.variant-solid.teal:is(.color-adjust) {
+	background-color: var(--teal-900);
+	border-color: var(--teal-900);
+}
+.h-tag.variant-outline.teal {
+	border-color: var(--teal-500);
+	color: var(--teal-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.teal:focus {
+	box-shadow: var(--teal-100) 0px 0px 0px 2px, var(--teal-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.teal.variant-solid:hover {
+	background-color: var(--teal-600);
+	border-color: var(--teal-600);
+}
+.h-tag.clickable.teal.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.teal.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.emerald {
+	color: #fff;
+	background-color: var(--emerald-500);
+	border-color: var(--emerald-500);
+}
+html.dark .h-tag.variant-solid.emerald:is(.color-adjust) {
+	background-color: var(--emerald-900);
+	border-color: var(--emerald-900);
+}
+.h-tag.variant-outline.emerald {
+	border-color: var(--emerald-500);
+	color: var(--emerald-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.emerald:focus {
+	box-shadow: var(--emerald-100) 0px 0px 0px 2px,
+		var(--emerald-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.emerald.variant-solid:hover {
+	background-color: var(--emerald-600);
+	border-color: var(--emerald-600);
+}
+.h-tag.clickable.emerald.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.emerald.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.green {
+	color: #fff;
+	background-color: var(--green-500);
+	border-color: var(--green-500);
+}
+html.dark .h-tag.variant-solid.green:is(.color-adjust) {
+	background-color: var(--green-900);
+	border-color: var(--green-900);
+}
+.h-tag.variant-outline.green {
+	border-color: var(--green-500);
+	color: var(--green-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.green:focus {
+	box-shadow: var(--green-100) 0px 0px 0px 2px,
+		var(--green-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.green.variant-solid:hover {
+	background-color: var(--green-600);
+	border-color: var(--green-600);
+}
+.h-tag.clickable.green.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.green.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.lime {
+	color: #fff;
+	background-color: var(--lime-500);
+	border-color: var(--lime-500);
+}
+html.dark .h-tag.variant-solid.lime:is(.color-adjust) {
+	background-color: var(--lime-900);
+	border-color: var(--lime-900);
+}
+.h-tag.variant-outline.lime {
+	border-color: var(--lime-500);
+	color: var(--lime-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.lime:focus {
+	box-shadow: var(--lime-100) 0px 0px 0px 2px, var(--lime-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.lime.variant-solid:hover {
+	background-color: var(--lime-600);
+	border-color: var(--lime-600);
+}
+.h-tag.clickable.lime.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.lime.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.yellow {
+	color: #fff;
+	background-color: var(--yellow-500);
+	border-color: var(--yellow-500);
+}
+html.dark .h-tag.variant-solid.yellow:is(.color-adjust) {
+	background-color: var(--yellow-900);
+	border-color: var(--yellow-900);
+}
+.h-tag.variant-outline.yellow {
+	border-color: var(--yellow-500);
+	color: var(--yellow-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.yellow:focus {
+	box-shadow: var(--yellow-100) 0px 0px 0px 2px,
+		var(--yellow-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.yellow.variant-solid:hover {
+	background-color: var(--yellow-600);
+	border-color: var(--yellow-600);
+}
+.h-tag.clickable.yellow.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.yellow.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.amber {
+	color: #fff;
+	background-color: var(--amber-500);
+	border-color: var(--amber-500);
+}
+html.dark .h-tag.variant-solid.amber:is(.color-adjust) {
+	background-color: var(--amber-900);
+	border-color: var(--amber-900);
+}
+.h-tag.variant-outline.amber {
+	border-color: var(--amber-500);
+	color: var(--amber-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.amber:focus {
+	box-shadow: var(--amber-100) 0px 0px 0px 2px,
+		var(--amber-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.amber.variant-solid:hover {
+	background-color: var(--amber-600);
+	border-color: var(--amber-600);
+}
+.h-tag.clickable.amber.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.amber.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.orange {
+	color: #fff;
+	background-color: var(--orange-500);
+	border-color: var(--orange-500);
+}
+html.dark .h-tag.variant-solid.orange:is(.color-adjust) {
+	background-color: var(--orange-900);
+	border-color: var(--orange-900);
+}
+.h-tag.variant-outline.orange {
+	border-color: var(--orange-500);
+	color: var(--orange-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.orange:focus {
+	box-shadow: var(--orange-100) 0px 0px 0px 2px,
+		var(--orange-500) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.orange.variant-solid:hover {
+	background-color: var(--orange-600);
+	border-color: var(--orange-600);
+}
+.h-tag.clickable.orange.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.orange.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.variant-solid.red {
+	color: #fff;
+	background-color: var(--red-500);
+	border-color: var(--red-500);
+}
+html.dark .h-tag.variant-solid.red:is(.color-adjust) {
+	background-color: var(--red-900);
+	border-color: var(--red-900);
+}
+.h-tag.variant-outline.red {
+	border-color: var(--red-500);
+	color: var(--red-500);
+	background-color: var(--ui);
+}
+.h-tag.clickable.red:focus {
+	box-shadow: var(--red-100) 0px 0px 0px 2px, var(--red-500) 0px 0px 0px 4px,
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.h-tag.clickable.red.variant-solid:hover {
+	background-color: var(--red-600);
+	border-color: var(--red-600);
+}
+.h-tag.clickable.red.variant-outline:hover {
+	background-color: var(--ui-1);
+}
+html.dark .h-tag.clickable.red.variant-outline:hover {
+	background-color: var(--ui-2);
+}
+.h-tag.clickable {
+	cursor: pointer;
+	transition: var(--d-m-1) var(--p-s);
+}

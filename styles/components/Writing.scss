@@ -1,0 +1,38 @@
+article {
+	color: var(--text-color);
+
+	& p {
+		font-size: 1.15rem;
+	}
+
+	& > h1 {
+		line-height: 1.1;
+		margin-bottom: 3rem;
+	}
+
+	& h2,
+	& h3 {
+		margin-top: 3rem;
+	}
+
+	& a {
+		&:hover {
+			text-decoration: underline;
+			opacity: 1 !important;
+		}
+	}
+
+	& code, & pre {
+		font-family: 'Inter';
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	& blockquote {
+		margin: 3rem 0;
+		
+		& * {
+			line-height: 1.9;
+		}
+	}
+}

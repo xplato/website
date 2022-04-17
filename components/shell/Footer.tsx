@@ -1,27 +1,35 @@
-import dynamic from 'next/dynamic';
-import ELi from '../ELi';
+import { HeartIcon } from '@heroicons/react/solid';
 
-const ThemeSwitcher = dynamic(() => import('../ThemeSwitcher'), { ssr: false });
+import Button from '../Button';
 
 const Footer = () => {
 	return (
-		<div className='footer mt-5r mb-2r pt-2r'>
-			<div className='grid grid-2 landscape-grid-1'>
-				<div className='grid-block justify-s landscape-align-c landscape-text-c'>
-					<p className='fs-sm lh-1'>
-						This website is{' '}
-						<ELi href='https://github.com/xplato/website'>
-							open-source.
-						</ELi>
-					</p>
-					<p className='mb-0 fs-sm lh-1-5'>
-						Copyright &copy; 2022. All rights reserved.
-					</p>
+		<div className='footer'>
+			<div className='w-100p grid grid-3 landscape-grid-2'>
+				<div className='grid-block'>
+					<div className='flex align-c justify-c flex-row'>
+						<p className='caption-text low-weight'>
+							Copyright &copy; 2022
+						</p>
+					</div>
 				</div>
-				<div className='grid-block align-e landscape-align-c landscape-text-c'>
-					<p className='mb-0 fs-sm footer-caption'></p>
-					<div className='flex align-c justify-c flex-row mt-0-5r'>
-						<ThemeSwitcher />
+
+				<div className='grid-block align-c landscape-hide'>
+					<div className='flex-sb'>
+						<Button.Internal href='/privacy' className='hy-button'>Privacy</Button.Internal>
+						<Button.External href='https://github.com/xplato/website' className='hy-button'>Source code</Button.External>
+					</div>
+				</div>
+
+				<div className='grid-block align-e'>
+					<div className="flex align-c justify-c flex-row">
+						<p className="mb-0">Made with</p>
+						<i className='j-icon mx-0-25r'>
+							<span className='text-red-500'>
+								<HeartIcon />
+							</span>
+						</i>
+						<p className="mb-0">in SLC</p>
 					</div>
 				</div>
 			</div>

@@ -1,3 +1,4 @@
+import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 
 import Keyboard from '../Keyboard';
@@ -14,10 +15,12 @@ const KEYS: TKeys = {
 	'p': 'pins',
 	'h': 'help',
 	'k': 'keyboard shortcuts',
+	't': 'toggle theme',
 };
 
 const Shortcuts = () => {
 	const { push } = useRouter();
+	const { theme, setTheme } = useTheme();
 
 	const onPress = (key: string, ev: any) => {
 		switch (key) {
@@ -44,6 +47,9 @@ const Shortcuts = () => {
 				break;
 			case 'k':
 				push('/help?h=shortcuts#shortcuts');
+				break;
+			case 't':
+				setTheme(theme === 'light' ? 'dark' : 'light');
 				break;
 			default:
 				break;
