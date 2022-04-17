@@ -1,6 +1,6 @@
 import Writing from '../../components/writing/Writing';
 import PageMeta from '../../components/PageMeta';
-
+import Layout from '../../components/layout/Layout';
 
 const meta = {
 	title: '',
@@ -16,5 +16,7 @@ const A = () => (
 		
 	</Writing>
 );
+
+A.layout = Layout;
 
 export default A;
