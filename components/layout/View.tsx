@@ -1,9 +1,8 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 import { useSearchPanel } from '../../providers/SearchPanelProvider';
 
 import Search from '../Search';
-import Navigation from '../shell/Navigation';
 import Shortcuts from '../shell/Shortcuts';
 import Keyboard from '../Keyboard';
 
@@ -12,14 +11,11 @@ import type { ChildrenOnly } from '../../types';
 
 const View = ({ children }: ChildrenOnly) => {
 	const { showSearch, setShowSearch } = useSearchPanel();
-	const [query, setQuery] = useState('');
 	const inputRef = useRef();
 
 	return (
 		<div className='view'>
 			{showSearch && <Search setSearch={setShowSearch} />}
-
-			<Navigation />
 
 			{children}
 			

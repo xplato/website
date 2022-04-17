@@ -13,7 +13,7 @@ const Samara = () => {
 				}}
 			/>
 
-			<Wrapper s='top' c='flex-c'>
+			<Wrapper c='flex-c'>
 				<article className='w-100p flex-c'>
 					<div className='w-100p flex-c text-c'>
 						<p>Difficulty: 5</p>

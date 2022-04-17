@@ -22,7 +22,7 @@ const Home = () => {
 						<div className='h-screen landscape-h-auto flex justify-sb p-4r pt-6r landscape-p-2r landscape-pt-8r sticky top-0'>
 							<div className='flex landscape-mb-5r large-text'>
 								<h1>Hello 👋</h1>
-								<div className='mw-30r'>
+								<div className='mw-35r'>
 									<p className='mb-0-5r'>
 										Hi, I'm Tristan. I'm a software engineer
 										specializing in websites. I primarily
@@ -39,7 +39,7 @@ const Home = () => {
 								<Spacer />
 								<Spacer />
 
-								<div className='mw-30r'>
+								<div className='mw-35r'>
 									<p>
 										I've recently been working on{' '}
 										<ELi href='https://gofe.app'>Gofë,</ELi>{' '}
@@ -75,6 +75,6 @@ const Home = () => {
 	);
 };
 
-Home.layout = ({ children }: any) => <Layout hideFooter>{children}</Layout>;
+Home.layout = ({ children }: any) => <Layout affixNav hideFooter>{children}</Layout>;
 
 export default Home;

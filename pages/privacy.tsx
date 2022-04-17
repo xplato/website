@@ -13,7 +13,7 @@ const Privacy = () => {
 					description: `Short version: you're anonymous`,
 				}}
 			/>
-			<Wrapper s='top' c='flex-c'>
+			<Wrapper c='flex-c'>
 				<article className='mw-35r w-100p'>
 					<h1>Privacy</h1>
 					<p>Last updated: 15 April, 2022</p>

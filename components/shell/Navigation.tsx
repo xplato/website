@@ -8,11 +8,15 @@ import Button from '../Button';
 
 const links = ['whoami', 'code', 'writings'];
 
-const Navigation = () => {
+interface Props {
+	affix?: boolean;
+}
+
+const Navigation = ({ affix }: Props) => {
 	const { pathname } = useRouter();
 
 	return (
-		<nav>
+		<nav className={affix ? 'affix' : ''}>
 			<div className='w-100p grid grid-3'>
 				<div className='grid-block'>
 					<Logo />

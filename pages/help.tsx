@@ -15,7 +15,7 @@ const Help = () => {
 				}}
 			/>
 
-			<Wrapper s='ui-1 dark-ui top' c='flex-c'>
+			<Wrapper s='ui-1 dark-ui' c='flex-c'>
 				<article className='w-100p mw-40r'>
 					<h1 className='fw-600 mb-1r' id='shortcuts'>
 						Help {'&'} Info

@@ -16,20 +16,27 @@ const Footer = () => {
 
 				<div className='grid-block align-c landscape-hide'>
 					<div className='flex-sb'>
-						<Button.Internal href='/privacy' className='hy-button'>Privacy</Button.Internal>
-						<Button.External href='https://github.com/xplato/website' className='hy-button'>Source code</Button.External>
+						<Button.Internal href='/privacy' className='hy-button'>
+							<span className='text'>Privacy</span>
+						</Button.Internal>
+						<Button.External
+							href='https://github.com/xplato/website'
+							className='hy-button'
+						>
+							<span className='text'>Source code</span>
+						</Button.External>
 					</div>
 				</div>
 
 				<div className='grid-block align-e portrait-flex-c portrait-text-c'>
-					<div className="flex align-c justify-c flex-row">
-						<p className="mb-0">Made with</p>
+					<div className='flex align-c justify-c flex-row'>
+						<p className='mb-0'>Made with</p>
 						<i className='j-icon mx-0-25r'>
 							<span className='text-red-500'>
 								<HeartIcon />
 							</span>
 						</i>
-						<p className="mb-0">in SLC</p>
+						<p className='mb-0'>in SLC</p>
 					</div>
 				</div>
 			</div>

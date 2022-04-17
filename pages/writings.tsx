@@ -3,7 +3,7 @@ import PageMeta from '../components/PageMeta';
 import HObject from '../components/HObject';
 
 import { writings } from '../data/writings';
-
+import Li from '../components/Li';
 
 const Writings = () => {
 	return (
@@ -15,14 +15,14 @@ const Writings = () => {
 				}}
 			/>
 
-			<section className='section ui-1 dark-ui top'>
+			<section className='section ui-1 dark-ui'>
 				<div className='container'>
 					<div className='mb-1-5r'>
 						<h1 className='mb-0 fw-600'>Writings 📜</h1>
 					</div>
 
-					<div className="w-100p grid grid-3 tablet-grid-2 landscape-grid-1">
-						{writings.map(e => (
+					<div className='w-100p grid grid-3 tablet-grid-2 landscape-grid-1'>
+						{writings.map((e) => (
 							<HObject
 								id={e.slug}
 								doesLink
@@ -35,6 +35,11 @@ const Writings = () => {
 							/>
 						))}
 					</div>
+
+					<p className='mt-2r'>
+						Abandon all hope, ye who enter{' '}
+						<Li href='/writings/archive'>here</Li>
+					</p>
 				</div>
 			</section>
 		</>

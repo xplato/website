@@ -10,21 +10,24 @@ nav {
 	flex-direction: row;
 	background-color: var(--ui);
 	border-bottom: 1px solid var(--ui-2);
-	position: fixed;
-	top: 0;
 	z-index: 999;
-}
 
-@supports (backdrop-filter: saturate(180%) blur(20px)) {
-	nav {
-		background-color: rgba(255, 255, 255, 0.8) !important;
-		backdrop-filter: saturate(180%) blur(20px);
-
-		html.dark & {
-			background-color: rgb(24, 24, 27, 0.8) !important;
-		}
+	&.affix {
+		position: fixed;
+		top: 0;
 	}
 }
+
+// @supports (backdrop-filter: saturate(180%) blur(20px)) {
+// 	nav {
+// 		background-color: rgba(255, 255, 255, 0.8) !important;
+// 		backdrop-filter: saturate(180%) blur(20px);
+
+// 		html.dark & {
+// 			background-color: rgb(24, 24, 27, 0.8) !important;
+// 		}
+// 	}
+// }
 
 @media only screen and (max-width: 767px) {
 	nav {
