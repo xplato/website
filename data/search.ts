@@ -7,9 +7,9 @@ const Schema = {
 	Writing: ['title', 'date', 'tags', 'type'],
 	Page: ['title', 'tags', 'type'],
 	Help: ['id', 'title', 'tags', 'type'],
+	Tool: ['title', 'type', 'tags'],
 	Project: ['title', 'description', 'tags', 'type'],
 	Pin: ['title', 'type', 'date'],
-	Tool: ['title', 'type', 'tags'],
 };
 
 const resources = [
@@ -29,18 +29,8 @@ const suggestions = [
 	pins[0],
 ];
 
-const KeyResources = {
-	All: resources,
-	Project: projects,
-	Writing: writings,
-	Page: pages,
-	Pin: pins,
-	Help: helpPages,
-}
-
 export {
 	Schema,
 	resources,
 	suggestions,
-	KeyResources,
 }

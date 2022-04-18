@@ -61,14 +61,14 @@ const App = ({ Component, pageProps }: AppProps) => {
 					href: `/writings/${e.slug}`,
 					_order: `D ${e.title}`,
 				})),
-				...projects.map((e) => ({
-					...e,
-					type: 'Project',
-					_order: `E ${e.title}`,
-				})),
 				...tools.map((e) => ({
 					...e,
 					type: 'Tool',
+					_order: `E ${e.title}`,
+				})),
+				...projects.map((e) => ({
+					...e,
+					type: 'Project',
 					_order: `F ${e.title}`,
 				})),
 			]}
@@ -96,17 +96,17 @@ const App = ({ Component, pageProps }: AppProps) => {
 					_order: 'C',
 				},
 				{
-					...projects[0],
-					type: 'Project',
-					caption: 'Latest Project',
-					href: `/code?h=${projects[0].id}#${projects[0].id}`,
-					_order: 'D',
-				},
-				{
 					...tools[0],
 					type: 'Tool',
 					caption: 'Latest Tool',
 					href: `/tools/${tools[0].id}`,
+					_order: 'D',
+				},
+				{
+					...projects[0],
+					type: 'Project',
+					caption: 'Latest Project',
+					href: `/code?h=${projects[0].id}#${projects[0].id}`,
 					_order: 'E',
 				},
 			]}

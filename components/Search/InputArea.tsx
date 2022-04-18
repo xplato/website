@@ -14,9 +14,9 @@ const Types = [
 	'All',
 	'Page',
 	'Pin',
+	'Tool',
 	'Project',
 	'Writing',
-	'Tool',
 	'Help',
 ];
 
