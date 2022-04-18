@@ -34,7 +34,7 @@ const projects: Project[] = [
 		title: 'useUndoable',
 		date: '2022-04-04',
 		description:
-			'React hook for undo/redo functionality (with batteries included)',
+			'⃔ React hook for undo/redo functionality (with batteries included)',
 		repository: 'https://github.com/Infinium8/useUndoable',
 		liveURL: 'https://codesandbox.io/s/use-undoable-zi0b4',
 		tags: ['javascript', 'react', 'typescript', 'undo/redo'],
@@ -43,7 +43,7 @@ const projects: Project[] = [
 		id: 'jupiterui',
 		title: 'JupiterUI',
 		date: '2022-04-04',
-		description: 'The elegant and reliable UI kit for web artisans.',
+		description: '🎨 The elegant and reliable UI kit for web artisans.',
 		repository: 'https://github.com/Infinium8/JupiterUI',
 		liveURL: 'https://jupiter-ui.vercel.app/',
 		tags: ['css design system'],
@@ -53,7 +53,7 @@ const projects: Project[] = [
 		title: 'Hydro',
 		date: '2022-04-04',
 		description:
-			'A fluid set of general React components for modern web apps.',
+			'🌊 A fluid set of general React components for modern web apps.',
 		repository: 'https://github.com/Infinium8/Hydro',
 		liveURL: 'https://neqd5.csb.app/',
 		tags: ['react components', 'javascript', 'typescript'],
@@ -63,7 +63,7 @@ const projects: Project[] = [
 		title: 'Supervisor',
 		date: '2022-04-04',
 		description:
-			'Effortlessly run scripts or commands when certain files change.',
+			'👀 Effortlessly run scripts or commands when certain files change.',
 		repository: 'https://github.com/Infinium8/Supervisor',
 		tags: ['python', 'file', 'watcher'],
 	},
@@ -71,7 +71,7 @@ const projects: Project[] = [
 		id: 'hyper',
 		title: 'Hyper',
 		date: '2022-04-04',
-		description: 'A tiny, hook-based request library for React',
+		description: '🪝 A tiny, hook-based request library for React',
 		repository: 'https://github.com/Infinium8/Hyper',
 		tags: ['request', 'http', 'javascript', 'typescript'],
 	},
@@ -80,7 +80,7 @@ const projects: Project[] = [
 		title: 'Tree',
 		date: '2022-04-04',
 		description:
-			'Easily manage, manipulate, and traverse a JavaScript Tree',
+			'🌳 Easily manage, manipulate, and traverse a JavaScript Tree',
 		repository: 'https://github.com/Infinium8/Tree',
 		tags: ['javascript'],
 	},
@@ -89,7 +89,7 @@ const projects: Project[] = [
 		title: 'useSettings',
 		date: '2022-04-04',
 		description:
-			'Easily manage application settings in localStorage with a React hook',
+			'⚙️ Easily manage application settings in localStorage with a React hook',
 		repository: 'https://github.com/Infinium8/useSettings',
 		tags: ['settings', 'localstorage'],
 	},

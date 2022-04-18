@@ -13,9 +13,27 @@ const Whoami = () => {
 				}}
 			/>
 
+			<section className='whoami-section'>
+				<div className='image-wrapper'>
+					<div className='image'></div>
+				</div>
+				<div className='content'>
+					<div className='container text-white'>
+						<div className='w-100p grid grid-2 landscape-grid-1'>
+							<div className='grid-block landscape-align-c landscape-text-c'>
+								<h1 className='fw-600 fs-7xl tablet-fs-6xl landscape-fs-5xl'>whoami</h1>
+								<h4 className='fs-lg'>I build things for the web and the command-line.</h4>
+							</div>
+							<div className='grid-block align-e landscape-align-c landscape-text-c'>
+								<p className='mb-0 caption-text white'>Zion National Park</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<Wrapper s='ui-1 dark-ui mod-padding' c='primary-text flex-c'>
 				<article className='w-100p mw-40r'>
-					<h1 className='mb-1r'>About me</h1>
 					<p className='fs-lg mb-0-5r'>
 						I'm Tristan, a full-stack software engineer specializing
 						in websites. I develop unique and professional solutions
@@ -33,9 +51,7 @@ const Whoami = () => {
 
 					<h2>My Work</h2>
 
-					<p>
-						I am a developer who can design. I am not a designer.
-					</p>
+					<p>I am a developer who can design. I am not a designer.</p>
 
 					<p>
 						Against popular opinion, I'm a big fan of JavaScript.
