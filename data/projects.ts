@@ -10,6 +10,25 @@ interface Project {
 }
 
 const projects: Project[] = [
+	// {
+	// 	id: '',
+	// 	title: '',
+	// 	date: '',
+	// 	description: '',
+	// 	repository: '',
+	// 	liveURL: '',
+	// 	isNew: true,
+	// 	tags: [],
+	// },
+	{
+		id: 'archy',
+		title: 'Archy',
+		date: '2022-04-18',
+		description: '🗄 Hassle-free, automated backups and archives (with optional encryption using GPG)',
+		repository: 'https://codeberg.org/athena/Archy',
+		isNew: true,
+		tags: ['python'],
+	},
 	{
 		id: 'scavenger',
 		title: 'Scavenger',
@@ -17,7 +36,6 @@ const projects: Project[] = [
 		description: '⚡️ A lightning-fast search library for React. It powers the search feature of this website.',
 		repository: 'https://codeberg.org/athena/Scavenger',
 		liveURL: 'https://codesandbox.io/s/scavenger-o44bxn',
-		isNew: true,
 		tags: ['search', 'static resources', 'typescript', 'ts'],
 	},
 	{
