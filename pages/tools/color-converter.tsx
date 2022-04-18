@@ -48,7 +48,7 @@ const ColorConverter = () => {
 		return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 	};
 
-	const [randomColor, setRandomColor] = useState(getRandomHex());
+	const [randomColor, setRandomColor] = useState(() => getRandomHex());
 
 	const getColor = useCallback(() => {
 		return result ? result : randomColor;
