@@ -1,4 +1,5 @@
 import ELi from '../components/ELi';
+import Li from '../components/Li';
 
 interface Pin {
 	// 1970-01-28
@@ -26,6 +27,26 @@ const pins: Pin[] = [
 	// 	tags: [''],
 	// },
 	{
+		date: '2022-04-17',
+		time: '22:06',
+		title: 'Introducing Tools',
+		content: (
+			<>
+				<p>
+					To add more utility to this site, I've decided to start
+					creating small web-related tools. If you have any ideas, let
+					me know!
+				</p>
+				<p>
+					In the meantime, check out the new{' '}
+					<Li href='/tools/color-converter'>Color Converter</Li> tool
+					for converting Hex to RGB and vice/versa.
+				</p>
+			</>
+		),
+		tags: [''],
+	},
+	{
 		date: '2022-04-16',
 		time: '13:40',
 		title: 'On the redesign',
@@ -48,8 +69,8 @@ const pins: Pin[] = [
 					</ELi>
 				</p>
 				<p>
-					Note that the old version will not contain up-to-date information.
-					It's only for historical reasons.
+					Note that the old version will not contain up-to-date
+					information. It's only for historical reasons.
 				</p>
 			</>
 		),
@@ -68,9 +89,7 @@ const pins: Pin[] = [
 					change things in a way that applies only to one very
 					specific scenario.
 				</p>
-				<p>
-					At minimum, don't break shit, make good PRs.
-				</p>
+				<p>At minimum, don't break shit, make good PRs.</p>
 			</>
 		),
 		tags: [''],
