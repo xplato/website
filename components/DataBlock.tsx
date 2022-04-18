@@ -43,7 +43,8 @@ const DataBlock = ({ type, data, block, isTop, showMore, setMode }: Props) => {
 						}
 
 						if (isMobile) {
-							window.location = type === 'project' ? `/code` : `/${type}s`
+							// @ts-ignore
+							window.location = type === 'project' ? `/code` : `/${type}s`;
 						}
 					}}
 				>
