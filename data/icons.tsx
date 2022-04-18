@@ -1,4 +1,10 @@
-const icons = {
+import React from "react"
+
+interface Icons {
+	[key: string]: React.ReactNode;
+}
+
+const icons: Icons = {
 	moon: (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'

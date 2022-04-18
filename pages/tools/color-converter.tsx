@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Select } from '@infinium/hydro';
 import { RefreshIcon } from '@heroicons/react/outline';
+import { CheckIcon, XIcon } from '@heroicons/react/solid';
 
 import { usePrevious } from '../../hooks/usePrevious';
 
@@ -8,9 +9,9 @@ import Layout from '../../components/layout/Layout';
 import PageMeta from '../../components/PageMeta';
 import Button from '../../components/Button';
 
-import { hexToRGB, RGBToHex } from '../../logic/tools/color_converter';
+import { hexToRGB, RGBToHex } from '../../tools/color_converter';
 import { copyToClipboard } from '../../logic/utils';
-import { CheckIcon, XIcon } from '@heroicons/react/solid';
+
 
 const ColorConverter = () => {
 	const [result, setResult] = useState('');
