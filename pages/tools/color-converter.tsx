@@ -96,7 +96,7 @@ const ColorConverter = () => {
 				style={{ backgroundColor: getColor() }}
 			>
 				<div className='container flex-c'>
-					<div className='ui radius-8 border-ui-2 shadow-xs w-100p mw-35r'>
+					<div className='ui radius-8 border-ui-2 shadow-xs'>
 						<div className='w-100p flex-sb px-1-5r py-1r border-bottom-ui-2'>
 							<h5 className='mb-0 mt-0'>Convert Colors</h5>
 							<Button.Action className='hy-button icon-only' onClick={refreshRandomColor} title='Randomize color'>
