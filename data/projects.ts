@@ -18,7 +18,7 @@ const projects: Project[] = [
 		repository: 'https://codeberg.org/athena/Scavenger',
 		liveURL: 'https://codesandbox.io/s/scavenger-o44bxn',
 		isNew: true,
-		tags: ['search', 'static resources'],
+		tags: ['search', 'static resources', 'typescript', 'ts'],
 	},
 	{
 		id: 'gofe',
@@ -27,7 +27,7 @@ const projects: Project[] = [
 		description: '🔍 A private and minimal front-end for Google Search.',
 		repository: 'https://codeberg.org/ar324/gofe',
 		liveURL: 'https://gofe.app',
-		tags: ['search', 'private', 'google', 'gofe', 'javascript', 'go'],
+		tags: ['search', 'private', 'google', 'gofe', 'javascript', 'go', 'typescript', 'ts', 'js'],
 	},
 	{
 		id: 'use-undoable',
@@ -37,7 +37,7 @@ const projects: Project[] = [
 			'⃔ React hook for undo/redo functionality (with batteries included)',
 		repository: 'https://github.com/Infinium8/useUndoable',
 		liveURL: 'https://codesandbox.io/s/use-undoable-zi0b4',
-		tags: ['javascript', 'react', 'typescript', 'undo/redo'],
+		tags: ['javascript', 'react', 'typescript', 'undo/redo', 'typescript', 'ts', 'js'],
 	},
 	{
 		id: 'jupiterui',
@@ -56,7 +56,7 @@ const projects: Project[] = [
 			'🌊 A fluid set of general React components for modern web apps.',
 		repository: 'https://github.com/Infinium8/Hydro',
 		liveURL: 'https://neqd5.csb.app/',
-		tags: ['react components', 'javascript', 'typescript'],
+		tags: ['react components', 'javascript', 'typescript', 'ts', 'js'],
 	},
 	{
 		id: 'supervisor',
@@ -73,7 +73,7 @@ const projects: Project[] = [
 		date: '2022-04-04',
 		description: '🪝 A tiny, hook-based request library for React',
 		repository: 'https://github.com/Infinium8/Hyper',
-		tags: ['request', 'http', 'javascript', 'typescript'],
+		tags: ['request', 'http', 'javascript', 'typescript', 'ts', 'js'],
 	},
 	{
 		id: 'tree',
