@@ -22,7 +22,7 @@ const wrap = (d: any, t: string, o: string, ex: any = {}) => d.map((e: any) => (
 
 const RESOURCES = [
 	...wrap(pages, 'Page', 'A'),
-	...wrap(helpPages, 'Page', 'B'),
+	...wrap(helpPages, 'Help', 'B'),
 	...pins.map((e) => ({
 		...e,
 		type: 'Pin',
