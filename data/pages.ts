@@ -8,42 +8,42 @@ interface Page {
 const pages: Page[] = [
 	{
 		href: '/',
-		title: 'home',
+		title: 'Home',
 		tags: ['landing', 'first', '1'],
 	},
 	{
 		href: '/writings',
-		title: 'writings',
+		title: 'Writings',
 		tags: ['blog'],
 	},
 	{
 		href: '/code',
-		title: 'code',
+		title: 'Code & Projects',
 		tags: ['projects'],
 	},
 	{
 		href: '/pins',
-		title: 'pins',
+		title: 'Pins',
 		tags: [''],
 	},
 	{
 		href: '/whoami',
-		title: 'whoami',
+		title: 'Whoami',
 		tags: ['about me'],
 	},
 	{
 		href: '/help',
-		title: 'help',
+		title: 'Help',
 		tags: [''],
 	},
 	{
 		href: '/privacy',
-		title: 'privacy',
+		title: 'Privacy',
 		tags: [''],
 	},
 	{
 		href: '/samara',
-		title: 'samara',
+		title: 'Samara',
 		tags: [''],
 	},
 ];
@@ -51,7 +51,7 @@ const pages: Page[] = [
 const helpPages: Page[] = [
 	{
 		id: 'shortcuts',
-		title: 'Keyboard shortcuts',
+		title: 'Keyboard Shortcuts',
 		href: '/help?h=shortcuts#shortcuts',
 		tags: [''],
 	},
