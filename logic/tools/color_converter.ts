@@ -6,7 +6,7 @@ const nToHex = (n: number) => {
 };
 
 const RGBToHex = (r: number, g: number, b: number) => {
-	return `#${nToHex(r)}${nToHex(b)}${nToHex(b)}`;
+	return `#${nToHex(r)}${nToHex(g)}${nToHex(b)}`;
 };
 
 const hexToRGB = (hex: string) => {
