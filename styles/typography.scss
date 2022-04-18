@@ -14,6 +14,10 @@
 	&.white {
 		color: white;
 	}
+
+	&.sm-ls {
+		letter-spacing: normal;
+	}
 }
 
 .primary-text {
@@ -32,4 +36,8 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+.text-blend {
+	mix-blend-mode: color-burn;
 }

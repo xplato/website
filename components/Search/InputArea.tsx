@@ -16,6 +16,7 @@ const Types = [
 	'Pin',
 	'Project',
 	'Writing',
+	'Tool',
 	'Help',
 ];
 

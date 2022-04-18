@@ -1,11 +1,3 @@
-const Schema = {
-	Writing: ['title', 'date', 'tags', 'type'],
-	Page: ['title', 'tags', 'type'],
-	Help: ['id', 'title', 'tags', 'type'],
-	Project: ['title', 'description', 'tags', 'type'],
-	Pin: ['title', 'type', 'date'],
-};
-
 const MAX_TITLE_LENGTH = 30;
 
 const truncate = (s: string) => {
@@ -14,6 +6,5 @@ const truncate = (s: string) => {
 };
 
 export {
-	Schema,
 	truncate,
 }

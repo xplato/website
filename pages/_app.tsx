@@ -15,7 +15,7 @@ import View from '../components/layout/View';
 
 // DATA
 
-import { Schema } from '../logic/search';
+import { Schema } from '../data/search';
 import { writings } from '../data/writings';
 import { projects } from '../data/projects';
 import { helpPages, pages } from '../data/pages';
@@ -29,6 +29,7 @@ import '../styles/hydro.css';
 
 /// FONTS
 import '../assets/fonts/inter/inter.css';
+import { tools } from '../data/tools';
 
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -65,6 +66,11 @@ const App = ({ Component, pageProps }: AppProps) => {
 					type: 'Project',
 					_order: `E ${e.title}`,
 				})),
+				...tools.map((e) => ({
+					...e,
+					type: 'Tool',
+					_order: `F ${e.title}`,
+				})),
 			]}
 			suggestions={[
 				...pages
@@ -74,7 +80,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 						caption: '',
 						_order: 'A',
 					}))
-					.slice(0, 5),
+					.slice(0, 3),
 				{
 					...writings[0],
 					type: 'Writing',
@@ -88,6 +94,20 @@ const App = ({ Component, pageProps }: AppProps) => {
 					caption: 'Latest Pin',
 					href: `/pins?h=${pins[0].date}#${pins[0].date}`,
 					_order: 'C',
+				},
+				{
+					...projects[0],
+					type: 'Project',
+					caption: 'Latest Project',
+					href: `/code?h=${projects[0].id}#${projects[0].id}`,
+					_order: 'D',
+				},
+				{
+					...tools[0],
+					type: 'Tool',
+					caption: 'Latest Tool',
+					href: `/tools/${tools[0].id}`,
+					_order: 'E',
 				},
 			]}
 			schema={Schema}

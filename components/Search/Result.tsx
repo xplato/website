@@ -25,6 +25,7 @@ const iconMap = {
 	Help: icons.questionMark,
 	Pin: icons.location,
 	Writing: icons.pencil,
+	Tool: icons.nut,
 };
 
 const DefaultIcon = ({ type }: any) => (

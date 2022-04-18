@@ -46,3 +46,7 @@ section.top {
 section.mod-padding {
 	padding-top: 5% !important;
 }
+
+.smart-view {
+	min-height: calc(100vh - 4rem - 98.5px);
+}

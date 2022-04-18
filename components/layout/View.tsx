@@ -37,7 +37,6 @@ const View = ({ children }: ChildrenOnly) => {
 						} catch {}
 					}
 				}}
-				handleFocusableElements
 			/>
 		</div>
 	);

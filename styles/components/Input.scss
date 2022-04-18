@@ -57,3 +57,21 @@
 		text-decoration: underline;
 	}
 }
+
+.tool-input {
+	height: 2.5rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    background-color: var(--ui);
+    color: var(--text-color);
+	border: none;
+    box-shadow: inset var(--ui-2) 0px 0px 0px 2px;
+    border-radius: 0.5rem;
+    transition: box-shadow var(--d-m-2) var(--e-s);
+
+	&:focus {
+		outline: none;
+		box-shadow: inset var(--accent) 0px 0px 0px 2px;
+	}
+}
