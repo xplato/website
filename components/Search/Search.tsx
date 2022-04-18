@@ -53,7 +53,7 @@ const Search = ({ setSearch }: any) => {
 				setSortBy('date');
 			}
 		}
-	}, [scope]);
+	}, [scope, previousScope]);
 
 	const baseTransition = {
 		type: 'spring',
