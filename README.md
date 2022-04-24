@@ -1,6 +1,6 @@
 # Hydra
 
-This is the source code to my website found at [hydra.im](https://hydra.im)
+This is the source code to my website found at [xplato.dev](https://xplato.dev)
 
 I am hosting this on GitHub so that Vercel can automatically pull my changes.
 
