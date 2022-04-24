@@ -12,8 +12,8 @@ const global: Global = {
 	social: [
 		{
 			title: 'Codeberg',
-			username: 'athena',
-			href: 'https://codeberg.org/athena',
+			username: 'xplato',
+			href: 'https://codeberg.org/xplato',
 		},
 		{
 			title: 'GitHub',

@@ -1,4 +1,4 @@
-# Hydra
+# xplato
 
 This is the source code to my website found at [xplato.dev](https://xplato.dev)
 

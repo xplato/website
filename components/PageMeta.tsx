@@ -11,7 +11,7 @@ interface Meta {
 
 const PageMeta = ({ meta }: Props) => (
 	<Head>
-		<title>Hydra - {meta.title}</title>
+		<title>xplato - {meta.title}</title>
 		<meta name='description' content={meta.description} />
 	</Head>
 );

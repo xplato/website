@@ -11,7 +11,7 @@ const Social = () => (
 		</div>
 		<div className='w-100p flex align-c justify-s flex-row'>
 			<ELi
-				href='https://codeberg.org/athena'
+				href='https://codeberg.org/xplato'
 				className='social-button'
 				title='My Codeberg Profile'
 			>
