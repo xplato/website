@@ -21,6 +21,15 @@ const projects: Project[] = [
 	// 	tags: [],
 	// },
 	{
+		id: 'jupiterui',
+		title: 'JupiterUI',
+		date: '2022-04-24',
+		description: '🎨 The elegant and reliable UI kit for web artisans.',
+		repository: 'https://codeberg.org/xplato/JupiterUI',
+		liveURL: 'https://jupiter-ui.vercel.app/',
+		tags: ['css design system'],
+	},
+	{
 		id: 'archy',
 		title: 'Archy',
 		date: '2022-04-18',
@@ -56,15 +65,6 @@ const projects: Project[] = [
 		repository: 'https://github.com/Infinium8/useUndoable',
 		liveURL: 'https://codesandbox.io/s/use-undoable-zi0b4',
 		tags: ['javascript', 'react', 'typescript', 'undo/redo', 'typescript', 'ts', 'js'],
-	},
-	{
-		id: 'jupiterui',
-		title: 'JupiterUI',
-		date: '2022-04-04',
-		description: '🎨 The elegant and reliable UI kit for web artisans.',
-		repository: 'https://github.com/Infinium8/JupiterUI',
-		liveURL: 'https://jupiter-ui.vercel.app/',
-		tags: ['css design system'],
 	},
 	{
 		id: 'hydro',
