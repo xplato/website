@@ -83,7 +83,7 @@ const DataBlock = ({ type, data, block, isTop, showMore, setMode }: Props) => {
 					// If Article, link and adjust URL
 					if (e.slug) {
 						doesLink = true;
-						href = `/writings/${e.slug}`;
+						href = `/writing/${e.slug}`;
 					}
 
 					// If no ID, use date of resource

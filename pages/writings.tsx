@@ -28,7 +28,7 @@ const Writings = () => {
 								highlight={false}
 								obj={{
 									...e,
-									href: `/writings/${e.slug}`,
+									href: `/writing/${e.slug}`,
 									content: e.excerpt,
 								}}
 							/>

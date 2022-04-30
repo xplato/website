@@ -32,7 +32,7 @@ const RESOURCES = [
 	...writings.map((e) => ({
 		...e,
 		type: 'Writing',
-		href: `/writings/${e.slug}`,
+		href: `/writing/${e.slug}`,
 		_order: `D ${e.title}`,
 	})),
 	...wrap(tools, 'Tool', 'E'),
@@ -52,7 +52,7 @@ const SUGGESTIONS = [
 		...writings[0],
 		type: 'Writing',
 		caption: 'Latest Writing',
-		href: `/writings/${writings[0].slug}`,
+		href: `/writing/${writings[0].slug}`,
 		_order: 'B',
 	},
 	{
