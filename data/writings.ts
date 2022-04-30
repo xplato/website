@@ -17,6 +17,14 @@ const writings: Writing[] = [
 	// 	tags: [''],
 	// },
 	{
+		slug: 'on-the-representation-of-innovation',
+		title: 'On the Representation of Innovation',
+		date: '2022-04-30',
+		time: '02:25',
+		excerpt: `There's this whole category within life. It's like this general wrapper around an entire way of thinking. On the one hand, you've got survival to think about...`,
+		tags: [''],
+	},
+	{
 		slug: 'the-internet-an-extension-of-google',
 		title: 'The Internet: An Extension of Google',
 		date: '2022-03-27',

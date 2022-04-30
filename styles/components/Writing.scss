@@ -22,10 +22,17 @@ article {
 		}
 	}
 
-	& code, & pre {
+	& pre {
 		font-family: 'Inter';
 		font-size: 14px;
 		font-weight: 500;
+		width: 100%;
+		background-color: var(--ui-2);
+		margin-bottom: 1.5rem;
+
+		& code {
+			line-height: 2;
+		}
 	}
 
 	& blockquote {
