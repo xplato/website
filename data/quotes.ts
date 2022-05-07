@@ -121,7 +121,7 @@ const quotes: Quote[] = [
 		a: 'WIlliam Shakespeare',
 	},
 	{
-		q: `The world is a comedy to those that thing, and a tragedy to those that feel.`,
+		q: `The world is a comedy to those that think, and a tragedy to those that feel.`,
 		a: 'Horatio Walpole',
 	},
 	{
