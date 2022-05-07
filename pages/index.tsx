@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Layout from '../components/layout/Layout';
 import Li from '../components/Li';
 import Social from '../components/Social';
@@ -5,8 +7,13 @@ import HomePanel from '../components/HomePanel';
 import PageMeta from '../components/PageMeta';
 import Spacer from '../components/Spacer';
 import ELi from '../components/ELi';
+import Quote from '../components/etc/Quote';
+
+import { quotes } from '../data/quotes';
 
 const Home = () => {
+	const [quote, _] = useState(quotes[Math.floor(Math.random() * quotes.length)]);
+
 	return (
 		<>
 			<PageMeta
@@ -47,16 +54,8 @@ const Home = () => {
 										In other words, it uses Google's results
 										while letting you remain anonymous.
 									</p>
-									<p>
-										If you use React, you might be
-										interested in my other search-related
-										project,{' '}
-										<Li href='/code?h=scavenger#scavenger'>
-											Scavenger,
-										</Li>{' '}
-										which powers the search behind this
-										website.
-									</p>
+									<div className="w-100p h-1 ui-2 my-2r"></div>
+									<Quote {...quote} />
 								</div>
 							</div>
 
