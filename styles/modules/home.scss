@@ -1,0 +1,49 @@
+@use '../mixins';
+
+$radius: 0.5rem;
+
+.quote-buttons {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+
+	& .gap {
+		height: 2rem;
+		width: 1px;
+		background-color: var(--ui-2);
+	}
+
+	& button {
+		height: 2rem;
+		width: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		box-shadow: none;
+		background-color: var(--ui-1);
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		transition: var(--d-f-2) var(--e-s);
+
+		&:hover {
+			background-color: var(--ui-2);
+		}
+
+		&:focus {
+			z-index: 2;
+			box-shadow: 0 0 0 2px var(--accent);
+		}
+
+		&:first-child {
+			border-top-left-radius: $radius;
+			border-bottom-left-radius: $radius;
+		}
+
+		&:last-child {
+			border-top-right-radius: $radius;
+			border-bottom-right-radius: $radius;
+		}
+	}
+}

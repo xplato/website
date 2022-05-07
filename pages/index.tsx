@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import Layout from '../components/layout/Layout';
 import Li from '../components/Li';
 import Social from '../components/Social';
@@ -9,11 +7,7 @@ import Spacer from '../components/Spacer';
 import ELi from '../components/ELi';
 import Quote from '../components/etc/Quote';
 
-import { quotes } from '../data/quotes';
-
 const Home = () => {
-	const [quote, _] = useState(quotes[Math.floor(Math.random() * quotes.length)]);
-
 	return (
 		<>
 			<PageMeta
@@ -55,7 +49,7 @@ const Home = () => {
 										while letting you remain anonymous.
 									</p>
 									<div className="w-100p h-1 ui-2 my-2r"></div>
-									<Quote {...quote} />
+									<Quote />
 								</div>
 							</div>
 
