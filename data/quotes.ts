@@ -118,7 +118,7 @@ const quotes: Quote[] = [
 	},
 	{
 		q: `Wisely, and slow. They stumble that run fast.`,
-		a: 'WIlliam Shakespeare',
+		a: 'William Shakespeare',
 	},
 	{
 		q: `The world is a comedy to those that think, and a tragedy to those that feel.`,
