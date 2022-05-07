@@ -109,7 +109,7 @@ const quotes: Quote[] = [
 		a: 'H. L. Mencken',
 	},
 	{
-		q: `Despite lack of preparation, I spoke quite well and without hesitation, which I ascribe to the concaine I had taken beforehand.`,
+		q: `Despite lack of preparation, I spoke quite well and without hesitation, which I ascribe to the cocaine I had taken beforehand.`,
 		a: 'Sigmund Freud',
 	},
 	{
