@@ -17,7 +17,7 @@ const quotes: Quote[] = [
 		a: 'Plato',
 	},
 	{
-		q: `The mind, once stretched by a ne widea, never returns to its original dimensions.`,
+		q: `The mind, once stretched by a new idea, never returns to its original dimensions.`,
 		a: 'Ralpha Waldo Emerson',
 	},
 	{
