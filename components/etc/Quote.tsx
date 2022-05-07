@@ -5,8 +5,7 @@ import { quotes } from "../../data/quotes";
 
 const Quote = () => {
 	const [quote, setQuote] = useState(
-		// Math.floor(Math.random() * quotes.length)
-		0
+		Math.floor(Math.random() * quotes.length)
 	);
 
 	const increment = () => {
