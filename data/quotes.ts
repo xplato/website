@@ -136,6 +136,78 @@ const quotes: Quote[] = [
 		q: `To know even one life has breathed easier because you have lived. This is to have succeeded.`,
 		a: 'Ralph Waldo Emerson',
 	},
+	{
+		q: `I often regret that I have spoken; never that I have been silent.`,
+		a: 'Publilus Syrus',
+	},
+	{
+		q: `Only the dead have seen the end of war.`,
+		a: 'Plato',
+	},
+	{
+		q: `No man ever steps in the same river twice, for it's not the same river and he's not the same man.`,
+		a: 'Heraclitus',
+	},
+	{
+		q: `Opinion is the medium between knowledge and ignorance.`,
+		a: 'Plato',
+	},
+	{
+		q: `No snowflake in an avalanche ever feels responsible.`,
+		a: 'Voltaire',
+	},
+	{
+		q: `The energy of the mind is the essence of life.`,
+		a: 'Aristotle',
+	},
+	{
+		q: `Men argue, nature acts.`,
+		a: 'Voltaire',
+	},
+	{
+		q: `Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no hope at all.`,
+		a: 'Dale Carnegie',
+	},
+	{
+		q: `All of humanity's problems stem from man's inability to sit quietly in a room alone.`,
+		a: 'Blaise Pascal',
+	},
+	{
+		q: `If you want to truly understand something, try to change it.`,
+		a: 'Kurt Lewin',
+	},
+	{
+		q: `If a man knows not to which port he sails, no wind is favorable.`,
+		a: 'Seneca',
+	},
+	{
+		q: `All cruelty springs from weakness.`,
+		a: 'Seneca',
+	},
+	{
+		q: `While we wait for life, life passes.`,
+		a: 'Seneca',
+	},
+	{
+		q: `The man who does not read good books has no advantage over the man who can't read them.`,
+		a: 'Mark Twain',
+	},
+	{
+		q: `A man, as a general rule, owes very little to what he is born with—a man is what he makes of himself.`,
+		a: 'Alexander Graham Bell',
+	},
+	{
+		q: `Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.`,
+		a: 'Sir Isaac Newton',
+	},
+	{
+		q: `It is better to fail in originality than to succeed in imitation.`,
+		a: 'Herman Melville',
+	},
+	{
+		q: `The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.`,
+		a: 'Friedrich Nietzsche',
+	},
 ];
 
 export {
