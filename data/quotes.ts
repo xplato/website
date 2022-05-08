@@ -208,6 +208,58 @@ const quotes: Quote[] = [
 		q: `The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.`,
 		a: 'Friedrich Nietzsche',
 	},
+	{
+		q: `Intuitions are not to be ignored. They represent data processed too fast for the conscious mind to comprehend.`,
+		a: 'Sir Arthur Conan Doyle',
+	},
+	{
+		q: `Do not worry about your difficulties in mathematics. I can assure you that mine are still greater.`,
+		a: 'Albert Einstein',
+	},
+	{
+		q: `The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence.`,
+		a: 'Nikola Tesla',
+	},
+	{
+		q: `No one is more hated than he who speaks the truth.`,
+		a: 'Plato',
+	},
+	{
+		q: `Well done is better than well said.`,
+		a: 'Benjamin Franklin',
+	},
+	{
+		q: `Knowledge is like a skyscraper. You can take a shortcut with a fragile foundation of memorization, or build slowly upon a steel frame of understanding.`,
+		a: 'Naval Ravikant',
+	},
+	{
+		q: `Why join the navy if you can be a pirate?`,
+		a: 'Steve Jobs',
+	},
+	{
+		q: `I would rather have questions that can't be answered than answers which can't be questioned.`,
+		a: 'Richard Feynman',
+	},
+	{
+		q: `The world is indeed comic, but the joke is on mankind.`,
+		a: 'H. P. Lovecraft',
+	},
+	{
+		q: `The unfed mind devours itself.`,
+		a: 'Gore Vidal',
+	},
+	{
+		q: `Never ask the barber if you need a haircut.`,
+		a: 'Warren Buffet',
+	},
+	{
+		q: `Work like hell. I mean you just have to put in 80 to 100 hour weeks every week. [This] improves the odds of success. If other people are putting in 40 hour work weeks and you're putting in 100 hour work weeks, then even if you're doing the same thing you know that... you will achieve in 4 months what it takes them a year to achieve.`,
+		a: 'Elon Musk',
+	},
+	{
+		q: `To be normal is the ideal aim of the unsuccessful.`,
+		a: 'Carl Jung',
+	},
 ];
 
 export {
