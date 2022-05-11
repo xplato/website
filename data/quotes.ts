@@ -18,7 +18,7 @@ const quotes: Quote[] = [
 	},
 	{
 		q: `The mind, once stretched by a new idea, never returns to its original dimensions.`,
-		a: 'Ralpha Waldo Emerson',
+		a: 'Ralph Waldo Emerson',
 	},
 	{
 		q: `Illusion is the first of all pleasures.`,
@@ -259,6 +259,30 @@ const quotes: Quote[] = [
 	{
 		q: `To be normal is the ideal aim of the unsuccessful.`,
 		a: 'Carl Jung',
+	},
+	{
+		q: `What is true never fears investigation; what is false.... fears everything.`,
+		a: 'Guy Finley',
+	},
+	{
+		q: `Condemnation without investigation is the height of ignorance.`,
+		a: 'Albert Einstein',
+	},
+	{
+		q: `I am an investigator by inclination. I feel a great thirst for knowledge.`,
+		a: 'Immanuel Kant',
+	},
+	{
+		q: `Unthinking respect for authority is the greatest enemy of truth.`,
+		a: 'Albert Einstein',
+	},
+	{
+		q: `Everything is design. Few things are designed.`,
+		a: 'Chet Atkins',
+	},
+	{
+		q: `I had no shoes and complained, until I met a man who had no feet.`,
+		a: 'Proverb (likely of Indian origin)',
 	},
 ];
 
