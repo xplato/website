@@ -15,10 +15,10 @@ const Navigation = () => {
 			<div className='border-wrapper'>
 				<Entity variants={variants.fadeIn} className='nav-container x-container h-100p'>
 					<div className='w-100p h-100p flex-sb'>
-						<div className='flex align-c justify-s flex-row'>
+						<div className='h-100p flex align-c justify-s flex-row'>
 							<Logo />
 						</div>
-						<div className='flex align-c justify-e flex-row relative'>
+						<div className='h-100p flex align-c justify-e flex-row relative'>
 							{navLinks.map(link => (
 								<div key={link.href} className="link-wrapper">
 									<Li href={link.href} className={classNames(
