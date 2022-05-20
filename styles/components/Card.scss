@@ -1,0 +1,84 @@
+@use '../variables';
+
+$radius: 0.75rem;
+
+.card {
+	width: 100%;
+	
+	& .image {
+		width: 100%;
+		min-height: 18rem;
+		border-radius: $radius;
+		padding: 2rem;
+		padding-bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		z-index: 1;
+		
+		& img {
+			width: calc(100% - 4rem);
+			position: absolute;
+			top: 2rem;
+			bottom: -1rem;
+			box-shadow: var(--shadow-sm);
+			transition: var(--d-s-1) var(--e-s);
+		}
+
+		&:hover img {
+			transform: translateY(-4rem);
+		}
+	}
+
+	& .content {
+		padding-top: 1.5rem;
+		padding: 2rem;
+		position: relative;
+		background-color: var(--ui);
+		color: var(--text-color);
+		z-index: 2;
+
+		// What is this sorcery?
+		min-height: 15rem;
+
+		& .title {
+			font-size: 1.25rem;
+			font-weight: 500;
+		}
+	}
+
+	@each $color in variables.$colors {
+		&.#{$color} .image {
+			background-image: linear-gradient(to bottom right, var(--#{$color}-400), var(--#{$color}-200));
+	
+			html.dark & {
+				background-image: linear-gradient(to bottom right, var(--#{$color}-600), var(--#{$color}-400));
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1360px) {
+	.card .image {
+		min-height: 15rem;
+	}
+}
+
+@media only screen and (max-width: 1180px) {
+	.card .image {
+		min-height: 12rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.card .image {
+		min-height: 18rem;
+		overflow: hidden;
+	}
+
+	.card:hover .image > img {
+		transform: translateY(0);
+	}
+}

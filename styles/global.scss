@@ -1,18 +1,291 @@
-@use './root';
-@use './layout';
-@use './typography';
+@use './mixins';
+@use './variables';
 
-// Components
+@use './components/Article';
+@use './components/Badge';
 @use './components/Button';
-@use './components/Input';
-@use './components/Footer';
-@use './components/HObject';
+@use './components/Card';
 @use './components/Navigation';
-@use './components/ProjectCard';
-@use './components/Search';
-@use './components/Tag';
-@use './components/Writing';
 
-// Modules
-@use './modules/home';
-@use './modules/whoami';
+// Pages
+@use './pages/quotes';
+
+:root {
+	--accent: var(--blue-600);
+	--accent-hover: var(--blue-700);
+	--accent-50: var(--blue-50);
+	--accent-100: var(--blue-100);
+	--accent-200: var(--blue-200);
+	--accent-300: var(--blue-300);
+	--accent-400: var(--blue-400);
+	--accent-500: var(--blue-500);
+	--accent-600: var(--blue-600);
+	--accent-700: var(--blue-700);
+	--accent-800: var(--blue-800);
+	--accent-900: var(--blue-900);
+
+	--text-color: #333;
+}
+
+html.dark {
+	--text-color: white;
+}
+
+html, body {
+	font-size: 16px;
+	@include mixins.sans();
+}
+
+.mono, .mono * {
+	@include mixins.mono();
+}
+
+.serif, .serif * {
+	@include mixins.serif();
+}
+
+.sans, .sans * {
+	@include mixins.sans();
+}
+
+.x-container {
+	max-width: 1470px;
+    width: 93.3%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.x-container {
+		padding: 0 1.5rem;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.container {
+		max-width: none !important;
+	}
+}
+
+.grad {
+	background-image: linear-gradient(to bottom, var(--ui-1), var(--ui));
+}
+
+article .text-container, footer .text-container {
+	max-width: 40rem !important;
+}
+
+.text-container {
+	max-width: 40rem;
+	width: 100%;
+}
+
+.p-text {
+	font-size: 1.15rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.smaller-text .p-text {
+	font-size: 1rem;
+}
+
+:not(pre)>code {
+    border-radius: 0.3em;
+    background: var(--ui-1);
+    color: var(--text-color);
+    padding: 0.15em 0.2em 0.05em;
+    white-space: normal;
+}
+
+pre {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: scroll;
+	background-color: #282c34 !important;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	
+	&, & code {
+		color: #abb2bf;
+	}
+
+	& .hljs-keyword {
+		color: #10b1fe;
+	}
+
+	& .hljs-title {
+		color: #3fc56b;
+
+		&.class_ {
+			color: #ff6480;
+		}
+	}
+
+	& .hljs-params {
+		color: #abb2bf;
+	}
+
+	& .hljs-string {
+		color: #f9c859;
+	}
+
+	& .hljs-number {
+		color: #ff78f8;
+	}
+
+	& .hljs-property, & .hljs-attr {
+		color: #ce9887;
+	}
+
+	& .hljs-built_in {
+		color: #3691ff;
+	}
+
+	& .hljs-comment {
+		color: #636d83;
+	}
+}
+
+code, pre {
+    color: var(--text-color);
+    background: none;
+    font-feature-settings: normal;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    margin-bottom: 0;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+	
+	&, & * {
+		font-family: 'Cascadia Code PL', 'IBM Plex Mono', monospace !important;
+	}
+}
+
+.logo-container {
+	background-color: transparent;
+	padding: 0;
+	border: 2px solid transparent;
+
+	&:focus-visible {
+		outline: 2px solid var(--accent);
+		outline-offset: 2px;
+	}
+
+	& .logo {
+		color: var(--text-color);
+		transition: var(--d-m-1) ease-in-out;
+	}
+
+	& .logo-text {
+		font-size: 13px;
+		letter-spacing: 0.05em;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+
+.caption-text {
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1.3px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--text-color);
+	margin: 0;
+
+	&.low-weight {
+		font-weight: 500;
+	}
+
+	&.white {
+		color: white;
+	}
+
+	&.sm-ls {
+		letter-spacing: normal;
+	}
+}
+
+blockquote {
+	border-left: 3px solid var(--accent);
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	margin: 0;
+	margin-bottom: 1.75rem;
+	padding: 1.25rem 2.25rem;
+	color: var(--text-color);
+	background-color: var(--accent-50);
+
+	html.dark & {
+		background-color: var(--accent-900) !important;
+	}
+
+	& * {
+		margin: 0 !important;
+	}
+
+	&.sm {
+		padding: 0.5rem 1rem;
+		width: auto;
+	}
+
+	@each $color in variables.$colors {
+		&.#{$color} {
+			background-color: var(--#{$color}-50);
+			border-left-color: var(--#{$color}-500);
+
+			html.dark & {
+				background-color: var(--#{$color}-900);
+			}
+		}
+	}
+}
+
+hr {
+	width: 100%;
+	border: none;
+	box-shadow: none;
+	height: 1px;
+	background-color: var(--ui-2);
+	margin: 2.5rem 0;
+}
+
+.special-section {
+	min-height: 60vh;
+}
+
+ul.list {
+	margin: 0.5rem 0 !important;
+
+	& p {
+		margin-bottom: 0.25rem;
+	}
+}
+
+// Redefine the .section padding for all elements
+// that don't manually override it themselves.
+// This is necessary due to the order of CSS imports.
+.section:not([class^='section p']) {
+	padding: 10% 0;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.ghost {
+	background-color: #f7f7f8;
+
+	html.dark & {
+		background-color: var(--gray-800);
+	}
+}

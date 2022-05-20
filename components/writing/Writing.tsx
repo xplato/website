@@ -1,4 +1,5 @@
-import Wrapper from '../Wrapper';
+import { transition, variants } from "../../logic/motion";
+import Entity from "../Entity";
 
 interface Props {
 	children: React.ReactNode;
@@ -6,13 +7,17 @@ interface Props {
 
 const Writing = ({ children }: Props) => {
 	return (
-		<Wrapper s='ui-1 dark-ui mod-padding' c='flex-c'>
-			<div className='mw-50r'>
-				{children}
-
-				<div className="h-3r"></div>
+		<section className="section pt-8r ml-pt-4r pb-5r">
+			<div className="x-container flex-c">
+				<article className='w-100p flex-c'>
+					<div className="text-container">
+						<Entity variants={variants.fadeIn} transition={transition.default}>
+							{children}
+						</Entity>
+					</div>
+				</article>
 			</div>
-		</Wrapper>
+		</section>
 	);
 };
 

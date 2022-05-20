@@ -1,51 +1,37 @@
+import Entity from '../Entity';
+import Logo from '../Logo';
+
+import { variants } from '../../logic/motion';
+import Li from '../Li';
+import { navLinks } from '../../data/links';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
-import Logo from '../Logo';
-import SearchButton from '../Search/SearchButton';
-import ThemeButton from '../etc/ThemeButton';
-import Button from '../Button';
-
-const links = ['whoami', 'code', 'writings'];
-
-interface Props {
-	affix?: boolean;
-}
-
-const Navigation = ({ affix }: Props) => {
+const Navigation = () => {
 	const { pathname } = useRouter();
 
 	return (
-		<nav className={affix ? 'affix' : ''}>
-			<div className='w-100p grid grid-3'>
-				<div className='grid-block'>
-					<Logo />
-				</div>
-
-				<div className='grid-block align-c'>
-					<div className='flex-sb landscape-hide'>
-						{links.map((link, index) => (
-							<Button.Internal
-								key={link}
-								href={`/${link}`}
-								className={classNames(
-									'hy-button',
-									index === 1 ? 'mx-1r' : '',
-									pathname === `/${link}`
-										? 'active'
-										: ''
-								)}
-							>
-								<span className="text">{link}</span>
-							</Button.Internal>
-						))}
+		<nav>
+			<div className='border-wrapper'>
+				<Entity variants={variants.fadeIn} className='nav-container x-container h-100p'>
+					<div className='w-100p h-100p flex-sb'>
+						<div className='flex align-c justify-s flex-row'>
+							<Logo />
+						</div>
+						<div className='flex align-c justify-e flex-row relative'>
+							{navLinks.map(link => (
+								<div key={link.href} className="link-wrapper">
+									<Li href={link.href} className={classNames(
+										'nav-link', 
+										pathname === link.href && 'active'
+									)}>
+										<span>{link.label}</span>
+									</Li>
+								</div>
+							))}
+						</div>
 					</div>
-				</div>
-
-				<div className='grid-block align-c justify-e flex-row'>
-					<ThemeButton />
-					<SearchButton />
-				</div>
+				</Entity>
 			</div>
 		</nav>
 	);

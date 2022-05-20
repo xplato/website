@@ -19,13 +19,12 @@ const Quote = () => {
 	}
 
 	return (
-		<div>
-			<div className='flex align-s justify-s flex-row'>
-				<span className='fs-4xl opacity-6'>"</span>
+		<div className='h-100p'>
+			<div className='h-100p flex align-c justify-c flex-row'>
 				<div className='ml-0-25r'>
-					<p className='mb-0-5r'>{quotes[quote].q}</p>
-					<p className='mb-0 opacity-8 fs-sm'>{quotes[quote].a}</p>
-					<div className='quote-buttons mt-1r'>
+					<p className='fs-xl mb-0-5r text-c'>{quotes[quote].q}</p>
+					<p className='fs-lg mb-0 opacity-8 text-c fs-sm'>{quotes[quote].a}</p>
+					<div className='quote-buttons mt-1r flex align-c justify-c flex-row'>
 						<button
 							title='Previous quote'
 							onClick={decrement}

@@ -1,45 +1,65 @@
 import { HeartIcon } from '@heroicons/react/solid';
+import { ExternalLinkIcon } from '@heroicons/react/outline';
 
-import Button from '../Button';
+import Li from '../Li';
+
+import { footerLinks } from '../../data/links';
+import ELi from '../ELi';
+import ThemeButton from '../ThemeButton';
 
 const Footer = () => {
 	return (
-		<div className='footer'>
-			<div className='w-100p grid grid-3 landscape-grid-2 portrait-grid-1'>
-				<div className='grid-block portrait-flex-c portrait-text-c'>
-					<div className='flex align-c justify-c flex-row'>
-						<p className='caption-text low-weight'>
-							Copyright &copy; 2022
-						</p>
-					</div>
-				</div>
+		<div className='w-100p flex-c my-3r'>
+			<footer className='w-100p flex-c'>
+				<div className='container flex-c'>
+					<div className='text-container'>
+						<div className='w-100p d-flex flex-wrap flex-row'>
+							{footerLinks.map((link) => {
+								let Component = Li;
 
-				<div className='grid-block align-c landscape-hide'>
-					<div className='flex-sb'>
-						<Button.Internal href='/privacy' className='hy-button'>
-							<span className='text'>Privacy</span>
-						</Button.Internal>
-						<Button.External
-							href='https://github.com/xplato/website'
-							className='hy-button'
-						>
-							<span className='text'>Source code</span>
-						</Button.External>
-					</div>
-				</div>
+								if (link.external) {
+									Component = ELi;
+								}
 
-				<div className='grid-block align-e portrait-flex-c portrait-text-c'>
-					<div className='flex align-c justify-c flex-row'>
-						<p className='mb-0'>Made with</p>
-						<i className='j-icon mx-0-25r'>
-							<span className='text-red-500'>
-								<HeartIcon />
-							</span>
-						</i>
-						<p className='mb-0'>in SLC</p>
+								return (
+									<Component
+										key={link.label}
+										href={link.href}
+										className='link in-grid'
+									>
+										{link.label}
+									</Component>
+								)
+							})}
+						</div>
+						<div className='w-100p border-top-ui-2 mt-1r pt-2r'>
+							<div className='w-100p grid grid-2 ml-grid-1'>
+								<div className='grid-block ml-align-c ml-text-c'>
+									<p className='mb-0 opacity-07 fs-sm'>
+										Copyright &copy; 2022
+									</p>
+								</div>
+								<div className='grid-block flex-row align-c justify-e ml-justify-c mp-text-c'>
+									<ThemeButton />
+									<div className='flex align-c justify-c flex-row ml-0-5r'>
+										<p className='mb-0 opacity-07 fs-sm'>
+											Made with
+										</p>
+										<i className='icon sm mx-0-25r'>
+											<span className='text-red-500'>
+												<HeartIcon />
+											</span>
+										</i>
+										<p className='mb-0 opacity-07 fs-sm'>
+											in SLC
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
 	);
 };

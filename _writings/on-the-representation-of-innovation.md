@@ -144,7 +144,7 @@ One must note that the metadata is not a part of the innovation itself. It's off
 
 The basic structure is a named object with no properties:
 
-```
+```ts
 interface Innovation {
 
 }
@@ -156,7 +156,7 @@ Surely, we'll assume a constant value containing all the necessary innovations t
 
 We can update our object accordingly:
 
-```
+```ts
 interface Innovation {
     dependencies: Innovation[];
 }
@@ -175,7 +175,7 @@ In an effort to avoid getting into abstract programming, we'll say the objective
 (I know, I'm mixing TS with pseudocode, don't mind)
 
 
-```
+```ts
 interface Innovation {
     dependencies: Innovation[];
     objective: string;
@@ -185,13 +185,13 @@ interface Innovation {
 The objective (the code) is useless, however, unless we execute it.
 
 
-```
+```ts
 interface Innovation {
     dependencies: Innovation[];
     
 }
 
-create MyInnovation which is Innovation {
+class MyInnovation extends Innovation {
 	// the magic here...
 }
 

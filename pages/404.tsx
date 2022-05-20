@@ -1,38 +1,44 @@
 import Image from 'next/image';
 import { isMobile } from 'react-device-detect';
 
-import Button from '../components/Button';
-import Layout from '../components/layout/Layout';
-import PageMeta from '../components/PageMeta';
-import Wrapper from '../components/Wrapper';
+import Entity from '../components/Entity';
+import Li from '../components/Li';
+
+import { variants, transition } from '../logic/motion';
 
 const FourOhFour = () => {
 	return (
 		<>
-			<PageMeta
-				meta={{
-					title: '404!',
-					description: 'Page not found.',
-				}}
-			/>
-			<Wrapper c='py-2r flex-c large-text text-c'>
-				<h1 className='fs-10xl tablet-fs-9xl landscape-fs-7xl portrait-fs-6xl fw-700 flex align-c justify-c flex-row text-c'>
-					4{' '}
-					<Image
-						src='/images/etc/ghost.png'
-						width={isMobile ? 75 : 150}
-						height={isMobile ? 100 : 200}
-					/>
-					{' '}4
-				</h1>
-				<p>This is some spooky shit, man.</p>
-				<p>You can head back home, or try a search {!isMobile && `(press "/" to search)`}.</p>
-				<Button.Internal href='/'>I gotta get outta here!</Button.Internal>
-			</Wrapper>
+			<section className='section p-0 flex-c special-section'>
+				<div className='container flex-c h-100p'>
+					<Entity
+						variants={variants.fadeInUp}
+						transition={{
+							...transition.default,
+							delay: 0.2,
+						}}
+						className='h-100p'
+					>
+						<div className='text-container h-100p flex-c text-c'>
+							<h1 className='fs-10xl tablet-fs-9xl landscape-fs-7xl portrait-fs-6xl fw-700 flex align-c justify-c flex-row text-c'>
+								4{' '}
+								<Image
+									src='/images/etc/ghost.png'
+									width={isMobile ? 75 : 150}
+									height={isMobile ? 100 : 200}
+								/>{' '}
+								4
+							</h1>
+							<p className='fs-lg'>
+								This is some spooky shit, man. Try heading back home.
+							</p>
+							<Li href='/' className='button'>Go home</Li>
+						</div>
+					</Entity>
+				</div>
+			</section>
 		</>
 	);
 };
-
-FourOhFour.layout = Layout;
 
 export default FourOhFour;

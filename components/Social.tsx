@@ -6,16 +6,13 @@ import { icons } from '../data/icons';
 
 const Social = () => (
 	<div>
-		<div className='mb-0-5r'>
-			<p className='caption-text'>Find me on</p>
-		</div>
 		<div className='w-100p flex align-c justify-s flex-row'>
 			<ELi
 				href='https://codeberg.org/xplato'
 				className='social-button'
 				title='My Codeberg Profile'
 			>
-				<i className='j-icon md'>
+				<i className='icon lg'>
 					<Image
 						src='/images/social/codeberg.png'
 						alt='Codeberg Logo'
@@ -30,7 +27,7 @@ const Social = () => (
 				className='social-button'
 				title='My GitHub Profile'
 			>
-				<i className='j-icon md'>{icons.github}</i>
+				<i className='icon lg'>{icons.github}</i>
 				<span className='sr-only'>My GitHub Profile</span>
 			</ELi>
 			<ELi
@@ -38,7 +35,7 @@ const Social = () => (
 				className='social-button'
 				title='My Mastodon Profile'
 			>
-				<i className='j-icon md'>
+				<i className='icon lg'>
 					<Image
 						src='/images/social/mastodon.png'
 						alt='Mastodon Logo'

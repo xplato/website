@@ -84,7 +84,7 @@ Yeah, that’ll get you far.
 
 ...
 
-Very recently, Josh Renaud of Missouri uncovered “a flaw in a public website run by the Missouri Department of Elementary and Secondary Education that exposed thousands of teachers’ sensitive information.” \[1\]
+Very recently, Josh Renaud of Missouri uncovered “a flaw in a public website run by the Missouri Department of Elementary and Secondary Education that exposed thousands of teachers’ sensitive information.” [1]
 
 How? Inspect element. Literally.
 
@@ -98,7 +98,7 @@ My point is that you **really** have to convince people that you’re not breaki
 
 And no, this “I think you’re hacking” view is not specific to your tech-unsavvy mother, it extends to the governors of entire states:
 
-> Gov. Mike Parson falsely accused me of being a “hacker” in a televised press conference, in press releases sent to every teacher across the state, and in attack ads aired by his political action committee. \[2\]
+> Gov. Mike Parson falsely accused me of being a “hacker” in a televised press conference, in press releases sent to every teacher across the state, and in attack ads aired by his political action committee. [2]
 
 He waited anxiously for **four months** before the charges were dropped.
 
@@ -130,4 +130,4 @@ Thank you for reading.
 
 ## References & Further Reading
 
-\[1 & 2\]: https://joshrenaud.com/pd/josh-renaud-personal-statement.pdf
+\[1 & 2\]: [https://joshrenaud.com/pd/josh-renaud-personal-statement.pdf](https://joshrenaud.com/pd/josh-renaud-personal-statement.pdf)

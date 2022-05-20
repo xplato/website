@@ -1,4 +1,5 @@
 interface Global {
+	email: string;
 	social: Social[];
 }
 
@@ -9,6 +10,7 @@ interface Social {
 }
 
 const global: Global = {
+	email: 'tristan@infinium.earth',
 	social: [
 		{
 			title: 'Codeberg',

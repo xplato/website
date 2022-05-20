@@ -1,0 +1,90 @@
+@use '../mixins';
+
+article {
+	& * {
+		@include mixins.serif();
+	}
+
+	& h1 {
+		text-rendering: optimizeLegibility;
+		font-size: 2.5rem;
+		font-weight: 500;
+		line-height: 1.1;
+		margin: 0;
+		margin-bottom: 1.75rem;
+	}
+
+	& h2 {
+		text-rendering: optimizeLegibility;
+		font-size: 1.73286rem;
+		line-height: 1.1;
+		margin-top: 3.5rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	& h3 {
+		font-size: 1.4427rem;
+    	line-height: 1.1;
+		margin-top: 3.5rem;
+		margin-bottom: 1.25rem;
+	}
+
+	& h4 {
+		font-size: 1.125rem;
+    	line-height: 1.1;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	& p {
+		font-size: 1.1rem;
+		line-height: 1.8;
+		margin: 0;
+	}
+
+	& p, & pre {
+		margin-bottom: 1.25rem;
+	}
+
+	& img {
+		width: 100%;
+	}
+}
+
+.writing-item {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--ui-2);
+
+	&, & a {
+		color: var(--text-color);
+	}
+
+	& h4 {
+		display: inline;
+		font-size: 1.25rem;
+		font-weight: 500;
+		margin-bottom: 0;
+		transition: var(--d-m-1) var(--e-s);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	article {
+		h1 {
+			font-size: 2rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	article {
+		h1 {
+			font-size: 1.75rem;
+		}
+	}
+}

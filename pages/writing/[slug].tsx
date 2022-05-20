@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 
-import Layout from '../../components/layout/Layout';
 import PageMeta from '../../components/PageMeta';
 import Writing from '../../components/writing/Writing';
 
@@ -26,9 +25,9 @@ const SingleWriting = ({ writing }: Props) => {
 		<>
 			<Writing>
 				{router.isFallback ? (
-					<section className="section mnh-screen">
-						<div className="container flex-c">
-							<div className="mw-40r flex-c text-c">
+					<section className='section mnh-screen'>
+						<div className='container flex-c'>
+							<div className='mw-40r flex-c text-c'>
 								<h1>Hang in there...</h1>
 								<p>Fetching this writing...</p>
 							</div>
@@ -45,21 +44,18 @@ const SingleWriting = ({ writing }: Props) => {
 						/>
 
 						<div className='w-100p flex-c'>
-							<div className='w-100p mw-50r mb-2r'>
-								<p className='mt-0-5r fs-lg fw-500 text-dynamic-08'>
+							<div className='article-container w-100p'>
+								<p className='mt-0-5r fs-base fw-500 opacity-08'>
 									{getDate(writing.date)}
 								</p>
-								<h1 className='fs-5xl tablet-fs-4xl fw-600 mb-1-5r'>
-									{writing.title}
-								</h1>
+								<h1>{writing.title}</h1>
+								<div
+									dangerouslySetInnerHTML={{
+										// @ts-ignore
+										__html: writing.content,
+									}}
+								></div>
 							</div>
-
-							<article
-								dangerouslySetInnerHTML={{
-									// @ts-ignore
-									__html: writing.content,
-								}}
-							></article>
 						</div>
 					</>
 				)}
@@ -67,8 +63,6 @@ const SingleWriting = ({ writing }: Props) => {
 		</>
 	);
 };
-
-SingleWriting.layout = Layout;
 
 export default SingleWriting;
 
