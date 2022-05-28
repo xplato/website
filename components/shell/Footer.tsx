@@ -1,11 +1,15 @@
+import dynamic from 'next/dynamic';
 import { HeartIcon } from '@heroicons/react/solid';
-import { ExternalLinkIcon } from '@heroicons/react/outline';
 
 import Li from '../Li';
+import ELi from '../ELi';
 
 import { footerLinks } from '../../data/links';
-import ELi from '../ELi';
-import ThemeButton from '../ThemeButton';
+
+const ThemeButton = dynamic(
+	import('../ThemeButton'),
+	{ ssr: false },
+);
 
 const Footer = () => {
 	return (

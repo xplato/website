@@ -40,6 +40,14 @@ const writings: Writing[] = [
 		excerpt: `Lately, I’ve found myself thinking, perhaps more often than I should, about realization in a general sense. We are all aware of those scenes in movies where the protagonist comes to a sudden...`,
 		tags: ['realization', 'sherlock lol'],
 	},
+	{
+		slug: 'write-maintainable-code-the-first-time',
+		title: 'Write Maintainable Code the First Time',
+		date: '2021/11/14',
+		time: '12:00',
+		excerpt: `Maintainability is a major aspect of programming. Get it right and you'll be worry-free. Get it wrong, however...`,
+		tags: [''],
+	},
 ];
 
 

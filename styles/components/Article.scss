@@ -49,6 +49,11 @@ article {
 	& img {
 		width: 100%;
 	}
+
+	& li {
+		margin-bottom: 0.5rem;
+		line-height: 1.5;
+	}
 }
 
 .writing-item {
