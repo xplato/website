@@ -1,70 +1,55 @@
-import dynamic from 'next/dynamic';
 import { HeartIcon } from '@heroicons/react/solid';
 
+import Entity from '../Entity';
 import Li from '../Li';
-import ELi from '../ELi';
 
-import { footerLinks } from '../../data/links';
+import { transition, variants } from '../../logic/motion';
 
-const ThemeButton = dynamic(
-	import('../ThemeButton'),
-	{ ssr: false },
+const Tagline = () => (
+	<div className='flex align-c justify-c flex-row'>
+		<p className='mb-0 opacity-05'>Made with</p>
+		<i className='icon mx-0-25r text-red-500'>
+			<HeartIcon />
+		</i>
+		<p className='mb-0 opacity-05'>in SLC</p>
+	</div>
 );
 
 const Footer = () => {
 	return (
-		<div className='w-100p flex-c my-3r'>
-			<footer className='w-100p flex-c'>
-				<div className='container flex-c'>
+		<>
+			<section className='section py-4r' id='end'>
+				<div className='x-container flex-c'>
 					<div className='text-container'>
-						<div className='w-100p d-flex flex-wrap flex-row'>
-							{footerLinks.map((link) => {
-								let Component = Li;
-
-								if (link.external) {
-									Component = ELi;
-								}
-
-								return (
-									<Component
-										key={link.label}
-										href={link.href}
-										className='link in-grid'
+						<Entity
+							variants={variants.fadeInUp}
+							transition={{
+								...transition.default,
+								delay: 0.2,
+							}}
+						>
+							<div className='w-100p flex-sb ml-flex-c ml-text-c'>
+								<p className='mb-0 opacity-05'>
+									Copyright &copy; 2022
+								</p>
+								<div className='flex align-c justify-c flex-row'>
+									<Li
+										href='/privacy'
+										className='normal-link opacity-05'
 									>
-										{link.label}
-									</Component>
-								)
-							})}
-						</div>
-						<div className='w-100p border-top-ui-2 mt-1r pt-2r'>
-							<div className='w-100p grid grid-2 ml-grid-1'>
-								<div className='grid-block ml-align-c ml-text-c'>
-									<p className='mb-0 opacity-07 fs-sm'>
-										Copyright &copy; 2022
+										Privacy
+									</Li>
+									<p className='mb-0 mx-0-5r opacity-05'>
+										{' • '}
 									</p>
-								</div>
-								<div className='grid-block flex-row align-c justify-e ml-justify-c mp-text-c'>
-									<ThemeButton />
-									<div className='flex align-c justify-c flex-row ml-0-5r'>
-										<p className='mb-0 opacity-07 fs-sm'>
-											Made with
-										</p>
-										<i className='icon sm mx-0-25r'>
-											<span className='text-red-500'>
-												<HeartIcon />
-											</span>
-										</i>
-										<p className='mb-0 opacity-07 fs-sm'>
-											in SLC
-										</p>
-									</div>
+									<Tagline />
 								</div>
 							</div>
-						</div>
+						</Entity>
 					</div>
 				</div>
-			</footer>
-		</div>
+			</section>
+		</>
 	);
 };
 

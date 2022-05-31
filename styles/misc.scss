@@ -1,0 +1,45 @@
+@use './variables';
+
+.tag {
+	padding: 0.25rem 0.5rem;
+	background-color: var(--ui-1);
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: var(--d-m-1) var(--e-s);
+
+	&:focus {
+		outline: none;
+	}
+
+	& span {
+		font-weight: 500;
+	}
+
+	&:not(:last-child) {
+		margin: 0 0.5rem 0.5rem 0;
+	}
+
+	@each $color in variables.$colors {
+		&.#{$color} {
+			background-color: var(--#{$color}-100);
+			color: var(--#{$color}-600);
+
+			&:hover {
+				background-color: var(--#{$color}-200);
+
+				html.dark & {
+					background-color: var(--#{$color}-800);
+				}
+			}
+
+			&:focus {
+				box-shadow: 0 0 0 2px var(--#{$color}-500);
+			}
+
+			html.dark & {
+				background-color: var(--#{$color}-900);
+				color: var(--#{$color}-400);
+			}
+		}
+	}
+}

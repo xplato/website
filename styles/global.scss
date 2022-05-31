@@ -2,13 +2,11 @@
 @use './variables';
 
 @use './components/Article';
-@use './components/Badge';
 @use './components/Button';
 @use './components/Card';
 @use './components/Navigation';
 
-// Pages
-@use './pages/quotes';
+@use './misc';
 
 :root {
 	--accent: var(--blue-600);
@@ -31,33 +29,39 @@ html.dark {
 	--text-color: white;
 }
 
-html, body {
+html,
+body {
 	font-size: 16px;
-	@include mixins.sans();
+	@include mixins.bevietnampro();
+	-webkit-font-smoothing: antialiased;
 }
 
-.mono, .mono * {
+.mono,
+.mono * {
 	@include mixins.mono();
 }
 
-.serif, .serif * {
+.serif,
+.serif * {
 	@include mixins.serif();
 }
 
-.sans, .sans * {
+.sans,
+.sans * {
 	@include mixins.sans();
 }
 
 .x-container {
 	max-width: 1470px;
-    width: 93.3%;
+	width: 93.3%;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 @media only screen and (max-width: 600px) {
 	.x-container {
-		padding: 0 1.5rem;
 		width: 100%;
+		padding: 0 1.5rem;
 	}
 }
 
@@ -71,31 +75,20 @@ html, body {
 	background-image: linear-gradient(to bottom, var(--ui-1), var(--ui));
 }
 
-article .text-container, footer .text-container {
-	max-width: 40rem !important;
-}
-
 .text-container {
-	max-width: 40rem;
+	max-width: 55rem;
 	width: 100%;
 }
 
-.p-text {
-	font-size: 1.15rem;
-	font-weight: 400;
-	line-height: 1.5;
-}
+:not(pre) > code {
+	color: var(--pink-500) !important;
+	background-color: var(--pink-50) !important;
+	border-radius: 0.25rem;
+	white-space: normal;
 
-.smaller-text .p-text {
-	font-size: 1rem;
-}
-
-:not(pre)>code {
-    border-radius: 0.3em;
-    background: var(--ui-1);
-    color: var(--text-color);
-    padding: 0.15em 0.2em 0.05em;
-    white-space: normal;
+	// &::before, &::after {
+	// 	content: "`";
+	// }
 }
 
 pre {
@@ -105,8 +98,9 @@ pre {
 	background-color: #282c34 !important;
 	border-radius: 0.5rem;
 	padding: 1rem;
-	
-	&, & code {
+
+	&,
+	& code {
 		color: #abb2bf;
 	}
 
@@ -134,7 +128,8 @@ pre {
 		color: #ff78f8;
 	}
 
-	& .hljs-property, & .hljs-attr {
+	& .hljs-property,
+	& .hljs-attr {
 		color: #ce9887;
 	}
 
@@ -147,71 +142,28 @@ pre {
 	}
 }
 
-code, pre {
-    color: var(--text-color);
-    background: none;
-    font-feature-settings: normal;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-    margin-bottom: 0;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-	
-	&, & * {
-		font-family: 'Cascadia Code PL', 'IBM Plex Mono', monospace !important;
-	}
-}
-
-.logo-container {
-	background-color: transparent;
-	padding: 0;
-	border: 2px solid transparent;
-
-	&:focus-visible {
-		outline: 2px solid var(--accent);
-		outline-offset: 2px;
-	}
-
-	& .logo {
-		color: var(--text-color);
-		transition: var(--d-m-1) ease-in-out;
-	}
-
-	& .logo-text {
-		font-size: 13px;
-		letter-spacing: 0.05em;
-		font-weight: 600;
-		text-transform: uppercase;
-	}
-}
-
-.caption-text {
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: 1.3px;
-	line-height: 18px;
-	text-transform: uppercase;
+code,
+pre {
 	color: var(--text-color);
-	margin: 0;
+	background: none;
+	font-feature-settings: normal;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	margin-bottom: 0;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 
-	&.low-weight {
-		font-weight: 500;
-	}
-
-	&.white {
-		color: white;
-	}
-
-	&.sm-ls {
-		letter-spacing: normal;
+	&,
+	& * {
+		font-family: 'Cascadia Code PL', 'IBM Plex Mono', monospace !important;
 	}
 }
 
@@ -259,10 +211,6 @@ hr {
 	margin: 2.5rem 0;
 }
 
-.special-section {
-	min-height: 60vh;
-}
-
 ul.list {
 	margin: 0.5rem 0 !important;
 
@@ -271,21 +219,38 @@ ul.list {
 	}
 }
 
-// Redefine the .section padding for all elements
-// that don't manually override it themselves.
-// This is necessary due to the order of CSS imports.
-.section:not([class^='section p']) {
-	padding: 10% 0;
-}
-
 .capitalize {
 	text-transform: capitalize;
 }
 
-.ghost {
-	background-color: #f7f7f8;
+section[id] {
+	padding: 2.5rem 0 !important;
+}
 
-	html.dark & {
-		background-color: var(--gray-800);
+.x-title {
+	position: relative;
+
+	&:not(.no-octo)::before {
+		content: "#";
+		font-size: 1rem;
+		position: absolute;
+		top: 0;
+		left: -1.75rem;
+		opacity: 0.5;
 	}
+}
+
+@media only screen and (max-width: 600px) {
+	.x-title::before {
+		display: none;
+	}
+}
+
+.spec-overlay {
+	height: 130px;
+	background-image: linear-gradient(to bottom, transparent, var(--ui));
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }

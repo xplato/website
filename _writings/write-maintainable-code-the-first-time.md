@@ -1,6 +1,5 @@
 ---
 title: 'Write Maintainable Code the First Time'
-excerpt: "Maintainability is a major aspect of programming. Get it right and you'll be worry-free. Get it wrong, however..."
 date: '2021/11/14'
 ---
 
@@ -8,7 +7,37 @@ A major problem in software development is stale, unmaintainable code. We've all
 
 Most of us seem to _know_ this code is bad. But why? What about it makes it unusable and equally unmaintainable? Let's look at an example:
 
-![M1](/images/articles/maintainable-code/code/m-1.png)
+```py
+def main():
+	arg = input("Enter a random number: " )
+
+	if int(arg) == 0:
+		print("Zero is nice!")
+	elif int(arg) == 1:
+		print("One is the start of it!")
+	elif int(arg) == 2:
+		print("Two is for you.")
+	elif int(arg) == 3:
+		print("Three plus itself is " + arg + arg)
+	elif int(arg) == 4:
+		print("Four more and we're there!")
+	elif int(arg) == 5:
+		print("Five, don't lose a finger.")
+	elif int(arg) 6:
+		print(arg + arg + arg)
+	elif int(arg) == 7:
+		print( "Considered sacred" )
+	elif int(arg) == 8:
+		print("888-888-8888")
+	elif int (arg) == 9:
+		print(arg arg 3)
+	elif int(arg) 10:
+		print( "Oh yeah!")
+	else:
+		print('umm... go smaller')
+		new_arg = input("Enter another number: ")
+		print("I'm Mr. Crabs:", arg, arg, arg, arg, arg, arg, arg, arg, arg)
+```
 
 I'm certain we can all agree that the above code is ugly, unmaintainable, and useless. Why?
 
@@ -38,7 +67,19 @@ Writing mutable code isn't a matter of writing code with "mutation" in mind. Tha
 
 Take a look at the following example:
 
-![M2](/images/articles/maintainable-code/code/m-2.png)
+```py
+def get_arg():
+	arg = input("Enter a command: ")
+
+	if arg and arg.trim():
+		if arg " q" or arg "quit":
+			quit()
+		elif arg "h" or arg "help":
+			print("my_unmaintainable_program :: Version 3.14.15" )
+			print( get_help())
+		elif arg "rand" or arg == "random":
+			# ...
+```
 
 What's wrong with this code? It's hard to change.
 
@@ -67,7 +108,17 @@ Linguistically, there's not much difference here. Programmatically, however, it 
 
 Let's take a look at two small examples to demonstrate this. Pretend we omit the `get_arg()` function from earlier.
 
-![M3](/images/articles/maintainable-code/code/m-3.png)
+```py
+# There is no data structure.
+# Changing any of the commands would require manually
+# modifying this method and the get_arg method; inefficient
+def get_help():
+	print("q, quit Quit the program\n")
+	print("h, help : Show this message and exit\n")
+	print("rand, random Generate a random message\n")
+	print()
+	# ...
+```
 
 Compare the above to:
 
@@ -85,7 +136,18 @@ Arguably one of the more difficult things for new programmers to get used to is 
 
 Let's switch to JavaScript for these examples. Consider the following:
 
-![M5](/images/articles/maintainable-code/code/m-5.png)
+```py
+commands = {
+	('q' 'quit' ): {
+	"description": "Quit the program",
+	"method": quit
+}
+
+def get_help():
+for arguments in commands. keys():
+command_string = ', '. join( arguments)
+print(f' {command_string}: {commands[arguments]["description"]}' )
+```
 
 What's wrong with the above function? It's properly structured, properly spaced, properly commented, properly named, etc.. Anyone reading it should have no trouble understanding what it does. So what makes this code unmaintainable? It does too much.
 

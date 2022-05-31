@@ -1,53 +1,27 @@
 @use '../mixins';
 
-nav {
-	width: 100%;
-	height: 50px;
-	background-color: var(--ui);
-	z-index: 99;
+.nav-button {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	padding: 0.5rem;
+	z-index: 9999;
 
-	&, & .nav-container, & .nav-link {
+	@include mixins.link-focus(-4px, 90px);
+
+	&:hover > div {
+		background-color: var(--ui-2);
+	}
+
+	& div {
+		width: 2rem;
+		height: 2rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-	
-	&, & .nav-container {
-		transition: var(--d-s-1) var(--e-s);
-	}
-
-	& .border-wrapper {
-		width: 100%;
-		height: 100%;
-	}
-
-	& .link-wrapper {
-		height: 100%;
-		padding: 0 0 0 2.45rem;
-	}
-
-	& .nav-link {
-		height: 100%;
 		color: var(--text-color);
-		font-size: 13px;
-		letter-spacing: 0.05em;
-		font-weight: 600;
-		text-transform: uppercase;
-		transition: var(--d-m-1) var(--e-s);
-
-		&:hover, &.active {
-			opacity: 0.65;
-		}
-	}
-}
-
-@media only screen and (max-width: 700px) {
-	nav {
-		& .link-wrapper {
-			padding-left: 2rem;
-		}
-		& .nav-link {
-			font-size: 12px;
-		}
+		background-color: var(--ui-1);
+		border-radius: 90px;
+		transition: var(--d-s-1) var(--e-s);
 	}
 }

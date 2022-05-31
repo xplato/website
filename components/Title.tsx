@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classNames from 'classnames';
 
 interface Props {
 	mods?: string;
@@ -6,10 +6,9 @@ interface Props {
 }
 
 const Title = ({ mods, children }: Props) => (
-	<h1 className={classNames(
-		'fs-5xl tl-fs-4xl',
-		mods,
-	)}>{children}</h1>
+	<p className={classNames('mb-1r fs-xl fw-500 opacity-04 x-title', mods)}>
+		{children}
+	</p>
 );
 
 export default Title;

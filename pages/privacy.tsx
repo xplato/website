@@ -1,4 +1,3 @@
-import Breadcrumbs from '../components/Breadcrumbs';
 import ELi from '../components/ELi';
 import Entity from '../components/Entity';
 import Li from '../components/Li';
@@ -17,7 +16,7 @@ const Privacy = () => {
 			/>
 
 			<section className='section flex-c pb-3r'>
-				<div className='container flex-c'>
+				<div className='x-container flex-c'>
 					<Entity
 						variants={variants.fadeIn}
 						transition={{
@@ -27,7 +26,6 @@ const Privacy = () => {
 					>
 						<article>
 							<div className='text-container'>
-								<Breadcrumbs />
 								<h1>Privacy</h1>
 								<p>Last updated: 19th May, 2022</p>
 								<p>

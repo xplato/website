@@ -1,6 +1,5 @@
 ---
 title: 'On Realization'
-excerpt: "Lately, I have found myself thinking, perhaps more often than I should, about realization in a general sense."
 date: '2022/03/20'
 ---
 

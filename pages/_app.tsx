@@ -9,6 +9,7 @@ import '../styles/global.scss';
 // Fonts
 
 /// IBM Plex
+import '../assets/fonts/be_vietnam_pro/be_vietnam_pro.css';
 import '../assets/fonts/plex/mono/mono.css';
 import '../assets/fonts/plex/sans/sans.css';
 import '../assets/fonts/plex/serif/serif.css';
@@ -20,7 +21,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 	return (
 		<ThemeProvider attribute='class'>
 			<RootView>
-				<div id="content">
+				<div id='content'>
 					<Component {...pageProps} />
 				</div>
 			</RootView>

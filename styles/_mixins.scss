@@ -18,15 +18,15 @@
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
 }
 
-@mixin link-focus() {
+@mixin link-focus($offset: 2px, $radius: 0.25rem) {
 	& {
 		&::after {
 			content: "";
-			top: -2px;
-			right: -2px;
-			bottom: -2px;
-			left: -2px;
-			border-radius: 0.25rem;
+			top: -$offset;
+			right: -$offset;
+			bottom: -$offset;
+			left: -$offset;
+			border-radius: $radius;
 			position: absolute;
 		}
 	
@@ -51,4 +51,8 @@
 
 @mixin serif() {
 	font-family: 'IBM Plex Serif', 'Times New Roman', Times, serif;
+}
+
+@mixin bevietnampro() {
+	font-family: 'Be Vietnam Pro', 'IBM Plex Sans', 'Times New Roman', Times, serif;
 }

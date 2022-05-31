@@ -1,14 +1,13 @@
 @use '../mixins';
+@use '../variables';
 
 .button {
 	height: 2.25rem;
 	appearance: none;
 	padding: 0.5rem 0.875rem;
 	border-radius: 0.25rem;
-	font-size: 13px;
-	letter-spacing: 0.05em;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-size: 0.875rem;
+	font-weight: 500;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -42,46 +41,59 @@
 			background-color: var(--ui-3);
 		}
 	}
-}
 
-.link {
-	display: inline-flex;
-	color: var(--text-color-08);
-	text-decoration: none;
-	line-height: 1.2;
-	position: relative;
+	&.ghost {
+		background-color: transparent !important;
+		color: white !important;
 
-	@include mixins.link-focus();
-
-	&:hover {
-		opacity: 1 !important;
-		text-decoration: underline;
-	}
-
-	&.active {
-		font-style: italic;
-	}
-
-	&.in-grid {
-		opacity: 0.9;
-
-		&:not(:last-child) {
-			margin-right: 1rem;
-			margin-bottom: 1rem;
+		&:hover {
+			background-color: var(--ui-1) !important;
 		}
 	}
 }
 
-.offset-link {
-	--underline-offset: 0;
+.links {
+	& .link:not(:last-child) {
+		margin-right: 1.5rem;
+	}
+}
 
-	color: currentColor;
-	text-decoration: underline;
-	text-underline-offset: var(--underline-offset);
-	transition: --underline-offset 300ms ease 0s;
+.link {
+	font-size: 1.125rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	background-color: transparent;
+	color: var(--text-color);
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	position: relative;
+
+	@include mixins.link-focus();
+	
+	&, & i {
+		transition: var(--d-m-1) var(--e-s);
+	}
 
 	&:hover {
-		--underline-offset: 0.1em;
+		opacity: 0.7;
+
+		&.with-icon i {
+			// transform: rotate(0);
+			transform: translate(2px, -2px) rotate(-45deg);
+		}
+	}
+
+	& span {
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+
+	&.with-icon i {
+		margin-left: 0.5rem;
+		transform: rotate(-45deg);
 	}
 }
 
@@ -101,98 +113,6 @@
 	}
 }
 
-.icon-button {
-	width: 2.25rem;
-	height: 2.25rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	border-radius: 90px;
-	cursor: pointer;
-	background-color: transparent;
-	border: none;
-	box-shadow: none;
-	color: var(--text-color);
-	transition: var(--d-m-1) var(--e-s);
-
-	&:hover {
-		background-color: var(--ui-1);
-	}
-
-	&:focus-visible {
-		box-shadow: 0 0 0 2px var(--accent);
-	}
-
-	&.stretch {
-		width: auto;
-		padding: 0 0.85rem;
-	}
-
-	& span {
-		font-size: 14px;
-		font-weight: 500;
-		line-height: 1;
-	}
-}
-
-.sm-link {
-	font-size: inherit;
-	line-height: 1.5;
-	opacity: 0.8;
-	color: var(--text-color);
-	text-decoration: underline;
-	transition: var(--d-m-1) var(--e-s);
-
-	&:hover {
-		opacity: 1;
-		text-underline-offset: 1px;
-		color: var(--accent);
-	}
-}
-
-.whoami .j-link.underline {
-	font-weight: 400;
-}
-
-article a:not([class]), .default-link {
-	color: var(--text-color);
-	text-decoration: underline;
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.05em;
-	text-decoration-color: rgba(0, 0, 0, 0.4);
-	transition: var(--d-m-1) var(--e-s);
-
-	&:hover {
-		opacity: 0.6;
-	}
-
-	html.dark & {
-		text-decoration-color: rgba(255, 255, 255, 0.4);
-	}
-}
-
-.simple-link {
-	color: var(--text-color);
-	transition: var(--d-m-1) var(--e-s);
-
-	&:hover {
-		opacity: 0.6;
-	}
-}
-
-.action-link {
-	font-size: 13px;
-	letter-spacing: 0.05em;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: var(--text-color);
-	transition: var(--d-m-1) var(--e-s);
-
-	&:hover {
-		opacity: 0.65;
-	}
-}
 
 .top-button {
 	$size: 2.5rem;
@@ -250,5 +170,102 @@ article a:not([class]), .default-link {
 	& .icon-container {
 		color: white;
 		z-index: 2;
+	}
+}
+
+.normal-link {
+	display: inline-flex;
+	color: var(--text-color-08);
+	text-decoration: none;
+	line-height: 1.2;
+	position: relative;
+
+	@include mixins.link-focus();
+
+	&:hover {
+		opacity: 1 !important;
+		text-decoration: underline;
+	}
+
+	&.active {
+		font-style: italic;
+	}
+
+	&.in-grid {
+		opacity: 0.9;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.simple-link {
+	color: var(--text-color);
+	position: relative;
+	transition: var(--d-m-1) var(--e-s);
+
+	@include mixins.link-focus(0);
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
+
+article a:not([class]), .default-link {
+	position: relative;
+	color: var(--text-color);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.05em;
+	text-decoration-color: rgba(0, 0, 0, 0.4);
+	transition: var(--d-m-1) var(--e-s);
+
+	@include mixins.link-focus(0);
+
+	&:focus-visible {
+		text-decoration-color: rgba(0, 0, 0, 0);
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	html.dark & {
+		text-decoration-color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+.xbutton {
+	$height: 1.75rem;
+
+	padding: 0 0.5rem;
+	padding-bottom: 2px;
+	height: $height;
+	color: white;
+	border-radius: 0.25rem;
+	font-weight: 500;
+	line-height: $height;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to bottom, var(--accent-500), var(--accent-600));
+	transition: var(--d-m-2) var(--e-s);
+
+	@each $color in variables.$colors {
+		&.#{$color} {
+			background-image: linear-gradient(to bottom, var(--#{$color}-500), var(--#{$color}-600));
+			box-shadow: 0 1px 0 0 var(--#{$color}-700);
+
+			&:focus {
+				outline: 2px solid var(--#{$color}-500);
+				outline-offset: 2px;
+			}
+		}
+	}
+
+	&:hover {
+		opacity: 0.7;
 	}
 }

@@ -1,6 +1,5 @@
 ---
 title: 'On the Representation of Innovation'
-excerpt: "There's this whole category within life. It's like this general wrapper around an entire way of thinking. On the one hand, you've got survival to think about..."
 date: '2022/04/30'
 ---
 

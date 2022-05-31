@@ -6,6 +6,7 @@ interface Variant {
 }
 
 interface Props {
+	id?: string;
 	custom?: string | number;
 	variants: Variant;
 	transition?: any;
@@ -14,11 +15,11 @@ interface Props {
 	[key: string]: any;
 }
 
-const Entity = ({ custom, variants, transition, noVis, children, ...props }: Props) => {
+const Entity = ({ id, custom, variants, transition, noVis, children, ...props }: Props) => {
 	return (
 		<motion.div
 			custom={custom}
-			key={custom}
+			key={id || (custom || undefined)}
 			variants={variants}
 			initial='initial'
 			whileInView={noVis ? undefined : 'animate'}

@@ -24,7 +24,7 @@ const Card = ({ href, title, content, image, mods }: Props) => {
 			)}
 			<div className='content'>
 				<h4 className='title mb-0'>{title}</h4>
-				{content && <p className='mb-0 opacity-7'>{content}</p>}
+				{/* {content && <p className='mb-0 opacity-7'>{content}</p>} */}
 			</div>
 		</div>
 	);

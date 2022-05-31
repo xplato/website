@@ -1,24 +1,19 @@
-import moment from 'moment';
 import Li from '../Li';
 
-interface Props {
-	slug: string;
-	title: string;
-	date: string;
-}
+import type { Writing } from '../../data/writings';
+import moment from 'moment';
 
-const WritingItem = ({ slug, title, date }: Props) => {
+const WritingItem = ({ slug, title, excerpt, date }: Writing) => {
 	return (
-		<div className="writing-item">
+		<div className='writing-item'>
 			<Li href={`/writing/${slug}`} className='simple-link'>
-				<h4 className='fs-lg fw-400'>{title}</h4>
+				<h4 className='fs-lg fw-500'>{title}</h4>
 			</Li>
-			<p
-				className='mb-0 fs-sm opacity-06 d-inline'
-				title={moment(date).format('Mo MMMM, YYYY')}
-			>
-				{moment(date).fromNow()}
-			</p>
+			<div className="flex align-c justify-c flex-row">
+				<p className='mb-0 opacity-06 d-inline'>{moment(date).fromNow()}</p>
+				<p className="mb-0 mx-0-5r opacity-03 fs-sm">{' • '}</p>
+				<p className='mb-0 opacity-06 d-inline'>{excerpt}</p>
+			</div>
 		</div>
 	);
 };

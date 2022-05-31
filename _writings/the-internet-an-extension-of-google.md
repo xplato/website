@@ -1,6 +1,5 @@
 ---
 title: 'The Internet: An Extension of Google'
-excerpt: "There exist many tech companies who are right around or above the size of Google. We usually group them into this subtly suggestive term “FAANG” (Facebook, Apple, Amazon, Netflix, Google)."
 date: '2022/03/27'
 ---
 
