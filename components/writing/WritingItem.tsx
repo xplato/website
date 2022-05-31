@@ -11,8 +11,8 @@ const WritingItem = ({ slug, title, excerpt, date }: Writing) => {
 			</Li>
 			<div className="flex align-c justify-c flex-row">
 				<p className='mb-0 opacity-06 d-inline'>{moment(date).fromNow()}</p>
-				<p className="mb-0 mx-0-5r opacity-03 fs-sm">{' • '}</p>
-				<p className='mb-0 opacity-06 d-inline'>{excerpt}</p>
+				<p className="mb-0 mx-0-5r opacity-03 fs-sm ml-hide">{' • '}</p>
+				<p className='mb-0 opacity-06 d-inline ml-hide'>{excerpt}</p>
 			</div>
 		</div>
 	);
