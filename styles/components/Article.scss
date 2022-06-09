@@ -21,17 +21,17 @@ article {
 		margin-top: 3.5rem;
 		margin-bottom: 1.5rem;
 	}
-	
+
 	& h3 {
 		font-size: 1.4427rem;
-    	line-height: 1.1;
+		line-height: 1.1;
 		margin-top: 3.5rem;
 		margin-bottom: 1.25rem;
 	}
 
 	& h4 {
 		font-size: 1.125rem;
-    	line-height: 1.1;
+		line-height: 1.1;
 		margin-top: 3rem;
 		margin-bottom: 1rem;
 	}
@@ -42,7 +42,8 @@ article {
 		margin: 0;
 	}
 
-	& p, & pre {
+	& p,
+	& pre {
 		margin-bottom: 1.25rem;
 	}
 
@@ -56,6 +57,43 @@ article {
 	}
 }
 
+.featured-image {
+	margin: 4rem 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&.mt-0 {
+		margin: 0 !important;
+	}
+	
+	& img {
+		box-shadow: var(--shadow-sm);
+		border-radius: 1rem;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	&.sm img {
+		border-radius: 0.5rem;
+		box-shadow: var(--shadow-sm);
+	}
+
+	& .img-link {
+		transition: var(--d-m-2) var(--e-s);
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
+
+
+.gallery {
+	min-height: 60vh;
+}
+
 .writing-item {
 	width: 100%;
 	display: flex;
@@ -65,7 +103,8 @@ article {
 	padding: 1rem 0;
 	border-bottom: 1px solid var(--ui-2);
 
-	&, & a {
+	&,
+	& a {
 		color: var(--text-color);
 	}
 

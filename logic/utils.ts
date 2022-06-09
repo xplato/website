@@ -19,7 +19,12 @@ const getDate = (date: string | undefined): string => {
 	return moment(date, 'YYYY/MM/DD').format('MMMM D, YYYY');
 };
 
+const getEdgePath = (file: string) => {
+	return `https://infinium-proper.sfo3.cdn.digitaloceanspaces.com/${file}`;
+};
+
 export {
 	copyToClipboard,
 	getDate,
+	getEdgePath,
 }

@@ -5,11 +5,19 @@ import { variants, transition } from '../logic/motion';
 
 const cards = [
 	{
+		href: '/crystal',
+		title: 'Experimenting in conceptional UI/UX with Crystal',
+		image: '/images/showcase/crystalos.png',
+		alt: "CrystalOS's blurred widgets and top complications being shown with Athens, Greece as a wallpaper.",
+		color: 'orange',
+	},
+	{
 		href: 'https://gofe.app',
 		title: 'Private web searching with Gofë',
 		content:
 			'Gofë is a private front-end for Google. Get top-notch search results while remaining anonymous.',
 		image: '/images/showcase/gofe.png',
+		alt: 'Gofë displaying the search results for the query "git"',
 		color: 'cyan',
 	},
 	{
@@ -18,15 +26,8 @@ const cards = [
 		content:
 			'Scavenger is a React library for lightning-fast static resource searching.',
 		image: '/images/showcase/scavenger.png',
+		alt: 'A modern search component using Scavenger showing the default results for my personal website.',
 		color: 'green',
-	},
-	{
-		href: 'https://kiri.vercel.app',
-		title: 'Beautiful mind-maps with Kiri',
-		content:
-			'Kiri is a super-simple one-page web application allowing you to create elegant mind maps.',
-		image: '/images/showcase/kiri.png',
-		color: 'purple',
 	},
 ];
 

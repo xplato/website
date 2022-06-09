@@ -36,6 +36,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+html.no-scroll body {
+	overflow: hidden;
+	max-height: 100vh;
+	height: 100vh;
+}
+
 .mono,
 .mono * {
 	@include mixins.mono();
@@ -78,6 +84,10 @@ body {
 .text-container {
 	max-width: 55rem;
 	width: 100%;
+}
+
+.expose .text-container {
+	max-width: 45rem;
 }
 
 :not(pre) > code {

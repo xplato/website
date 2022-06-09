@@ -14,9 +14,18 @@ const Li = ({ href, className, children, ...props }: Props) => {
 
 	return (
 		<Link href={href}>
-			<a className={className ? classNames(className, pathname === href && 'active') : 'default-link'} {...props}>{children}</a>
+			<a
+				className={
+					className
+						? classNames(className, pathname === href && 'active')
+						: 'default-link'
+				}
+				{...props}
+			>
+				{children}
+			</a>
 		</Link>
 	);
-}
+};
 
 export default Li;
