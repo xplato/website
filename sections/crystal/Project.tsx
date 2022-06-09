@@ -58,14 +58,14 @@ const Project = () => {
 						<div className='grid-block'>
 							<GalleryImage
 								index={0}
-								src={getEdgePath('mtn-hero.jpg')}
+								src={getEdgePath('part-1/mtn-hero.jpg')}
 								caption='A dark mountain desktop'
 							/>
 						</div>
 						<div className='grid-block'>
 							<GalleryImage
 								index={1}
-								src={getEdgePath('search-expose-alt-hero.png')}
+								src={getEdgePath('part-1/search-expose-alt-hero.png')}
 								caption='The search interface with a frosted background'
 							/>
 						</div>
@@ -102,7 +102,7 @@ const Project = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('search-expose-light.png')}
+						src={getEdgePath('part-1/search-expose-light.png')}
 					/>
 
 					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
@@ -132,7 +132,7 @@ const Project = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('lock-interaction.gif')}
+						src={getEdgePath('part-1/lock-interaction.gif')}
 						caption='Locking the OS adds a nice background blur'
 					/>
 
@@ -196,14 +196,14 @@ const Project = () => {
 								<div className='grid-block justify-s'>
 									<GalleryImage
 										index={0}
-										src={getEdgePath('os-menu-light.png')}
+										src={getEdgePath('part-1/os-menu-light.png')}
 										caption='The hovering background, shown as a gentle white in light mode.'
 									/>
 								</div>
 								<div className='grid-block justify-s'>
 									<GalleryImage
 										index={1}
-										src={getEdgePath('os-menu-dark.png')}
+										src={getEdgePath('part-1/os-menu-dark.png')}
 										caption='The hovering background, shown as a more aggressive blue in dark mode.'
 									/>
 								</div>
@@ -234,10 +234,10 @@ const Project = () => {
 							</T>
 
 							<FeaturedImage
-								src={getEdgePath('app-item-closeup.png')}
+								src={getEdgePath('part-1/app-item-closeup.png')}
 							/>
 							<FeaturedImage
-								src={getEdgePath('app-item-closeup-left.png')}
+								src={getEdgePath('part-1/app-item-closeup-left.png')}
 								mods='enlarge'
 							/>
 
@@ -263,14 +263,14 @@ const Project = () => {
 								<div className='grid-block justify-s'>
 									<GalleryImage
 										index={0}
-										src={getEdgePath('wifi-menu-light.png')}
+										src={getEdgePath('part-1/wifi-menu-light.png')}
 										caption='The WiFi menu showing and inherited background color (Light)'
 									/>
 								</div>
 								<div className='grid-block justify-s'>
 									<GalleryImage
 										index={1}
-										src={getEdgePath('wifi-menu-dark.png')}
+										src={getEdgePath('part-1/wifi-menu-dark.png')}
 										caption='The WiFi menu showing and inherited background color (Dark)'
 									/>
 								</div>
@@ -353,7 +353,7 @@ const Project = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('horizontal-widget-animation.gif')}
+						src={getEdgePath('part-1/horizontal-widget-animation.gif')}
 						caption='Widgets animating into a horizontal layout'
 					/>
 
@@ -404,7 +404,7 @@ const Project = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('vertical-widget-animation.gif')}
+						src={getEdgePath('part-1/vertical-widget-animation.gif')}
 						caption='Widgets animating into a vertical layout'
 					/>
 
@@ -416,11 +416,11 @@ const Project = () => {
 							</T>
 
 							<FeaturedImage
-								src={getEdgePath('calendar-expose-light.png')}
+								src={getEdgePath('part-1/calendar-expose-light.png')}
 								caption='Command palette calendar widget exposé (Light)'
 							/>
 							<FeaturedImage
-								src={getEdgePath('calendar-expose-dark.png')}
+								src={getEdgePath('part-1/calendar-expose-dark.png')}
 								caption='Command palette calendar widget exposé (Dark)'
 							/>
 
@@ -452,7 +452,7 @@ const Project = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('desktop-sunset-wallpaper.jpg')}
+						src={getEdgePath('part-1/desktop-sunset-wallpaper.jpg')}
 						caption='CrystalOS Desktop with the Sunset wallpaper'
 					/>
 
@@ -464,7 +464,7 @@ const Project = () => {
 					/>
 
 					<FeaturedImage
-						src={getEdgePath('lock-screen-dark.png')}
+						src={getEdgePath('part-1/lock-screen-dark.png')}
 						caption='Lock Screen (Dark)'
 					/>
 
