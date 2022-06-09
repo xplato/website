@@ -9,9 +9,17 @@ interface Props {
 	caption?: string;
 	useCaptionAsAlt?: boolean;
 	mods?: string;
+	delay?: number;
 }
 
-const FeaturedImage = ({ src, alt, caption, useCaptionAsAlt, mods }: Props) => {
+const FeaturedImage = ({
+	src,
+	alt,
+	caption,
+	useCaptionAsAlt,
+	mods,
+	delay,
+}: Props) => {
 	return (
 		<motion.div
 			variants={variants.fadeIn}
@@ -22,7 +30,7 @@ const FeaturedImage = ({ src, alt, caption, useCaptionAsAlt, mods }: Props) => {
 			transition={{
 				type: 'spring',
 				duration: 1.2,
-				// delay: 0.5,
+				delay,
 			}}
 			className={classNames('featured-image', mods)}
 			layout
@@ -38,6 +46,10 @@ const FeaturedImage = ({ src, alt, caption, useCaptionAsAlt, mods }: Props) => {
 			)}
 		</motion.div>
 	);
+};
+
+FeaturedImage.defaultProps = {
+	delay: 0,
 };
 
 export default FeaturedImage;

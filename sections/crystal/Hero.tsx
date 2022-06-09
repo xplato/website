@@ -27,6 +27,7 @@ const Hero = () => {
 						src={getEdgePath('crystal/part-1/desktop-widgets-closed-light.jpg')}
 						caption='The conceptual—and pre-release teaser of the—CrystalOS Desktop'
 						useCaptionAsAlt
+						delay={0.3}
 					/>
 				</div>
 			</section>
