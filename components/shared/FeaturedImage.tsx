@@ -14,10 +14,11 @@ interface Props {
 const FeaturedImage = ({ src, alt, caption, useCaptionAsAlt, mods }: Props) => {
 	return (
 		<motion.div
-			variants={variants.fadeInUp}
+			variants={variants.fadeIn}
 			initial='initial'
 			whileInView='animate'
 			exit='exit'
+			viewport={{ once: true }}
 			transition={{
 				type: 'spring',
 				duration: 1.2,

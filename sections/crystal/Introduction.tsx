@@ -1,20 +1,14 @@
-import Entity from '../../components/Entity';
+import AnimatedView from '../../components/AnimatedView';
 import Title from '../../components/Title';
 
-import { variants, transition } from '../../logic/motion';
+import { textAreaEntityProps } from '../../logic/motion';
 
 const Introduction = () => {
 	return (
 		<>
 			<section className='section pt-6r pb-0'>
 				<div className='x-container flex-c'>
-					<Entity
-						variants={variants.fadeInUp}
-						transition={{
-							...transition.default,
-							delay: 0.2,
-						}}
-					>
+					<AnimatedView {...textAreaEntityProps}>
 						<div className='text-container'>
 							<Title>Introduction</Title>
 							<p className='fs-lg'>
@@ -60,7 +54,7 @@ const Introduction = () => {
 								CrystalUI.
 							</p>
 						</div>
-					</Entity>
+					</AnimatedView>
 				</div>
 			</section>
 		</>

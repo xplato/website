@@ -44,7 +44,7 @@ const transition = {
 }
 
 const textAreaEntityProps = {
-	variants: variants.fadeInUp,
+	variants: variants.fadeIn,
 	transition: {
 		...transition.default,
 		delay: 0.2,

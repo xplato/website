@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import Entity from '../../components/Entity';
+import AnimatedView from '../../components/AnimatedView';
 import FeaturedImage from '../../components/shared/FeaturedImage';
 import GalleryImage from '../../components/shared/GalleryImage';
 import Title from '../../components/Title';
@@ -21,7 +21,7 @@ const Project = () => {
 		<>
 			<section className='section p-0'>
 				<div className='x-container flex-c'>
-					<Entity {...textAreaEntityProps}>
+					<AnimatedView {...textAreaEntityProps}>
 						<div className='text-container'>
 							<Title>Frost</Title>
 							<T>
@@ -48,7 +48,7 @@ const Project = () => {
 								wallpaper directly:
 							</T>
 						</div>
-					</Entity>
+					</AnimatedView>
 				</div>
 			</section>
 
@@ -75,7 +75,7 @@ const Project = () => {
 
 			<section className='section p-0'>
 				<div className='x-container flex-c'>
-					<Entity {...textAreaEntityProps}>
+					<AnimatedView {...textAreaEntityProps}>
 						<div className='text-container'>
 							<T>
 								In this particular case, the search interface
@@ -97,13 +97,13 @@ const Project = () => {
 								while also providing a hint of context.
 							</T>
 						</div>
-					</Entity>
+					</AnimatedView>
 
 					<FeaturedImage
 						src={getEdgePath('search-expose-light.png')}
 					/>
 
-					<Entity {...textAreaEntityProps} className='mt-4r'>
+					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
 						<div className='text-container'>
 							<T>
 								Focus will become more relevant when I go more
@@ -127,14 +127,14 @@ const Project = () => {
 								are for me.
 							</T>
 						</div>
-					</Entity>
+					</AnimatedView>
 
 					<FeaturedImage
 						src={getEdgePath('lock-interaction.gif')}
 						caption='Locking the OS adds a nice background blur'
 					/>
 
-					<Entity {...textAreaEntityProps} className='mt-4r'>
+					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
 						<div className='text-container'>
 							<div className='mt-4r'></div>
 							<Title>Overflow</Title>
@@ -214,6 +214,7 @@ const Project = () => {
 							/>
 							<FeaturedImage
 								src={getEdgePath('app-item-closeup-left.png')}
+								mods='enlarge'
 							/>
 
 							<div className='mt-4r'></div>
@@ -325,14 +326,14 @@ const Project = () => {
 								time (again, forgive the frame rate):
 							</T>
 						</div>
-					</Entity>
+					</AnimatedView>
 
 					<FeaturedImage
 						src={getEdgePath('horizontal-widget-animation.gif')}
 						caption='Widgets animating into a horizontal layout'
 					/>
 
-					<Entity {...textAreaEntityProps} className='mt-4r'>
+					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
 						<div className='text-container'>
 							<div className='mt-4r'></div>
 							<Title>Adaptation</Title>
@@ -376,18 +377,18 @@ const Project = () => {
 								vertical list of widgets instead:
 							</T>
 						</div>
-					</Entity>
+					</AnimatedView>
 
 					<FeaturedImage
 						src={getEdgePath('vertical-widget-animation.gif')}
 						caption='Widgets animating into a vertical layout'
 					/>
 
-					<Entity {...textAreaEntityProps} className='mt-4r'>
+					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
 						<div className='text-container'>
 							<T>
-								Even further, we can see this when we create
-								what I an "Exposé" with the calendar widget:
+								Even further, we can see this when I create what
+								I call an "Exposé" with the calendar widget:
 							</T>
 
 							<FeaturedImage
@@ -424,7 +425,7 @@ const Project = () => {
 
 							<h3>Extra shots</h3>
 						</div>
-					</Entity>
+					</AnimatedView>
 
 					<FeaturedImage
 						src={getEdgePath('desktop-sunset-wallpaper.jpg')}
@@ -443,9 +444,9 @@ const Project = () => {
 						caption='Lock Screen (Dark)'
 					/>
 
-					<Entity {...textAreaEntityProps} className='mt-4r'>
+					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
 						<div className='text-container'></div>
-					</Entity>
+					</AnimatedView>
 				</div>
 			</section>
 		</>

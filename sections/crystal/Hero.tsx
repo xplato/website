@@ -1,8 +1,8 @@
-import Entity from '../../components/Entity';
+import AnimatedView from '../../components/AnimatedView';
 import FeaturedImage from '../../components/shared/FeaturedImage';
 import Title from '../../components/Title';
 
-import { variants, transition } from '../../logic/motion';
+import { textAreaEntityProps } from '../../logic/motion';
 import { getEdgePath } from '../../logic/utils';
 
 const Hero = () => {
@@ -10,13 +10,7 @@ const Hero = () => {
 		<>
 			<section className='section pt-8r pb-0'>
 				<div className='container flex-c'>
-					<Entity
-						variants={variants.fadeInUp}
-						transition={{
-							...transition.default,
-							delay: 0.2,
-						}}
-					>
+					<AnimatedView {...textAreaEntityProps}>
 						<div className='text-container flex-c text-c'>
 							<Title mods='no-octo'>Introducing Crystal</Title>
 
@@ -27,7 +21,7 @@ const Hero = () => {
 								</h1>
 							</div>
 						</div>
-					</Entity>
+					</AnimatedView>
 
 					<FeaturedImage
 						src={getEdgePath('desktop-widgets-closed-light.jpg')}

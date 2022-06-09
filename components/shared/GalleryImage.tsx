@@ -9,9 +9,8 @@ interface GalleryImageProps {
 
 const GalleryImage = ({ index, src, caption }: GalleryImageProps) => {
 	const variants = {
-		initial: { opacity: 0, scale: 0.96 },
+		initial: { scale: 0.96 },
 		animate: (i: number) => ({
-			opacity: 1,
 			scale: 1,
 
 			transition: {
@@ -20,7 +19,7 @@ const GalleryImage = ({ index, src, caption }: GalleryImageProps) => {
 				delay: i * 0.3,
 			},
 		}),
-		exit: { opacity: 0, scale: 0.96 },
+		exit: { scale: 0.96 },
 	};
 
 	return (
