@@ -1,0 +1,63 @@
+.four-oh-four {
+	width: 100vw;
+	min-height: 85vh;
+	background-color: var(--ui);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1.5rem;
+
+	& .wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+
+		& .bg {
+			height: 100%;
+			position: absolute;
+			top: 0;
+			border-radius: 1rem;
+			background-color: var(--red-400);
+			transition: var(--d-s-1) var(--e-s);
+			z-index: 1;
+		}
+
+		& .block {
+			padding: 0 2rem;
+			cursor: pointer;
+			position: relative;
+			z-index: 2;
+
+			& span {
+				font-size: 10rem;
+				font-weight: 700;
+				user-select: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.block span {
+		font-size: 8rem !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.block {
+		padding: 0 1rem !important;
+
+		& span {
+			font-size: 6rem !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.block span {
+		font-size: 4rem !important;
+	}
+}
