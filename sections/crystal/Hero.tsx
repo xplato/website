@@ -24,7 +24,7 @@ const Hero = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('part-1/desktop-widgets-closed-light.jpg')}
+						src={getEdgePath('crystal/part-1/desktop-widgets-closed-light.jpg')}
 						caption='The conceptual—and pre-release teaser of the—CrystalOS Desktop'
 						useCaptionAsAlt
 					/>

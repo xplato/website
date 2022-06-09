@@ -20,7 +20,7 @@ const getDate = (date: string | undefined): string => {
 };
 
 const getEdgePath = (file: string) => {
-	return `https://infinium-proper.sfo3.cdn.digitaloceanspaces.com/crystal/${file}`;
+	return `https://infinium-proper.sfo3.cdn.digitaloceanspaces.com/${file}`;
 };
 
 export {
