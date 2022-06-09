@@ -136,6 +136,28 @@ const Project = () => {
 
 					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
 						<div className='text-container'>
+							<p className='fs-lg opacity-05 fw-600'>
+								Functional Implications
+							</p>
+
+							<T>
+								Focus also applies functionally as well. The
+								keyboard is a vital tool—and the fact that it's
+								available at all times when using a desktop or
+								laptop computer means we need to utilize it.
+							</T>
+
+							<T>
+								When I introduce the Menu component below, note
+								that when you first open the menu, focus is
+								shifted to where the background is—even as your
+								mouse hovers over the items. This combination
+								and close synchronization of the interface and
+								keyboard gives CrystalOS some interesting
+								capabilities. These will be discussed in more
+								detail in later chapters.
+							</T>
+
 							<div className='mt-4r'></div>
 							<Title>Overflow</Title>
 

@@ -12,21 +12,16 @@ interface Props {
 }
 
 const Card = ({ href, title, image, alt, mods }: Props) => {
-	const imageLinkProps = {
-		href,
-		className: 'image relative'
-	}
-
-	let ImageLink = ELi;
+	let Wrapper = ELi;
 
 	if (href.startsWith('/')) {
-		ImageLink = Li;
+		Wrapper = Li;
 	}
 
 	return (
-		<div className={classNames('card', mods)}>
+		<Wrapper href={href} className={classNames('card', mods)}>
 			{image && (
-				<ImageLink {...imageLinkProps}>
+				<div className='image relative'>
 					<img
 						src={image}
 						alt={alt}
@@ -34,13 +29,13 @@ const Card = ({ href, title, image, alt, mods }: Props) => {
 						height='auto'
 						className='radius-0-5r'
 					/>
-				</ImageLink>
+				</div>
 			)}
 			<div className='content'>
 				<h4 className='title mb-0'>{title}</h4>
 				{/* {content && <p className='mb-0 opacity-7'>{content}</p>} */}
 			</div>
-		</div>
+		</Wrapper>
 	);
 };
 
