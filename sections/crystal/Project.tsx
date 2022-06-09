@@ -331,8 +331,8 @@ const Project = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('crystal/part-1/unlock-interaction.gif')}
-						caption='Unlocking the OS promptly removes the background blur'
+						src={getEdgePath('crystal/part-1/search-entrance-animation-light.gif')}
+						caption='Opening the Command Palette (Light)'
 					/>
 
 					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
