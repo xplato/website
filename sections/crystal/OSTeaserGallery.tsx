@@ -5,7 +5,7 @@ import { getEdgePath } from '../../logic/utils';
 const OSTeaserGallery = () => {
 	return (
 		<>
-			<section className='section p-0 gallery'>
+			<section className='section gallery'>
 				<div className='x-container flex-c'>
 					<div className='grid grid-2 tp-grid-1'>
 						<div className='grid-block'>

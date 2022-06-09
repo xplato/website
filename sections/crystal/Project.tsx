@@ -19,7 +19,7 @@ const T = ({ className, children }: TProps) => (
 const Project = () => {
 	return (
 		<>
-			<section className='section p-0'>
+			<section className='section xspacing'>
 				<div className='x-container flex-c'>
 					<AnimatedView {...textAreaEntityProps}>
 						<div className='text-container'>
@@ -52,7 +52,7 @@ const Project = () => {
 				</div>
 			</section>
 
-			<section className='section p-0 gallery'>
+			<section className='section gallery'>
 				<div className='x-container flex-c'>
 					<div className='grid grid-2 tp-grid-1'>
 						<div className='grid-block'>
@@ -88,6 +88,8 @@ const Project = () => {
 								This brings me to the second primary
 								characteristic...
 							</T>
+
+							<div className="mt-4r"></div>
 							<Title>Focus</Title>
 							<T>
 								Context is undeniably useful. Too much of it,
@@ -355,7 +357,7 @@ const Project = () => {
 						caption='Widgets animating into a horizontal layout'
 					/>
 
-					<AnimatedView {...textAreaEntityProps} className='mt-4r'>
+					<AnimatedView {...textAreaEntityProps}>
 						<div className='text-container'>
 							<div className='mt-4r'></div>
 							<Title>Adaptation</Title>
