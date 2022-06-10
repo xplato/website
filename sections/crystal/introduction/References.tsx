@@ -1,15 +1,12 @@
-import AnimatedView from '../../components/AnimatedView';
-import Title from '../../components/Title';
-
-import { textAreaEntityProps } from '../../logic/motion';
+import Content from '../../../components/shared/Content';
+import Title from '../../../components/Title';
 
 const References = () => {
 	return (
 		<>
 			<section className='section pt-6r pb-0'>
 				<div className='x-container flex-c'>
-					<AnimatedView {...textAreaEntityProps}>
-						<div className='text-container'>
+					<Content>
 							<Title>References</Title>
 
 							<ul>
@@ -23,8 +20,7 @@ const References = () => {
 									</p>
 								</li>
 							</ul>
-						</div>
-					</AnimatedView>
+					</Content>
 				</div>
 			</section>
 		</>

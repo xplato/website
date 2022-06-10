@@ -1,6 +1,6 @@
-import GalleryImage from '../../components/shared/GalleryImage';
+import GalleryImage from '../../../components/shared/GalleryImage';
 
-import { getEdgePath } from '../../logic/utils';
+import { getEdgePath } from '../../../logic/utils';
 
 const OSTeaserGallery = () => {
 	return (

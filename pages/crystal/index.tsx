@@ -1,12 +1,13 @@
 import PageMeta from '../../components/PageMeta';
+import Expose from '../../components/shared/Expose';
 
-import Hero from '../../sections/crystal/Hero';
-import Introduction from '../../sections/crystal/Introduction';
-import OSTeaserGallery from '../../sections/crystal/OSTeaserGallery';
-import Project from '../../sections/crystal/Project';
-import References from '../../sections/crystal/References';
+import Hero from '../../sections/crystal/introduction/Hero';
+import Introduction from '../../sections/crystal/introduction/Introduction';
+import OSTeaserGallery from '../../sections/crystal/introduction/OSTeaserGallery';
+import Project from '../../sections/crystal/introduction/Project';
+import References from '../../sections/crystal/introduction/References';
 
-const Home = () => {
+const Crystal = () => {
 	return (
 		<>
 			<PageMeta
@@ -16,15 +17,15 @@ const Home = () => {
 				}}
 			/>
 
-			<div className='expose'>
+			<Expose>
 				<Hero />
 				<Introduction />
 				<OSTeaserGallery />
 				<Project />
 				<References />
-			</div>
+			</Expose>
 		</>
 	);
 };
 
-export default Home;
+export default Crystal;

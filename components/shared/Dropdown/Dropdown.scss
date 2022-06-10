@@ -1,0 +1,47 @@
+@use '../../../styles/mixins';
+
+.dropdown {
+	position: relative;
+
+	& .trigger {
+		background-color: transparent;
+		font-size: 0.875rem;
+		font-weight: 500;
+		color: var(--text-color);
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		position: relative;
+		transition: var(--d-m-1) var(--e-s);
+		
+		& span {
+			@include mixins.inter();
+			
+			position: relative;
+			z-index: 2;
+		}
+
+		& .bg {
+			width: 100%;
+			height: 100%;
+			border-radius: 0.5rem;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			transition: var(--d-m-2) var(--e-s);
+
+			@include mixins.blur();
+			// @include mixins.fluid-shadow();
+		}
+
+		&:hover .bg {
+			transform: scale(1.05);
+		}
+	}
+
+	&:not(.custom-trigger) .menu {
+		top: 2.75rem;
+	}
+}

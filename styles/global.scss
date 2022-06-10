@@ -7,6 +7,9 @@
 @use './components/Navigation';
 @use './components/404' as FourOhFour;
 
+@use '../components/shared/Dropdown/Dropdown.scss';
+@use '../components/shared/Menu/Menu.scss';
+
 @use './misc';
 
 :root {
@@ -97,9 +100,9 @@ html.no-scroll body {
 	border-radius: 0.25rem;
 	white-space: normal;
 
-	// &::before, &::after {
-	// 	content: "`";
-	// }
+	html.dark & {
+		background: vaar(--pink-900) !important;
+	}
 }
 
 pre {

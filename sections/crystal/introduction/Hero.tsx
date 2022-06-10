@@ -1,9 +1,10 @@
-import AnimatedView from '../../components/AnimatedView';
-import FeaturedImage from '../../components/shared/FeaturedImage';
-import Title from '../../components/Title';
+import AnimatedView from '../../../components/AnimatedView';
+import FeaturedImage from '../../../components/shared/FeaturedImage';
+import Title from '../../../components/Title';
+import ContentsDropdown from '../ContentsDropdown';
 
-import { textAreaEntityProps } from '../../logic/motion';
-import { getEdgePath } from '../../logic/utils';
+import { textAreaEntityProps } from '../../../logic/motion';
+import { getEdgePath } from '../../../logic/utils';
 
 const Hero = () => {
 	return (
@@ -15,10 +16,12 @@ const Hero = () => {
 							<Title mods='no-octo'>Introducing Crystal</Title>
 
 							<div className='mw-40r flex-c text-c'>
-								<h1 className='fs-3xl fw-500 mb-0'>
+								<h1 className='fs-3xl fw-500 mb-2r'>
 									Crystal is a multi-part, futuristic UI/UX
 									concept.
 								</h1>
+
+								<ContentsDropdown />
 							</div>
 						</div>
 					</AnimatedView>

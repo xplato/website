@@ -1,9 +1,13 @@
+import dynamic from 'next/dynamic';
 import { HeartIcon } from '@heroicons/react/solid';
 
 import Entity from '../Entity';
 import Li from '../Li';
+import Bullet from '../shared/Bullet';
 
 import { transition, variants } from '../../logic/motion';
+
+const ThemeButton = dynamic(import('../ThemeButton'), { ssr: false });
 
 const Tagline = () => (
 	<div className='flex align-c justify-c flex-row'>
@@ -28,20 +32,20 @@ const Footer = () => {
 								delay: 0.2,
 							}}
 						>
-							<div className='w-100p flex-sb ml-flex-c ml-text-c'>
+							<div className='w-100p flex-sb tp-flex-c tp-text-c'>
 								<p className='mb-0 opacity-05'>
 									Copyright &copy; 2022
 								</p>
-								<div className='flex align-c justify-c flex-row'>
+								<div className='flex align-c justify-c flex-row tp-mt-0-5r'>
+									<ThemeButton />
+									<Bullet />
 									<Li
 										href='/privacy'
 										className='normal-link opacity-05'
 									>
 										Privacy
 									</Li>
-									<p className='mb-0 mx-0-5r opacity-05'>
-										{' • '}
-									</p>
+									<Bullet />
 									<Tagline />
 								</div>
 							</div>

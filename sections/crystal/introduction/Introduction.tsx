@@ -1,7 +1,7 @@
-import AnimatedView from '../../components/AnimatedView';
-import Title from '../../components/Title';
+import AnimatedView from '../../../components/AnimatedView';
+import Title from '../../../components/Title';
 
-import { textAreaEntityProps } from '../../logic/motion';
+import { textAreaEntityProps } from '../../../logic/motion';
 
 const Introduction = () => {
 	return (
@@ -32,9 +32,6 @@ const Introduction = () => {
 								canvas for CrystalUI. I've omitted certain parts
 								of CrystalOS from the demonstration images, as
 								these will be explained in detail later.
-							</p>
-							<p className='fs-lg'>
-								Check back in a few days for part 2!
 							</p>
 
 							<div className='mt-4r'></div>

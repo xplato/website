@@ -192,6 +192,12 @@
 		font-style: italic;
 	}
 
+	&.btn {
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+	}
+
 	&.in-grid {
 		opacity: 0.9;
 

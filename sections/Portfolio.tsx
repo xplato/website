@@ -5,8 +5,15 @@ import { variants, transition } from '../logic/motion';
 
 const cards = [
 	{
+		href: '/crystal/philosophy',
+		title: 'Crystal #2: Philosophies of a modular operating system',
+		image: '/images/showcase/philosophy-featured.png',
+		alt: 'A modern search component using Scavenger showing the default results for my personal website.',
+		color: 'red',
+	},
+	{
 		href: '/crystal',
-		title: 'Experimenting in conceptional UI/UX with Crystal',
+		title: 'Crystal #1: Experimenting in futuristic UI/UX',
 		image: '/images/showcase/crystalos.png',
 		alt: "CrystalOS's blurred widgets and top complications being shown with Athens, Greece as a wallpaper.",
 		color: 'orange',
@@ -14,20 +21,9 @@ const cards = [
 	{
 		href: 'https://gofe.app',
 		title: 'Private web searching with Gofë',
-		content:
-			'Gofë is a private front-end for Google. Get top-notch search results while remaining anonymous.',
 		image: '/images/showcase/gofe.png',
 		alt: 'Gofë displaying the search results for the query "git"',
 		color: 'cyan',
-	},
-	{
-		href: 'https://codeberg.org/xplato/Scavenger',
-		title: 'Lightning-fast results with Scavenger',
-		content:
-			'Scavenger is a React library for lightning-fast static resource searching.',
-		image: '/images/showcase/scavenger.png',
-		alt: 'A modern search component using Scavenger showing the default results for my personal website.',
-		color: 'green',
 	},
 ];
 

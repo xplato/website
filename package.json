@@ -10,6 +10,7 @@
 	},
 	"dependencies": {
 		"@heroicons/react": "^1.0.6",
+		"@infinium/react-keyboard-event-handler": "^1.5.7",
 		"@mapbox/rehype-prism": "^0.8.0",
 		"classnames": "^2.3.1",
 		"framer-motion": "^6.3.3",
