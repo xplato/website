@@ -12,21 +12,21 @@ const Article = () => {
 				<div className='x-container flex-c'>
 					<Content mods='mt-6r'>
 						<T>
-							<Li href='/crystal'>On Wednesday</Li>, I spoke about
+							<Li href='/avalon'>On Wednesday</Li>, I spoke about
 							a few of the features and implementation deatils of
-							CrystalUI.
+							AvalonUI.
 						</T>
 
 						<T>
-							While CrystalUI itself—that is, the visual
-							manifestation of the "Crystal Philosophy"—is an
+							While AvalonUI itself—that is, the visual
+							manifestation of the "Avalon Philosophy"—is an
 							important aspect to the project as a whole, it is,
 							at the end of the day, just a component.
 						</T>
 
 						<T>
 							In other words, the so-called "characteristics" of
-							CrystalUI aren't specific or linked in any way to
+							AvalonUI aren't specific or linked in any way to
 							the particular way I implemented it. Color, depth,
 							adaptability and so on are all general, and many
 							different UIs could fit the bill.
@@ -61,10 +61,10 @@ const Article = () => {
 						<T>
 							It stands to reason, then, that the ideal aim of the
 							UI should be to implement the underlying philosophy
-							that Crystal subscribes to, however that
+							that Avalon subscribes to, however that
 							implementation may turn out to be. In other words,
 							as long as it fulfills the necessary requirements,
-							it can be constituted as being "Crystal-like."
+							it can be constituted as being "Avalon-like."
 						</T>
 					</Content>
 
@@ -73,13 +73,13 @@ const Article = () => {
 						<Title>Implementation of the UI</Title>
 
 						<T>
-							Now, one of the important things about CrystalUI is
+							Now, one of the important things about AvalonUI is
 							that it is designed specifically—though not by means
-							of exclusion—for CrystalOS.
+							of exclusion—for AvalonOS.
 						</T>
 						<T>
-							And, since CrystalUI inherits the principles of the
-							Crystal Philosophy, CrystalOS does as well. Indeed,
+							And, since AvalonUI inherits the principles of the
+							Avalon Philosophy, AvalonOS does as well. Indeed,
 							it is entirely the OS that I want to focus on with
 							the philosophy. The tiny UI-focused implementation
 							details like the floating backgrounds are, at the
@@ -92,8 +92,8 @@ const Article = () => {
 
 						<T>
 							Therefore, as I go on to discuss this mysterious
-							"Crystal Philosophy," note that it applies
-							specifically to CrystalOS, from which the UI
+							"Avalon Philosophy," note that it applies
+							specifically to AvalonOS, from which the UI
 							inherits its properties.
 						</T>
 						<T>Without further ado, let's proceed.</T>
@@ -110,13 +110,13 @@ const Article = () => {
 						</T>
 
 						<T>
-							For instance, CrystalOS assumes that "files" and
+							For instance, AvalonOS assumes that "files" and
 							"folders" are a very common way of dealing with data
 							stored on disk, and therefore, they are present in
 							the OS.
 						</T>
 						<T>
-							This is one of the first principles of the Crystal
+							This is one of the first principles of the Avalon
 							Philosophy (although, note that there is no sanity
 							to the ordering): Be radical, but not unacceptably
 							so.
@@ -157,7 +157,7 @@ const Article = () => {
 							Simplicity is a widely over-used and
 							over-misunderstood topic that I'm hesitant to speak
 							on for that reason. Regardless, it is crucial to
-							Crystal.
+							Avalon.
 						</T>
 
 						<T>
@@ -197,7 +197,7 @@ const Article = () => {
 							shown when.
 						</T>
 						<T>
-							I intend for CrystalOS to be more applicable than,
+							I intend for AvalonOS to be more applicable than,
 							say, MercuryOS. In the latter, with the more radical
 							changes to, for instance, the eradication of the
 							file/folder structure, it would require a lot of
@@ -254,7 +254,7 @@ const Article = () => {
 							all. While I certainly don't intend to innovate the
 							entire software distribution practices in all modern
 							operating systems, I can at least control how
-							CrystalOS works with applications.
+							AvalonOS works with applications.
 						</T>
 						<T>
 							One thing I think may be overlooked is the safety of
@@ -290,16 +290,16 @@ const Article = () => {
 
 						<T>
 							Now, I have avoided touching on the distribution of
-							"CrystalOS." That was quoted this time because my
-							vision for Crystal doesn't really make it an "OS."
+							"AvalonOS." That was quoted this time because my
+							vision for Avalon doesn't really make it an "OS."
 						</T>
 						<T>
 							I've been using "OS" only because it is a familiar
 							term which is very closely related to how most
-							people will interpret Crystal.
+							people will interpret Avalon.
 						</T>
 						<T>
-							Now, allow me to clarify that Crystal is still{' '}
+							Now, allow me to clarify that Avalon is still{' '}
 							<span className='fw-600'>very</span> experimental.
 							It will likely change a lot as time goes on, but for
 							right now, this is the general plan.
@@ -322,7 +322,7 @@ const Article = () => {
 							Now... you may be questioning how good a
 							browser-based OS could really be. After all, it's
 							sandboxed within sandboxed on top of an already
-							demanding OS. Can Crystal really replace modern
+							demanding OS. Can Avalon really replace modern
 							operating systems?
 						</T>
 						<T>
@@ -363,7 +363,7 @@ const Article = () => {
 							nature.
 						</T>
 						<T>
-							Now, if we just assume that CrystalOS would just be
+							Now, if we just assume that AvalonOS would just be
 							another OS on top of your current one that also
 							allows web browsing... there's very little point to
 							that. For that reason, I think there's another key
@@ -383,13 +383,13 @@ const Article = () => {
 						</T>
 						<T>
 							This is a small example, but if we enlarge it, we
-							come to see how CrystalOS might actually be useful.
+							come to see how AvalonOS might actually be useful.
 						</T>
 						<T>
 							In the way that a website can accept and work with
 							the authentication mechanisms of many different
 							providers (usually via some{' '}
-							<span className='fw-600'>standard</span>), CrystalOS
+							<span className='fw-600'>standard</span>), AvalonOS
 							could hypothetically integrate with any other
 							system.
 						</T>
@@ -441,7 +441,7 @@ const Article = () => {
 						<T>
 							Instead, I am proposing something so simple that I
 							could walk into the lobby of my hotel, stick my
-							physical key or passowrd into Crystal, and get right
+							physical key or passowrd into Avalon, and get right
 							back to precisely what I was doing before I left my
 							hotel room only minutes prior.
 						</T>
@@ -462,7 +462,7 @@ const Article = () => {
 						</T>
 						<T>
 							This brings up another point, in particular about
-							the construction of such a system: Crystal should
+							the construction of such a system: Avalon should
 							largely be a series of the Middleman pattern.
 							Instead of working directly with cloud files, for
 							instance, it should always create a local store to
@@ -470,17 +470,17 @@ const Article = () => {
 							handle the submission of that data to a third-party.
 						</T>
 						<T>
-							Many systems already work in this way, but Crystal
+							Many systems already work in this way, but Avalon
 							would make copious use of the pattern to enable
 							highly precise integration with existing systems.
 						</T>
 						<T>
-							So far, I've only mentioned CrystalOS in the context
-							of being a desktop OS. Crystal is not exclusive to a
-							PC, however. In fact, I envision Crystal to be fully
+							So far, I've only mentioned AvalonOS in the context
+							of being a desktop OS. Avalon is not exclusive to a
+							PC, however. In fact, I envision Avalon to be fully
 							compatible out-of-the-box with any device. There's
 							no sense of "sharing" things between your own
-							devices—they simply are the same thing, and Crystal
+							devices—they simply are the same thing, and Avalon
 							would recognize that they are separate, albeit
 							identical (as much as possible), instances.
 						</T>
@@ -521,18 +521,18 @@ const Article = () => {
 						<Title>Competition</Title>
 
 						<T>
-							Again, one important aspect of Crystal is that it
+							Again, one important aspect of Avalon is that it
 							can integrate nicely with existing technologies. In
 							practice, this would mean that switching between
-							Crystal and more traditional operating systems
+							Avalon and more traditional operating systems
 							wouldn't involve, for instance, reformatting your
 							data from APFS to LUKS.
 						</T>
 						<T>
 							This means that both the complete adoption of
-							Crystal as well as the integration with your
+							Avalon as well as the integration with your
 							existing OS would generally be seamless. In this
-							way, Crystal is not lock-in, not downloadable (in
+							way, Avalon is not lock-in, not downloadable (in
 							the layman sense of the word), not restrictive.
 						</T>
 					</Content>
@@ -564,7 +564,7 @@ const Article = () => {
 						</T>
 						<T>
 							This brings me to something very important:
-							CrystalOS is actually a low-level abstraction of a
+							AvalonOS is actually a low-level abstraction of a
 							real OS. It itself does not contain any UI
 							whatsoever. This means that the UI can, in theory,
 							literally be downloaded on-demand from anywhere.
@@ -616,7 +616,7 @@ const Article = () => {
 						</T>
 						<T>
 							When I talk about "the UI" here I mean literally the
-							entire interface that sits atop CrystalOS, I'm not
+							entire interface that sits atop AvalonOS, I'm not
 							talking just about the design of Menus and Inputs.
 						</T>
 						<T>
@@ -632,7 +632,7 @@ const Article = () => {
 
 						<T>
 							I could go on, really. There is a lot to say about
-							the highly modular nature of Crystal and how it can
+							the highly modular nature of Avalon and how it can
 							work closely with the workflows we already have
 							today.
 						</T>
@@ -648,7 +648,7 @@ const Article = () => {
 						<T>
 							Next up, we'll visit specific UI implementations of
 							the principles outlined here. More specifically,
-							we'll be taking a closer look at what CrystalOS
+							we'll be taking a closer look at what AvalonOS
 							looks like, how it works, and more on the trajectory
 							of the project as a whole.
 						</T>

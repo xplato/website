@@ -13,12 +13,11 @@ const Hero = () => {
 				<div className='container flex-c'>
 					<AnimatedView {...textAreaEntityProps}>
 						<div className='text-container flex-c text-c'>
-							<Title mods='no-octo'>Introducing Crystal</Title>
+							<Title mods='no-octo'>Principles {'&'} Methodologies</Title>
 
 							<div className='mw-40r flex-c text-c'>
 								<h1 className='fs-3xl fw-500 mb-2r'>
-									Crystal is a multi-part, futuristic UI/UX
-									concept.
+									The Philosophy of AvalonOS
 								</h1>
 
 								<ContentsDropdown />
@@ -27,9 +26,9 @@ const Hero = () => {
 					</AnimatedView>
 
 					<FeaturedImage
-						src={getEdgePath('crystal/part-1/desktop-widgets-closed-light.jpg')}
-						caption='The conceptual—and pre-release teaser of the—CrystalOS Desktop'
-						useCaptionAsAlt
+						src={getEdgePath('avalon/part-2/desktop-fish-wallpaper.png')}
+						caption='Demonstration of the color-related adaptability of AvalonUI.'
+						alt='Demonstration of the color-related adaptability of AvalonUI via a black wallpaper with a prominent red fish.'
 						delay={0.3}
 					/>
 				</div>

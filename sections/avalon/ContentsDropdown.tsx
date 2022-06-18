@@ -5,8 +5,8 @@ const ContentsDropdown = () => {
 		<Dropdown
 			label='Series Contents'
 			items={[
-				{ label: '1. Introduction', href: '/crystal' },
-				{ label: '2. Philosophy', href: '/crystal/philosophy' },
+				{ label: '1. Introduction', href: '/avalon' },
+				{ label: '2. Philosophy', href: '/avalon/philosophy' },
 			]}
 		/>
 	);

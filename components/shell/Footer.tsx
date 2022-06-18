@@ -36,16 +36,16 @@ const Footer = () => {
 								<p className='mb-0 opacity-05'>
 									Copyright &copy; 2022
 								</p>
-								<div className='flex align-c justify-c flex-row tp-mt-0-5r'>
+								<div className='flex align-c justify-c flex-row ml-flex-c tp-mt-0-5r'>
 									<ThemeButton />
-									<Bullet />
+									<div className="ml-hide"><Bullet /></div>
 									<Li
 										href='/privacy'
-										className='normal-link opacity-05'
+										className='normal-link opacity-05 ml-my-0-5r'
 									>
 										Privacy
 									</Li>
-									<Bullet />
+									<div className="ml-hide"><Bullet /></div>
 									<Tagline />
 								</div>
 							</div>

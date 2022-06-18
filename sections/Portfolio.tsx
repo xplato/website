@@ -5,18 +5,18 @@ import { variants, transition } from '../logic/motion';
 
 const cards = [
 	{
-		href: '/crystal/philosophy',
-		title: 'Crystal #2: Philosophies of a modular operating system',
+		href: '/avalon',
+		title: 'Avalon #1: Experimenting in futuristic UI/UX',
+		image: '/images/showcase/avalonos.png',
+		alt: "AvalonOS's blurred widgets and top complications being shown with Athens, Greece as a wallpaper.",
+		color: 'orange',
+	},
+	{
+		href: '/avalon/philosophy',
+		title: 'Avalon #2: Philosophies of a modular operating system',
 		image: '/images/showcase/philosophy-featured.png',
 		alt: 'A modern search component using Scavenger showing the default results for my personal website.',
 		color: 'red',
-	},
-	{
-		href: '/crystal',
-		title: 'Crystal #1: Experimenting in futuristic UI/UX',
-		image: '/images/showcase/crystalos.png',
-		alt: "CrystalOS's blurred widgets and top complications being shown with Athens, Greece as a wallpaper.",
-		color: 'orange',
 	},
 	{
 		href: 'https://gofe.app',

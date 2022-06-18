@@ -4,9 +4,9 @@ import { Store, useStore } from '../../providers/StoreProvider';
 
 import PageMeta from '../../components/PageMeta';
 
-import Hero from '../../sections/crystal/philosophy/Hero';
-import Article from '../../sections/crystal/philosophy/Article';
-import References from '../../sections/crystal/philosophy/References';
+import Hero from '../../sections/avalon/philosophy/Hero';
+import Article from '../../sections/avalon/philosophy/Article';
+import References from '../../sections/avalon/philosophy/References';
 import View from '../../components/shared/Expose';
 import Expose from '../../components/shared/Expose';
 
@@ -26,7 +26,7 @@ const Philosophy = () => {
 		<>
 			<PageMeta
 				meta={{
-					title: 'Crystal Philosophy',
+					title: 'Avalon Philosophy',
 					description: 'Experimenting in futuristic UI/UX',
 				}}
 			/>

@@ -18,7 +18,7 @@ const Project = () => {
 						<Title>Frost</Title>
 						<T>
 							Although you haven't seen it too clearly yet, one of
-							the most distinctive artisic features of Crystal is
+							the most distinctive artisic features of Avalon is
 							the frosty, blurred backgrounds inherent to some of
 							its panels and components.
 						</T>
@@ -27,7 +27,7 @@ const Project = () => {
 							operating systems. MacOS makes excellent use of it,
 							and even recent Windows versions have inhereted the
 							frosty look. One of the distinctions is that
-							CrystalUI (usually) doesn't set too many blur colors
+							AvalonUI (usually) doesn't set too many blur colors
 							by default. Instead, much of the interface is
 							inherited from the background. In the case of the
 							desktop, it is inherited from the wallpaper.
@@ -48,7 +48,7 @@ const Project = () => {
 						<div className='grid-block'>
 							<GalleryImage
 								index={0}
-								src={getEdgePath('crystal/part-1/mtn-hero.jpg')}
+								src={getEdgePath('avalon/part-1/mtn-hero.jpg')}
 								caption='A dark mountain desktop'
 							/>
 						</div>
@@ -56,7 +56,7 @@ const Project = () => {
 							<GalleryImage
 								index={1}
 								src={getEdgePath(
-									'crystal/part-1/search-expose-alt-hero.png'
+									'avalon/part-1/search-expose-alt-hero.png'
 								)}
 								caption='The search interface with a frosted background'
 							/>
@@ -93,7 +93,7 @@ const Project = () => {
 
 					<FeaturedImage
 						src={getEdgePath(
-							'crystal/part-1/search-expose-light.png'
+							'avalon/part-1/search-expose-light.png'
 						)}
 					/>
 
@@ -109,7 +109,7 @@ const Project = () => {
 							blur to the lock screen.
 						</T>
 						<T className='mb-0'>
-							This is a good time to note: CrystalOS is still
+							This is a good time to note: AvalonOS is still
 							under development. The animations are smooth on my
 							computer when I'm not screen recording, but once I
 							start recording, the frame rate drops substantially.
@@ -120,7 +120,7 @@ const Project = () => {
 					</Content>
 
 					<FeaturedImage
-						src={getEdgePath('crystal/part-1/lock-interaction.gif')}
+						src={getEdgePath('avalon/part-1/lock-interaction.gif')}
 						caption='Locking the OS adds a nice background blur'
 					/>
 
@@ -142,7 +142,7 @@ const Project = () => {
 							where the background is—even as your mouse hovers
 							over the items. This combination and close
 							synchronization of the interface and keyboard gives
-							CrystalOS some interesting capabilities. These will
+							AvalonOS some interesting capabilities. These will
 							be discussed in more detail in later chapters.
 						</T>
 
@@ -185,7 +185,7 @@ const Project = () => {
 								<GalleryImage
 									index={0}
 									src={getEdgePath(
-										'crystal/part-1/os-menu-light.png'
+										'avalon/part-1/os-menu-light.png'
 									)}
 									caption='The hovering background, shown as a gentle white in light mode.'
 								/>
@@ -194,7 +194,7 @@ const Project = () => {
 								<GalleryImage
 									index={1}
 									src={getEdgePath(
-										'crystal/part-1/os-menu-dark.png'
+										'avalon/part-1/os-menu-dark.png'
 									)}
 									caption='The hovering background, shown as a more aggressive blue in dark mode.'
 								/>
@@ -214,14 +214,14 @@ const Project = () => {
 						<Title>Depth</Title>
 
 						<T>
-							One of the goals with CrystalUI is to feel
+							One of the goals with AvalonUI is to feel
 							relatively natural. Now, it's arguable how close
 							"futuristic" can come to "natural," but it's
 							undeniable that depth in any interface is more
 							"natural" than otherwise.
 						</T>
 						<T>
-							Unlike flat interfaces, Crystal intends to stand out
+							Unlike flat interfaces, Avalon intends to stand out
 							in highly precise areas. One of the best and most
 							natural ways to do that is with depth, introduced
 							via dynamic backgrounds and shadows.
@@ -231,12 +231,12 @@ const Project = () => {
 					<div className='text-container'>
 						<FeaturedImage
 							src={getEdgePath(
-								'crystal/part-1/app-item-closeup.png'
+								'avalon/part-1/app-item-closeup.png'
 							)}
 						/>
 						<FeaturedImage
 							src={getEdgePath(
-								'crystal/part-1/app-item-closeup-left.png'
+								'avalon/part-1/app-item-closeup-left.png'
 							)}
 							mods='enlarge'
 						/>
@@ -246,7 +246,7 @@ const Project = () => {
 						<Title>Color</Title>
 
 						<T>
-							Akin to real-life crystals, CrystalUI intends to
+							Akin to real-life avalons, AvalonUI intends to
 							inherit its visual characteristics, in terms of
 							color, from what it is currently doing.
 						</T>
@@ -265,7 +265,7 @@ const Project = () => {
 							<GalleryImage
 								index={0}
 								src={getEdgePath(
-									'crystal/part-1/wifi-menu-light.png'
+									'avalon/part-1/wifi-menu-light.png'
 								)}
 								caption='The WiFi menu showing an inherited background color (Light)'
 							/>
@@ -274,7 +274,7 @@ const Project = () => {
 							<GalleryImage
 								index={1}
 								src={getEdgePath(
-									'crystal/part-1/wifi-menu-dark.png'
+									'avalon/part-1/wifi-menu-dark.png'
 								)}
 								caption='The WiFi menu showing an inherited background color (Dark)'
 							/>
@@ -286,7 +286,7 @@ const Project = () => {
 
 						<T>
 							Animation, movement, and fluidity are some of the
-							most important aspects of CrystalUI. The interface
+							most important aspects of AvalonUI. The interface
 							is designed to react to its environment.
 						</T>
 
@@ -299,7 +299,7 @@ const Project = () => {
 						</T>
 
 						<T>
-							CrystalUI employs various stages of animations for
+							AvalonUI employs various stages of animations for
 							most components. The Menu component, for instance,
 							animates its height and each item sequentially
 							within it:
@@ -338,7 +338,7 @@ const Project = () => {
 
 					<FeaturedImage
 						src={getEdgePath(
-							'crystal/part-1/search-entrance-animation-light.gif'
+							'avalon/part-1/search-entrance-animation-light.gif'
 						)}
 						caption='Opening the Command Palette (Light)'
 					/>
@@ -348,7 +348,7 @@ const Project = () => {
 						<Title>Movement {'&'} Fluidity</Title>
 						<T>
 							Movement {'&'} Fluidity is something I've been
-							saving until the end. It's one of CrystalUI's most
+							saving until the end. It's one of AvalonUI's most
 							distinctive features.
 						</T>
 						<T>Described most simply, the UI moves with you:</T>
@@ -372,7 +372,7 @@ const Project = () => {
 
 					<FeaturedImage
 						src={getEdgePath(
-							'crystal/part-1/horizontal-widget-animation.gif'
+							'avalon/part-1/horizontal-widget-animation.gif'
 						)}
 						caption='Widgets animating into a horizontal layout'
 					/>
@@ -382,7 +382,7 @@ const Project = () => {
 
 						<T>
 							Similar to how the colors adapt to their background,
-							another distinctive characteristic of CrystalUI is
+							another distinctive characteristic of AvalonUI is
 							the ability to adapt to certain conditions
 							on-demand.
 						</T>
@@ -393,23 +393,23 @@ const Project = () => {
 							The code itself is closed-source, as I plan to use
 							many parts of it in a real-life projet. Regardless,
 							my point is that I'm a programmer by nature, almost.
-							In practice, this means that CrystalUI has both
+							In practice, this means that AvalonUI has both
 							aesthetic characteristics and functional ones.
 						</T>
 
 						<T>
-							So, when I say that components in CrystalUI are
+							So, when I say that components in AvalonUI are
 							"adaptable," I mean that literally.
 						</T>
 
 						<T>
 							I've always had a very modular perspective to life
 							and programming. In practice, I tend to write
-							smaller, more versatile things. In CrystalUI, we see
+							smaller, more versatile things. In AvalonUI, we see
 							this with the adaptability of components. It may not
 							be as clear now, but in later parts of this series,
 							you'll see how adaptability plays a vital role in
-							the efficacy of CrystalUI as a whole.
+							the efficacy of AvalonUI as a whole.
 						</T>
 
 						<T>
@@ -420,7 +420,7 @@ const Project = () => {
 
 					<FeaturedImage
 						src={getEdgePath(
-							'crystal/part-1/vertical-widget-animation.gif'
+							'avalon/part-1/vertical-widget-animation.gif'
 						)}
 						caption='Widgets animating into a vertical layout'
 					/>
@@ -435,13 +435,13 @@ const Project = () => {
 					<div className='text-container'>
 						<FeaturedImage
 							src={getEdgePath(
-								'crystal/part-1/calendar-expose-light.png'
+								'avalon/part-1/calendar-expose-light.png'
 							)}
 							caption='Command palette calendar widget exposé (Light)'
 						/>
 						<FeaturedImage
 							src={getEdgePath(
-								'crystal/part-1/calendar-expose-dark.png'
+								'avalon/part-1/calendar-expose-dark.png'
 							)}
 							caption='Command palette calendar widget exposé (Dark)'
 						/>
@@ -452,13 +452,13 @@ const Project = () => {
 
 						<T>
 							I've only touched the tip of what I've got in store
-							for Crystal. Today concludes most of what CrystalUI
+							for Avalon. Today concludes most of what AvalonUI
 							is or will become.
 						</T>
 
 						<T>
 							Next up, we'll talk about the philosophy behind
-							CrystalOS, and some of its implementation.
+							AvalonOS, and some of its implementation.
 						</T>
 
 						<T>
@@ -470,7 +470,7 @@ const Project = () => {
 
 						<div className="mt-3r"></div>
 
-						<Li href='/crystal/philosophy' className='fluid-button'>
+						<Li href='/avalon/philosophy' className='fluid-button'>
 							Part 2: Philosophy
 						</Li>
 
@@ -481,9 +481,9 @@ const Project = () => {
 
 					<FeaturedImage
 						src={getEdgePath(
-							'crystal/part-1/desktop-sunset-wallpaper.jpg'
+							'avalon/part-1/desktop-sunset-wallpaper.jpg'
 						)}
-						caption='CrystalOS Desktop with the Sunset wallpaper'
+						caption='AvalonOS Desktop with the Sunset wallpaper'
 					/>
 
 					<FeaturedImage
@@ -494,7 +494,7 @@ const Project = () => {
 					/>
 
 					<FeaturedImage
-						src={getEdgePath('crystal/part-1/lock-screen-dark.png')}
+						src={getEdgePath('avalon/part-1/lock-screen-dark.png')}
 						caption='Lock Screen (Dark)'
 					/>
 
