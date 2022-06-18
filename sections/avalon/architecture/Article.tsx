@@ -104,8 +104,9 @@ const Article = () => {
 							become more popular.
 						</T>
 						<T>
-							(I do not like Windows [the operating system] and I haven't used it for
-							some time, so I'm going to disregard it for now.)
+							(I do not like Windows [the operating system] and I
+							haven't used it for some time, so I'm going to
+							disregard it for now.)
 						</T>
 						<T>Let's define these more clearly.</T>
 						<T>
@@ -150,7 +151,8 @@ const Article = () => {
 						</T>
 						<T>
 							This extends to real-life occupations, of course.
-							Hell, even baking could have its own project: "Jim's Wedding Cake!"
+							Hell, even baking could have its own project: "Jim's
+							Wedding Cake!"
 						</T>
 						<T>
 							Baking obviously isn't the best example here. After
@@ -168,8 +170,11 @@ const Article = () => {
 						<T>One word: Integration.</T>
 						<T>
 							Traditional "Workspaces" are a collection of
-							windows. <span className='fw-600'>In Avalon, a Workspace is the project you are
-							working on—entirely.</span>
+							windows.{' '}
+							<span className='fw-600'>
+								In Avalon, a Workspace is the project you are
+								working on—entirely.
+							</span>
 						</T>
 						<T>
 							Indeed, in Avalon, a Workspace does contain a
@@ -233,6 +238,18 @@ const Article = () => {
 									and then use my mouse to walk down what
 									seems like an endless directory tree in an
 									effort to find the newly created project.
+								</p>
+							</li>
+							<li>
+								<p>
+									Start the development server (
+									<code>yarn dev</code>)
+								</p>
+							</li>
+							<li>
+								<p>
+									Open my browser to{' '}
+									<code>localhost:3000</code>
 								</p>
 							</li>
 							<li>
