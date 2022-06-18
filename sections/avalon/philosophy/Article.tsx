@@ -26,8 +26,8 @@ const Article = () => {
 
 						<T>
 							In other words, the so-called "characteristics" of
-							AvalonUI aren't specific or linked in any way to
-							the particular way I implemented it. Color, depth,
+							AvalonUI aren't specific or linked in any way to the
+							particular way I implemented it. Color, depth,
 							adaptability and so on are all general, and many
 							different UIs could fit the bill.
 						</T>
@@ -79,9 +79,9 @@ const Article = () => {
 						</T>
 						<T>
 							And, since AvalonUI inherits the principles of the
-							Avalon Philosophy, AvalonOS does as well. Indeed,
-							it is entirely the OS that I want to focus on with
-							the philosophy. The tiny UI-focused implementation
+							Avalon Philosophy, AvalonOS does as well. Indeed, it
+							is entirely the OS that I want to focus on with the
+							philosophy. The tiny UI-focused implementation
 							details like the floating backgrounds are, at the
 							end of the day, subject to preference. I definitely
 							love them, but you may not. In this case, it doesn't
@@ -93,8 +93,8 @@ const Article = () => {
 						<T>
 							Therefore, as I go on to discuss this mysterious
 							"Avalon Philosophy," note that it applies
-							specifically to AvalonOS, from which the UI
-							inherits its properties.
+							specifically to AvalonOS, from which the UI inherits
+							its properties.
 						</T>
 						<T>Without further ado, let's proceed.</T>
 					</Content>
@@ -521,19 +521,19 @@ const Article = () => {
 						<Title>Competition</Title>
 
 						<T>
-							Again, one important aspect of Avalon is that it
-							can integrate nicely with existing technologies. In
+							Again, one important aspect of Avalon is that it can
+							integrate nicely with existing technologies. In
 							practice, this would mean that switching between
 							Avalon and more traditional operating systems
 							wouldn't involve, for instance, reformatting your
 							data from APFS to LUKS.
 						</T>
 						<T>
-							This means that both the complete adoption of
-							Avalon as well as the integration with your
-							existing OS would generally be seamless. In this
-							way, Avalon is not lock-in, not downloadable (in
-							the layman sense of the word), not restrictive.
+							This means that both the complete adoption of Avalon
+							as well as the integration with your existing OS
+							would generally be seamless. In this way, Avalon is
+							not lock-in, not downloadable (in the layman sense
+							of the word), not restrictive.
 						</T>
 					</Content>
 
@@ -563,11 +563,11 @@ const Article = () => {
 							feel for some new ways of doing things.
 						</T>
 						<T>
-							This brings me to something very important:
-							AvalonOS is actually a low-level abstraction of a
-							real OS. It itself does not contain any UI
-							whatsoever. This means that the UI can, in theory,
-							literally be downloaded on-demand from anywhere.
+							This brings me to something very important: AvalonOS
+							is actually a low-level abstraction of a real OS. It
+							itself does not contain any UI whatsoever. This
+							means that the UI can, in theory, literally be
+							downloaded on-demand from anywhere.
 						</T>
 						<T>
 							Of course, in practice, this would not be ideal in
@@ -648,15 +648,23 @@ const Article = () => {
 						<T>
 							Next up, we'll visit specific UI implementations of
 							the principles outlined here. More specifically,
-							we'll be taking a closer look at what AvalonOS
-							looks like, how it works, and more on the trajectory
-							of the project as a whole.
+							we'll be taking a closer look at what AvalonOS looks
+							like, how it works, and more on the trajectory of
+							the project as a whole.
 						</T>
 						<T>
 							If you've made it this far, then{' '}
 							<code>{`{props}`}</code> to you.
 						</T>
 						<T>Thanks for reading.</T>
+						<div className='mt-2r'>
+							<Li
+								href='/avalon/architecture'
+								className='fluid-button'
+							>
+								Part 3: Architecture
+							</Li>
+						</div>
 					</Content>
 				</div>
 			</section>

@@ -246,7 +246,7 @@ const Project = () => {
 						<Title>Color</Title>
 
 						<T>
-							Akin to real-life avalons, AvalonUI intends to
+							Akin to crystals, AvalonUI intends to
 							inherit its visual characteristics, in terms of
 							color, from what it is currently doing.
 						</T>

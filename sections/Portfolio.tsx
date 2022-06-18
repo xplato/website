@@ -6,25 +6,41 @@ import { variants, transition } from '../logic/motion';
 const cards = [
 	{
 		href: '/avalon',
-		title: 'Avalon #1: Experimenting in futuristic UI/UX',
+		title: 'Avalon: New ways of working',
 		image: '/images/showcase/avalonos.png',
 		alt: "AvalonOS's blurred widgets and top complications being shown with Athens, Greece as a wallpaper.",
 		color: 'orange',
 	},
 	{
-		href: '/avalon/philosophy',
-		title: 'Avalon #2: Philosophies of a modular operating system',
-		image: '/images/showcase/philosophy-featured.png',
-		alt: 'A modern search component using Scavenger showing the default results for my personal website.',
-		color: 'red',
-	},
-	{
 		href: 'https://gofe.app',
 		title: 'Private web searching with Gofë',
+		content:
+			'Gofë is a private front-end for Google. Get top-notch search results while remaining anonymous.',
 		image: '/images/showcase/gofe.png',
-		alt: 'Gofë displaying the search results for the query "git"',
 		color: 'cyan',
 	},
+	{
+		href: 'https://codeberg.org/xplato/Scavenger',
+		title: 'Lightning-fast results with Scavenger',
+		content:
+			'Scavenger is a React library for lightning-fast static resource searching.',
+		image: '/images/showcase/scavenger.png',
+		color: 'green',
+	},
+	// {
+	// 	href: '/avalon/philosophy',
+	// 	title: 'Avalon #2: Philosophies of a modular operating system',
+	// 	image: '/images/showcase/philosophy-featured.png',
+	// 	alt: 'A modern search component using Scavenger showing the default results for my personal website.',
+	// 	color: 'red',
+	// },
+	// {
+	// 	href: '/avalon/architecture',
+	// 	title: 'Avalon #3: Architecture & Detail',
+	// 	image: '/images/showcase/applications.png',
+	// 	alt: "AvalonOS's blurred widgets and top complications being shown with Athens, Greece as a wallpaper.",
+	// 	color: 'rose',
+	// },
 ];
 
 const Portfolio = () => {
