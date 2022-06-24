@@ -93,16 +93,10 @@
 	@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px)) {
 		& {
 			background-color: rgba(#EDEDED, 80%);
-			// border: 1px solid #97979798;
-			// box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.05);
 			backdrop-filter: saturate(180%) blur($blur-radius);
 
 			html.dark & {
-				// background-color: rgba(59, 59, 77, 0.8);
-				// background-color: rgba(96, 83, 67, 0.8);
 				background-color: rgba(65, 65, 65, 0.6);
-				// box-shadow: 0 0 0 0.5px rgba(4, 0, 25, 0.9);
-				// border-color: rgba(83, 83, 83, 0.66);
 			}
 		}
 	}

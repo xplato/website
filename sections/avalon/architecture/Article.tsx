@@ -1,11 +1,10 @@
-import ELi from '../../../components/ELi';
-
 import Li from '../../../components/Li';
 import Content from '../../../components/shared/Content';
 import FeaturedImage from '../../../components/shared/FeaturedImage';
 import Title from '../../../components/Title';
-import { getEdgePath } from '../../../logic/utils';
 import T from '../T';
+
+import { getEdgePath } from '../../../logic/utils';
 
 const Article = () => {
 	return (

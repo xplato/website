@@ -27,6 +27,7 @@ $gutter: 0.75rem;
 	transform-origin: top left;
 	z-index: 999;
 
+	background-color: var(--ui);
 	@include mixins.panel();
 
 	&.align-right {

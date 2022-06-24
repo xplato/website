@@ -55,9 +55,12 @@ const About = () => {
 								<T h='https://typescriptlang.org/' c='blue'>TypeScript</T>
 								<T h='https://nodejs.org/' c='green'>NodeJS</T>
 								<T h='https://reactjs.org/' c='cyan'>React</T>
+								<T h='https://solidjs.com/' c='amber'>SolidJS</T>
 								<T h='https://nextjs.org/' c='blue'>NextJS</T>
 								<T h='https://www.python.org/' c='sky'>Python</T>
 								<T h='https://fastapi.tiangolo.com/' c='teal'>FastAPI</T>
+								<T h='https://flask.palletsprojects.com/' c='pink'>Flask</T>
+								<T h='https://www.djangoproject.com/' c='emerald'>Django</T>
 								<T h='https://go.dev/' c='sky'>Go</T>
 								<T h='https://www.rust-lang.org/' c='orange'>Rust</T>
 								<T h='https://www.php.net/' c='blue'>PHP</T>
