@@ -312,7 +312,7 @@ const Project = () => {
 								<GalleryImage
 									index={1}
 									src={getEdgePath(
-										'wifi-menu-interaction-light.gif'
+										'avalon/part-1/wifi-menu-interaction-light.gif'
 									)}
 									caption='The WiFi menu entrance animation (Light)'
 								/>
@@ -321,7 +321,7 @@ const Project = () => {
 								<GalleryImage
 									index={1}
 									src={getEdgePath(
-										'wifi-menu-interaction-dark.gif'
+										'avalon/part-1/wifi-menu-interaction-dark.gif'
 									)}
 									caption='The WiFi menu entrance animation (Dark)'
 								/>
@@ -356,7 +356,7 @@ const Project = () => {
 
 					<div className='text-container'>
 						<FeaturedImage
-							src={getEdgePath('wifi-menu-microinteraction.gif')}
+							src={getEdgePath('avalon/part-1/wifi-menu-microinteraction.gif')}
 						/>
 					</div>
 
@@ -488,7 +488,7 @@ const Project = () => {
 
 					<FeaturedImage
 						src={getEdgePath(
-							'desktop-widgets-vertical-expanded-dark.jpg'
+							'avalon/part-1/desktop-widgets-vertical-expanded-dark.jpg'
 						)}
 						caption='Widgets expanded vertically (Dark)'
 					/>
